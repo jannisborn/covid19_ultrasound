@@ -13,7 +13,7 @@ pip install -e .
 ```
 
 
-## Current performance:
+## Current performance (CT data):
 
 ```
 [INFO] evaluating network...
