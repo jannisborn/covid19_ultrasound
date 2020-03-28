@@ -1,27 +1,24 @@
-# USAGE
-# python train.py --dataset dataset
+import argparse
+import os
 
-# import the necessary packages
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras.applications import VGG16
-from tensorflow.keras.layers import AveragePooling2D
-from tensorflow.keras.layers import Dropout
-from tensorflow.keras.layers import Flatten
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.layers import Input
-from tensorflow.keras.models import Model
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.utils import to_categorical
-from sklearn.preprocessing import LabelBinarizer
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix
-from imutils import paths
+import cv2
 import matplotlib.pyplot as plt
 import numpy as np
-import argparse
-import cv2
-import os
+
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelBinarizer
+from tensorflow.keras.applications import VGG16
+from tensorflow.keras.layers import (
+    AveragePooling2D, Dense, Dropout, Flatten, Input
+)
+from tensorflow.keras.models import Model
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.utils import to_categorical
+import tensorflow as tf
+
+from imutils import paths
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
@@ -30,17 +27,30 @@ ap.add_argument(
     "-p",
     "--plot",
     type=str,
-    default="plot.png",
+    default="plots/plot.png",
     help="path to output loss/accuracy plot"
 )
 ap.add_argument(
     "-m",
     "--model",
     type=str,
-    default="covid19.model",
+    default="trained_model/covid19.model",
     help="path to output loss/accuracy plot"
 )
 args = vars(ap.parse_args())
+
+dataset_name = args['dataset'].split('_')[-1]
+model_name = (
+    os.path.join('trained_models', dataset_name + '.model')
+    if args['model'] == 'covid19.model' else args['model']
+)
+plot_path = (
+    os.path.join('plots', dataset_name + '.png')
+    if args['plot'] == 'plots/plot.png' else args['plots']  # yapf: disable
+)
+
+# Suppress logging
+tf.get_logger().setLevel('ERROR')
 
 # initialize the initial learning rate, number of epochs to train for,
 # and batch size
@@ -54,6 +64,8 @@ print("[INFO] loading images...")
 imagePaths = list(paths.list_images(args["dataset"]))
 data = []
 labels = []
+
+print(f"Model is called : {model_name}")
 
 # loop over the image paths
 for imagePath in imagePaths:
@@ -77,8 +89,11 @@ labels = np.array(labels)
 
 # perform one-hot encoding on the labels
 lb = LabelBinarizer()
+num_classes = len(set(labels))
+
 labels = lb.fit_transform(labels)
-labels = to_categorical(labels)
+if num_classes == 2:
+    labels = to_categorical(labels, num_classes=num_classes)
 # partition the data into training and testing splits using 80% of
 # the data for training and the remaining 20% for testing
 (trainX, testX, trainY, testY) = train_test_split(
@@ -103,7 +118,7 @@ headModel = AveragePooling2D(pool_size=(4, 4))(headModel)
 headModel = Flatten(name="flatten")(headModel)
 headModel = Dense(64, activation="relu")(headModel)
 headModel = Dropout(0.5)(headModel)
-headModel = Dense(2, activation="softmax")(headModel)
+headModel = Dense(num_classes, activation="softmax")(headModel)
 
 # place the head FC model on top of the base model (this will become
 # the actual model we will train)
@@ -173,5 +188,5 @@ plt.legend(loc="lower left")
 plt.savefig(args["plot"])
 
 # serialize the model to disk
-print("[INFO] saving COVID-19 detector model...")
-model.save(args["model"], save_format="h5")
+print(f"[INFO] saving COVID-19 detector model on {model_name} data...")
+model.save(model_name, save_format="h5")
