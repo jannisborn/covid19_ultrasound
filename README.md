@@ -32,3 +32,18 @@ python3 covid_detector/train_covid19.py --dataset data_ct
    macro avg       0.92      0.90      0.90        10
 weighted avg       0.92      0.90      0.90        10
 ```
+
+## Current performance (POCUS data):
+
+```
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+
+       covid       1.00      1.00      1.00        45
+   pneunomia       1.00      1.00      1.00         9
+        sane       1.00      1.00      1.00        11
+
+    accuracy                           1.00        65
+   macro avg       1.00      1.00      1.00        65
+weighted avg       1.00      1.00      1.00        65
+```
