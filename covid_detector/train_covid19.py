@@ -102,6 +102,8 @@ if dataset_name != 'pocus-splitted':
         data, labels, test_size=0.20, stratify=labels, random_state=42
     )
 
+    class_weights = {c: 1 for c in range(num_classes)}
+
 else:
     # For the pocus-splitted data
     train_labels, test_labels = [], []
@@ -134,8 +136,8 @@ else:
     train_data = np.array(train_data) / 255.0
     test_data = np.array(test_data) / 255.0
 
-    train_labels = np.array(train_labels)
-    test_labels = np.array(test_labels)
+    train_labels_text = np.array(train_labels)
+    test_labels_text = np.array(test_labels)
 
     assert len(set(train_labels)) == len(set(test_labels)), (
         'Some classes are only in train or test data'
@@ -144,8 +146,10 @@ else:
 
     # perform one-hot encoding on the labels
     lb = LabelBinarizer()
-    train_labels = lb.fit_transform(train_labels)
-    test_labels = lb.fit_transform(test_labels)
+    lb.fit(train_labels_text)
+
+    train_labels = lb.transform(train_labels_text)
+    test_labels = lb.transform(test_labels_text)
 
     if num_classes == 2:
         train_labels = to_categorical(train_labels, num_classes=num_classes)
@@ -157,7 +161,12 @@ else:
     trainY = train_labels
     testX = test_data
     testY = test_labels
+    #weights = {'covid': 0.2, 'pneunomia': 0.4, 'regular': 0.4}
+    weights = {'covid': 0.3, 'pneunomia': 0.3, 'regular': 0.3}
+    class_weights = {i: weights[c] for i, c in enumerate(lb.classes_)}
 
+print("Class mappings:", lb.classes_)
+print("Class weights:", class_weights)
 # initialize the training data augmentation object
 trainAug = ImageDataGenerator(rotation_range=15, fill_mode="nearest")
 
@@ -199,7 +208,8 @@ H = model.fit_generator(
     steps_per_epoch=len(trainX) // BS,
     validation_data=(testX, testY),
     validation_steps=len(testX) // BS,
-    epochs=EPOCHS
+    epochs=EPOCHS,
+    class_weight=class_weights
 )
 
 # make predictions on the testing set
