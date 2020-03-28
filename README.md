@@ -12,6 +12,12 @@ To run the code, just install the package `covid_detector` in editable mode for 
 pip install -e .
 ```
 
+To run the model on CT data just to:
+
+```sh
+python3 covid_detector/train_covid19.py --dataset data_ct
+```
+
 
 ## Current performance (CT data):
 
