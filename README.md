@@ -19,7 +19,7 @@ python3 covid_detector/train_covid19.py --dataset data_ct
 ```
 
 
-## Current performance (CT data):
+## Current performance (XRAY data):
 
 ```
 [INFO] evaluating network...
