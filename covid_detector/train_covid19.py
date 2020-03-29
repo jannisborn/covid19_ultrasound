@@ -16,6 +16,9 @@ from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.callbacks import (
+    EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
+)
 import tensorflow as tf
 
 from imutils import paths
@@ -54,8 +57,8 @@ tf.get_logger().setLevel('ERROR')
 
 # initialize the initial learning rate, number of epochs to train for,
 # and batch size
-INIT_LR = 1e-3
-EPOCHS = 25
+INIT_LR = 5e-3
+EPOCHS = 50
 BS = 8
 
 # grab the list of images in our dataset directory, then initialize
@@ -161,14 +164,19 @@ else:
     trainY = train_labels
     testX = test_data
     testY = test_labels
-    #weights = {'covid': 0.2, 'pneunomia': 0.4, 'regular': 0.4}
+    #weights = {'covid': 0.2, 'pneunomia': 0.3, 'regular': 0.5}
     weights = {'covid': 0.3, 'pneunomia': 0.3, 'regular': 0.3}
     class_weights = {i: weights[c] for i, c in enumerate(lb.classes_)}
 
 print("Class mappings:", lb.classes_)
 print("Class weights:", class_weights)
 # initialize the training data augmentation object
-trainAug = ImageDataGenerator(rotation_range=15, fill_mode="nearest")
+trainAug = ImageDataGenerator(
+    rotation_range=15,
+    fill_mode="nearest",
+    horizontal_flip=True,
+    vertical_flip=True
+)
 
 # load the VGG16 network, ensuring the head FC layer sets are left
 # off
@@ -196,10 +204,28 @@ model = Model(inputs=baseModel.input, outputs=headModel)
 for layer in baseModel.layers:
     layer.trainable = False
 
+earlyStopping = EarlyStopping(
+    monitor='val_loss', patience=10, verbose=0, mode='min'
+)
+mcp_save = ModelCheckpoint(
+    '.mdl_wts.hdf5', save_best_only=True, monitor='val_loss', mode='min'
+)
+reduce_lr_loss = ReduceLROnPlateau(
+    monitor='val_loss',
+    factor=0.1,
+    patience=7,
+    verbose=1,
+    epsilon=1e-4,
+    mode='min'
+)
+
 # compile our model
 print("[INFO] compiling model...")
 opt = Adam(lr=INIT_LR, decay=INIT_LR / EPOCHS)
 model.compile(loss="binary_crossentropy", optimizer=opt, metrics=["accuracy"])
+
+print(f"Model has {model.count_params()} parameters")
+print(f"Model summary {model.summary()}")
 
 # train the head of the network
 print("[INFO] training head...")
@@ -209,7 +235,8 @@ H = model.fit_generator(
     validation_data=(testX, testY),
     validation_steps=len(testX) // BS,
     epochs=EPOCHS,
-    class_weight=class_weights
+    class_weight=class_weights,
+    callbacks=[earlyStopping, mcp_save, reduce_lr_loss]
 )
 
 # make predictions on the testing set
