@@ -59,3 +59,43 @@ To run the model on CT data just to:
 ```sh
 python3 covid_detector/train_covid19.py --dataset data_pocus-splitted
 ```
+
+
+## Results on other data modalities
+
+#### XRay-Data (data as in this repository)
+```
+
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+
+       covid       1.00      0.80      0.89         5
+      normal       0.83      1.00      0.91         5
+
+    accuracy                           0.90        10
+   macro avg       0.92      0.90      0.90        10
+weighted avg       0.92      0.90      0.90        10
+
+
+```
+
+
+#### XRay-Data ([data from Kaggle challenge](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia/kernels))
+This was a sanity check of the model. It was trained only to differentiate *sane* from *pneunomia* since for this more data was available.
+```
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+
+      NORMAL       0.91      0.53      0.67       234
+   PNEUMONIA       0.78      0.97      0.86       390
+
+    accuracy                           0.81       624
+   macro avg       0.84      0.75      0.77       624
+weighted avg       0.83      0.81      0.79       624
+
+[[125 109]
+ [ 12 378]]
+acc: 0.8061
+sensitivity: 0.5342
+specificity: 0.9692
+```
