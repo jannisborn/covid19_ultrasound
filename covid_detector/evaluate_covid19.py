@@ -1,6 +1,7 @@
 """
 Evaluation class that performs forward pass through trained models
 """
+#%%
 import os
 
 import cv2
@@ -11,7 +12,7 @@ from tensorflow.keras.layers import (
 )
 from tensorflow.keras.models import Model
 
-from .utils import CLASS_MAPPINGS
+from covid_detector.utils import CLASS_MAPPINGS
 
 
 #%%
