@@ -1,7 +1,7 @@
 
 Butterfly
 AtlasPocus
-Gred
+Grep
 
 Consolidation = More specific of regular pneumonia, but Covid ends look like this or trigger a bacteriial infection which turns into a consolidation. ("known as hepatization because the lung is becoming so thick that  it looks like a liver on the  screen)
 Skip Lesion = More specific of viral pneumonia--> but we could consider that viral pneumonia=Covid during these times
