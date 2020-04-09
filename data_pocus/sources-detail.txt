@@ -44,3 +44,6 @@ Pneu-grep-pneumonia2.mp4 = consolidated
 Pneu-grep-pneumonia3.mp4 = Low-fi consolidation
 Pneu-grep-pneumonia4.mp4 = Low-fi consolidation
 Pneu-grep-pneumonia5.mp4 = Quality to bad to be sur, but probably consolidated even if we see some scattered B-lines. I'd rather not use this one to teach a NN (edited) 
+
+Reg-C_ConvexProb_score0 = tested positive for the RNA test but no lung injury related to covid
+Reg-D_ConvexProb_score0 = tested positive for the RNA test but no lung injury related to covid
