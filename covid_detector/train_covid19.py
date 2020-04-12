@@ -12,6 +12,7 @@ from tensorflow.keras.applications import VGG16
 from tensorflow.keras.layers import (
     AveragePooling2D, Dense, Dropout, Flatten, Input
 )
+from tensorflow.keras.layers import BatchNormalization, ReLU
 from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
@@ -45,24 +46,23 @@ ap.add_argument(
 )
 args = vars(ap.parse_args())
 
+split = args["split"]
 dataset_name = args['dataset']  # .split('_')[-1]
-model_name = (
-    os.path.join('trained_models', dataset_name + '.model')
-    if args['model'] == 'trained_model/covid19.model' else args['model']
+model_name = os.path.join(
+    'trained_models', dataset_name + f'fold_{split}.model'
 )
-plot_path = (
-    os.path.join('plots', dataset_name + '.png')
-    if args['plot'] == 'plots/plot.png' else args['plots']  # yapf: disable
-)
+
+plot_path = os.path.join('plots', dataset_name + f'fold_{split}.png')
 
 # Suppress logging
 tf.get_logger().setLevel('ERROR')
 
 # initialize the initial learning rate, number of epochs to train for,
 # and batch size
-INIT_LR = 5e-3
-EPOCHS = 50
+INIT_LR = 5e-4
+EPOCHS = 20
 BS = 8
+TRAINABLE_VGG_LAYERS = 2
 
 # grab the list of images in our dataset directory, then initialize
 # the list of data (i.e., images) and class images
@@ -210,10 +210,12 @@ print("Class mappings:", lb.classes_)
 print("Class weights:", class_weights)
 # initialize the training data augmentation object
 trainAug = ImageDataGenerator(
-    rotation_range=15,
+    rotation_range=10,
     fill_mode="nearest",
     horizontal_flip=True,
-    vertical_flip=True
+    vertical_flip=True,
+    width_shift_range=0.1,
+    height_shift_range=0.1
 )
 
 # load the VGG16 network, ensuring the head FC layer sets are left
@@ -229,7 +231,9 @@ baseModel = VGG16(
 headModel = baseModel.output
 headModel = AveragePooling2D(pool_size=(4, 4))(headModel)
 headModel = Flatten(name="flatten")(headModel)
-headModel = Dense(64, activation="relu")(headModel)
+headModel = Dense(64)(headModel)
+headModel = BatchNormalization()(headModel)
+headModel = ReLU()(headModel)
 headModel = Dropout(0.5)(headModel)
 headModel = Dense(num_classes, activation="softmax")(headModel)
 
@@ -239,14 +243,24 @@ model = Model(inputs=baseModel.input, outputs=headModel)
 
 # loop over all layers in the base model and freeze them so they will
 # *not* be updated during the first training process
-for layer in baseModel.layers:
-    layer.trainable = False
+num_layers = len(baseModel.layers)
+for ind, layer in enumerate(baseModel.layers):
+    if ind < num_layers - TRAINABLE_VGG_LAYERS:
+        layer.trainable = False
 
 earlyStopping = EarlyStopping(
-    monitor='val_loss', patience=10, verbose=0, mode='min'
+    monitor='val_loss',
+    patience=20,
+    verbose=1,
+    mode='min',
+    restore_best_weights=True
 )
 mcp_save = ModelCheckpoint(
-    '.mdl_wts.hdf5', save_best_only=True, monitor='val_loss', mode='min'
+    'fold_' + str(split) + '.mdl_wts.hdf5',
+    save_best_only=True,
+    monitor='val_accuracy:',
+    mode='max',
+    verbose=1
 )
 reduce_lr_loss = ReduceLROnPlateau(
     monitor='val_loss',
@@ -273,7 +287,6 @@ H = model.fit_generator(
     validation_data=(testX, testY),
     validation_steps=len(testX) // BS,
     epochs=EPOCHS,
-    class_weight=class_weights,
     callbacks=[earlyStopping, mcp_save, reduce_lr_loss]
 )
 
@@ -306,6 +319,10 @@ print("acc: {:.4f}".format(acc))
 print("sensitivity: {:.4f}".format(sensitivity))
 print("specificity: {:.4f}".format(specificity))
 
+# serialize the model to disk
+print(f"[INFO] saving COVID-19 detector model on {model_name} data...")
+model.save(model_name, save_format="h5")
+
 # plot the training loss and accuracy
 N = EPOCHS
 plt.style.use("ggplot")
@@ -318,8 +335,4 @@ plt.title("Training Loss and Accuracy on COVID-19 Dataset")
 plt.xlabel("Epoch #")
 plt.ylabel("Loss/Accuracy")
 plt.legend(loc="lower left")
-plt.savefig(args["plot"])
-
-# serialize the model to disk
-print(f"[INFO] saving COVID-19 detector model on {model_name} data...")
-model.save(model_name, save_format="h5")
+plt.savefig(plot_path)
