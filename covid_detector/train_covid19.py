@@ -5,7 +5,7 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
 from tensorflow.keras.applications import VGG16
@@ -298,6 +298,9 @@ predIdxs = model.predict(testX, batch_size=BS)
 # label with corresponding largest predicted probability
 predIdxs = np.argmax(predIdxs, axis=1)
 
+# print("accuracy sklearn: ", accuracy_score(predIdxs, testY.argmax(axis=1)))
+
+print("classification report sklearn:")
 # show a nicely formatted classification report
 print(
     classification_report(
@@ -307,21 +310,21 @@ print(
 
 # compute the confusion matrix and and use it to derive the raw
 # accuracy, sensitivity, and specificity
+print("confusion matrix:")
 cm = confusion_matrix(testY.argmax(axis=1), predIdxs)
-total = sum(sum(cm))
-acc = (cm[0, 0] + cm[1, 1]) / total
-sensitivity = cm[0, 0] / (cm[0, 0] + cm[0, 1])
-specificity = cm[1, 1] / (cm[1, 0] + cm[1, 1])
-
 # show the confusion matrix, accuracy, sensitivity, and specificity
 print(cm)
-print("acc: {:.4f}".format(acc))
-print("sensitivity: {:.4f}".format(sensitivity))
-print("specificity: {:.4f}".format(specificity))
 
 # serialize the model to disk
 print(f"[INFO] saving COVID-19 detector model on {model_name} data...")
 model.save(model_name, save_format="h5")
+
+# print outputs per class
+print("check test outputs per file:")
+gt = testY.argmax(axis=1)
+print(len(gt), len(predIdxs), len(test_files))
+for i in range(len(predIdxs)):
+    print("gt:", gt[i], "pred", predIdxs[i], "filename", test_files[i])
 
 # plot the training loss and accuracy
 N = EPOCHS
