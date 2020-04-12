@@ -5,10 +5,11 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
 from tensorflow.keras.applications import VGG16
+from tensorflow.keras.applications.nasnet import NASNetLarge
 from tensorflow.keras.layers import (
     AveragePooling2D, Dense, Dropout, Flatten, Input
 )
@@ -47,22 +48,21 @@ ap.add_argument(
 args = vars(ap.parse_args())
 
 split = args["split"]
-dataset_name = args['dataset']  # .split('_')[-1]
-model_name = os.path.join(
-    'trained_models', dataset_name + f'fold_{split}.model'
-)
-
-plot_path = os.path.join('plots', dataset_name + f'fold_{split}.png')
+dataset_name = os.path.join("data_pocus", "cross_validation_data")
+model_name = f'pocus_fold_{split}.model'
+plot_path = f'pocus_fold_{split}.png'
 
 # Suppress logging
 tf.get_logger().setLevel('ERROR')
 
 # initialize the initial learning rate, number of epochs to train for,
 # and batch size
-INIT_LR = 5e-4
+INIT_LR = 1e-4
 EPOCHS = 20
 BS = 8
-TRAINABLE_VGG_LAYERS = 2
+TRAINABLE_BASE_LAYERS = 2
+IMG_WIDTH = 224
+IMG_HEIGHT = 224
 
 # grab the list of images in our dataset directory, then initialize
 # the list of data (i.e., images) and class images
@@ -93,7 +93,7 @@ if "pocus" in dataset_name:
             # 224x224 pixels while ignoring aspect ratio
             image = cv2.imread(imagePath)
             image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-            image = cv2.resize(image, (224, 224))
+            image = cv2.resize(image, (IMG_WIDTH, IMG_HEIGHT))
             # TESTING
             # image = (imagePath.split(os.path.sep)[-1]).split(".")[0]
 
@@ -121,7 +121,7 @@ if "pocus" in dataset_name:
             # 224x224 pixels while ignoring aspect ratio
             image = cv2.imread(imagePath)
             image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-            image = cv2.resize(image, (224, 224))
+            image = cv2.resize(image, (IMG_WIDTH, IMG_HEIGHT))
 
             # update the data and labels lists, respectively
             if '/train/' in imagePath:
@@ -180,7 +180,7 @@ else:
         # 224x224 pixels while ignoring aspect ratio
         image = cv2.imread(imagePath)
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-        image = cv2.resize(image, (224, 224))
+        image = cv2.resize(image, (IMG_WIDTH, IMG_HEIGHT))
 
         # update the data and labels lists, respectively
         data.append(image)
@@ -220,10 +220,15 @@ trainAug = ImageDataGenerator(
 
 # load the VGG16 network, ensuring the head FC layer sets are left
 # off
+# baseModel = VGG16(
+#     weights="imagenet",
+#     include_top=False,
+#     input_tensor=Input(shape=(224, 224, 3))
+# )
 baseModel = VGG16(
     weights="imagenet",
     include_top=False,
-    input_tensor=Input(shape=(224, 224, 3))
+    input_tensor=Input(shape=(IMG_WIDTH, IMG_HEIGHT, 3))
 )
 
 # construct the head of the model that will be placed on top of the
@@ -256,9 +261,9 @@ earlyStopping = EarlyStopping(
     restore_best_weights=True
 )
 mcp_save = ModelCheckpoint(
-    'fold_' + str(split) + '.mdl_wts.hdf5',
+    f'fold_{str(split)}',
     save_best_only=True,
-    monitor='val_accuracy:',
+    monitor='val_accuracy',
     mode='max',
     verbose=1
 )
@@ -324,9 +329,9 @@ model.save(model_name, save_format="h5")
 # print outputs per class
 print("check test outputs per file:")
 gt = testY.argmax(axis=1)
-print(len(gt), len(predIdxs), len(test_files))
-for i in range(len(predIdxs)):
-    print("gt:", gt[i], "pred", predIdxs[i], "filename", test_files[i])
+# print(len(gt), len(predIdxs), len(test_files))
+# for i in range(len(predIdxs)):
+#     print("gt:", gt[i], "pred", predIdxs[i], "filename", test_files[i])
 
 # plot the training loss and accuracy
 N = EPOCHS

@@ -27,7 +27,7 @@ class Evaluator(object):
                 {'pocus', 'xray', 'ct'}, defaults to 'pocus'.
         """
 
-        if modality not in ['pocus', 'xray', 'splitted']:
+        if modality not in ['pocus', 'xray', 'ct']:
             raise ValueError(f'Unknown modality provided: {modality}')
 
         self.modality = modality
