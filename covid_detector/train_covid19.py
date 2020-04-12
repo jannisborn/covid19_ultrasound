@@ -40,9 +40,12 @@ ap.add_argument(
     default="trained_model/covid19.model",
     help="path to output loss/accuracy plot"
 )
+ap.add_argument(
+    "-s", "--split", type=int, default="0", help="split to take as test data"
+)
 args = vars(ap.parse_args())
 
-dataset_name = args['dataset'].split('_')[-1]
+dataset_name = args['dataset']  # .split('_')[-1]
 model_name = (
     os.path.join('trained_models', dataset_name + '.model')
     if args['model'] == 'trained_model/covid19.model' else args['model']
@@ -71,7 +74,103 @@ labels = []
 print(f"Model is called : {model_name}")
 print(f"Dataset name : {dataset_name}")
 
-if dataset_name != 'pocus-splitted':
+if "pocus" in dataset_name:
+    if dataset_name == os.path.join("data_pocus", "cross_validation_data"):
+        print("selected split:", args["split"])
+
+        train_labels, test_labels, test_files = [], [], []
+        train_data, test_data = [], []
+
+        # loop over split0, split1 etc
+        for imagePath in imagePaths:
+
+            path_parts = imagePath.split(os.path.sep)
+            # extract the split
+            train_test = path_parts[-3][-1]
+            # extract the class label from the filename
+            label = path_parts[-2]
+            # load the image, swap color channels, and resize it to be a fixed
+            # 224x224 pixels while ignoring aspect ratio
+            image = cv2.imread(imagePath)
+            image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+            image = cv2.resize(image, (224, 224))
+            # TESTING
+            # image = (imagePath.split(os.path.sep)[-1]).split(".")[0]
+
+            # update the data and labels lists, respectively
+            if train_test == str(args["split"]):
+                test_labels.append(label)
+                test_data.append(image)
+                test_files.append(imagePath.split(os.path.sep)[-1])
+            else:
+                train_labels.append(label)
+                train_data.append(image)
+
+    elif dataset_name == 'pocus-splitted':
+        # For the pocus-splitted data
+        train_labels, test_labels = [], []
+        train_data, test_data = [], []
+
+        # loop over the image paths (train and test)
+        for imagePath in imagePaths:
+
+            # extract the class label from the filename
+            label = imagePath.split(os.path.sep)[-2]
+
+            # load the image, swap color channels, and resize it to be a fixed
+            # 224x224 pixels while ignoring aspect ratio
+            image = cv2.imread(imagePath)
+            image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+            image = cv2.resize(image, (224, 224))
+
+            # update the data and labels lists, respectively
+            if '/train/' in imagePath:
+                train_labels.append(label)
+                train_data.append(image)
+            elif '/test/' in imagePath:
+                test_labels.append(label)
+                test_data.append(image)
+
+    # Now prepare for KERAS
+    print(len(test_labels), len(train_labels))
+    # convert the data and labels to NumPy arrays while scaling the pixel
+    # intensities to the range [0, 255]
+    train_data = np.array(train_data) / 255.0
+    test_data = np.array(test_data) / 255.0
+
+    train_labels_text = np.array(train_labels)
+    test_labels_text = np.array(test_labels)
+
+    assert len(set(train_labels)) == len(set(test_labels)), (
+        'Some classes are only in train or test data'
+    )  # yapf: disable
+    num_classes = len(set(train_labels))
+
+    # perform one-hot encoding on the labels
+    lb = LabelBinarizer()
+    lb.fit(train_labels_text)
+
+    train_labels = lb.transform(train_labels_text)
+    test_labels = lb.transform(test_labels_text)
+
+    if num_classes == 2:
+        train_labels = to_categorical(train_labels, num_classes=num_classes)
+        test_labels = to_categorical(test_labels, num_classes=num_classes)
+    # partition the data into training and testing splits using 80% of
+    # the data for training and the remaining 20% for testing
+
+    trainX = train_data
+    trainY = train_labels
+    testX = test_data
+    testY = test_labels
+    print(
+        "train:", trainX.shape, len(trainY), "test:", testX.shape, len(testY)
+    )
+    #weights = {'covid': 0.2, 'pneunomia': 0.3, 'regular': 0.5}
+    weights = {'covid': 0.3, 'pneunomia': 0.3, 'regular': 0.3}
+    class_weights = {i: weights[c] for i, c in enumerate(lb.classes_)}
+
+else:
     # loop over the image paths
     for imagePath in imagePaths:
         # extract the class label from the filename
@@ -106,67 +205,6 @@ if dataset_name != 'pocus-splitted':
     )
 
     class_weights = {c: 1 for c in range(num_classes)}
-
-else:
-    # For the pocus-splitted data
-    train_labels, test_labels = [], []
-    train_data, test_data = [], []
-
-    # loop over the image paths (train and test)
-    for imagePath in imagePaths:
-
-        # extract the class label from the filename
-        label = imagePath.split(os.path.sep)[-2]
-
-        # load the image, swap color channels, and resize it to be a fixed
-        # 224x224 pixels while ignoring aspect ratio
-        image = cv2.imread(imagePath)
-        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-        image = cv2.resize(image, (224, 224))
-
-        # update the data and labels lists, respectively
-        if '/train/' in imagePath:
-            train_labels.append(label)
-            train_data.append(image)
-        elif '/test/' in imagePath:
-            test_labels.append(label)
-            test_data.append(image)
-
-    # Now prepare for KERAS
-    print(len(test_labels), len(train_labels))
-    # convert the data and labels to NumPy arrays while scaling the pixel
-    # intensities to the range [0, 255]
-    train_data = np.array(train_data) / 255.0
-    test_data = np.array(test_data) / 255.0
-
-    train_labels_text = np.array(train_labels)
-    test_labels_text = np.array(test_labels)
-
-    assert len(set(train_labels)) == len(set(test_labels)), (
-        'Some classes are only in train or test data'
-    )  # yapf: disable
-    num_classes = len(set(train_labels))
-
-    # perform one-hot encoding on the labels
-    lb = LabelBinarizer()
-    lb.fit(train_labels_text)
-
-    train_labels = lb.transform(train_labels_text)
-    test_labels = lb.transform(test_labels_text)
-
-    if num_classes == 2:
-        train_labels = to_categorical(train_labels, num_classes=num_classes)
-        test_labels = to_categorical(test_labels, num_classes=num_classes)
-    # partition the data into training and testing splits using 80% of
-    # the data for training and the remaining 20% for testing
-
-    trainX = train_data
-    trainY = train_labels
-    testX = test_data
-    testY = test_labels
-    #weights = {'covid': 0.2, 'pneunomia': 0.3, 'regular': 0.5}
-    weights = {'covid': 0.3, 'pneunomia': 0.3, 'regular': 0.3}
-    class_weights = {i: weights[c] for i, c in enumerate(lb.classes_)}
 
 print("Class mappings:", lb.classes_)
 print("Class weights:", class_weights)
