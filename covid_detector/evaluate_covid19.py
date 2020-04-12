@@ -8,7 +8,7 @@ import cv2
 import numpy as np
 from tensorflow.keras.applications import VGG16
 from tensorflow.keras.layers import (
-    AveragePooling2D, Dense, Dropout, Flatten, Input
+    AveragePooling2D, Dense, Dropout, Flatten, Input, BatchNormalization, ReLU
 )
 from tensorflow.keras.models import Model
 
@@ -18,7 +18,8 @@ from covid_detector.utils import CLASS_MAPPINGS
 #%%
 class Evaluator(object):
 
-    def __init__(self, modality='pocus'):
+    def __init__(self, split=None, modality='pocus'):
+        print("init")
         """
         Constructor of COVID model evaluator class.
         
@@ -32,9 +33,24 @@ class Evaluator(object):
 
         self.modality = modality
         self.num_classes = 3 if modality == 'pocus' else 2
-        self.weights_path = os.path.join(
-            '..', 'trained_models', modality + '.model'
-        )
+        # load correct weights
+        if split is None:
+            self.weights_path = os.path.join(
+                '..', 'trained_models', modality + '.model'
+            )
+        else:
+            # This is not the best, but the last one
+            # self.weights_path = os.path.join(
+            #     '..', 'trained_models', 'fold_' + split, 'pocus_fold_' + split + '.model'
+            # )
+            #
+            # This is the best model:
+            self.weights_path = os.path.join(
+                '..', 'trained_models', 'fold_' + split, "variables",
+                "variables"
+            )
+            print("Loading weights from ", self.weights_path)
+
         self.class_mappings = CLASS_MAPPINGS[self.modality]
 
         # load the VGG16 network, ensuring the head FC layer sets are left off
@@ -49,7 +65,9 @@ class Evaluator(object):
         headModel = baseModel.output
         headModel = AveragePooling2D(pool_size=(4, 4))(headModel)
         headModel = Flatten(name="flatten")(headModel)
-        headModel = Dense(64, activation="relu")(headModel)
+        headModel = Dense(64)(headModel)
+        headModel = BatchNormalization()(headModel)
+        headModel = ReLU()(headModel)
         headModel = Dropout(0.5)(headModel)
         headModel = Dense(self.num_classes, activation="softmax")(headModel)
 
