@@ -14,12 +14,13 @@ from tensorflow.keras.models import Model
 
 from covid_detector.utils import CLASS_MAPPINGS
 
+DIR_PATH = os.path.dirname(os.path.realpath(__file__))
+
 
 #%%
 class Evaluator(object):
 
     def __init__(self, split=None, modality='pocus'):
-        print("init")
         """
         Constructor of COVID model evaluator class.
         
@@ -27,6 +28,7 @@ class Evaluator(object):
             modality {str} -- The data modality to be used. Chose from
                 {'pocus', 'xray', 'ct'}, defaults to 'pocus'.
         """
+        self.root = os.path.join('/', *DIR_PATH.split('/')[:-1])
 
         if modality not in ['pocus', 'xray', 'ct']:
             raise ValueError(f'Unknown modality provided: {modality}')
@@ -36,7 +38,7 @@ class Evaluator(object):
         # load correct weights
         if split is None:
             self.weights_path = os.path.join(
-                '..', 'trained_models', modality + '.model'
+                self.root, 'trained_models', modality + '.model'
             )
         else:
             # This is not the best, but the last one
@@ -46,7 +48,7 @@ class Evaluator(object):
             #
             # This is the best model:
             self.weights_path = os.path.join(
-                '..', 'trained_models', 'fold_' + split, "variables",
+                self.root, 'trained_models', 'fold_' + split, "variables",
                 "variables"
             )
             print("Loading weights from ", self.weights_path)
