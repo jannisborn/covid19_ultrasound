@@ -9,7 +9,6 @@ from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
 from tensorflow.keras.applications import VGG16
-from tensorflow.keras.applications.nasnet import NASNetLarge
 from tensorflow.keras.layers import (
     AveragePooling2D, Dense, Dropout, Flatten, Input
 )
@@ -250,7 +249,7 @@ model = Model(inputs=baseModel.input, outputs=headModel)
 # *not* be updated during the first training process
 num_layers = len(baseModel.layers)
 for ind, layer in enumerate(baseModel.layers):
-    if ind < num_layers - TRAINABLE_VGG_LAYERS:
+    if ind < num_layers - TRAINABLE_BASE_LAYERS:
         layer.trainable = False
 
 earlyStopping = EarlyStopping(
