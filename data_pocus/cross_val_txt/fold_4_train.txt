@@ -1,619 +1,619 @@
-Reg-Atlas ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame15.jpg normal
-Reg-Atlas-lungcurtain ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame55.jpg normal
-Reg-Youtube ../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame135.jpg normal
-Reg-Atlas-alines ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame40.jpg normal
-Reg-Atlas-alines ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame55.jpg normal
-Reg-Youtube ../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame120.jpg normal
-Reg-Atlas-lungcurtain ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame40.jpg normal
-Reg-Youtube ../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame15.jpg normal
-Reg-Atlas ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame10.jpg normal
-Reg-Atlas-lungcurtain ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame50.jpg normal
-Reg-Atlas-alines ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame45.jpg normal
-Reg-Atlas-alines ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame50.jpg normal
-Reg-Atlas-lungcurtain ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame45.jpg normal
-Reg-Youtube ../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame60.jpg normal
-Reg-Youtube ../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame75.jpg normal
-Reg-Atlas-lungcurtain ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame35.jpg normal
-Reg-Atlas-alines ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame20.jpg normal
-Reg-Atlas-alines ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame35.jpg normal
-Reg-Atlas-lungcurtain ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame20.jpg normal
-Reg-Atlas-lungcurtain ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame30.jpg normal
-Reg-Youtube ../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame150.jpg normal
-Reg-Atlas-alines ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame25.jpg normal
-Reg-Atlas-alines ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame30.jpg normal
-Reg-Atlas-lungcurtain ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame25.jpg normal
-Reg-Atlas ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame40.jpg normal
-Reg-Atlas-alines ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame15.jpg normal
-Reg-Atlas-alines ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame0.jpg normal
-Reg-Atlas-lungcurtain ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame15.jpg normal
-Reg-Atlas ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame55.jpg normal
-Reg-Atlas ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame45.jpg normal
-Reg-Youtube ../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame165.jpg normal
-Reg-Atlas-alines ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame10.jpg normal
-Reg-Youtube ../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame90.jpg normal
-Reg-Atlas-alines ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame5.jpg normal
-Reg-Atlas-lungcurtain ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame10.jpg normal
-Reg-Atlas ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame50.jpg normal
-Reg-Youtube ../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame45.jpg normal
-Reg-Atlas ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame20.jpg normal
-Reg-Atlas ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame5.jpg normal
-Reg-Atlas ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame35.jpg normal
-Reg-Atlas-lungcurtain ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame5.jpg normal
-Reg-Youtube ../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame0.jpg normal
-Reg-Youtube ../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame30.jpg normal
-Reg-Atlas-lungcurtain ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame0.jpg normal
-Reg-Atlas ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame25.jpg normal
-Reg-Youtube ../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame105.jpg normal
-Reg-Atlas ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame0.jpg normal
-Reg-Atlas ../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame30.jpg normal
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame75.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame60.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame330.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame0.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame285.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame135.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame120.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame240.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame255.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame150.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame390.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame345.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame15.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame225.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame195.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame180.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame165.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame210.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame375.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame30.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame360.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame405.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame270.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame105.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame90.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame315.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame45.jpg pneumonia
-Pneu-grep-pneumonia2 ../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame300.jpg pneumonia
-Cov-Atlas+(44) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame15.jpg COVID-19
-Cov-Atlas+(44) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame0.jpg COVID-19
-Cov-Atlas-Day+2 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame35.jpg COVID-19
-Cov-Atlas-+(43) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-+(43).gif_frame25.jpg COVID-19
-Cov-B_ConvexProb_score1 ../data_pocus/cross_validation_data/split0/covid/Cov-B_ConvexProb_score1.jpg COVID-19
-Cov-Atlas-+(43) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-+(43).gif_frame30.jpg COVID-19
-Cov-Atlas-Day+2 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame20.jpg COVID-19
-Cov-Atlas-Day+2 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame30.jpg COVID-19
-Cov-Atlas-+(43) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-+(43).gif_frame20.jpg COVID-19
-Cov-Atlas-+(43) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-+(43).gif_frame35.jpg COVID-19
-Cov-Atlas-Day+2 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame25.jpg COVID-19
-Cov-Atlas+(44) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame10.jpg COVID-19
-Cov-Atlas+(44) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame5.jpg COVID-19
-Cov-Atlas-Day+2 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame55.jpg COVID-19
-Cov-Atlas-Day+1 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+1.gif_frame10.jpg COVID-19
-Cov-Atlas-Day+4 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+4.gif_frame20.jpg COVID-19
-Cov-Atlas-Day+3 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+3.gif_frame30.jpg COVID-19
-Cov-Atlas+(45) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(45).gif_frame15.jpg COVID-19
-Cov-Atlas-Day+3 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+3.gif_frame25.jpg COVID-19
-Cov-Atlas-Day+4 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+4.gif_frame35.jpg COVID-19
-Cov-Atlas-Day+2 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame40.jpg COVID-19
-Cov-Atlas+(45) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(45).gif_frame5.jpg COVID-19
-Cov-Atlas-Day+2 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame80.jpg COVID-19
-Cov-Atlas+(45) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(45).gif_frame0.jpg COVID-19
-Cov-Atlas-Day+2 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame50.jpg COVID-19
-Cov-Atlas-Day+1 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+1.gif_frame15.jpg COVID-19
-Cov-Atlas-Day+3 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+3.gif_frame35.jpg COVID-19
-Cov-Atlas-Day+4 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+4.gif_frame25.jpg COVID-19
-Cov-Atlas+(45) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(45).gif_frame10.jpg COVID-19
-Cov-Atlas-Day+4 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+4.gif_frame30.jpg COVID-19
-Cov-Atlas-Day+3 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+3.gif_frame20.jpg COVID-19
-Cov-Atlas-Day+2 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame45.jpg COVID-19
-Cov-Atlas-Day+2 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame60.jpg COVID-19
-Cov-Atlas-Day+1 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+1.gif_frame25.jpg COVID-19
-Cov-Atlas-Day+4 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+4.gif_frame15.jpg COVID-19
-Cov-Atlas+(45) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(45).gif_frame20.jpg COVID-19
-Cov-Atlas-Day+3 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+3.gif_frame10.jpg COVID-19
-Cov-Atlas-Day+1 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+1.gif_frame30.jpg COVID-19
-Cov-Atlas-Day+2 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame75.jpg COVID-19
-Cov-Atlas+(44) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame40.jpg COVID-19
-Cov-Atlas-Day+1 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+1.gif_frame0.jpg COVID-19
-Cov-Atlas-+(43) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-+(43).gif_frame0.jpg COVID-19
-Cov-Atlas-Day+1 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+1.gif_frame5.jpg COVID-19
-Cov-Atlas-+(43) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-+(43).gif_frame5.jpg COVID-19
-Cov-Atlas-Day+2 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame65.jpg COVID-19
-Cov-Atlas-Day+1 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+1.gif_frame20.jpg COVID-19
-Cov-Atlas-Day+4 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+4.gif_frame10.jpg COVID-19
-Cov-Atlas-Day+3 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+3.gif_frame15.jpg COVID-19
-Cov-Atlas-Day+2 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame70.jpg COVID-19
-Cov-Atlas-Day+4 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+4.gif_frame5.jpg COVID-19
-Cov-Atlas+(44) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame20.jpg COVID-19
-Cov-Atlas+(44) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame35.jpg COVID-19
-Cov-Atlas-Day+3 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+3.gif_frame5.jpg COVID-19
-Cov-Atlas-+(43) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-+(43).gif_frame10.jpg COVID-19
-Cov-Atlas-Day+2 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame0.jpg COVID-19
-Cov-Atlas-Day+2 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame15.jpg COVID-19
-Cov-Atlas-Day+3 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+3.gif_frame0.jpg COVID-19
-Cov-Atlas-+(43) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-+(43).gif_frame15.jpg COVID-19
-Cov-Atlas-Day+2 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame5.jpg COVID-19
-Cov-Atlas-Day+2 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame10.jpg COVID-19
-Cov-Atlas-Day+4 ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+4.gif_frame0.jpg COVID-19
-Cov-Atlas+(44) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame25.jpg COVID-19
-Cov-Atlas+(44) ../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame30.jpg COVID-19
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame555.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame390.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame435.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame150.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame420.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame540.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame90.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame45.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame345.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame225.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame180.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame630.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame195.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame585.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame720.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame495.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame330.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame480.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame30.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame285.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame450.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame0.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame120.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame135.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame690.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame525.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame255.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame645.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame240.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame675.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame660.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame270.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame105.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame465.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame510.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame15.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame300.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame315.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame705.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame165.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame615.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame600.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame210.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame75.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame360.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame375.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame60.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame405.jpg normal
-Reg-Butterfly ../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame570.jpg normal
-Pneu-Atlas-pneumonia ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame30.jpg pneumonia
-Pneu-Atlas-pneumonia ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame25.jpg pneumonia
-Pneu-grep-pneumonia4 ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame16.jpg pneumonia
-Pneu-Atlas-pneumonia ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame5.jpg pneumonia
-Pneu-Atlas-pneumonia ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame0.jpg pneumonia
-Pneu-Atlas-pneumonia ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame35.jpg pneumonia
-Pneu-grep-pneumonia4 ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame0.jpg pneumonia
-Pneu-Atlas-pneumonia ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame20.jpg pneumonia
-Pneu-grep-pneumonia4 ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame128.jpg pneumonia
-Pneu-Atlas-pneumonia ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame50.jpg pneumonia
-Pneu-grep-pneumonia4 ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame48.jpg pneumonia
-Pneu-Atlas-pneumonia ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame45.jpg pneumonia
-Pneu-Atlas-pneumonia ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame55.jpg pneumonia
-Pneu-grep-pneumonia4 ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame112.jpg pneumonia
-Pneu-grep-pneumonia4 ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame64.jpg pneumonia
-Pneu-Atlas-pneumonia ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame40.jpg pneumonia
-Pneu-grep-pneumonia4 ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame80.jpg pneumonia
-Pneu-grep-pneumonia4 ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame96.jpg pneumonia
-Pneu-Atlas-pneumonia ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame10.jpg pneumonia
-Pneu-grep-pneumonia4 ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame144.jpg pneumonia
-Pneu-grep-pneumonia4 ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame32.jpg pneumonia
-Pneu-Atlas-pneumonia ../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame15.jpg pneumonia
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame45.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame585.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame750.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame195.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame630.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame180.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame345.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame225.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame780.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame555.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame435.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame390.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame810.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame150.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame420.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame15.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame540.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame795.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame90.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame540.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame795.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame150.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame420.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame435.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame390.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame810.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame780.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame555.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame225.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame180.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame345.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame195.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame630.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame585.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame750.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame525.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame60.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame690.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame135.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame450.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame120.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame285.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame75.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame720.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame240.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame330.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame495.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame480.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame645.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame255.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame735.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame30.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame255.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame735.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame480.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame645.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame330.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame495.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame720.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame240.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame285.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame450.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame120.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame690.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame135.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame525.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame510.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame465.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame105.jpg COVID-19
-Cov-C_ConvexProb_score3 ../data_pocus/cross_validation_data/split1/covid/Cov-C_ConvexProb_score3.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame705.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame675.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame315.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame300.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame660.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame270.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame15.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame270.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame90.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame300.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame660.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame675.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame315.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame705.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame465.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame105.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame45.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame510.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame765.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame615.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame375.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame360.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame600.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame210.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame570.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame405.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame165.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame0.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame0.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame30.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame405.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame165.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame570.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame75.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame210.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame360.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame600.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame615.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame375.jpg COVID-19
-Cov-Butterfly-COVID_Lung_1 ../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame60.jpg COVID-19
-Cov-MSU-SkipLesions ../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame765.jpg COVID-19
-Reg-Youtube-Video_902_Lung_POCUS-left ../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame120.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS-left ../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame45.jpg normal
-Reg-NormalLungs ../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame120.jpg normal
-Reg-NormalLungs ../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame108.jpg normal
-Reg-Grep-Alines ../data_pocus/cross_validation_data/split2/regular/Reg-Grep-Alines.mp4_frame72.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS-left ../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame135.jpg normal
-Reg-NormalLungs ../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame36.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS-left ../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame90.jpg normal
-Reg-Grep-Alines ../data_pocus/cross_validation_data/split2/regular/Reg-Grep-Alines.mp4_frame48.jpg normal
-Reg-Grep-Alines ../data_pocus/cross_validation_data/split2/regular/Reg-Grep-Alines.mp4_frame60.jpg normal
-Reg-NormalLungs ../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame24.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS-left ../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame180.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS-left ../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame195.jpg normal
-Reg-NormalLungs ../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame96.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS-left ../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame30.jpg normal
-Reg-Grep-Alines ../data_pocus/cross_validation_data/split2/regular/Reg-Grep-Alines.mp4_frame12.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS-left ../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame150.jpg normal
-Reg-NormalLungs ../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame84.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS-left ../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame225.jpg normal
-Reg-NormalLungs ../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame0.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS-left ../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame0.jpg normal
-Reg-Grep-Alines ../data_pocus/cross_validation_data/split2/regular/Reg-Grep-Alines.mp4_frame24.jpg normal
-Reg-NormalLungs ../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame48.jpg normal
-Reg-NormalLungs ../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame60.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS-left ../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame15.jpg normal
-Reg-Grep-Alines ../data_pocus/cross_validation_data/split2/regular/Reg-Grep-Alines.mp4_frame36.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS-left ../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame165.jpg normal
-Reg-NormalLungs ../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame72.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS-left ../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame210.jpg normal
-Reg-Grep-Alines ../data_pocus/cross_validation_data/split2/regular/Reg-Grep-Alines.mp4_frame0.jpg normal
-Reg-Grep-Alines ../data_pocus/cross_validation_data/split2/regular/Reg-Grep-Alines.mp4_frame84.jpg normal
-Reg-NormalLungs ../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame12.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS-left ../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame75.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS-left ../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame60.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS-left ../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame105.jpg normal
-pneu-everyday ../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame45.jpg pneumonia
-pneu-everyday ../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame50.jpg pneumonia
-pneu-everyday ../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame5.jpg pneumonia
-Pneu-grep-pneumonia3 ../data_pocus/cross_validation_data/split2/pneunomia/Pneu-grep-pneumonia3.mp4_frame16.jpg pneumonia
-pneu-everyday ../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame0.jpg pneumonia
-Pneu-grep-pneumonia3 ../data_pocus/cross_validation_data/split2/pneunomia/Pneu-grep-pneumonia3.mp4_frame0.jpg pneumonia
-pneu-everyday ../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame40.jpg pneumonia
-pneu-everyday ../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame55.jpg pneumonia
-pneu-gred-7 ../data_pocus/cross_validation_data/split2/pneunomia/pneu-gred-7.gif_frame8.jpg pneumonia
-pneu-everyday ../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame25.jpg pneumonia
-Pneu-grep-pneumonia3 ../data_pocus/cross_validation_data/split2/pneunomia/Pneu-grep-pneumonia3.mp4_frame64.jpg pneumonia
-pneu-everyday ../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame30.jpg pneumonia
-pneu-everyday ../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame20.jpg pneumonia
-Pneu-grep-pneumonia3 ../data_pocus/cross_validation_data/split2/pneunomia/Pneu-grep-pneumonia3.mp4_frame48.jpg pneumonia
-pneu-everyday ../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame35.jpg pneumonia
-pneu-gred-7 ../data_pocus/cross_validation_data/split2/pneunomia/pneu-gred-7.gif_frame16.jpg pneumonia
-pneu-gred-7 ../data_pocus/cross_validation_data/split2/pneunomia/pneu-gred-7.gif_frame0.jpg pneumonia
-pneu-gred-7 ../data_pocus/cross_validation_data/split2/pneunomia/pneu-gred-7.gif_frame32.jpg pneumonia
-pneu-everyday ../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame10.jpg pneumonia
-pneu-gred-7 ../data_pocus/cross_validation_data/split2/pneunomia/pneu-gred-7.gif_frame24.jpg pneumonia
-pneu-everyday ../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame15.jpg pneumonia
-Pneu-grep-pneumonia3 ../data_pocus/cross_validation_data/split2/pneunomia/Pneu-grep-pneumonia3.mp4_frame96.jpg pneumonia
-Pneu-grep-pneumonia3 ../data_pocus/cross_validation_data/split2/pneunomia/Pneu-grep-pneumonia3.mp4_frame80.jpg pneumonia
-Pneu-grep-pneumonia3 ../data_pocus/cross_validation_data/split2/pneunomia/Pneu-grep-pneumonia3.mp4_frame32.jpg pneumonia
-pneu-everyday ../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame60.jpg pneumonia
-pneu-gred-7 ../data_pocus/cross_validation_data/split2/pneunomia/pneu-gred-7.gif_frame40.jpg pneumonia
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame570.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame30.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame405.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame15.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame180.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame375.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame0.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame360.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame585.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame630.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame195.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame210.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame600.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame615.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame225.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame345.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame390.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame435.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame555.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame165.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame540.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame420.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame150.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame645.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame315.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame255.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame90.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame240.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame300.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame120.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame510.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame60.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame450.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame45.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame525.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame465.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame75.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame135.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame690.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame105.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame285.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame495.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame270.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame330.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame660.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame675.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame480.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame240.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame300.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame645.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame315.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame255.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame525.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame465.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame135.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame690.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame120.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame510.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame450.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame285.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame60.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame75.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame45.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame0.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame105.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame675.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame90.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame480.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame270.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame495.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame330.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame660.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame405.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame570.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame585.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame360.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame630.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame195.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame180.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame375.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame615.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame225.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame345.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame210.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame600.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame540.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame30.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame420.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame150.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame15.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame390.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame435.jpg COVID-19
-Cov-Butterfly-COVID_Lung_2 ../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame555.jpg COVID-19
-Cov-MSU-COVID_Lung_2-Blines ../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame165.jpg COVID-19
-Reg-Youtube-Video_902_Lung_POCUS ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame135.jpg normal
-Reg-Youtube_Video_29_Lung_POCUS_right ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube_Video_29_Lung_POCUS_right.mp4_frame0.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame120.jpg normal
-Reg-nephropocus ../data_pocus/cross_validation_data/split3/regular/Reg-nephropocus.mp4_frame66.jpg normal
-Reg-Youtube_Video_29_Lung_POCUS_right ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube_Video_29_Lung_POCUS_right.mp4_frame45.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame0.jpg normal
-Reg-nephropocus ../data_pocus/cross_validation_data/split3/regular/Reg-nephropocus.mp4_frame0.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame15.jpg normal
-Reg-Youtube_Video_29_Lung_POCUS_right ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube_Video_29_Lung_POCUS_right.mp4_frame90.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame195.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame180.jpg normal
-Reg-nephropocus ../data_pocus/cross_validation_data/split3/regular/Reg-nephropocus.mp4_frame11.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame75.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame225.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame60.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame150.jpg normal
-Reg-Youtube_Video_29_Lung_POCUS_right ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube_Video_29_Lung_POCUS_right.mp4_frame30.jpg normal
-Reg-nephropocus ../data_pocus/cross_validation_data/split3/regular/Reg-nephropocus.mp4_frame22.jpg normal
-Reg-Youtube_Video_29_Lung_POCUS_right ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube_Video_29_Lung_POCUS_right.mp4_frame15.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame90.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame45.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame210.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame165.jpg normal
-Reg-nephropocus ../data_pocus/cross_validation_data/split3/regular/Reg-nephropocus.mp4_frame33.jpg normal
-Reg-nephropocus ../data_pocus/cross_validation_data/split3/regular/Reg-nephropocus.mp4_frame55.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame30.jpg normal
-Reg-Youtube_Video_29_Lung_POCUS_right ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube_Video_29_Lung_POCUS_right.mp4_frame75.jpg normal
-Reg-Youtube_Video_29_Lung_POCUS_right ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube_Video_29_Lung_POCUS_right.mp4_frame60.jpg normal
-Reg-Youtube-Video_902_Lung_POCUS ../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame105.jpg normal
-Reg-nephropocus ../data_pocus/cross_validation_data/split3/regular/Reg-nephropocus.mp4_frame44.jpg normal
-Pneu-grep-pneumonia1 ../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame24.jpg pneumonia
-pneu-gred-6 ../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame28.jpg pneumonia
-pneu-gred-6 ../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame16.jpg pneumonia
-Pneu-grep-pneumonia1 ../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame36.jpg pneumonia
-pneu-gred-6 ../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame12.jpg pneumonia
-Pneu-grep-pneumonia1 ../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame84.jpg pneumonia
-Pneu-grep-pneumonia1 ../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame0.jpg pneumonia
-Pneu-grep-pneumonia1 ../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame96.jpg pneumonia
-pneu-gred-6 ../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame8.jpg pneumonia
-Pneu-grep-pneumonia1 ../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame72.jpg pneumonia
-pneu-gred-6 ../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame4.jpg pneumonia
-Pneu-grep-pneumonia1 ../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame144.jpg pneumonia
-pneu-gred-6 ../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame40.jpg pneumonia
-Pneu-grep-pneumonia1 ../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame60.jpg pneumonia
-Pneu-grep-pneumonia1 ../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame48.jpg pneumonia
-pneu-gred-6 ../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame44.jpg pneumonia
-pneu-gred-6 ../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame0.jpg pneumonia
-pneu-gred-6 ../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame20.jpg pneumonia
-Pneu-grep-pneumonia1 ../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame12.jpg pneumonia
-pneu-gred-6 ../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame36.jpg pneumonia
-Pneu-grep-pneumonia1 ../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame132.jpg pneumonia
-pneu-gred-6 ../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame32.jpg pneumonia
-pneu-gred-6 ../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame24.jpg pneumonia
-Pneu-grep-pneumonia1 ../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame120.jpg pneumonia
-Pneu-grep-pneumonia1 ../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame108.jpg pneumonia
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame660.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame270.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame885.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame675.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame105.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1170.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame930.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame30.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1005.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame855.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame510.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame465.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame840.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1200.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame315.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame705.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame300.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1215.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame165.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame45.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1110.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame945.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame825.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1065.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame600.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame210.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame990.jpg COVID-19
-Cov-D_Convex_Prob_score3 ../data_pocus/cross_validation_data/split3/covid/Cov-D_Convex_Prob_score3.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame90.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame615.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1260.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame375.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame765.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame360.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1275.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame570.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame405.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame150.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame420.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1290.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame540.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame795.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1125.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame780.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame555.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame435.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame390.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame810.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1050.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame345.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame225.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1245.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame0.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame195.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame630.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1080.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame585.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame750.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1095.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame180.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame75.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame960.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame975.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame60.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame480.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1230.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame735.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1185.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame720.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame330.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame495.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame285.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame870.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame690.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1020.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame135.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame15.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame525.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame900.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1140.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1155.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame915.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame450.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame120.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1035.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame240.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame255.jpg COVID-19
-Cov-Butterfly-COVID_Skip_Lesion ../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame645.jpg COVID-19
+Reg-Atlas	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame15.jpg	normal
+Reg-Atlas-lungcurtain	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame55.jpg	normal
+Reg-Youtube	../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame135.jpg	normal
+Reg-Atlas-alines	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame40.jpg	normal
+Reg-Atlas-alines	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame55.jpg	normal
+Reg-Youtube	../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame120.jpg	normal
+Reg-Atlas-lungcurtain	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame40.jpg	normal
+Reg-Youtube	../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame15.jpg	normal
+Reg-Atlas	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame10.jpg	normal
+Reg-Atlas-lungcurtain	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame50.jpg	normal
+Reg-Atlas-alines	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame45.jpg	normal
+Reg-Atlas-alines	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame50.jpg	normal
+Reg-Atlas-lungcurtain	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame45.jpg	normal
+Reg-Youtube	../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame60.jpg	normal
+Reg-Youtube	../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame75.jpg	normal
+Reg-Atlas-lungcurtain	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame35.jpg	normal
+Reg-Atlas-alines	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame20.jpg	normal
+Reg-Atlas-alines	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame35.jpg	normal
+Reg-Atlas-lungcurtain	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame20.jpg	normal
+Reg-Atlas-lungcurtain	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame30.jpg	normal
+Reg-Youtube	../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame150.jpg	normal
+Reg-Atlas-alines	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame25.jpg	normal
+Reg-Atlas-alines	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame30.jpg	normal
+Reg-Atlas-lungcurtain	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame25.jpg	normal
+Reg-Atlas	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame40.jpg	normal
+Reg-Atlas-alines	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame15.jpg	normal
+Reg-Atlas-alines	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame0.jpg	normal
+Reg-Atlas-lungcurtain	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame15.jpg	normal
+Reg-Atlas	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame55.jpg	normal
+Reg-Atlas	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame45.jpg	normal
+Reg-Youtube	../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame165.jpg	normal
+Reg-Atlas-alines	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame10.jpg	normal
+Reg-Youtube	../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame90.jpg	normal
+Reg-Atlas-alines	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-alines.gif_frame5.jpg	normal
+Reg-Atlas-lungcurtain	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame10.jpg	normal
+Reg-Atlas	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame50.jpg	normal
+Reg-Youtube	../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame45.jpg	normal
+Reg-Atlas	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame20.jpg	normal
+Reg-Atlas	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame5.jpg	normal
+Reg-Atlas	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame35.jpg	normal
+Reg-Atlas-lungcurtain	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame5.jpg	normal
+Reg-Youtube	../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame0.jpg	normal
+Reg-Youtube	../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame30.jpg	normal
+Reg-Atlas-lungcurtain	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas-lungcurtain.gif_frame0.jpg	normal
+Reg-Atlas	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame25.jpg	normal
+Reg-Youtube	../data_pocus/cross_validation_data/split0/regular/Reg-Youtube.mp4_frame105.jpg	normal
+Reg-Atlas	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame0.jpg	normal
+Reg-Atlas	../data_pocus/cross_validation_data/split0/regular/Reg-Atlas.gif_frame30.jpg	normal
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame75.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame60.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame330.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame0.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame285.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame135.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame120.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame240.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame255.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame150.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame390.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame345.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame15.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame225.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame195.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame180.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame165.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame210.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame375.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame30.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame360.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame405.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame270.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame105.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame90.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame315.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame45.jpg	pneumonia
+Pneu-grep-pneumonia2	../data_pocus/cross_validation_data/split0/pneunomia/Pneu-grep-pneumonia2.mp4_frame300.jpg	pneumonia
+Cov-Atlas+(44)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame15.jpg	COVID-19
+Cov-Atlas+(44)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame0.jpg	COVID-19
+Cov-Atlas-Day+2	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame35.jpg	COVID-19
+Cov-Atlas-+(43)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-+(43).gif_frame25.jpg	COVID-19
+Cov-B_ConvexProb_score1	../data_pocus/cross_validation_data/split0/covid/Cov-B_ConvexProb_score1.jpg	COVID-19
+Cov-Atlas-+(43)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-+(43).gif_frame30.jpg	COVID-19
+Cov-Atlas-Day+2	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame20.jpg	COVID-19
+Cov-Atlas-Day+2	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame30.jpg	COVID-19
+Cov-Atlas-+(43)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-+(43).gif_frame20.jpg	COVID-19
+Cov-Atlas-+(43)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-+(43).gif_frame35.jpg	COVID-19
+Cov-Atlas-Day+2	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame25.jpg	COVID-19
+Cov-Atlas+(44)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame10.jpg	COVID-19
+Cov-Atlas+(44)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame5.jpg	COVID-19
+Cov-Atlas-Day+2	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame55.jpg	COVID-19
+Cov-Atlas-Day+1	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+1.gif_frame10.jpg	COVID-19
+Cov-Atlas-Day+4	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+4.gif_frame20.jpg	COVID-19
+Cov-Atlas-Day+3	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+3.gif_frame30.jpg	COVID-19
+Cov-Atlas+(45)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(45).gif_frame15.jpg	COVID-19
+Cov-Atlas-Day+3	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+3.gif_frame25.jpg	COVID-19
+Cov-Atlas-Day+4	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+4.gif_frame35.jpg	COVID-19
+Cov-Atlas-Day+2	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame40.jpg	COVID-19
+Cov-Atlas+(45)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(45).gif_frame5.jpg	COVID-19
+Cov-Atlas-Day+2	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame80.jpg	COVID-19
+Cov-Atlas+(45)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(45).gif_frame0.jpg	COVID-19
+Cov-Atlas-Day+2	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame50.jpg	COVID-19
+Cov-Atlas-Day+1	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+1.gif_frame15.jpg	COVID-19
+Cov-Atlas-Day+3	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+3.gif_frame35.jpg	COVID-19
+Cov-Atlas-Day+4	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+4.gif_frame25.jpg	COVID-19
+Cov-Atlas+(45)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(45).gif_frame10.jpg	COVID-19
+Cov-Atlas-Day+4	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+4.gif_frame30.jpg	COVID-19
+Cov-Atlas-Day+3	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+3.gif_frame20.jpg	COVID-19
+Cov-Atlas-Day+2	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame45.jpg	COVID-19
+Cov-Atlas-Day+2	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame60.jpg	COVID-19
+Cov-Atlas-Day+1	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+1.gif_frame25.jpg	COVID-19
+Cov-Atlas-Day+4	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+4.gif_frame15.jpg	COVID-19
+Cov-Atlas+(45)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(45).gif_frame20.jpg	COVID-19
+Cov-Atlas-Day+3	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+3.gif_frame10.jpg	COVID-19
+Cov-Atlas-Day+1	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+1.gif_frame30.jpg	COVID-19
+Cov-Atlas-Day+2	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame75.jpg	COVID-19
+Cov-Atlas+(44)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame40.jpg	COVID-19
+Cov-Atlas-Day+1	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+1.gif_frame0.jpg	COVID-19
+Cov-Atlas-+(43)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-+(43).gif_frame0.jpg	COVID-19
+Cov-Atlas-Day+1	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+1.gif_frame5.jpg	COVID-19
+Cov-Atlas-+(43)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-+(43).gif_frame5.jpg	COVID-19
+Cov-Atlas-Day+2	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame65.jpg	COVID-19
+Cov-Atlas-Day+1	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+1.gif_frame20.jpg	COVID-19
+Cov-Atlas-Day+4	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+4.gif_frame10.jpg	COVID-19
+Cov-Atlas-Day+3	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+3.gif_frame15.jpg	COVID-19
+Cov-Atlas-Day+2	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame70.jpg	COVID-19
+Cov-Atlas-Day+4	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+4.gif_frame5.jpg	COVID-19
+Cov-Atlas+(44)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame20.jpg	COVID-19
+Cov-Atlas+(44)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame35.jpg	COVID-19
+Cov-Atlas-Day+3	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+3.gif_frame5.jpg	COVID-19
+Cov-Atlas-+(43)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-+(43).gif_frame10.jpg	COVID-19
+Cov-Atlas-Day+2	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame0.jpg	COVID-19
+Cov-Atlas-Day+2	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame15.jpg	COVID-19
+Cov-Atlas-Day+3	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+3.gif_frame0.jpg	COVID-19
+Cov-Atlas-+(43)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-+(43).gif_frame15.jpg	COVID-19
+Cov-Atlas-Day+2	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame5.jpg	COVID-19
+Cov-Atlas-Day+2	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+2.gif_frame10.jpg	COVID-19
+Cov-Atlas-Day+4	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas-Day+4.gif_frame0.jpg	COVID-19
+Cov-Atlas+(44)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame25.jpg	COVID-19
+Cov-Atlas+(44)	../data_pocus/cross_validation_data/split0/covid/Cov-Atlas+(44).gif_frame30.jpg	COVID-19
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame555.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame390.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame435.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame150.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame420.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame540.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame90.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame45.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame345.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame225.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame180.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame630.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame195.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame585.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame720.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame495.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame330.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame480.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame30.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame285.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame450.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame0.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame120.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame135.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame690.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame525.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame255.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame645.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame240.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame675.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame660.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame270.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame105.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame465.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame510.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame15.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame300.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame315.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame705.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame165.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame615.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame600.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame210.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame75.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame360.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame375.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame60.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame405.jpg	normal
+Reg-Butterfly	../data_pocus/cross_validation_data/split1/regular/Reg-Butterfly.mp4_frame570.jpg	normal
+Pneu-Atlas-pneumonia	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame30.jpg	pneumonia
+Pneu-Atlas-pneumonia	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame25.jpg	pneumonia
+Pneu-grep-pneumonia4	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame16.jpg	pneumonia
+Pneu-Atlas-pneumonia	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame5.jpg	pneumonia
+Pneu-Atlas-pneumonia	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame0.jpg	pneumonia
+Pneu-Atlas-pneumonia	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame35.jpg	pneumonia
+Pneu-grep-pneumonia4	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame0.jpg	pneumonia
+Pneu-Atlas-pneumonia	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame20.jpg	pneumonia
+Pneu-grep-pneumonia4	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame128.jpg	pneumonia
+Pneu-Atlas-pneumonia	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame50.jpg	pneumonia
+Pneu-grep-pneumonia4	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame48.jpg	pneumonia
+Pneu-Atlas-pneumonia	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame45.jpg	pneumonia
+Pneu-Atlas-pneumonia	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame55.jpg	pneumonia
+Pneu-grep-pneumonia4	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame112.jpg	pneumonia
+Pneu-grep-pneumonia4	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame64.jpg	pneumonia
+Pneu-Atlas-pneumonia	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame40.jpg	pneumonia
+Pneu-grep-pneumonia4	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame80.jpg	pneumonia
+Pneu-grep-pneumonia4	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame96.jpg	pneumonia
+Pneu-Atlas-pneumonia	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame10.jpg	pneumonia
+Pneu-grep-pneumonia4	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame144.jpg	pneumonia
+Pneu-grep-pneumonia4	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-grep-pneumonia4.mp4_frame32.jpg	pneumonia
+Pneu-Atlas-pneumonia	../data_pocus/cross_validation_data/split1/pneunomia/Pneu-Atlas-pneumonia.gif_frame15.jpg	pneumonia
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame45.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame585.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame750.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame195.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame630.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame180.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame345.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame225.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame780.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame555.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame435.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame390.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame810.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame150.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame420.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame15.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame540.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame795.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame90.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame540.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame795.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame150.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame420.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame435.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame390.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame810.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame780.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame555.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame225.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame180.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame345.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame195.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame630.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame585.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame750.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame525.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame60.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame690.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame135.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame450.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame120.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame285.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame75.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame720.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame240.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame330.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame495.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame480.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame645.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame255.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame735.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame30.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame255.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame735.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame480.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame645.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame330.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame495.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame720.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame240.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame285.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame450.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame120.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame690.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame135.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame525.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame510.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame465.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame105.jpg	COVID-19
+Cov-C_ConvexProb_score3	../data_pocus/cross_validation_data/split1/covid/Cov-C_ConvexProb_score3.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame705.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame675.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame315.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame300.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame660.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame270.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame15.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame270.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame90.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame300.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame660.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame675.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame315.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame705.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame465.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame105.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame45.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame510.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame765.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame615.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame375.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame360.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame600.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame210.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame570.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame405.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame165.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame0.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame0.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame30.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame405.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame165.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame570.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame75.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame210.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame360.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame600.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame615.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame375.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_1	../data_pocus/cross_validation_data/split1/covid/Cov-Butterfly-COVID Lung 1.mp4_frame60.jpg	COVID-19
+Cov-MSU-SkipLesions	../data_pocus/cross_validation_data/split1/covid/Cov-MSU-SkipLesions.mp4_frame765.jpg	COVID-19
+Reg-Youtube-Video_902_Lung_POCUS-left	../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame120.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS-left	../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame45.jpg	normal
+Reg-NormalLungs	../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame120.jpg	normal
+Reg-NormalLungs	../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame108.jpg	normal
+Reg-Grep-Alines	../data_pocus/cross_validation_data/split2/regular/Reg-Grep-Alines.mp4_frame72.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS-left	../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame135.jpg	normal
+Reg-NormalLungs	../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame36.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS-left	../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame90.jpg	normal
+Reg-Grep-Alines	../data_pocus/cross_validation_data/split2/regular/Reg-Grep-Alines.mp4_frame48.jpg	normal
+Reg-Grep-Alines	../data_pocus/cross_validation_data/split2/regular/Reg-Grep-Alines.mp4_frame60.jpg	normal
+Reg-NormalLungs	../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame24.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS-left	../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame180.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS-left	../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame195.jpg	normal
+Reg-NormalLungs	../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame96.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS-left	../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame30.jpg	normal
+Reg-Grep-Alines	../data_pocus/cross_validation_data/split2/regular/Reg-Grep-Alines.mp4_frame12.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS-left	../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame150.jpg	normal
+Reg-NormalLungs	../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame84.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS-left	../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame225.jpg	normal
+Reg-NormalLungs	../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame0.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS-left	../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame0.jpg	normal
+Reg-Grep-Alines	../data_pocus/cross_validation_data/split2/regular/Reg-Grep-Alines.mp4_frame24.jpg	normal
+Reg-NormalLungs	../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame48.jpg	normal
+Reg-NormalLungs	../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame60.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS-left	../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame15.jpg	normal
+Reg-Grep-Alines	../data_pocus/cross_validation_data/split2/regular/Reg-Grep-Alines.mp4_frame36.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS-left	../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame165.jpg	normal
+Reg-NormalLungs	../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame72.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS-left	../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame210.jpg	normal
+Reg-Grep-Alines	../data_pocus/cross_validation_data/split2/regular/Reg-Grep-Alines.mp4_frame0.jpg	normal
+Reg-Grep-Alines	../data_pocus/cross_validation_data/split2/regular/Reg-Grep-Alines.mp4_frame84.jpg	normal
+Reg-NormalLungs	../data_pocus/cross_validation_data/split2/regular/Reg-NormalLungs.mp4_frame12.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS-left	../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame75.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS-left	../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame60.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS-left	../data_pocus/cross_validation_data/split2/regular/Reg-Youtube-Video_902_Lung_POCUS-left.mp4_frame105.jpg	normal
+pneu-everyday	../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame45.jpg	pneumonia
+pneu-everyday	../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame50.jpg	pneumonia
+pneu-everyday	../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame5.jpg	pneumonia
+Pneu-grep-pneumonia3	../data_pocus/cross_validation_data/split2/pneunomia/Pneu-grep-pneumonia3.mp4_frame16.jpg	pneumonia
+pneu-everyday	../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame0.jpg	pneumonia
+Pneu-grep-pneumonia3	../data_pocus/cross_validation_data/split2/pneunomia/Pneu-grep-pneumonia3.mp4_frame0.jpg	pneumonia
+pneu-everyday	../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame40.jpg	pneumonia
+pneu-everyday	../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame55.jpg	pneumonia
+pneu-gred-7	../data_pocus/cross_validation_data/split2/pneunomia/pneu-gred-7.gif_frame8.jpg	pneumonia
+pneu-everyday	../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame25.jpg	pneumonia
+Pneu-grep-pneumonia3	../data_pocus/cross_validation_data/split2/pneunomia/Pneu-grep-pneumonia3.mp4_frame64.jpg	pneumonia
+pneu-everyday	../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame30.jpg	pneumonia
+pneu-everyday	../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame20.jpg	pneumonia
+Pneu-grep-pneumonia3	../data_pocus/cross_validation_data/split2/pneunomia/Pneu-grep-pneumonia3.mp4_frame48.jpg	pneumonia
+pneu-everyday	../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame35.jpg	pneumonia
+pneu-gred-7	../data_pocus/cross_validation_data/split2/pneunomia/pneu-gred-7.gif_frame16.jpg	pneumonia
+pneu-gred-7	../data_pocus/cross_validation_data/split2/pneunomia/pneu-gred-7.gif_frame0.jpg	pneumonia
+pneu-gred-7	../data_pocus/cross_validation_data/split2/pneunomia/pneu-gred-7.gif_frame32.jpg	pneumonia
+pneu-everyday	../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame10.jpg	pneumonia
+pneu-gred-7	../data_pocus/cross_validation_data/split2/pneunomia/pneu-gred-7.gif_frame24.jpg	pneumonia
+pneu-everyday	../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame15.jpg	pneumonia
+Pneu-grep-pneumonia3	../data_pocus/cross_validation_data/split2/pneunomia/Pneu-grep-pneumonia3.mp4_frame96.jpg	pneumonia
+Pneu-grep-pneumonia3	../data_pocus/cross_validation_data/split2/pneunomia/Pneu-grep-pneumonia3.mp4_frame80.jpg	pneumonia
+Pneu-grep-pneumonia3	../data_pocus/cross_validation_data/split2/pneunomia/Pneu-grep-pneumonia3.mp4_frame32.jpg	pneumonia
+pneu-everyday	../data_pocus/cross_validation_data/split2/pneunomia/pneu-everyday.gif_frame60.jpg	pneumonia
+pneu-gred-7	../data_pocus/cross_validation_data/split2/pneunomia/pneu-gred-7.gif_frame40.jpg	pneumonia
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame570.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame30.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame405.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame15.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame180.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame375.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame0.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame360.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame585.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame630.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame195.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame210.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame600.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame615.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame225.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame345.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame390.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame435.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame555.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame165.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame540.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame420.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame150.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame645.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame315.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame255.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame90.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame240.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame300.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame120.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame510.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame60.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame450.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame45.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame525.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame465.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame75.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame135.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame690.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame105.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame285.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame495.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame270.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame330.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame660.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame675.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame480.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame240.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame300.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame645.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame315.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame255.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame525.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame465.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame135.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame690.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame120.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame510.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame450.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame285.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame60.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame75.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame45.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame0.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame105.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame675.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame90.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame480.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame270.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame495.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame330.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame660.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame405.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame570.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame585.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame360.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame630.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame195.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame180.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame375.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame615.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame225.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame345.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame210.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame600.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame540.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame30.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame420.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame150.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame15.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame390.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame435.jpg	COVID-19
+Cov-Butterfly-COVID_Lung_2	../data_pocus/cross_validation_data/split2/covid/Cov-Butterfly-COVID Lung 2.mp4_frame555.jpg	COVID-19
+Cov-MSU-COVID_Lung_2-Blines	../data_pocus/cross_validation_data/split2/covid/Cov-MSU-COVID Lung 2-Blines.mp4_frame165.jpg	COVID-19
+Reg-Youtube-Video_902_Lung_POCUS	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame135.jpg	normal
+Reg-Youtube_Video_29_Lung_POCUS_right	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube_Video_29_Lung_POCUS_right.mp4_frame0.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame120.jpg	normal
+Reg-nephropocus	../data_pocus/cross_validation_data/split3/regular/Reg-nephropocus.mp4_frame66.jpg	normal
+Reg-Youtube_Video_29_Lung_POCUS_right	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube_Video_29_Lung_POCUS_right.mp4_frame45.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame0.jpg	normal
+Reg-nephropocus	../data_pocus/cross_validation_data/split3/regular/Reg-nephropocus.mp4_frame0.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame15.jpg	normal
+Reg-Youtube_Video_29_Lung_POCUS_right	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube_Video_29_Lung_POCUS_right.mp4_frame90.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame195.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame180.jpg	normal
+Reg-nephropocus	../data_pocus/cross_validation_data/split3/regular/Reg-nephropocus.mp4_frame11.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame75.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame225.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame60.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame150.jpg	normal
+Reg-Youtube_Video_29_Lung_POCUS_right	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube_Video_29_Lung_POCUS_right.mp4_frame30.jpg	normal
+Reg-nephropocus	../data_pocus/cross_validation_data/split3/regular/Reg-nephropocus.mp4_frame22.jpg	normal
+Reg-Youtube_Video_29_Lung_POCUS_right	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube_Video_29_Lung_POCUS_right.mp4_frame15.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame90.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame45.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame210.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame165.jpg	normal
+Reg-nephropocus	../data_pocus/cross_validation_data/split3/regular/Reg-nephropocus.mp4_frame33.jpg	normal
+Reg-nephropocus	../data_pocus/cross_validation_data/split3/regular/Reg-nephropocus.mp4_frame55.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame30.jpg	normal
+Reg-Youtube_Video_29_Lung_POCUS_right	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube_Video_29_Lung_POCUS_right.mp4_frame75.jpg	normal
+Reg-Youtube_Video_29_Lung_POCUS_right	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube_Video_29_Lung_POCUS_right.mp4_frame60.jpg	normal
+Reg-Youtube-Video_902_Lung_POCUS	../data_pocus/cross_validation_data/split3/regular/Reg-Youtube-Video_902_Lung_POCUS.mp4_frame105.jpg	normal
+Reg-nephropocus	../data_pocus/cross_validation_data/split3/regular/Reg-nephropocus.mp4_frame44.jpg	normal
+Pneu-grep-pneumonia1	../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame24.jpg	pneumonia
+pneu-gred-6	../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame28.jpg	pneumonia
+pneu-gred-6	../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame16.jpg	pneumonia
+Pneu-grep-pneumonia1	../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame36.jpg	pneumonia
+pneu-gred-6	../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame12.jpg	pneumonia
+Pneu-grep-pneumonia1	../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame84.jpg	pneumonia
+Pneu-grep-pneumonia1	../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame0.jpg	pneumonia
+Pneu-grep-pneumonia1	../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame96.jpg	pneumonia
+pneu-gred-6	../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame8.jpg	pneumonia
+Pneu-grep-pneumonia1	../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame72.jpg	pneumonia
+pneu-gred-6	../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame4.jpg	pneumonia
+Pneu-grep-pneumonia1	../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame144.jpg	pneumonia
+pneu-gred-6	../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame40.jpg	pneumonia
+Pneu-grep-pneumonia1	../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame60.jpg	pneumonia
+Pneu-grep-pneumonia1	../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame48.jpg	pneumonia
+pneu-gred-6	../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame44.jpg	pneumonia
+pneu-gred-6	../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame0.jpg	pneumonia
+pneu-gred-6	../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame20.jpg	pneumonia
+Pneu-grep-pneumonia1	../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame12.jpg	pneumonia
+pneu-gred-6	../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame36.jpg	pneumonia
+Pneu-grep-pneumonia1	../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame132.jpg	pneumonia
+pneu-gred-6	../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame32.jpg	pneumonia
+pneu-gred-6	../data_pocus/cross_validation_data/split3/pneunomia/pneu-gred-6.gif_frame24.jpg	pneumonia
+Pneu-grep-pneumonia1	../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame120.jpg	pneumonia
+Pneu-grep-pneumonia1	../data_pocus/cross_validation_data/split3/pneunomia/Pneu-grep-pneumonia1.mp4_frame108.jpg	pneumonia
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame660.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame270.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame885.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame675.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame105.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1170.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame930.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame30.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1005.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame855.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame510.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame465.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame840.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1200.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame315.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame705.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame300.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1215.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame165.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame45.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1110.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame945.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame825.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1065.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame600.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame210.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame990.jpg	COVID-19
+Cov-D_Convex_Prob_score3	../data_pocus/cross_validation_data/split3/covid/Cov-D_Convex_Prob_score3.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame90.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame615.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1260.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame375.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame765.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame360.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1275.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame570.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame405.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame150.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame420.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1290.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame540.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame795.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1125.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame780.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame555.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame435.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame390.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame810.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1050.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame345.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame225.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1245.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame0.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame195.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame630.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1080.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame585.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame750.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1095.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame180.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame75.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame960.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame975.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame60.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame480.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1230.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame735.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1185.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame720.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame330.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame495.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame285.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame870.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame690.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1020.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame135.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame15.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame525.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame900.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1140.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1155.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame915.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame450.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame120.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame1035.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame240.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame255.jpg	COVID-19
+Cov-Butterfly-COVID_Skip_Lesion	../data_pocus/cross_validation_data/split3/covid/Cov-Butterfly-COVID Skip Lesion.mp4_frame645.jpg	COVID-19
