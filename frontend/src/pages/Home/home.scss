@@ -15,7 +15,7 @@
   background: url("teaser-image.jpg") no-repeat center;
   background-size: cover;
   position: relative;
-  padding-top: 12rem;
+  padding-top: 10rem;
   padding-bottom: 18rem;
   color: #fff;
   height: 100%;
@@ -42,6 +42,7 @@
 
   p {
     margin: 0 auto;
-    max-width: 430px;
+    max-width: 460px;
+    padding: 0 2rem;
   }
 }

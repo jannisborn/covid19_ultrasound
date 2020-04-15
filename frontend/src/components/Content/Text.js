@@ -1,8 +1,6 @@
 import React, {useRef} from 'react';
 import './content.scss';
 import TextSimple from './TextSimple';
-import {useIntersection} from 'react-use';
-import gsap from "gsap";
 import {useFadeInOnScroll} from '../Animation/Utils';
 
 const Text = (props) => {

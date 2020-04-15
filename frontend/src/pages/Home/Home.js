@@ -1,18 +1,16 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect} from 'react';
 import Text from '../../components/Content/Text';
-import StatisticNumber from '../../components/StatisticNumber/StatisticNumber';
 import TextImage from '../../components/Content/TextImage';
 import CallToAction from '../../components/CallToAction/CallToAction';
 import gsap from 'gsap';
-import {useIntersection} from 'react-use';
 import './home.scss';
 import VideoPresentation from '../../components/VideoPresentation/VideoPresentation';
 import {Helmet} from 'react-helmet';
 import Footer from '../../components/Footer/Footer';
 import Slider from '../../components/Slider/Slider';
-import {useFadeInOnScroll} from '../../components/Animation/Utils';
+import StatisticList from '../../components/StatisticNumber/StatisticList';
 
-const Home = (props) => {
+const Home = () => {
     document.title = 'CovidScreen - Home';
 
     let tl = gsap.timeline();
@@ -64,17 +62,7 @@ const Home = (props) => {
             </section>
             <section className="container spacer">
                 <Text title="Statistics" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, veniam, voluptatem? Assumenda at beatae culpa doloremque, id ipsam nesciunt nulla, porro qui quibusdam similique, ut? Incidunt magnam nobis porro veritatis?"/>
-                <div className="row">
-                    <div className="col-8 col-md offset-lg-1">
-                        <StatisticNumber className="primary fadeIn" number="3682" text="COVID-19 cases detected by the AI."/>
-                    </div>
-                    <div className="col-8 col-md">
-                        <StatisticNumber className="secondary fadeIn" number="12508" text="images that trained the AI."/>
-                    </div>
-                    <div className="col-8 col-md">
-                        <StatisticNumber className="primary fadeIn" number="50" text="organisations collaborating with us."/>
-                    </div>
-                </div>
+                <StatisticList/>
             </section>
             <section className="container spacer">
                 <VideoPresentation title="Presentation video" videoId="cVFzblT5VPE"/>

@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useRef} from 'react';
 import './content.scss';
 import covid from '../../assets/images/covid19.png'
 import TextSimple from './TextSimple';

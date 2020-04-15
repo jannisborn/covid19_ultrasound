@@ -2,9 +2,11 @@ import React, {useEffect, useRef} from 'react';
 import './slider.scss';
 import TeamMember from '../TeamMember/TeamMember';
 import {TweenLite, Power3} from 'gsap';
+import {useFadeInOnScroll} from '../Animation/Utils';
 
 const Slider = () => {
 
+    const sliderWrapRef = useRef(null);
     let sliderRef = useRef(null);
     let selectedIndex = 0;
     let cardWidth;
@@ -16,7 +18,7 @@ const Slider = () => {
             .7,
             {opacity: 1, ease: Power3.easeOut}
         );
-    }, [selectedIndex])
+    }, [selectedIndex]);
 
     const slideRight = () => {
         TweenLite.to(sliderRef.children, .7, {opacity: .3, ease: Power3.easeOut});
@@ -27,7 +29,7 @@ const Slider = () => {
         }
         selected = [sliderRef.children[selectedIndex], sliderRef.children[selectedIndex + 1], sliderRef.children[selectedIndex + 2]]
         TweenLite.to(selected, .7, {opacity: 1, ease: Power3.easeOut});
-    }
+    };
 
     const slideLeft = () => {
         TweenLite.to(sliderRef.children, .7, {opacity: .3, ease: Power3.easeOut});
@@ -38,24 +40,24 @@ const Slider = () => {
         }
         selected = [sliderRef.children[selectedIndex], sliderRef.children[selectedIndex + 1], sliderRef.children[selectedIndex + 2]]
         TweenLite.to(selected, .7, {opacity: 1, ease: Power3.easeOut});
-    }
+    };
 
     return (
-        <div className="slider">
+        <div className="slider" ref={sliderWrapRef}>
             <div className="slider-cards" ref={el => sliderRef = el}>
-                <div className="slide-card col-6 col-md-4">
+                <div className="slide-card col-6 col-md-4 fadeIn">
                     <TeamMember fullName="John Doe" job="Data Scientist"/>
                 </div>
-                <div className="slide-card col-6 col-md-4">
+                <div className="slide-card col-6 col-md-4 fadeIn">
                     <TeamMember fullName="John Doe" job="Data Scientist"/>
                 </div>
-                <div className="slide-card col-6 col-md-4">
+                <div className="slide-card col-6 col-md-4 fadeIn">
                     <TeamMember fullName="John Doe" job="Data Scientist"/>
                 </div>
-                <div className="slide-card col-6 col-md-4">
+                <div className="slide-card col-6 col-md-4 fadeIn">
                     <TeamMember fullName="John Doe" job="Data Scientist"/>
                 </div>
-                <div className="slide-card col-6 col-md-4">
+                <div className="slide-card col-6 col-md-4 fadeIn">
                     <TeamMember fullName="John Doe" job="Data Scientist"/>
                 </div>
             </div>
