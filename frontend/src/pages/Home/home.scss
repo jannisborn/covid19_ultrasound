@@ -1,0 +1,47 @@
+.start {
+  margin-bottom: -130px;
+}
+
+.teaser-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 515px;
+  border-radius: var(--border-radius-base);
+}
+
+.teaser {
+  background: url("teaser-image.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  padding-top: 12rem;
+  padding-bottom: 18rem;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+  }
+}
+
+
+.teaser-text {
+  position: relative;
+
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    margin: 0 auto;
+    max-width: 430px;
+  }
+}
