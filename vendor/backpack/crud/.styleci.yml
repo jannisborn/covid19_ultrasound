@@ -1,0 +1,4 @@
+preset: laravel
+finder:
+ not-name:
+  - "LicenseCheck.php"

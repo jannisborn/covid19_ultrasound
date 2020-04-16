@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+>
+    <testsuites>
+        <testsuite name="Package Test Suite">
+            <directory suffix=".php">./tests/</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src/PanelTraits/</directory>
+            <file>./src/CrudPanel.php</file>
+            <exclude>
+                <file>./src/PanelTraits/AutoFocus.php</file>
+                <file>./src/PanelTraits/Errors.php</file>
+                <file>./src/PanelTraits/Filters.php</file>
+                <file>./src/PanelTraits/Query.php</file>
+                <file>./src/PanelTraits/Reorder.php</file>
+                <file>./src/PanelTraits/Views.php</file>
+                <file>./src/PanelTraits/ViewsAndRestoresRevisions.php</file>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>

@@ -1,0 +1,3 @@
+<span>
+	{!! $column['value']?? ' ' !!}
+</span>

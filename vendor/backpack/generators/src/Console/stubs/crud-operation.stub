@@ -1,0 +1,58 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Support\Facades\Route;
+
+trait DummyClassOperation
+{
+    /**
+     * Define which routes are needed for this operation.
+     *
+     * @param string $segment    Name of the current entity (singular). Used as first URL segment.
+     * @param string $routeName  Prefix of the route name.
+     * @param string $controller Name of the current CrudController.
+     */
+    protected function setupDummyClassRoutes($segment, $routeName, $controller)
+    {
+        Route::get($segment.'/dummy_class', [
+            'as'        => $routeName.'.dummy_class',
+            'uses'      => $controller.'@dummy_class',
+            'operation' => 'dummy_class',
+        ]);
+    }
+
+    /**
+     * Add the default settings, buttons, etc that this operation needs.
+     */
+    protected function setupDummyClassDefaults()
+    {
+        $this->crud->allowAccess('dummy_class');
+
+        $this->crud->operation('dummy_class', function () {
+            $this->crud->loadDefaultOperationSettingsFromConfig();
+        });
+
+        $this->crud->operation('list', function () {
+            // $this->crud->addButton('top', 'dummy_class', 'view', 'crud::buttons.dummy_class');
+            // $this->crud->addButton('line', 'dummy_class', 'view', 'crud::buttons.dummy_class');
+        });
+    }
+
+    /**
+     * Show the view for performing the operation.
+     *
+     * @return Response
+     */
+    public function dummy_class()
+    {
+        $this->crud->hasAccessOrFail('dummy_class');
+
+        // prepare the fields you need to show
+        $this->data['crud'] = $this->crud;
+        $this->data['title'] = $this->crud->getTitle() ?? 'dummy_class '.$this->crud->entity_name;
+
+        // load the view
+        return view("crud::operations.dummy_class", $this->data);
+    }
+}

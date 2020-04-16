@@ -1,0 +1,83 @@
+{
+    "name": "backpack/crud",
+    "type": "library",
+    "description": "Quickly build an admin interfaces using Laravel 7, CoreUI, Boostrap 4 and jQuery.",
+    "keywords": [
+        "backpack",
+        "base",
+        "admin panel for laravel",
+        "coreui for laravel",
+        "bootstrap 4 admin panel laravel",
+        "laravel admin",
+        "CRUD",
+        "BREAD",
+        "create",
+        "update",
+        "delete",
+        "read",
+        "admin panel",
+        "admin interface",
+        "CMS",
+        "content management system",
+        "content management framework"
+    ],
+    "homepage": "https://github.com/laravel-backpack/CRUD",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Cristian Tabacitu",
+            "email": "hello@tabacitu.ro",
+            "homepage": "http://www.tabacitu.ro",
+            "role": "Creator & Maintainer"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^7.0|^6.0|5.8.*",
+        "prologue/alerts": "^0.4.1",
+        "creativeorange/gravatar": "~1.0",
+        "nesbot/carbon": "^2.14",
+        "ocramius/package-versions": "^1.4",
+        "laravel/helpers": "^1.1",
+        "doctrine/dbal": "^2.5",
+        "venturecraft/revisionable": "1.*",
+        "intervention/image": "^2.3",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8.0|~7.0",
+        "scrutinizer/ocular": "~1.7|~1.1",
+        "orchestra/testbench": "^5.0|^3.0",
+        "orchestra/database": "^5.0@dev|3.8.x-dev",
+        "spatie/laravel-translatable": "^4.0|^3.1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Backpack\\CRUD\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Backpack\\CRUD\\Tests\\": "tests"
+        },
+        "files": ["src/helpers.php"],
+        "exclude-from-classmap": [
+            "**/config"
+        ]
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --testdox"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "4.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Backpack\\CRUD\\BackpackServiceProvider"
+            ],
+            "aliases": {
+                "CRUD": "Backpack\\CRUD\\app\\Library\\CrudPanel\\CrudPanelFacade"
+            }
+        }
+    }
+}
