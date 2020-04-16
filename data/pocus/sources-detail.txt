@@ -22,7 +22,7 @@ Cov-MSU-SkipLesions.mp4 : no effusion, B-lines, really narrow field of view, bew
 Cov-MSU-COVID Lung 2-Blines.mp4 : Minimal effusion, pleural irregularities, lots of B-lines
 Cov-MSU-COVID Consolidation.mp4: Small cluster of consolidation, no visible B-lines. Likely late stage of COVID (and doesnot happpen in every patient, some belive this is caused by another germ taking the oppurtunity but still has to be confirmed)
 Cov-Butterfly-COVID Skip Lesion.mp4 : no effusion, pleural irregularities, B-lines and areas without either B-lines nor A-lines : those areas are not properly consolidatd yet but are no normal lung anymore.
-Cov-Butterfly-COVID Lung 2.mp4 : same clip as Cov-MSU-COVID Lung 2-Blines.mp4. Do not use both!
+Cov-Butterfly-COVID Lung 2.mp4 : Minimal effusion, pleural irregularities, lots of B-lines
 Cov-Butterfly-COVID Lung 1.mp4 : No effusion (or maybe minimal) pleural irregularties, B-lines
 Cov-Butterfly-COVID Consolidation.mp4 : Same clip as Cov-MSU-COVID Consolidation.mp4. Do not use both!Nou used anyway.
 Cov-Atlas-Day%2B5.gif : Small resolution. Left clip : Pleural irregularities, minimal effusion, we can see the image switching from B-lines (sick lung) to normal lung : some part of the lungs are infected, others not yet. Nice clip :) // Right clip : Discrete pleura thickening, lots of B-lines
