@@ -35,11 +35,11 @@ specificity: 1.0000
 
 
 ### COVID
-![COVID](data_pocus-splitted/train/covid/Cov-Atlas+(44).gif_frame4.jpg)  
+![COVID](data/pocus/cleaned_data_images/covid/Cov-Atlas+(44).gif_frame40.jpg)  
 ### Pneunomia
-![Pneunomia](data_pocus-splitted/train/pneunomia/Pneu-Atlas-pneumonia.gif_frame0.jpg)
+![Pneunomia](data/pocus/cleaned_data_images/pneunomia/Pneu-Atlas-pneumonia.gif_frame0.jpg)
 ### Sane
-![Sane](data_pocus-splitted/train/regular/Reg-Atlas.gif_frame0.jpg)
+![Sane](data/pocus/cleaned_data_images/regular/Reg-Atlas.gif_frame0.jpg)
 
 
 

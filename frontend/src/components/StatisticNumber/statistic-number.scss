@@ -1,0 +1,9 @@
+.statistic-number {
+  &.primary {
+    border-top: solid 2px var(--primary);
+  }
+
+  &.secondary {
+    border-top: solid 2px var(--secondary);
+  }
+}
