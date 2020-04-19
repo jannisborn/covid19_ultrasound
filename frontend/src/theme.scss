@@ -1,0 +1,73 @@
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/images";
+@import "assets/scss/variables";
+
+:root {
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --border-radius-base: #{$border-radius-base};
+}
+
+.light {
+  --primary-light: #{$primary-light};
+  --main-bg-color: #{$white};
+  --main-color: #{$dark};
+  --main-color-light: #{$light-dark};
+  --footer-bg: #{$light-white};
+  --copyright-bg: #{$white};
+  --link-color: #{$primary};
+}
+
+.dark {
+  --primary-light: #{$light-dark};
+  --main-bg-color: #{$dark};
+  --main-color: #{$white};
+  --main-color-light: #{$light-white};
+  --footer-bg: #{$light-dark};
+  --copyright-bg: #{$dark};
+  --link-color: #{$white};
+}
+
+html,
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+  transition: color,background-color .25s ease;
+  visibility: hidden;
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+
+  main {
+    flex: 1;
+  }
+}
+
+.app-footer {
+  background-color: var(--footer-bg);
+
+  .copyright {
+    background-color: var(--copyright-bg);
+  }
+}
+
+.app-footer-links {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.page {
+  visibility: hidden;
+}
+
+.spacer {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
