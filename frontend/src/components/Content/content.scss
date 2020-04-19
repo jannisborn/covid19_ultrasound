@@ -4,6 +4,19 @@
   }
 }
 
+.text-image,
+.text {
+  h2 {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+  }
+
+  header p {
+    font-size: .85rem;
+    text-transform: uppercase;
+  }
+}
+
 .fadeIn {
   opacity: 0;
 }

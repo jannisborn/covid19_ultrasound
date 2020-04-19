@@ -13,7 +13,7 @@ const TextImage = (props) => {
         <div className="text-image row align-items-center mb-5" ref={sectionRef}>
             <div className="col-8 col-md-6 col-lg-6 col-xl-5">
                 {props.orientation !== 'textLeft'
-                    ? <img src={covid} alt="Covid" className="img-fluid fadeIn"/>
+                    ? <img src={covid} alt="Covid" className="img-fluid mb-3 fadeIn"/>
                     : <TextSimple title={props.title} subtitle={props.subtitle} text={props.text}/>
                 }
             </div>

@@ -9,7 +9,7 @@ const StatisticNumberList = (props) => {
     useFadeInOnScroll(statsRef);
 
     return (
-        <div className="row" ref={statsRef}>
+        <div className="row pt-5" ref={statsRef}>
             <div className="col-8 col-md offset-lg-1 fadeIn">
                 <StatisticNumber className="primary" number="3682" text="COVID-19 cases detected by the AI."/>
             </div>

@@ -1,0 +1,19 @@
+version: '3.6'
+
+services:
+  frontend:
+    container_name: ddev-${DDEV_SITENAME}-frontend
+    build: ../frontend
+    restart: "no"
+    ports:
+      - "8080:80"
+    labels:
+      com.ddev.site-name: ${DDEV_SITENAME}
+      com.ddev.approot: $DDEV_APPROOT
+    environment:
+      - VIRTUAL_HOST=$DDEV_HOSTNAME
+      - HTTP_EXPOSE=80
+    user: "8080:80"
+  web:
+    links:
+      - frontend:$DDEV_HOSTNAME

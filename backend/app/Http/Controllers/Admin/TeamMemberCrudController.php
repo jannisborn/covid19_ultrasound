@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\Team_memberRequest;
+use App\Http\Requests\TeamMemberRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
@@ -43,7 +43,7 @@ class TeamMemberCrudController extends CrudController
 
     protected function setupCreateOperation()
     {
-        $this->crud->setValidation(Team_memberRequest::class);
+        $this->crud->setValidation(TeamMemberRequest::class);
 
         // TODO: remove setFromDb() and manually define Fields
         $this->crud->setFromDb();

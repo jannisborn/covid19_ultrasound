@@ -4,7 +4,7 @@ $theme-switcher-size: 20px;
   box-sizing: content-box;
   overflow: hidden;
   border-radius: 50%;
-  border: solid 1px var(--main-color);
+  border: solid 1px var(--black);
   width: $theme-switcher-size;
   height: $theme-switcher-size;
 }
@@ -21,7 +21,7 @@ $theme-switcher-size: 20px;
 }
 
 .theme-switcher-dark {
-  background-color: var(--main-color);
+  background-color: var(--black);
 }
 
 .theme-switcher-light {

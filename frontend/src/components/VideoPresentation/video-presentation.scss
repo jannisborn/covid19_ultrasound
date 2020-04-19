@@ -9,7 +9,7 @@
     overflow: hidden;
     transform: translateY(10%);
 
-    &::before {
+    &::after {
       content: '';
       position: absolute;
       top: 0;
@@ -30,6 +30,7 @@
     top: 50%;
     transform: translateY(-50%) translateX(-50%);
     color: #fff;
+    z-index: 10;
 
     &:hover,
     &:focus {
@@ -60,6 +61,10 @@
       line-height: 1;
     }
   }
+}
+
+.o0 {
+  opacity: 0;
 }
 
 @keyframes boom-boom {

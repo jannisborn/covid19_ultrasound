@@ -2,7 +2,6 @@ import React, {useEffect, useRef} from 'react';
 import './slider.scss';
 import TeamMember from '../TeamMember/TeamMember';
 import {TweenLite, Power3} from 'gsap';
-import {useFadeInOnScroll} from '../Animation/Utils';
 
 const Slider = () => {
 

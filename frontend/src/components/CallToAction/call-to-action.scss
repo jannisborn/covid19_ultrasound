@@ -26,10 +26,22 @@
   &.secondary {
     background-color: var(--secondary);
   }
+
+  h2 {
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 200;
+  }
 }
 
 .call-to-action-link {
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
   position: relative;
   display: inline-block;
 

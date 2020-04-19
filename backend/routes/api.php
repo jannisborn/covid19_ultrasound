@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\TeamMember;
 use Illuminate\Http\Request;
 
 /*
@@ -13,6 +14,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::get('/team-members', function (Request $request) {
+    TeamMember::create(['full_name' => 'Toto']);
+    return TeamMember::get(['*']);
 });

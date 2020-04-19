@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500|Roboto:200,400,700&display=swap');
 @import "~bootstrap/scss/bootstrap-reboot";
 @import "~bootstrap/scss/bootstrap-grid";
 @import "~bootstrap/scss/utilities";
@@ -13,7 +14,9 @@
 .light {
   --primary-light: #{$primary-light};
   --main-bg-color: #{$white};
-  --main-color: #{$dark};
+  --main-color: #{$dark-gray};
+  --black: #111;
+  --white: #fff;
   --main-color-light: #{$light-dark};
   --footer-bg: #{$light-white};
   --copyright-bg: #{$white};
@@ -23,7 +26,9 @@
 .dark {
   --primary-light: #{$light-dark};
   --main-bg-color: #{$dark};
-  --main-color: #{$white};
+  --main-color: #{$opac-white};
+  --black: #fff;
+  --white: #111;
   --main-color-light: #{$light-white};
   --footer-bg: #{$light-dark};
   --copyright-bg: #{$dark};
@@ -37,6 +42,21 @@ body {
   transition: color,background-color .25s ease;
   visibility: hidden;
   overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color:var(--black);
+}
+
+p {
+  line-height: 2rem;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .app {
@@ -47,6 +67,15 @@ body {
 
   main {
     flex: 1;
+  }
+}
+
+.app-header {
+  color: var(--black);
+  font-size: .9rem;
+
+  .button {
+    color: var(--black);
   }
 }
 
