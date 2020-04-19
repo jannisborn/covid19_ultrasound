@@ -1,0 +1,60 @@
+﻿Type,Used?,Modality,Fold (old!),video_or_photo__name,
+video,Yes,convex,train,Cov-Atlas+(44).gif,http://www.thepocusatlas.com/
+video,Yes,convex,train,Cov-Atlas+(45).gif,http://www.thepocusatlas.com/
+video,Yes,convex,train,Cov-Atlas-Day+2.gif,http://www.thepocusatlas.com/
+video,Yes,convex,train,Cov-Atlas-Day+4.gif,http://www.thepocusatlas.com/
+video,Yes,convex,train,Cov-Butterfly-COVID Lung 2.mp4,https://www.butterflynetwork.com/covid-19#lungfindings
+video,Yes,convex,train,Cov-Butterfly-COVID Skip Lesion.mp4,https://www.butterflynetwork.com/covid-19#lungfindings
+video,Yes,convex,train,Cov-clarius.gif,https://clarius.com/clinical-utility-and-technique-for-lung-ultrasound-in-covid-19-cases/
+video,Yes,convex,train,Cov-grepmed-blines-pocus-.mp4,https://www.grepmed.com/
+video,Yes,convex,train,Cov-grepmed2.mp4,https://www.grepmed.com/
+video,Yes,convex,train,Cov-grepmed3.mp4,https://www.grepmed.com/
+video,Yes,convex,train,Cov-MSU-COVID Lung 2-Blines.mp4,https://sites.google.com/msu.edu/ultrasound-elective/covid-19-pocus-hub
+video,Yes,convex,train,Pneu-Atlas-pneumonia.gif,http://www.thepocusatlas.com/
+video,Yes,convex,train,Pneu-Atlas-pneumonia2.gif,http://www.thepocusatlas.com/
+video,Yes,convex,train,pneu-everyday.gif,https://everydayultrasound.com/blog/category/Pneumonia
+video,Yes,convex,train,pneu-gred-6.gif,https://www.grepmed.com/
+video,Yes,convex,train,Pneu-grep-pneumonia1.mp4,https://www.grepmed.com/
+video,Yes,convex,train,Pneu-grep-pneumonia2.mp4,https://www.grepmed.com/
+video,Yes,convex,train,Pneu-grep-pneumonia4.mp4,https://www.grepmed.com/
+video,Yes,convex,train,pneu-radiopaeda.mp4,https://radiopaedia.org/cases/normal-anterior-lung-ultrasound-1
+video,Yes,convex,train,Reg-Atlas-lungcurtain.gif,http://www.thepocusatlas.com/
+video,Yes,convex,train,Reg-Atlas.gif,http://www.thepocusatlas.com/
+video,Yes,convex,train,Reg-bcpocus.gif,https://www.bcpocus.ca/organscans/pneumonia/
+video,Yes,convex,train,Reg-Butterfly.mp4,https://www.butterflynetwork.com/covid-19#lungfindings
+video,Yes,convex,train,Reg-NormalLungs.mp4,Youtube I believe…
+video,Yes,convex,train,Reg-Youtube.mp4,https://www.youtube.com/watch?v=VzgX9ihnmec
+video,Yes,convex,test,Cov-Atlas-+(43).gif,http://www.thepocusatlas.com/
+video,Yes,convex,test,Cov-Atlas-Day+1.gif,http://www.thepocusatlas.com/
+video,Yes,convex,test,Cov-Atlas-Day+3.gif,http://www.thepocusatlas.com/
+video,Yes,convex,test,Cov-Butterfly-COVID Lung 1.mp4,https://www.butterflynetwork.com/covid-19#lungfindings
+video,Yes,convex,test,Cov-MSU-SkipLesions.mp4,https://sites.google.com/msu.edu/ultrasound-elective/covid-19-pocus-hub
+video,Yes,convex,test,Pneu-Atlas-pneumonia-AirBronch.gif,http://www.thepocusatlas.com/
+video,Yes,convex,test,pneu-gred-7.gif,https://www.grepmed.com/
+video,Yes,convex,test,Pneu-grep-pneumonia3.mp4,https://www.grepmed.com/
+video,Yes,convex,test,Reg-Atlas-alines.gif,https://www.grepmed.com/
+video,Yes,convex,test,Reg-Grep-Alines.mp4,https://www.grepmed.com/
+video,Yes,convex,test,Reg-Grep-Normal.gif,https://www.grepmed.com/
+video,Yes,convex,test,Reg-nephropocus.mp4,https://nephropocus.com/2019/06/03/lung-ultrasound-a-line-and-b-lines/#jp-carousel-642
+photo,Yes,convex,test,Cov-B_ConvexProb_score1.jpg,https://www.researchgate.net/publication/340286142_Proposal_for_international_standardization_of_the_use_of_lung_ultrasound_for_COVID-19_patients_a_simple_quantitative_reproducible_method
+photo,Yes,convex,test,Cov-C_Convex_Prob_score2.jpg,https://www.researchgate.net/publication/340286142_Proposal_for_international_standardization_of_the_use_of_lung_ultrasound_for_COVID-19_patients_a_simple_quantitative_reproducible_method
+photo,Yes,convex,test,Cov-D_Convex_Prob_score3.jpg,https://www.researchgate.net/publication/340286142_Proposal_for_international_standardization_of_the_use_of_lung_ultrasound_for_COVID-19_patients_a_simple_quantitative_reproducible_method
+photo,Yes,convex,test,Cov-C_ConvexProb_score3.jpg,https://www.researchgate.net/publication/340286142_Proposal_for_international_standardization_of_the_use_of_lung_ultrasound_for_COVID-19_patients_a_simple_quantitative_reproducible_method
+video,Yes,,,Reg-Youtube_Video_29_Lung_POCUS_left.mp4,https://www.youtube.com/watch?v=HqPXJ0A0HCU
+video,Yes,,,Reg-Youtube_Video_29_Lung_POCUS_right.mp4,https://www.youtube.com/watch?v=HqPXJ0A0HCU
+video,Yes,,,Reg-Youtube-Video_902_Lung_POCUS-left.mp4,https://www.youtube.com/watch?v=pPQFvDI-kEg
+video,Yes,,,Reg-Youtube-Video_902_Lung_POCUS.mp4,https://www.youtube.com/watch?v=pPQFvDI-kEg
+photo,NO!,linear,Cov-A_linearProb_score1.jpg,https://www.researchgate.net/publication/340286142_Proposal_for_international_standardization_of_the_use_of_lung_ultrasound_for_COVID-19_patients_a_simple_quantitative_reproducible_method,
+photo,NO!,linear,Cov-A_LinearProb_score2.jpg,https://www.researchgate.net/publication/340286142_Proposal_for_international_standardization_of_the_use_of_lung_ultrasound_for_COVID-19_patients_a_simple_quantitative_reproducible_method,
+photo,NO!,linear,Cov-A_LinearProb_score3.jpg,https://www.researchgate.net/publication/340286142_Proposal_for_international_standardization_of_the_use_of_lung_ultrasound_for_COVID-19_patients_a_simple_quantitative_reproducible_method,
+photo,NO!,linear,Cov-B_LinearProb_score2.jpg,https://www.researchgate.net/publication/340286142_Proposal_for_international_standardization_of_the_use_of_lung_ultrasound_for_COVID-19_patients_a_simple_quantitative_reproducible_method,
+photo,NO!,linear,Cov-B_LinearProb_score3.jpg,https://www.researchgate.net/publication/340286142_Proposal_for_international_standardization_of_the_use_of_lung_ultrasound_for_COVID-19_patients_a_simple_quantitative_reproducible_method,
+,NO!,,video_or_photo__name,,comment
+photo,NO!,convex,dknow-C_ConvexProb_score0.jpg,https://www.researchgate.net/publication/340286142_Proposal_for_international_standardization_of_the_use_of_lung_ultrasound_for_COVID-19_patients_a_simple_quantitative_reproducible_method,No lung injuries detected but positive to RNA test (probably)
+photo,NO!,convex,dknow-D_ConvexProb_score0.jpg,https://www.researchgate.net/publication/340286142_Proposal_for_international_standardization_of_the_use_of_lung_ultrasound_for_COVID-19_patients_a_simple_quantitative_reproducible_method,No lung injuries detected but positive to RNA test (probably)
+video,NO!,convex,Cov-Butterfly-COVID Consolidation.mp4,,"Small cluster of consolidation, no visible B-lines. Likely late stage of COVID (and doesnot happpen in every patient, some belive this is caused by another germ taking the oppurtunity but still has to be confirmed)"
+video,NO!,convex,Pneu-grep-pneumonia5.mp4,,"Quality to bad to be sur, but probably consolidated even if we see some scattered B-lines. I'd rather not use this one to teach a NN (edited)"
+video,NO!,convex,Cov-Atlas-Day+5.gif,,"already had a lot of images from the same patient, eliminated the days 5"
+video,NO!,convex,Cov-grepmed.mp4,,Image too shallow to be really helpfull even if we can see some B-lines. Do not use in my opinion
+photo,NO!,linear,Reg-A_linearProb_score0.jpg,https://www.researchgate.net/publication/340286142_Proposal_for_international_standardization_of_the_use_of_lung_ultrasound_for_COVID-19_patients_a_simple_quantitative_reproducible_method,No lung injuries detected but positive to RNA test (probably)
+photo,NO!,linear,Reg-B_linearProb_score0.jpg,https://www.researchgate.net/publication/340286142_Proposal_for_international_standardization_of_the_use_of_lung_ultrasound_for_COVID-19_patients_a_simple_quantitative_reproducible_method,No lung injuries detected but positive to RNA test (probably)
