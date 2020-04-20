@@ -6,12 +6,10 @@ import Layout from './Layout';
 import {IntlProvider} from 'react-intl';
 
 ReactDOM.render(
-    <AuthProvider>
         <AppProvider>
             <IntlProvider locale="en-EN">
                 <Layout/>
             </IntlProvider>
-        </AppProvider>
-    </AuthProvider>,
+        </AppProvider>,
   document.getElementById('app')
 );
