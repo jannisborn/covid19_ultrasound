@@ -1,4 +1,3 @@
-
 import os
 import argparse
 import numpy as np
@@ -23,9 +22,7 @@ ap.add_argument(
     "--output_dir",
     type=str,
     default="../data/pocus/cross_validation/",
-    help=(
-        "Output path where images for cross validation will be stored."
-    )
+    help=("Output path where images for cross validation will be stored.")
 )
 ap.add_argument(
     "-s",
@@ -39,7 +36,6 @@ args = vars(ap.parse_args())
 NUM_FOLDS = args['splits']
 DATA_DIR = args['data_dir']
 OUTPUT_DIR = args['output_dir']
-
 
 # Make splits of approximately equal size
 split_test = [{} for _ in range(NUM_FOLDS)]
@@ -98,5 +94,3 @@ for split_ind in range(NUM_FOLDS):
         mod_split_files = split_test[split_ind][modality]
         for fname in mod_split_files:
             shutil.copy(os.path.join(DATA_DIR, modality, fname), mod_path)
-
-    

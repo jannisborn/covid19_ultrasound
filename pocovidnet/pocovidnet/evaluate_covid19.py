@@ -6,10 +6,11 @@ import os
 import cv2
 import numpy as np
 
-from covid_detector.utils import CLASS_MAPPINGS
-from covid_detector.model import get_model
+from pocovidnet.utils import CLASS_MAPPINGS
+from pocovidnet.model import get_model
 
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
+NUM_FOLDS = 5
 
 
 #%%
@@ -34,7 +35,7 @@ class Evaluator(object):
                 os.path.join(
                     self.root, 'trained_models', 'fold_' + str(fold),
                     "variables", "variables"
-                ) for fold in range(5)
+                ) for fold in range(NUM_FOLDS)
             ]
 
         self.class_mappings = CLASS_MAPPINGS

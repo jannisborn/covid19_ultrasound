@@ -4,6 +4,13 @@
 
 ## Please contribute your own images here or tell us directly where to find them. 
 
+
+
+
+## Learn more about the project
+[![IMAGE ALT TEXT](pocovidnet/plots/pitch.jpg)](https://www.youtube.com/watch?v=UY34-d_yHwo& "POCUS 4 COVID19")
+
+
 ## Here is the current performance of our model (POCUS-splitted data):
 *Disclaimer: The model is in a very preliminary stage and was not trained in a scientifically rigorous way.*
 
@@ -32,6 +39,9 @@ sensitivity: 0.9787
 specificity: 1.0000
 
 ```
+
+
+
 
 
 ### COVID

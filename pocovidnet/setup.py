@@ -1,10 +1,10 @@
 """Install package."""
 from setuptools import setup, find_packages
 setup(
-    name='covid_detector',
+    name='pocovidnet',
     version='0.0.1',
     description=(
-        'Keras implementation of COVID detection models from medical images'
+        'Keras implementation of COVID19 detection models from POCUS data'
     ),
     long_description=open('README.md').read(),
     url='https://github.com/jannisborn/medimg_covid_detecter',

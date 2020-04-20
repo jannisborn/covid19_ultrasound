@@ -1,9 +1,7 @@
-import json
-
 from flask import Flask, jsonify, request
 import cv2
 import os
-from covid_detector.evaluate_covid19 import Evaluator
+from pocovidnet.evaluate_covid19 import Evaluator
 
 UPLOAD_FOLDER = "/Users/ninawiedemann/Desktop/Projects/covid19_pocus_ultrasound.nosync/data/pocus/cleaned_data_images"
 
