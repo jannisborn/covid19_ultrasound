@@ -3,7 +3,6 @@ import Text from '../../components/Content/Text';
 import TextImage from '../../components/Content/TextImage';
 import CallToAction from '../../components/CallToAction/CallToAction';
 import gsap from 'gsap';
-import './home.scss';
 import VideoPresentation from '../../components/VideoPresentation/VideoPresentation';
 import {Helmet} from 'react-helmet';
 import Footer from '../../components/Footer/Footer';
