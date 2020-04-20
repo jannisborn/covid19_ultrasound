@@ -43,7 +43,7 @@ const Layout = () => {
         <div className="app" ref={el => app = el}>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>CovidScreen</title>
+                <title>PocovidScreen</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
             <header className="app-header py-4 container">

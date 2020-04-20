@@ -10,7 +10,7 @@ const Logo = (props) => {
     }
 
     return (
-        <div className={`logo logo-${props.size}`}><img src={src} alt="CovidScreen logo"/></div>
+        <div className={`logo logo-${props.size}`}><img src={src} alt="PocovidScreen logo"/></div>
     );
 };
 

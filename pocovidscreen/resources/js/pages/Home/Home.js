@@ -11,7 +11,7 @@ import StatisticList from '../../components/StatisticNumber/StatisticList';
 import PartnerList from '../../components/Partner/ParternList';
 
 const Home = () => {
-    document.title = 'CovidScreen - Home';
+    document.title = 'PocovidScreen - Home';
 
     let tl = gsap.timeline();
     useEffect(() => {
@@ -28,14 +28,14 @@ const Home = () => {
     return (
         <div className="page page-home">
             <Helmet>
-                <title>CovidScreen - Home</title>
+                <title>PocovidScreen - Home</title>
             </Helmet>
             <section className="text-center container-fluid">
                 <div className="teaser-wrapper">
                     <div className="teaser">
                         <div className="teaser-text col-12 col-lg-8 col-xl-6">
                             <header>
-                                <h1>CovidScreen</h1>
+                                <h1>PocovidScreen</h1>
                                 <p>POCUS, X-Ray and CT's image analysis through AI to screen COVID-19 and pneumonia or healthy people</p>
                             </header>
                         </div>
