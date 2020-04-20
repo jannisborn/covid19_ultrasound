@@ -1,18 +1,13 @@
 """
 Evaluation class that performs forward pass through trained models
 """
-#%%
 import os
 
 import cv2
 import numpy as np
-from tensorflow.keras.applications import VGG16
-from tensorflow.keras.layers import (
-    AveragePooling2D, Dense, Dropout, Flatten, Input, BatchNormalization, ReLU
-)
-from tensorflow.keras.models import Model
 
 from covid_detector.utils import CLASS_MAPPINGS
+from covid_detector.model import get_model
 
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 
@@ -20,65 +15,35 @@ DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 #%%
 class Evaluator(object):
 
-    def __init__(self, split=None, modality='pocus'):
+    def __init__(self, ensemble=True):
         """
         Constructor of COVID model evaluator class.
         
         Arguments:
-            modality {str} -- The data modality to be used. Chose from
-                {'pocus', 'xray', 'ct'}, defaults to 'pocus'.
+            ensemble {str} -- Whether the model ensemble is used.
         """
         self.root = os.path.join('/', *DIR_PATH.split('/')[:-1])
 
-        if modality not in ['pocus', 'xray', 'ct']:
-            raise ValueError(f'Unknown modality provided: {modality}')
-
-        self.modality = modality
-        self.num_classes = 3 if modality == 'pocus' else 2
-        # load correct weights
-        if split is None:
-            self.weights_path = os.path.join(
-                self.root, 'trained_models', modality + '.model'
-            )
+        if not ensemble:
+            self.weights_paths = [
+                os.path.join(self.root, 'trained_models', 'pocus' + '.model')
+            ]
         else:
-            # This is not the best, but the last one
-            # self.weights_path = os.path.join(
-            #     '..', 'trained_models', 'fold_' + split, 'pocus_fold_' + split + '.model'
-            # )
-            #
-            # This is the best model:
-            self.weights_path = os.path.join(
-                self.root, 'trained_models', 'fold_' + split, "variables",
-                "variables"
-            )
-            print("Loading weights from ", self.weights_path)
+            # Stores 5 weight paths
+            self.weights_paths = [
+                os.path.join(
+                    self.root, 'trained_models', 'fold_' + str(fold),
+                    "variables", "variables"
+                ) for fold in range(5)
+            ]
 
-        self.class_mappings = CLASS_MAPPINGS[self.modality]
-
-        # load the VGG16 network, ensuring the head FC layer sets are left off
-        baseModel = VGG16(
-            weights="imagenet",
-            include_top=False,
-            input_tensor=Input(shape=(224, 224, 3))
-        )
-
-        # construct the head of the model that will be placed on top of the
-        # the base model
-        headModel = baseModel.output
-        headModel = AveragePooling2D(pool_size=(4, 4))(headModel)
-        headModel = Flatten(name="flatten")(headModel)
-        headModel = Dense(64)(headModel)
-        headModel = BatchNormalization()(headModel)
-        headModel = ReLU()(headModel)
-        headModel = Dropout(0.5)(headModel)
-        headModel = Dense(self.num_classes, activation="softmax")(headModel)
-
-        # place the head FC model on top of the base model
-        self.model = Model(inputs=baseModel.input, outputs=headModel)
+        self.class_mappings = CLASS_MAPPINGS
+        self.models = [get_model() for _ in range(len(self.weights_paths))]
 
         # restore weights
         try:
-            self.model.load_weights(self.weights_path)
+            for model, path in zip(self.models, self.weights_paths):
+                model.load_weights(path)
         except Exception:
             raise Exception('Error in model restoring.')
 
@@ -88,18 +53,20 @@ class Evaluator(object):
         """Performs a forward pass through the restored model
 
         Arguments:
-            image {np.array} -- Input image on which prediction is performed. 
+            image {np.array} -- Input image on which prediction is performed.
                 No size requirements, but the image will be reshaped to 224 x
                 224 pixels (aspec ratio is *not* preserved, so quadratic images
                 are preferred).
 
         Returns:
-            logits {np.array} -- Shape (self.num_classes,). Class probabilities
-                for 2 (or 3) classes.
+            logits {list} -- Length 3 num_classes). Class probabilities.
         """
 
         image = self.preprocess(image)
-        return np.squeeze(self.model.predict(image))
+        predictions = np.squeeze(
+            np.stack([model.predict(image) for model in self.models]), axis=1
+        )
+        return list(np.mean(predictions, axis=0, keepdims=False))
 
     def preprocess(self, image):
         """Apply image preprocessing pipeline
