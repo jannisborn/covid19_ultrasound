@@ -3,7 +3,7 @@ name: covidscreen
 type: php
 docroot: pocovidscreen/public
 php_version: "7.3"
-webserver_type: nginx-fpm
+webserver_type: apache-fpm
 router_http_port: "80"
 router_https_port: "443"
 xdebug_enabled: false
@@ -12,7 +12,6 @@ additional_fqdns: []
 nfs_mount_enabled: false
 provider: default
 use_dns_when_possible: true
-#webimage_extra_packages: [python3.6, python3-pip]
 timezone: ""
 
 
