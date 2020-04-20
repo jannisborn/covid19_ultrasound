@@ -4,11 +4,10 @@ import os
 from pocovidnet.evaluate_covid19 import Evaluator
 
 UPLOAD_FOLDER = os.path.join(
-    os.path.expanduser('~'), 'codevscovid', 'covid_detector',
-    'covid19_pocus_ultrasound', 'data', 'pocus', 'cleaned_data_images'
+    '..', '..', 'data', 'pocus', 'cleaned_data_images'
 )
 
-model = Evaluator(ensemble=False)
+model = Evaluator(ensemble=True)
 app = Flask(__name__)
 
 
@@ -23,15 +22,17 @@ def query_directions():
 
     if request.method == 'GET':
         # Parse arguments from query
-        filename = str(request.args.get('fn', "1,1,1,1,1"))
+        filename = str(request.args.get('fn', "None"))
 
-    # fn = "test.jpg"
+    # read image
     img = cv2.imread(os.path.join(UPLOAD_FOLDER, filename))
-    print(img.shape)
-    out_preds = model(img)
-
-    test_dict = {"image shape": img.shape, "prediction": str(out_preds)}
-    return jsonify(test_dict)  # return json file
+    # run model
+    if img is not None:
+        out_preds = str(model(img))
+    else:
+        out_preds = "wrong image path"
+    # return json file
+    return jsonify(out_preds)
 
 
 if __name__ == '__main__':
