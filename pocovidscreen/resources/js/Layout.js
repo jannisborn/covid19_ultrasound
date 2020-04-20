@@ -3,7 +3,7 @@ import React, {lazy, Suspense, useContext, useEffect, useRef} from 'react';
 import ThemeSwitcher from './components/ThemeSwitcher/ThemeSwitcher'
 import Logo from './components/Logo/Logo'
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import {TweenMax, TimelineLite, Power3} from 'gsap';
+import {Power3, TimelineLite, TweenMax} from 'gsap';
 import {Helmet} from 'react-helmet';
 import Button from './components/Button/Button';
 
@@ -17,8 +17,7 @@ const LoadingMessage = () => `loading...`;
 const Layout = () => {
     const context = useContext(AppContext);
 
-    let themeMode = context.themeMode === 'light' ? 'light' : 'dark';
-    document.documentElement.className = themeMode;
+    document.documentElement.className = context.themeMode === 'light' ? 'light' : 'dark';
 
     let app = useRef(null);
     let headerItems = useRef(null);
