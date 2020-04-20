@@ -25,10 +25,6 @@ Route::name('api.')->namespace('Api')->group(function () {
         });
     });
 
-    Route::get('test', function () {
-       return 'hello';
-    });
-
     // Protected routes
     Route::middleware('auth:api')->group(function () {
         Route::namespace('Auth')->group(function () {

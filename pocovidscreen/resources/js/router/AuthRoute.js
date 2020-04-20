@@ -21,15 +21,9 @@ function AuthRoute ({ component: Component, title, ...rest }) {
 
         return authenticated
           ? (
-            <div className="flex flex-col min-h-screen">
-              <AuthNav />
-              <div className="flex flex-1">
-                <Component {...props} />
-              </div>
-              <Footer />
-            </div>
+            <Component {...props} />
           )
-          : <Redirect to={{ pathname: '/login', state: { from: props.location } }} />;
+          : <Redirect to={{ pathname: '/sign-in', state: { from: props.location } }} />;
       }
       }
     />
