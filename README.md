@@ -8,7 +8,7 @@
 
 
 ## Learn more about the project
-[![IMAGE ALT TEXT](pocovidnet/plots/pitch.jpg)](https://www.youtube.com/watch?v=UY34-d_yHwo& "POCUS 4 COVID19")
+[![IMAGE ALT TEXT](pocovidnet/plots/pitch.png)](https://www.youtube.com/watch?v=UY34-d_yHwo& "POCUS 4 COVID19")
 
 
 ## Here is the current performance of our model (POCUS-splitted data):

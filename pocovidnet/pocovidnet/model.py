@@ -6,14 +6,18 @@ from tensorflow.keras.layers import (
 from tensorflow.keras.models import Model
 
 
-def get_model(shape=(224, 224, 3), hidden_size=64):
+def get_model(
+    input_size: tuple = (224, 224, 3),
+    hidden_size: int = 64,
+    dropout: float = 0.5,
+    num_classes: int = 3
+):
 
     # load the VGG16 network, ensuring the head FC layer sets are left off
     baseModel = VGG16(
         weights="imagenet",
         include_top=False,
-        input_tensor=Input(shape=shape)
-
+        input_tensor=Input(shape=input_size)
     )
     # construct the head of the model that will be placed on top of the
     # the base model
@@ -23,8 +27,8 @@ def get_model(shape=(224, 224, 3), hidden_size=64):
     headModel = Dense(hidden_size)(headModel)
     headModel = BatchNormalization()(headModel)
     headModel = ReLU()(headModel)
-    headModel = Dropout(0.5)(headModel)
-    headModel = Dense(3, activation="softmax")(headModel)
+    headModel = Dropout(dropout)(headModel)
+    headModel = Dense(num_classes, activation="softmax")(headModel)
 
     # place the head FC model on top of the base model
     model = Model(inputs=baseModel.input, outputs=headModel)

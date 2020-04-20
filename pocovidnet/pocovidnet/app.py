@@ -3,10 +3,12 @@ import cv2
 import os
 from pocovidnet.evaluate_covid19 import Evaluator
 
-UPLOAD_FOLDER = "/Users/ninawiedemann/Desktop/Projects/covid19_pocus_ultrasound.nosync/data/pocus/cleaned_data_images"
+UPLOAD_FOLDER = os.path.join(
+    os.path.expanduser('~'), 'codevscovid', 'covid_detector',
+    'covid19_pocus_ultrasound', 'data', 'pocus', 'cleaned_data_images'
+)
 
 model = Evaluator(ensemble=False)
-
 app = Flask(__name__)
 
 
@@ -35,9 +37,3 @@ def query_directions():
 if __name__ == '__main__':
 
     app.run(debug=True)
-
-# model_json = model.to_json()
-# with open("model.json", "w") as json_file:
-#     json_file.write(model_json)
-# # serialize weights to HDF5
-# model.save_weights("model.h5")

@@ -6,9 +6,7 @@ import os
 import cv2
 import numpy as np
 
-from pocovidnet.utils import CLASS_MAPPINGS
 from pocovidnet.model import get_model
-
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 NUM_FOLDS = 5
 
@@ -38,7 +36,7 @@ class Evaluator(object):
                 ) for fold in range(NUM_FOLDS)
             ]
 
-        self.class_mappings = CLASS_MAPPINGS
+        self.class_mappings = ['covid', 'pneunomia', 'regular']
         self.models = [get_model() for _ in range(len(self.weights_paths))]
 
         # restore weights
