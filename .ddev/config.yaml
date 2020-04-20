@@ -12,6 +12,7 @@ additional_fqdns: []
 nfs_mount_enabled: false
 provider: default
 use_dns_when_possible: true
+webimage_extra_packages: [python3.6, python3-pip]
 timezone: ""
 
 
