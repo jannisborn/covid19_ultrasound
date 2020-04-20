@@ -1,7 +1,7 @@
 APIVersion: v1.13.1
 name: covidscreen
 type: php
-docroot: backend/public
+docroot: pocovidscreen/public
 php_version: "7.3"
 webserver_type: nginx-fpm
 router_http_port: "80"
