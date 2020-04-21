@@ -1,3 +1,22 @@
+.slider {
+    position: relative;
+
+    .controls {
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        transform: translateY(-50%);
+    }
+
+    .left {
+        transform: translateX(-100%);
+    }
+
+    .right {
+        transform: translateX(100%);
+    }
+}
+
 .slider-cards {
   display: flex;
   flex-wrap: nowrap;

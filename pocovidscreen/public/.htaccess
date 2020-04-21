@@ -1141,8 +1141,12 @@ FileETag None
 # https://wiki.apache.org/httpd/RewriteHTTPToHTTPS
 
 <IfModule mod_rewrite.c>
+   RewriteEngine On
    RewriteCond %{HTTPS} !=on
-   RewriteCond %{HTTP_HOST} ^www\.pocovidscreen\.org [NC]
+   RewriteCond %{HTTP_HOST} (.*)\.pocovidscreen\.org$
+   RewriteCond %{HTTP_HOST} pocovidscreen\.org$
+   RewriteCond %{HTTP_HOST} ^pocovidscreen\.org [NC]
+   RewriteCond %{HTTP_HOST} ^(.*)\.pocovidscreen\.org$
    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 </IfModule>
 
@@ -1161,17 +1165,8 @@ FileETag None
 #
 # (!) NEVER USE BOTH WWW-RELATED RULES AT THE SAME TIME!
 
-# (1) The rule assumes by default that both HTTP and HTTPS
-#     environments are available for redirection.
-#     If your SSL certificate could not handle one of the domains
-#     used during redirection, you should turn the condition on.
-#
-#     https://github.com/h5bp/server-configs-apache/issues/52
-
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    # (1)
-    RewriteCond %{HTTPS} !=on
     RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
     RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L]
 </IfModule>
