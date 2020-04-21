@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 from sklearn.metrics import classification_report, confusion_matrix
-from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
 from tensorflow.keras.applications import VGG16
 from sklearn.metrics import balanced_accuracy_score
@@ -22,7 +21,6 @@ from tensorflow.keras.callbacks import Callback
 from tensorflow.keras.callbacks import (
     EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
 )
-import tensorflow.keras.backend as K
 import tensorflow as tf
 
 from imutils import paths
@@ -60,7 +58,7 @@ tf.get_logger().setLevel('ERROR')
 # initialize the initial learning rate, number of epochs to train for,
 # and batch size
 INIT_LR = 1e-4
-EPOCHS = 20
+EPOCHS = 25
 BS = 16
 TRAINABLE_BASE_LAYERS = 2
 IMG_WIDTH = 224
@@ -140,7 +138,7 @@ trainY = train_labels
 testX = test_data
 testY = test_labels
 print('train:', trainX.shape, len(trainY), 'test:', testX.shape, len(testY))
-weights = {'covid': 0.3, 'pneumonia': 0.3, 'regular': 0.3}
+weights = {'covid': 0.3, 'pneumonia': 0.3, 'regular': 1}
 class_weights = {i: weights[c] for i, c in enumerate(lb.classes_)}
 
 print('Class mappings:', lb.classes_)
@@ -198,10 +196,11 @@ earlyStopping = EarlyStopping(
     mode='min',
     restore_best_weights=True
 )
+
 mcp_save = ModelCheckpoint(
-    f'fold_{str(split)}',
+    'fold_' + str(split) + '_epoch_{epoch:02d}',
     save_best_only=True,
-    monitor='val_balanced',
+    monitor='val_accuracy',
     mode='max',
     verbose=1
 )
@@ -263,7 +262,8 @@ H = model.fit_generator(
     validation_data=(testX, testY),
     validation_steps=len(testX) // BS,
     epochs=EPOCHS,
-    callbacks=[earlyStopping, mcp_save, reduce_lr_loss, metrics]
+    callbacks=[earlyStopping, mcp_save, reduce_lr_loss, metrics],
+    class_weight=class_weights
 )
 
 # make predictions on the testing set
