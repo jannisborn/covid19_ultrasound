@@ -1,11 +1,12 @@
 import React from 'react';
+import Layout from '../Layout';
 
 const Train = () => {
     document.title = 'PocovidScreen - Train the AI';
     return (
-        <div className="page-train">
+        <Layout>
             <div className="container">Hello train</div>
-        </div>
+        </Layout>
     );
 };
 

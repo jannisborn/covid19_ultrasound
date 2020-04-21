@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import TextSimple from './TextSimple';
-import {useFadeInOnScroll} from '../Animation/Utils';
+import {useFadeInOnScroll} from '../../utils/animation';
 
 const Text = (props) => {
 

@@ -4,7 +4,7 @@ import oms from './images/oms.svg'
 import hug from './images/hug.svg'
 import google from './images/google.svg'
 import epfl from './images/epfl.svg'
-import {useFadeInOnScroll} from '../Animation/Utils';
+import {useFadeInOnScroll} from '../../utils/animation';
 
 const PartnerList = () => {
 

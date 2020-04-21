@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import {useFadeInOnScroll} from '../Animation/Utils';
+import {useFadeInOnScroll} from '../../utils/animation';
 import StatisticNumber from './StatisticNumber';
 
 const StatisticNumberList = (props) => {

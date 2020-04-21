@@ -23,6 +23,13 @@
     --border-radius-base: #{$border-radius-base};
 }
 
+::selection {
+    background: $primary;
+}
+::-moz-selection {
+    background: $primary;
+}
+
 .light {
     --primary-light: #{$primary-light};
     --main-bg-color: #{$white};

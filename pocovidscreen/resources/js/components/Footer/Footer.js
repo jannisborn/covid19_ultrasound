@@ -8,7 +8,8 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-md-6 col-lg-5">
                         <h2 className="mb-1">PocovidScreen</h2>
-                        <p>POCUS, X-Ray and CT's image analysis through AI to screen COVID-19 and pneumonia or healthy people.</p>
+                        <p>POCUS, X-Ray and CT's image analysis through AI to screen COVID-19 and pneumonia or healthy
+                            people.</p>
                     </div>
                     <div className="col-md-6 col-lg-5 offset-lg-2">
                         <div className="row">
@@ -34,7 +35,9 @@ const Footer = () => {
                 <div className="container">
                     <div className="row justify-content-between">
                         <div className="col">© Copyright {(new Date().getFullYear())}</div>
-                        <div className="col text-right">A <a href="https://www.codevscovid19.org/" target="_blank" title="Visit the official event page">#CodeVsCovid19</a> project</div>
+                        <div className="col text-right">A <a href="https://www.codevscovid19.org/" target="_blank"
+                                                             title="Visit the official event page">#CodeVsCovid19</a> project
+                        </div>
                     </div>
                 </div>
             </div>

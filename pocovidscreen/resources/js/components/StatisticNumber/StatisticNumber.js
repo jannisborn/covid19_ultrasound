@@ -2,6 +2,7 @@ import React from 'react';
 import {useIntl} from 'react-intl';
 
 const StatisticNumber = (props) => {
+
     const intl = useIntl();
     const numberFormat = (value) =>
         new Intl.NumberFormat(intl.locale, {

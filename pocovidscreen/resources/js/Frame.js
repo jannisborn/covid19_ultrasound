@@ -6,6 +6,8 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {Power3, TimelineLite, TweenMax} from 'gsap';
 import {Helmet} from 'react-helmet';
 import Button from './components/Button/Button';
+import GuestRoute from './router/GuestRoute';
+import AuthRoute from './router/AuthRoute';
 
 const Home = lazy(() => import('./pages/Home/Home'));
 const Train = lazy(() => import('./pages/Train/Train'));
@@ -14,7 +16,7 @@ const SignIn = lazy(() => import('./pages/Auth/SignIn'));
 const SignUp = lazy(() => import('./pages/Auth/SignUp'));
 const LoadingMessage = () => `loading...`;
 
-const Layout = () => {
+const Frame = () => {
     const context = useContext(AppContext);
 
     document.documentElement.className = context.themeMode === 'light' ? 'light' : 'dark';
@@ -42,9 +44,9 @@ const Layout = () => {
     return (
         <div className="app" ref={el => app = el}>
             <Helmet>
-                <meta charSet="utf-8" />
+                <meta charSet="utf-8"/>
                 <title>PocovidScreen</title>
-                <link rel="canonical" href="http://mysite.com/example" />
+                <link rel="canonical" href="http://mysite.com/example"/>
             </Helmet>
             <header className="app-header py-4 container">
                 <div className="row justify-content-between" ref={el => headerItems = el}>
@@ -61,21 +63,21 @@ const Layout = () => {
                 </div>
             </header>
             <BrowserRouter>
-                <main className="app-main">
-                    <Switch>
-                        <Suspense fallback={<LoadingMessage />}>
-                            <Route exact path="/" component={() => <Home timeline={addChild}/>}/>
-                            <Route exact path="/train" component={() => <Train timeline={addChild}/>}/>
-                            <Route exact path="/screen" component={() => <Screen timeline={addChild}/>}/>
-                            <Route exact path="/sign-in" component={() => <SignIn timeline={addChild}/>}/>
-                            <Route exact path="/sign-up" component={() => <SignUp timeline={addChild}/>}/>
-                        </Suspense>
-                        <Route render={() => <h2>404 Page Not Found</h2>} />
-                    </Switch>
-                </main>
+                <Switch>
+                    <Suspense fallback={<LoadingMessage/>}>
+                        <GuestRoute exact path="/" component={() => <Home/>}/>
+                        <AuthRoute exact path="/train" alertMessage="You need to sign in before to train."
+                                   component={() => <Train/>}/>
+                        <AuthRoute exact path="/screen" alertMessage="You need to sign in before to screen."
+                                   component={() => <Screen/>}/>
+                        <GuestRoute exact path="/sign-in" component={() => <SignIn/>}/>
+                        <GuestRoute exact path="/sign-up" component={() => <SignUp/>}/>
+                    </Suspense>
+                    <Route render={() => <h2>404 Page Not Found</h2>}/>
+                </Switch>
             </BrowserRouter>
         </div>
     )
 };
 
-export default Layout;
+export default Frame;

@@ -1,42 +1,30 @@
 import React from 'react';
-import { Route, Redirect } from 'react-router-dom';
-import { setIntendedUrl } from '../utils/auth';
-import PropTypes from 'prop-types';
-import { useAuth } from '../context/auth';
-import AuthNav from '../components/auth-nav';
-import Footer from '../components/footer';
-import useDocumentTitle from '../components/document-title';
+import {Route, Redirect} from 'react-router-dom';
+import {setIntendedUrl} from '../utils/auth';
+import {useAuth} from '../context/AuthContext';
 
-function AuthRoute ({ component: Component, title, ...rest }) {
-  useDocumentTitle(title);
-  let {authenticated} = useAuth();
+function AuthRoute({component: Component, title, alertMessage, ...rest}) {
 
-  return (
-    <Route
-      {...rest}
-      render={props => {
-        if (!authenticated) {
-          setIntendedUrl(props.location.pathname);
-        }
+    let {authenticated} = useAuth();
 
-        return authenticated
-          ? (
-            <Component {...props} />
-          )
-          : <Redirect to={{ pathname: '/sign-in', state: { from: props.location } }} />;
-      }
-      }
-    />
-  );
-};
+    return (
+        <Route
+            {...rest}
+            render={props => {
+                if (!authenticated) {
+                    setIntendedUrl(props.location.pathname);
+                }
 
-AuthRoute.displayName = 'Auth Route';
-
-AuthRoute.propTypes = {
-  component: PropTypes.func.isRequired,
-  rest: PropTypes.object,
-  location: PropTypes.object,
-  title: PropTypes.string
+                return authenticated
+                    ? (
+                        <Component {...props} />
+                    )
+                    :
+                    <Redirect to={{pathname: '/sign-in', state: {from: props.location, alertMessage: alertMessage}}}/>;
+            }
+            }
+        />
+    );
 };
 
 export default AuthRoute;

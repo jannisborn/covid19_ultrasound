@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 import covid from '../../assets/images/covid19.png'
 import TextSimple from './TextSimple';
-import {useFadeInOnScroll} from '../Animation/Utils';
+import {useFadeInOnScroll} from '../../utils/animation';
 
 const TextImage = (props) => {
 

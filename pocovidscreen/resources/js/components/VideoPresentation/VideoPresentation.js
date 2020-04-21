@@ -15,8 +15,11 @@ const VideoPresentation = (props) => {
                 <div className="row">
                     <div className="col-10 offset-1">
                         <div className="presentation-video-thumbnail o0 animated-video">
-                            <img src={`https://img.youtube.com/vi/${props.videoId}/maxresdefault.jpg`} alt="Video thumbnail" className="img-fluid animated-image"/>
-                            <a title="Watch our presentation video" href={`https://www.youtube.com/watch?v=${props.videoId}`} className="presentation-video-play d-block" target="_blank" rel="noopener noreferrer">
+                            <img src={`https://img.youtube.com/vi/${props.videoId}/maxresdefault.jpg`}
+                                 alt="Video thumbnail" className="img-fluid animated-image"/>
+                            <a title="Watch our presentation video"
+                               href={`https://www.youtube.com/watch?v=${props.videoId}`}
+                               className="presentation-video-play d-block" target="_blank" rel="noopener noreferrer">
                                 <span>&gt;</span>
                             </a>
                         </div>
@@ -37,7 +40,7 @@ function useAnimate(ref, animated, setAnimated) {
 
     const animate = (wrapper, title, video, image) => {
 
-        if (animated ==='initial') {
+        if (animated === 'initial') {
             let tl = new TimelineLite();
             tl.fromTo(wrapper, 1.67,
                 {opacity: 0, y: 800, ease: 'power4.out'},

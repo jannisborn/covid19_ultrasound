@@ -1,11 +1,15 @@
 import React from 'react';
+import {useLocation} from 'react-router-dom';
+import Layout from '../Layout';
 
 const SignIn = () => {
-    document.title = 'PocovidScreen - Screen';
+
+    const location = useLocation();
+
     return (
-        <div className="page-train">
-            <div className="container">Hello sign in</div>
-        </div>
+        <Layout>
+            <div className="container">Hello sign in {location.state.alertMessage}</div>
+        </Layout>
     );
 };
 

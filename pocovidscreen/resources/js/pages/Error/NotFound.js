@@ -1,13 +1,12 @@
 import React from 'react';
 import Layout from '../Layout';
 
-const SignUp = () => {
-
+const NotFound = () => {
     return (
         <Layout>
-            <div className="container">Hello sign up</div>
+            <div className="container">Not found</div>
         </Layout>
     );
 };
 
-export default SignUp;
+export default NotFound;
