@@ -28,6 +28,7 @@
     --main-bg-color: #{$white};
     --main-color: #{$dark-gray};
     --black: #111;
+    --blackblack: #000;
     --white: #fff;
     --main-color-light: #{$light-dark};
     --footer-bg: #{$light-white};
@@ -40,6 +41,7 @@
     --main-bg-color: #{$dark};
     --main-color: #{$opac-white};
     --black: #fff;
+    --blackblack: #fff;
     --white: #111;
     --main-color-light: #{$light-white};
     --footer-bg: #{$light-dark};
@@ -83,11 +85,10 @@ p {
 }
 
 .app-header {
-    color: var(--black);
     font-size: .9rem;
 
-    .button {
-        color: var(--black);
+    .button:not(.primary) {
+        color: var(--blackblack);
     }
 }
 

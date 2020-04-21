@@ -14,7 +14,7 @@ NUM_FOLDS = 5
 #%%
 class Evaluator(object):
 
-    def __init__(self, ensemble=True):
+    def __init__(self, ensemble=True, split=None):
         """
         Constructor of COVID model evaluator class.
         
@@ -22,18 +22,26 @@ class Evaluator(object):
             ensemble {str} -- Whether the model ensemble is used.
         """
         self.root = os.path.join('/', *DIR_PATH.split('/')[:-1])
+        self.split = split
+        self.ensemble = ensemble
 
-        if not ensemble:
-            self.weights_paths = [
-                os.path.join(self.root, 'trained_models', 'pocus' + '.model')
-            ]
-        else:
-            # Stores 5 weight paths
+        if ensemble:
+            # retores 5 weight paths
             self.weights_paths = [
                 os.path.join(
                     self.root, 'trained_models', 'fold_' + str(fold),
                     "variables", "variables"
                 ) for fold in range(NUM_FOLDS)
+            ]
+        else:
+            if split is None or split < 0 or split > 4:
+                raise ValueError(f'Provide split between 0 and 4, not {split}')
+            fold = split
+            self.weights_paths = [
+                os.path.join(
+                    self.root, 'trained_models', 'fold_' + str(fold),
+                    "variables", "variables"
+                )
             ]
 
         self.class_mappings = ['covid', 'pneunomia', 'regular']
