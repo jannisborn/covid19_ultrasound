@@ -8,7 +8,7 @@ const SignIn = () => {
 
     return (
         <Layout>
-            <div className="container">Hello sign in {location.state.alertMessage}</div>
+            <div className="container">Hello sign in</div>
         </Layout>
     );
 };
