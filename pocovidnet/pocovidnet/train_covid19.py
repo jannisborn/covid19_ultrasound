@@ -9,6 +9,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
 from tensorflow.keras.applications import VGG16
+from sklearn.metrics import balanced_accuracy_score
 from tensorflow.keras.layers import (
     AveragePooling2D, Dense, Dropout, Flatten, Input
 )
@@ -17,9 +18,11 @@ from tensorflow.keras.models import Model
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.callbacks import Callback
 from tensorflow.keras.callbacks import (
     EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
 )
+import tensorflow.keras.backend as K
 import tensorflow as tf
 
 from imutils import paths
@@ -57,8 +60,8 @@ tf.get_logger().setLevel('ERROR')
 # initialize the initial learning rate, number of epochs to train for,
 # and batch size
 INIT_LR = 1e-4
-EPOCHS = 20
-BS = 8
+EPOCHS = 2
+BS = 32
 TRAINABLE_BASE_LAYERS = 2
 IMG_WIDTH = 224
 IMG_HEIGHT = 224
@@ -166,7 +169,7 @@ if "pocus" in dataset_name:
         "train:", trainX.shape, len(trainY), "test:", testX.shape, len(testY)
     )
     #weights = {'covid': 0.2, 'pneunomia': 0.3, 'regular': 0.5}
-    weights = {'covid': 0.3, 'pneunomia': 0.3, 'regular': 0.3}
+    weights = {'covid': 0.3, 'pneumonia': 0.3, 'regular': 0.3}
     class_weights = {i: weights[c] for i, c in enumerate(lb.classes_)}
 
 else:
@@ -262,7 +265,7 @@ earlyStopping = EarlyStopping(
 mcp_save = ModelCheckpoint(
     f'fold_{str(split)}',
     save_best_only=True,
-    monitor='val_accuracy',
+    monitor='val_balanced',
     mode='max',
     verbose=1
 )
@@ -275,6 +278,35 @@ reduce_lr_loss = ReduceLROnPlateau(
     mode='min'
 )
 
+
+class Metrics(Callback):
+
+    def __init__(self, valid_data):
+        super(Metrics, self).__init__()
+        self.valid_data = valid_data
+        self._data = []
+
+    def on_epoch_end(self, epoch, logs=None):
+        # if epoch:
+        #     for i in range(1):  # len(self.valid_data)):
+        x_test_batch, y_test_batch = self.valid_data
+
+        y_predict = np.asarray(model.predict(x_test_batch))
+
+        y_val = np.argmax(y_test_batch, axis=1)
+        y_predict = np.argmax(y_predict, axis=1)
+        self._data.append(
+            {
+                'val_balanced': balanced_accuracy_score(y_val, y_predict),
+            }
+        )
+        print(self._data[-1])
+        return
+
+    def get_data(self):
+        return self._data
+
+
 # compile our model
 print("[INFO] compiling model...")
 opt = Adam(lr=INIT_LR, decay=INIT_LR / EPOCHS)
@@ -285,6 +317,8 @@ model.compile(
 print(f"Model has {model.count_params()} parameters")
 print(f"Model summary {model.summary()}")
 
+metrics = Metrics((testX, testY))
+
 # train the head of the network
 print("[INFO] training head...")
 H = model.fit_generator(
@@ -293,7 +327,7 @@ H = model.fit_generator(
     validation_data=(testX, testY),
     validation_steps=len(testX) // BS,
     epochs=EPOCHS,
-    callbacks=[earlyStopping, mcp_save, reduce_lr_loss]
+    callbacks=[earlyStopping, mcp_save, reduce_lr_loss, metrics]
 )
 
 # make predictions on the testing set
