@@ -59,7 +59,7 @@ const Slider = () => {
                     <TeamMember fullName="John Doe" job="Data Scientist"/>
                 </div>
             </div>
-            <div className="controls">
+            <div className="controls d-flex justify-content-between">
                 <button className="left" onClick={slideLeft}>left</button>
                 <button className="right" onClick={slideRight}>right</button>
             </div>
