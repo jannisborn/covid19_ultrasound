@@ -1,207 +1,207 @@
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame45.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame51.jpg	pneumonia
-Pneu-grep-pneumonia3	cross_validation_data/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame11.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame6.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame57.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame42.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame0.jpg	pneumonia
-Pneu-grep-pneumonia3	cross_validation_data/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame0.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame54.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame3.jpg	pneumonia
-Pneu-grep-pneumonia3	cross_validation_data/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame99.jpg	pneumonia
-Pneu-grep-pneumonia3	cross_validation_data/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame66.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame33.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame27.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame18.jpg	pneumonia
-pneu-gred-7	cross_validation_data/split3/pneumonia/pneu-gred-7.gif_frame10.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame24.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame30.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame21.jpg	pneumonia
-pneu-gred-7	cross_validation_data/split3/pneumonia/pneu-gred-7.gif_frame15.jpg	pneumonia
-Pneu-grep-pneumonia3	cross_validation_data/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame88.jpg	pneumonia
-Pneu-grep-pneumonia3	cross_validation_data/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame77.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame36.jpg	pneumonia
-pneu-gred-7	cross_validation_data/split3/pneumonia/pneu-gred-7.gif_frame0.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame12.jpg	pneumonia
-Pneu-grep-pneumonia3	cross_validation_data/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame110.jpg	pneumonia
-pneu-gred-7	cross_validation_data/split3/pneumonia/pneu-gred-7.gif_frame30.jpg	pneumonia
-Pneu-grep-pneumonia3	cross_validation_data/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame44.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame39.jpg	pneumonia
-pneu-gred-7	cross_validation_data/split3/pneumonia/pneu-gred-7.gif_frame25.jpg	pneumonia
-pneu-gred-7	cross_validation_data/split3/pneumonia/pneu-gred-7.gif_frame35.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame15.jpg	pneumonia
-Pneu-grep-pneumonia3	cross_validation_data/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame55.jpg	pneumonia
-pneu-gred-7	cross_validation_data/split3/pneumonia/pneu-gred-7.gif_frame20.jpg	pneumonia
-pneu-gred-7	cross_validation_data/split3/pneumonia/pneu-gred-7.gif_frame5.jpg	pneumonia
-pneu-gred-7	cross_validation_data/split3/pneumonia/pneu-gred-7.gif_frame45.jpg	pneumonia
-Pneu-grep-pneumonia3	cross_validation_data/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame33.jpg	pneumonia
-Pneu-grep-pneumonia3	cross_validation_data/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame22.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame9.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame60.jpg	pneumonia
-pneu-everyday	cross_validation_data/split3/pneumonia/pneu-everyday.gif_frame48.jpg	pneumonia
-pneu-gred-7	cross_validation_data/split3/pneumonia/pneu-gred-7.gif_frame40.jpg	pneumonia
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame15.jpg	normal
-Reg-Youtube	cross_validation_data/split3/regular/Reg-Youtube.mp4_frame120.jpg	normal
-Reg-Youtube	cross_validation_data/split3/regular/Reg-Youtube.mp4_frame10.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame12.jpg	normal
-Reg-Youtube	cross_validation_data/split3/regular/Reg-Youtube.mp4_frame130.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame9.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame39.jpg	normal
-Reg-Youtube	cross_validation_data/split3/regular/Reg-Youtube.mp4_frame60.jpg	normal
-Reg-Youtube	cross_validation_data/split3/regular/Reg-Youtube.mp4_frame140.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame48.jpg	normal
-Reg-Youtube	cross_validation_data/split3/regular/Reg-Youtube.mp4_frame150.jpg	normal
-Reg-Youtube	cross_validation_data/split3/regular/Reg-Youtube.mp4_frame70.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame57.jpg	normal
-Reg-Youtube	cross_validation_data/split3/regular/Reg-Youtube.mp4_frame40.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame42.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame54.jpg	normal
-Reg-Youtube	cross_validation_data/split3/regular/Reg-Youtube.mp4_frame160.jpg	normal
-Reg-Youtube	cross_validation_data/split3/regular/Reg-Youtube.mp4_frame80.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame51.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame45.jpg	normal
-Reg-Youtube	cross_validation_data/split3/regular/Reg-Youtube.mp4_frame90.jpg	normal
-Reg-Youtube	cross_validation_data/split3/regular/Reg-Youtube.mp4_frame50.jpg	normal
-Reg-Youtube	cross_validation_data/split3/regular/Reg-Youtube.mp4_frame100.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame21.jpg	normal
-Reg-Youtube	cross_validation_data/split3/regular/Reg-Youtube.mp4_frame20.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame6.jpg	normal
-Reg-Youtube	cross_validation_data/split3/regular/Reg-Youtube.mp4_frame0.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame36.jpg	normal
-Reg-Youtube	cross_validation_data/split3/regular/Reg-Youtube.mp4_frame30.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame3.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame27.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame33.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame0.jpg	normal
-Reg-Youtube	cross_validation_data/split3/regular/Reg-Youtube.mp4_frame110.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame18.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame30.jpg	normal
-Reg-Atlas	cross_validation_data/split3/regular/Reg-Atlas.gif_frame24.jpg	normal
-Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation_data/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame80.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame156.jpg	COVID-19
-Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation_data/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame40.jpg	COVID-19
-Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation_data/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame96.jpg	COVID-19
-Cov-grep-7507	cross_validation_data/split3/covid/Cov-grep-7507.mp4_frame104.jpg	COVID-19
-Cov-grep-7507	cross_validation_data/split3/covid/Cov-grep-7507.mp4_frame32.jpg	COVID-19
-Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation_data/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame56.jpg	COVID-19
-Cov-grep-7507	cross_validation_data/split3/covid/Cov-grep-7507.mp4_frame24.jpg	COVID-19
-Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation_data/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame40.jpg	COVID-19
-Cov-grep-7507	cross_validation_data/split3/covid/Cov-grep-7507.mp4_frame112.jpg	COVID-19
-Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation_data/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame80.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_5	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame16.jpg	COVID-19
-Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation_data/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame56.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame12.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame168.jpg	COVID-19
-Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation_data/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame96.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame150.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame144.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_2	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame16.jpg	COVID-19
-Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation_data/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame24.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_2	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame104.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_2	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame112.jpg	COVID-19
-Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation_data/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame120.jpg	COVID-19
-Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation_data/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame32.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_5	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame120.jpg	COVID-19
-Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation_data/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame8.jpg	COVID-19
-Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation_data/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame120.jpg	COVID-19
-Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation_data/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame8.jpg	COVID-19
-Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation_data/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame0.jpg	COVID-19
-Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation_data/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame40.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_2	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame72.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_5	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame88.jpg	COVID-19
-Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation_data/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame96.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame72.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame66.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame120.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame108.jpg	COVID-19
-Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation_data/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame80.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_5	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame48.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_2	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame64.jpg	COVID-19
-Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation_data/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame56.jpg	COVID-19
-Cov-grep-7507	cross_validation_data/split3/covid/Cov-grep-7507.mp4_frame8.jpg	COVID-19
-Cov-grep-7507	cross_validation_data/split3/covid/Cov-grep-7507.mp4_frame56.jpg	COVID-19
-Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation_data/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame32.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_5	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame64.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_2	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame48.jpg	COVID-19
-Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation_data/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame24.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame48.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame60.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame126.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame132.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_2	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame8.jpg	COVID-19
-Cov-grep-7507	cross_validation_data/split3/covid/Cov-grep-7507.mp4_frame80.jpg	COVID-19
-Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation_data/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame120.jpg	COVID-19
-Cov-grep-7507	cross_validation_data/split3/covid/Cov-grep-7507.mp4_frame96.jpg	COVID-19
-Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation_data/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame32.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_2	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame88.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_5	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame72.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_5	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame8.jpg	COVID-19
-Cov-grep-7507	cross_validation_data/split3/covid/Cov-grep-7507.mp4_frame40.jpg	COVID-19
-Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation_data/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame24.jpg	COVID-19
-Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation_data/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame112.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame114.jpg	COVID-19
-Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation_data/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame16.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_5	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame80.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_5	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame56.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame90.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame84.jpg	COVID-19
-Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation_data/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame48.jpg	COVID-19
-Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation_data/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame8.jpg	COVID-19
-Cov-grep-7507	cross_validation_data/split3/covid/Cov-grep-7507.mp4_frame64.jpg	COVID-19
-Cov-grep-7507	cross_validation_data/split3/covid/Cov-grep-7507.mp4_frame0.jpg	COVID-19
-Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation_data/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame16.jpg	COVID-19
-Cov-grep-7507	cross_validation_data/split3/covid/Cov-grep-7507.mp4_frame72.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_5	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame40.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_5	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame96.jpg	COVID-19
-Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation_data/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame88.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame102.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame78.jpg	COVID-19
-Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation_data/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame104.jpg	COVID-19
-Cov-grep-7507	cross_validation_data/split3/covid/Cov-grep-7507.mp4_frame88.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_2	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame0.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame54.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_2	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame96.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_2	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame40.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame96.jpg	COVID-19
-Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation_data/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame72.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_5	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame0.jpg	COVID-19
-Cov-grep-7507	cross_validation_data/split3/covid/Cov-grep-7507.mp4_frame48.jpg	COVID-19
-Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation_data/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame64.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_2	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame56.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_2	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame80.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame138.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame42.jpg	COVID-19
-Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation_data/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame104.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame6.jpg	COVID-19
-Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation_data/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame16.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_2	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame24.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_5	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame104.jpg	COVID-19
-Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation_data/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame48.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame30.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame24.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame162.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame18.jpg	COVID-19
-Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation_data/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame104.jpg	COVID-19
-Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation_data/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame88.jpg	COVID-19
-Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation_data/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame112.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame174.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_5	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame112.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_2	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame32.jpg	COVID-19
-Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation_data/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame88.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_2	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame120.jpg	COVID-19
-Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation_data/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame48.jpg	COVID-19
-Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation_data/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame112.jpg	COVID-19
-Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation_data/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame64.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame0.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_5	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame32.jpg	COVID-19
-Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation_data/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame72.jpg	COVID-19
-Cov-grepmed-blines-pocus-	cross_validation_data/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame36.jpg	COVID-19
-Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation_data/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame0.jpg	COVID-19
-Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation_data/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame0.jpg	COVID-19
-Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation_data/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame64.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_5	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame128.jpg	COVID-19
-Cov-Butterfly-Consolidation_Example_5	cross_validation_data/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame24.jpg	COVID-19
-Cov-grep-7507	cross_validation_data/split3/covid/Cov-grep-7507.mp4_frame120.jpg	COVID-19
-Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation_data/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame72.jpg	COVID-19
-Cov-grep-7507	cross_validation_data/split3/covid/Cov-grep-7507.mp4_frame16.jpg	COVID-19
-Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation_data/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame128.jpg	COVID-19
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame45.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame51.jpg	pneumonia
+Pneu-grep-pneumonia3	cross_validation/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame11.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame6.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame57.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame42.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame0.jpg	pneumonia
+Pneu-grep-pneumonia3	cross_validation/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame0.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame54.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame3.jpg	pneumonia
+Pneu-grep-pneumonia3	cross_validation/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame99.jpg	pneumonia
+Pneu-grep-pneumonia3	cross_validation/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame66.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame33.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame27.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame18.jpg	pneumonia
+pneu-gred-7	cross_validation/split3/pneumonia/pneu-gred-7.gif_frame10.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame24.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame30.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame21.jpg	pneumonia
+pneu-gred-7	cross_validation/split3/pneumonia/pneu-gred-7.gif_frame15.jpg	pneumonia
+Pneu-grep-pneumonia3	cross_validation/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame88.jpg	pneumonia
+Pneu-grep-pneumonia3	cross_validation/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame77.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame36.jpg	pneumonia
+pneu-gred-7	cross_validation/split3/pneumonia/pneu-gred-7.gif_frame0.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame12.jpg	pneumonia
+Pneu-grep-pneumonia3	cross_validation/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame110.jpg	pneumonia
+pneu-gred-7	cross_validation/split3/pneumonia/pneu-gred-7.gif_frame30.jpg	pneumonia
+Pneu-grep-pneumonia3	cross_validation/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame44.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame39.jpg	pneumonia
+pneu-gred-7	cross_validation/split3/pneumonia/pneu-gred-7.gif_frame25.jpg	pneumonia
+pneu-gred-7	cross_validation/split3/pneumonia/pneu-gred-7.gif_frame35.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame15.jpg	pneumonia
+Pneu-grep-pneumonia3	cross_validation/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame55.jpg	pneumonia
+pneu-gred-7	cross_validation/split3/pneumonia/pneu-gred-7.gif_frame20.jpg	pneumonia
+pneu-gred-7	cross_validation/split3/pneumonia/pneu-gred-7.gif_frame5.jpg	pneumonia
+pneu-gred-7	cross_validation/split3/pneumonia/pneu-gred-7.gif_frame45.jpg	pneumonia
+Pneu-grep-pneumonia3	cross_validation/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame33.jpg	pneumonia
+Pneu-grep-pneumonia3	cross_validation/split3/pneumonia/Pneu-grep-pneumonia3.mp4_frame22.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame9.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame60.jpg	pneumonia
+pneu-everyday	cross_validation/split3/pneumonia/pneu-everyday.gif_frame48.jpg	pneumonia
+pneu-gred-7	cross_validation/split3/pneumonia/pneu-gred-7.gif_frame40.jpg	pneumonia
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame15.jpg	normal
+Reg-Youtube	cross_validation/split3/regular/Reg-Youtube.mp4_frame120.jpg	normal
+Reg-Youtube	cross_validation/split3/regular/Reg-Youtube.mp4_frame10.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame12.jpg	normal
+Reg-Youtube	cross_validation/split3/regular/Reg-Youtube.mp4_frame130.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame9.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame39.jpg	normal
+Reg-Youtube	cross_validation/split3/regular/Reg-Youtube.mp4_frame60.jpg	normal
+Reg-Youtube	cross_validation/split3/regular/Reg-Youtube.mp4_frame140.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame48.jpg	normal
+Reg-Youtube	cross_validation/split3/regular/Reg-Youtube.mp4_frame150.jpg	normal
+Reg-Youtube	cross_validation/split3/regular/Reg-Youtube.mp4_frame70.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame57.jpg	normal
+Reg-Youtube	cross_validation/split3/regular/Reg-Youtube.mp4_frame40.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame42.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame54.jpg	normal
+Reg-Youtube	cross_validation/split3/regular/Reg-Youtube.mp4_frame160.jpg	normal
+Reg-Youtube	cross_validation/split3/regular/Reg-Youtube.mp4_frame80.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame51.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame45.jpg	normal
+Reg-Youtube	cross_validation/split3/regular/Reg-Youtube.mp4_frame90.jpg	normal
+Reg-Youtube	cross_validation/split3/regular/Reg-Youtube.mp4_frame50.jpg	normal
+Reg-Youtube	cross_validation/split3/regular/Reg-Youtube.mp4_frame100.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame21.jpg	normal
+Reg-Youtube	cross_validation/split3/regular/Reg-Youtube.mp4_frame20.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame6.jpg	normal
+Reg-Youtube	cross_validation/split3/regular/Reg-Youtube.mp4_frame0.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame36.jpg	normal
+Reg-Youtube	cross_validation/split3/regular/Reg-Youtube.mp4_frame30.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame3.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame27.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame33.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame0.jpg	normal
+Reg-Youtube	cross_validation/split3/regular/Reg-Youtube.mp4_frame110.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame18.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame30.jpg	normal
+Reg-Atlas	cross_validation/split3/regular/Reg-Atlas.gif_frame24.jpg	normal
+Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame80.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame156.jpg	COVID-19
+Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame40.jpg	COVID-19
+Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame96.jpg	COVID-19
+Cov-grep-7507	cross_validation/split3/covid/Cov-grep-7507.mp4_frame104.jpg	COVID-19
+Cov-grep-7507	cross_validation/split3/covid/Cov-grep-7507.mp4_frame32.jpg	COVID-19
+Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame56.jpg	COVID-19
+Cov-grep-7507	cross_validation/split3/covid/Cov-grep-7507.mp4_frame24.jpg	COVID-19
+Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame40.jpg	COVID-19
+Cov-grep-7507	cross_validation/split3/covid/Cov-grep-7507.mp4_frame112.jpg	COVID-19
+Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame80.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_5	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame16.jpg	COVID-19
+Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame56.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame12.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame168.jpg	COVID-19
+Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame96.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame150.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame144.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_2	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame16.jpg	COVID-19
+Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame24.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_2	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame104.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_2	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame112.jpg	COVID-19
+Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame120.jpg	COVID-19
+Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame32.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_5	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame120.jpg	COVID-19
+Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame8.jpg	COVID-19
+Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame120.jpg	COVID-19
+Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame8.jpg	COVID-19
+Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame0.jpg	COVID-19
+Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame40.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_2	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame72.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_5	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame88.jpg	COVID-19
+Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame96.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame72.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame66.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame120.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame108.jpg	COVID-19
+Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame80.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_5	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame48.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_2	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame64.jpg	COVID-19
+Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame56.jpg	COVID-19
+Cov-grep-7507	cross_validation/split3/covid/Cov-grep-7507.mp4_frame8.jpg	COVID-19
+Cov-grep-7507	cross_validation/split3/covid/Cov-grep-7507.mp4_frame56.jpg	COVID-19
+Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame32.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_5	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame64.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_2	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame48.jpg	COVID-19
+Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame24.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame48.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame60.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame126.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame132.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_2	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame8.jpg	COVID-19
+Cov-grep-7507	cross_validation/split3/covid/Cov-grep-7507.mp4_frame80.jpg	COVID-19
+Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame120.jpg	COVID-19
+Cov-grep-7507	cross_validation/split3/covid/Cov-grep-7507.mp4_frame96.jpg	COVID-19
+Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame32.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_2	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame88.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_5	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame72.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_5	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame8.jpg	COVID-19
+Cov-grep-7507	cross_validation/split3/covid/Cov-grep-7507.mp4_frame40.jpg	COVID-19
+Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame24.jpg	COVID-19
+Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame112.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame114.jpg	COVID-19
+Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame16.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_5	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame80.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_5	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame56.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame90.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame84.jpg	COVID-19
+Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame48.jpg	COVID-19
+Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame8.jpg	COVID-19
+Cov-grep-7507	cross_validation/split3/covid/Cov-grep-7507.mp4_frame64.jpg	COVID-19
+Cov-grep-7507	cross_validation/split3/covid/Cov-grep-7507.mp4_frame0.jpg	COVID-19
+Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame16.jpg	COVID-19
+Cov-grep-7507	cross_validation/split3/covid/Cov-grep-7507.mp4_frame72.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_5	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame40.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_5	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame96.jpg	COVID-19
+Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame88.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame102.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame78.jpg	COVID-19
+Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame104.jpg	COVID-19
+Cov-grep-7507	cross_validation/split3/covid/Cov-grep-7507.mp4_frame88.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_2	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame0.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame54.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_2	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame96.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_2	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame40.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame96.jpg	COVID-19
+Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame72.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_5	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame0.jpg	COVID-19
+Cov-grep-7507	cross_validation/split3/covid/Cov-grep-7507.mp4_frame48.jpg	COVID-19
+Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame64.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_2	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame56.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_2	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame80.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame138.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame42.jpg	COVID-19
+Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame104.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame6.jpg	COVID-19
+Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame16.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_2	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame24.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_5	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame104.jpg	COVID-19
+Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame48.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame30.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame24.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame162.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame18.jpg	COVID-19
+Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame104.jpg	COVID-19
+Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame88.jpg	COVID-19
+Cov-Butterfly-Subpleural_Basal_Consolidation	cross_validation/split3/covid/Cov-Butterfly-Subpleural Basal Consolidation.mp4_frame112.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame174.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_5	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame112.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_2	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame32.jpg	COVID-19
+Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame88.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_2	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 2.mp4_frame120.jpg	COVID-19
+Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame48.jpg	COVID-19
+Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame112.jpg	COVID-19
+Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame64.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame0.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_5	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame32.jpg	COVID-19
+Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame72.jpg	COVID-19
+Cov-grepmed-blines-pocus-	cross_validation/split3/covid/Cov-grepmed-blines-pocus-.mp4_frame36.jpg	COVID-19
+Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame0.jpg	COVID-19
+Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame0.jpg	COVID-19
+Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame64.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_5	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame128.jpg	COVID-19
+Cov-Butterfly-Consolidation_Example_5	cross_validation/split3/covid/Cov-Butterfly-Consolidation_Example 5.mp4_frame24.jpg	COVID-19
+Cov-grep-7507	cross_validation/split3/covid/Cov-grep-7507.mp4_frame120.jpg	COVID-19
+Cov-Butterfly-Patchy_B_lines_with_Sparing	cross_validation/split3/covid/Cov-Butterfly-Patchy B lines with Sparing.mp4_frame72.jpg	COVID-19
+Cov-grep-7507	cross_validation/split3/covid/Cov-grep-7507.mp4_frame16.jpg	COVID-19
+Cov-Butterfly-Irregular_Pleura_and_Coalescent_B-lines	cross_validation/split3/covid/Cov-Butterfly-Irregular Pleura and Coalescent B-lines.mp4_frame128.jpg	COVID-19
