@@ -1,2 +1,2 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{49:function(e,n,a){"use strict";a.r(n);var t=a(0),c=a.n(t);n.default=function(){return document.title="CovidScreen - Screen",c.a.createElement("div",{className:"page-train"},c.a.createElement("div",{className:"container"},"Hello screen"))}}}]);
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{49:function(e,n,a){"use strict";a.r(n);var c=a(0),t=a.n(c);n.default=function(){return document.title="PocovidScreen - Screen",t.a.createElement("div",{className:"page-train"},t.a.createElement("div",{className:"container"},"Hello screen"))}}}]);
 //# sourceMappingURL=4.js.map
