@@ -3,16 +3,17 @@ import cv2
 import os
 from pocovidnet.evaluate_covid19 import Evaluator
 
-UPLOAD_FOLDER = os.path.join(
-    '..', '..', 'data', 'pocus', 'cleaned_data_images'
-)
-
 model = Evaluator(ensemble=True)
+
 app = Flask(__name__)
 
+#set paths to upload folder
+APP_ROOT = os.path.dirname(os.path.abspath(__file__))
+app.config['IMAGE_UPLOADS'] = os.path.join(APP_ROOT, 'static')
 
-@app.route('/predict/', methods=['GET', 'POST'])
-def query_directions():
+
+@app.route('/predict', methods=['POST'])
+def predict():
     """
     Receives a query to compute directions from source to directions (accesses
     GoogleMaps API). Can be called in GET or in POST mode.
@@ -20,13 +21,11 @@ def query_directions():
     In any case, 'source' and 'destination' should be given in URL.
     """
 
-    if request.method == 'GET':
-        # Parse arguments from query
-        filename = str(request.args.get('fn', "None"))
+    image = request.files['file']
+    filename = image.filename
+    file_path = os.path.join(app.config["IMAGE_UPLOADS"], filename)
 
-    # read image
-    img = cv2.imread(os.path.join(UPLOAD_FOLDER, filename))
-    # run model
+    img = cv2.imread(file_path)
     if img is not None:
         out_preds = str(model(img))
     else:
@@ -37,4 +36,4 @@ def query_directions():
 
 if __name__ == '__main__':
 
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=False, threaded=False, port=8000)
