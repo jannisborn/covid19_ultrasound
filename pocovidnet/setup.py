@@ -12,7 +12,7 @@ setup(
     author_email='jannis.born@gmx.de',
     install_requires=[
         'numpy', 'tensorflow', 'scikit-learn', 'matplotlib', 'imutils',
-        'opencv-contrib-python'
+        'opencv-contrib-python', 'flask'
     ],
     packages=find_packages('.'),
     zip_safe=False,
