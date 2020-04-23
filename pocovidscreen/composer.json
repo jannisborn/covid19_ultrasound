@@ -22,15 +22,16 @@
         "tymon/jwt-auth": "^1.0"
     },
     "require-dev": {
-        "facade/ignition": "^2.0",
-        "mockery/mockery": "^1.3.1",
-        "nunomaduro/collision": "^4.1",
-        "phpunit/phpunit": "^8.5",
         "backpack/generators": "^2.0",
+        "barryvdh/laravel-ide-helper": "^2.7",
         "beyondcode/laravel-dump-server": "^1.0",
+        "facade/ignition": "^2.0",
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
-        "laracasts/generators": "^1.1"
+        "laracasts/generators": "^1.1",
+        "mockery/mockery": "^1.3.1",
+        "nunomaduro/collision": "^4.1",
+        "phpunit/phpunit": "^8.5"
     },
     "autoload": {
         "classmap": [
