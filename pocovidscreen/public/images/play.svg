@@ -1,0 +1,17 @@
+<svg width="24px" height="31px" viewBox="0 0 24 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="COVID-19" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="000---home-(-White-)-(-Desktop-)" transform="translate(-712.000000, -3497.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="VIDEO" transform="translate(75.000000, 2942.000000)">
+                <g id="CONTENT" transform="translate(110.000000, 100.000000)">
+                    <g id="VIDEO" transform="translate(0.000000, 170.000000)">
+                        <g id="bouton/play/default" transform="translate(478.000000, 243.000000)">
+                            <g id="icon/play" transform="translate(49.000000, 42.000000)">
+                                <path d="M1.69045862,0 C2.02419739,0 2.35046891,0.0991935444 2.62815635,0.285080235 L23.2470595,14.0875757 C24.0238737,14.6075828 24.2337845,15.6614553 23.7159083,16.4414659 C23.5921078,16.6279307 23.4327602,16.787934 23.2470595,16.9122439 L2.62815635,30.7147394 C1.85134212,31.2347464 0.801788184,31.0239719 0.283912028,30.2439613 C0.0987870675,29.9651313 -2.58662931e-15,29.6375173 0,29.3024053 L0,1.69741431 C-1.09197876e-15,0.759958275 0.756844105,1.88450845e-16 1.69045862,0 Z M4.22614656,6.45523763 L4.22614656,24.5437333 L17.7371371,15.4999098 L4.22614656,6.45523763 Z"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

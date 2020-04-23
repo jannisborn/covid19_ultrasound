@@ -1,6 +1,7 @@
 import React, {useRef, useState} from 'react';
 import {useIntersection} from 'react-use';
 import {TimelineLite} from "gsap";
+import play from './images/play.svg';
 
 const VideoPresentation = (props) => {
 
@@ -20,7 +21,7 @@ const VideoPresentation = (props) => {
                             <a title="Watch our presentation video"
                                href={`https://www.youtube.com/watch?v=${props.videoId}`}
                                className="presentation-video-play d-block" target="_blank" rel="noopener noreferrer">
-                                <span>&gt;</span>
+                                <img className="play" src={play}/>
                             </a>
                         </div>
                     </div>
