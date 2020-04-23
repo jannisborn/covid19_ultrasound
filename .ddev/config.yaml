@@ -13,6 +13,11 @@ nfs_mount_enabled: false
 provider: default
 use_dns_when_possible: true
 timezone: ""
+working_dir:
+   web: /var/www/html/pocovidscreen
+hooks:
+  post-start:
+    - exec: composer install
 
 
 # This config.yaml was created with ddev version v1.13.1
