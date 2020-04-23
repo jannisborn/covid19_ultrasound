@@ -9,10 +9,17 @@ app = Flask(__name__)
 
 #set paths to upload folder
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
-app.config['IMAGE_UPLOADS'] = os.path.join(APP_ROOT, 'static')
+app.config['IMAGE_UPLOADS'] = os.path.join(
+    APP_ROOT, '..', '..', 'data', 'tmp_images'
+)
 
 
-@app.route('/predict', methods=['POST'])
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.split('.')[-1].lower() in ["jpg", "png", "jpeg"]
+
+
+@app.route('/predict', methods=['GET'])
 def predict():
     """
     Receives a query to compute directions from source to directions (accesses
@@ -21,17 +28,27 @@ def predict():
     In any case, 'source' and 'destination' should be given in URL.
     """
 
-    image = request.files['file']
-    filename = image.filename
-    file_path = os.path.join(app.config["IMAGE_UPLOADS"], filename)
-
-    img = cv2.imread(file_path)
-    if img is not None:
-        out_preds = str(model(img))
-    else:
-        out_preds = "wrong image path"
-    # return json file
-    return jsonify(out_preds)
+    # OPTION 1: pass file
+    # image = request.files['file']
+    # filename = image.filename
+    # OPTION 2: pass only the filename as argument
+    filename = str(request.args.get('filename'))
+    if filename is None or filename == "None":
+        return jsonify("Need to pass argument filename to request! (empty)")
+    # A filename arguemnt was passed
+    if allowed_file(filename):
+        # The filename is valid (jpg, jpeg or png)
+        file_path = os.path.join(app.config["IMAGE_UPLOADS"], filename)
+        # read file
+        img = cv2.imread(file_path)
+        # check whether the file path was correct
+        if img is not None:
+            out_preds = str(model(img))
+        else:
+            out_preds = "image cannot be loaded from: " + file_path
+        # return json of outputs
+        return jsonify(out_preds)
+    return jsonify("filename not allowed: " + filename)
 
 
 if __name__ == '__main__':
