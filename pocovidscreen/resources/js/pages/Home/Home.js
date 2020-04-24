@@ -10,6 +10,7 @@ import Slider from '../../components/Slider/Slider';
 import StatisticList from '../../components/StatisticNumber/StatisticList';
 import PartnerList from '../../components/Partner/ParternList';
 import Layout from '../Layout';
+import Teaser from '../../components/Teaser/Teaser';
 
 const Home = () => {
     document.title = 'PocovidScreen - Home';
@@ -31,18 +32,7 @@ const Home = () => {
             <Helmet>
                 <title>PocovidScreen - Home</title>
             </Helmet>
-            <section className="text-center container-fluid">
-                <div className="teaser-wrapper">
-                    <div className="teaser">
-                        <div className="teaser-text col-12 col-lg-8 col-xl-6">
-                            <header>
-                                <h1>PocovidScreen</h1>
-                                <p>POCUS image analysis through AI to screen COVID-19, pneumonia or healthy people</p>
-                            </header>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Teaser teaser="POCUS image analysis through AI to screen COVID-19, pneumonia or healthy people"/>
             <section className="start container">
                 <div className="row">
                     <div

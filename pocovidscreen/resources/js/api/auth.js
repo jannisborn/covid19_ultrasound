@@ -7,7 +7,6 @@ export const login = ({email, password}) => {
         });
 };
 
-// eslint-disable-next-line camelcase
 export const register = ({email, name, password, password_confirmation}) => {
     return client('/api/register', {body: {email, name, password, password_confirmation}}
     ).then(({data: user, meta: {token}}) => {

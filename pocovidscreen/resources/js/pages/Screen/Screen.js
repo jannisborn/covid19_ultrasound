@@ -1,10 +1,13 @@
 import React from 'react';
+import Teaser from '../../components/Teaser/Teaser';
+import Footer from '../../components/Footer/Footer';
 
 const Screen = () => {
     return (
-        <div className="page-train">
-            <div className="container">Hello screen</div>
-        </div>
+        <>
+            <Teaser teaser="Select the images you want to analyses"/>
+            <Footer/>
+        </>
     );
 };
 

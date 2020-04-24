@@ -1,6 +1,8 @@
 import React from 'react';
 import {useLocation} from 'react-router-dom';
 import Layout from '../Layout';
+import {Helmet} from 'react-helmet';
+import Teaser from '../../components/Teaser/Teaser';
 
 const SignIn = () => {
 
@@ -8,7 +10,10 @@ const SignIn = () => {
 
     return (
         <Layout>
-            <div className="container">Hello sign in</div>
+            <Helmet>
+                <title>PocovidScreen - Home</title>
+            </Helmet>
+            <Teaser teaser="Fill in the form to login"/>
         </Layout>
     );
 };

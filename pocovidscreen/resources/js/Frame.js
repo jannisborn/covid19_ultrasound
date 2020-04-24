@@ -68,7 +68,7 @@ const Frame = () => {
                         <GuestRoute exact path="/" component={() => <Home/>}/>
                         <AuthRoute exact path="/train" alertMessage="You need to sign in before to train."
                                    component={() => <Train/>}/>
-                        <AuthRoute exact path="/screen" alertMessage="You need to sign in before to screen."
+                        <GuestRoute exact path="/screen" alertMessage="You need to sign in before to screen."
                                    component={() => <Screen/>}/>
                         <GuestRoute exact path="/sign-in" component={() => <SignIn/>}/>
                         <GuestRoute exact path="/sign-up" component={() => <SignUp/>}/>
