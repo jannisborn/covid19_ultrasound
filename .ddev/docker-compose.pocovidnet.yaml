@@ -7,12 +7,14 @@ services:
     ports:
       - "8000:8000"
     volumes:
-    - ".:/mnt/ddev_config"
-    - "../data/tmp_images:/tmp_images"
+      - ".:/mnt/ddev_config"
+      - "../data/tmp_images:/tmp_images"
     labels:
       com.ddev.site-name: ${DDEV_SITENAME}
       com.ddev.approot: $DDEV_APPROOT
   web:
+    volumes:
+      - "../data/tmp_images:/tmp_images"
     depends_on:
       - pocovidnet
     links:

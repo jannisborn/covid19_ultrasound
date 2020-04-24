@@ -37,8 +37,7 @@ const Home = () => {
                         <div className="teaser-text col-12 col-lg-8 col-xl-6">
                             <header>
                                 <h1>PocovidScreen</h1>
-                                <p>POCUS, X-Ray and CT's image analysis through AI to screen COVID-19 and pneumonia or
-                                    healthy people</p>
+                                <p>POCUS image analysis through AI to screen COVID-19, pneumonia or healthy people</p>
                             </header>
                         </div>
                     </div>
@@ -49,12 +48,12 @@ const Home = () => {
                     <div
                         className="screen col-10 offset-1 col-sm-12 mb-5 mb-md-0 offset-sm-0 col-md-6 col-lg-5 offset-lg-1">
                         <CallToAction action="/screen" title="Screen"
-                                      text="Use our AI to detect COVID-19, pneumonia or healthy patient from POCUS, X-Ray or CT's images."
+                                      text="Use our AI to detect COVID-19, pneumonia or healthy patient from POCUS images."
                                       linkTitle="Start screening" className="primary"/>
                     </div>
                     <div className="train col-10 offset-1 col-sm-12 offset-sm-0 col-md-6 col-lg-5">
                         <CallToAction action="/train" title="Train the AI"
-                                      text="Send us your POCUS, X-Ray and CT's images to train our AI about COVID-19, pneumonia or healthy patient."
+                                      text="Send us your POCUS images to train our AI about COVID-19, pneumonia or healthy patient."
                                       linkTitle="Start training" className="secondary"/>
                     </div>
                 </div>
@@ -78,7 +77,7 @@ const Home = () => {
             </section>
             <section className="container spacer pt-4">
                 <Text title="The team"
-                      text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, veniam, voluptatem? Assumenda at beatae culpa doloremque, id ipsam nesciunt nulla, porro qui quibusdam similique, ut? Incidunt magnam nobis porro veritatis?"/>
+                      text="We are all very proud of our collaboration, mixing a pediatrician, a medical geneticist (with expertise in AI), a deep learning and drug discovery specialist, a medical biophysics and data specialist, an economist data scientist and an actuary data scientist. Everyone brought major contribution to this project and we believe we found something that could actually help COVID-19 detection and therefore improve treatments when given at early stage."/>
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
                         <Slider/>
