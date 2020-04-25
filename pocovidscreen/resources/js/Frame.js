@@ -10,6 +10,7 @@ import GuestRoute from './router/GuestRoute';
 import AuthRoute from './router/AuthRoute';
 import configuration from './utils/constants';
 import ForgotPassword from './pages/Auth/ForgotPassword';
+import Results from './pages/Screen/Results';
 
 const Home = lazy(() => import('./pages/Home/Home'));
 const Train = lazy(() => import('./pages/Train/Train'));
@@ -68,10 +69,9 @@ const Frame = () => {
                     <Suspense fallback={<LoadingMessage/>}>
                         <Route exact path="/" component={() => <Home/>}/>
                         <Route exact path="/forgot-password" component={() => <ForgotPassword/>}/>
-                        <Route exact path="/train" alertMessage="You need to sign in before to train."
-                                   component={() => <Train/>}/>
-                        <Route exact path="/screen" alertMessage="You need to sign in before to screen."
-                                   component={() => <Screen/>}/>
+                        <Route exact path="/train" alertMessage="You need to sign in before to train." component={() => <Train/>}/>
+                        <Route exact path="/screen" alertMessage="You need to sign in before to screen." component={() => <Screen/>}/>
+                        <Route exact path="/screen/results" component={() => <Results/>}/>
                         <Route exact path="/sign-in" component={() => <SignIn/>}/>
                         <Route exact path="/sign-up" component={() => <SignUp/>}/>
                     </Suspense>

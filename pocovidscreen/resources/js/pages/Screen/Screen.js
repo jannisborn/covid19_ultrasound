@@ -1,6 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react';
 import Teaser from '../../components/Teaser/Teaser';
-import Footer from '../../components/Footer/Footer';
 import {Helmet} from 'react-helmet';
 import configuration from '../../utils/constants';
 import {useDropzone} from 'react-dropzone';
@@ -8,10 +7,12 @@ import Layout from '../Layout';
 import download from './images/download.svg';
 import downloadDark from './images/download-dark.svg';
 import {AppContext} from '../../context/AppContext';
+import {useHistory} from 'react-router-dom';
 
-const Screen = () => {
+const Screen = (props) => {
 
     const context = useContext(AppContext);
+    let history = useHistory();
     const isLight = context.themeMode === 'light';
 
     let downloadImage = downloadDark;
@@ -51,27 +52,11 @@ const Screen = () => {
     };
 
     const [files, setFiles] = useState([]);
+    const [results, setResults] = useState([]);
+
     useEffect(() => () => {
         files.forEach(file => URL.revokeObjectURL(file.preview));
     }, [files]);
-
-
-    const screen = (event) => {
-        event.preventDefault();
-        var formData = new FormData();
-        files.map((file) => {
-            formData.append('image', file);
-
-            fetch('/api/screen', {
-                method: 'POST',
-                body: formData
-            }).then((data) => {
-                return data.json();
-            }).then(data => {
-                console.log(data);
-            })
-        })
-    };
 
     const {getRootProps, getInputProps, open} = useDropzone({
         accept: 'image/png, image/jpeg, image/jpg',
@@ -93,6 +78,31 @@ const Screen = () => {
         </div>
     ));
 
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        let formData = new FormData();
+
+        files.map((file) => {
+            formData.append('image', file);
+
+            fetch('/api/screen', {
+                method: 'POST',
+                body: formData
+            }).then((data) => {
+                return data.json();
+            }).then(data => {
+                results.push({image: file, data: data});
+            })
+        });
+
+        history.push({
+            pathname: '/screen/results',
+            state: {results: results}
+        })
+
+    };
+
     return (
         <Layout>
             <Helmet>
@@ -100,7 +110,7 @@ const Screen = () => {
             </Helmet>
             <Teaser additionalClass="small" teaser="Select the images you want to analyses"/>
             <div className="container">
-                <form action="/screen/result" onSubmit={screen}>
+                <form onSubmit={handleSubmit}>
                     <div className="row">
                         <div className="col-lg-10 offset-lg-1">
                             <section className="custom-dropzone text-center">
