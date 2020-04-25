@@ -9,6 +9,8 @@ The library itself has few dependencies (see [setup.py](setup.py)) with loose re
 To run the code, just install the package `pocovidnet` in editable mode:
 
 ```sh
+git clone https://github.com/jannisborn/covid19_pocus_ultrasound.git
+cd covid19_pocus_ultrasound
 pip install -e .
 ```
 
