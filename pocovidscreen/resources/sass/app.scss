@@ -15,6 +15,7 @@
 @import "components/team-member";
 @import "components/theme-switcher";
 @import "components/video-presentation";
+@import "components/dropzone";
 @import "variables";
 
 :root {
@@ -41,6 +42,7 @@
     --footer-bg: #{$light-white};
     --copyright-bg: #{$white};
     --link-color: #{$primary};
+    --light-primary: #{$light-primary}
 }
 
 .dark {
@@ -54,6 +56,7 @@
     --footer-bg: #{$light-dark};
     --copyright-bg: #{$dark};
     --link-color: #{$white};
+    --light-primary: #{$light-dark-primary}
 }
 
 html,

@@ -12,6 +12,7 @@
 |
 */
 
+
 Route::name('api.')->namespace('Api')->group(function () {
     // Unprotected routes
     Route::group(['middleware' => 'guest:api'], function () {
@@ -24,6 +25,8 @@ Route::name('api.')->namespace('Api')->group(function () {
             Route::post('password/reset', 'ResetPasswordController@reset');
         });
     });
+
+    Route::post('screen', 'ScreeningController')->name('screen');
 
     // Protected routes
     Route::middleware('auth:api')->group(function () {

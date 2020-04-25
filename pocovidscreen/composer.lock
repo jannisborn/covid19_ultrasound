@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8de36d4ce0b843badd8f950136da9afc",
+    "content-hash": "402c1d31977217dfb749f36831979ba9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5770,6 +5770,73 @@
                 "schema"
             ],
             "time": "2019-09-25T14:49:45+00:00"
+        },
+        {
+            "name": "lanin/laravel-api-debugger",
+            "version": "3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mlanin/laravel-api-debugger.git",
+                "reference": "2474809b8c2b93389c2ed3fcc3a11ddd108768a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mlanin/laravel-api-debugger/zipball/2474809b8c2b93389c2ed3fcc3a11ddd108768a5",
+                "reference": "2474809b8c2b93389c2ed3fcc3a11ddd108768a5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": ">=5.4.0",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "orchestra/testbench": ">=3.4.0",
+                "phpunit/phpunit": ">=5.7"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Lanin\\Laravel\\ApiDebugger\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Debugger": "Lanin\\Laravel\\ApiDebugger\\Support\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lanin\\Laravel\\ApiDebugger\\": "src/"
+                },
+                "files": [
+                    "src/Support/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxim Lanin",
+                    "email": "max@lanin.me",
+                    "homepage": "http://lanin.me"
+                }
+            ],
+            "description": "Easily debug your JSON API.",
+            "keywords": [
+                "api",
+                "debug",
+                "debugger",
+                "dump",
+                "framework",
+                "json",
+                "laravel",
+                "log",
+                "queries"
+            ],
+            "time": "2019-10-31T08:33:08+00:00"
         },
         {
             "name": "laracasts/generators",

@@ -1,23 +1,23 @@
 .copyright {
-  font-size: .8rem;
+    font-size: .8rem;
 
-  a {
-    color: var(--primary);
-  }
+    a {
+        color: var(--primary);
+    }
 }
 
 .app-footer {
-  .app-footer-links {
-    margin-top: 2.6rem;
-    padding-top: 3.1rem;
-    border-top: 1px solid #C8C8C8;
+    .app-footer-links {
+        margin-top: 2.6rem;
+        padding-top: 3.1rem;
+        border-top: 1px solid #C8C8C8;
 
-    li {
-      padding-bottom: .4rem;
+        li {
+            padding-bottom: .4rem;
+        }
+
+        a {
+            color: var(--main-color);
+        }
     }
-
-      a {
-          color: var(--main-color);
-      }
-  }
 }

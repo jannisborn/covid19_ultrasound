@@ -1,9 +1,7 @@
 import React, {useRef} from 'react';
 import hidora from './images/hidora.png'
-import oms from './images/oms.svg'
-import hug from './images/hug.svg'
 import google from './images/google.svg'
-import epfl from './images/epfl.svg'
+import euvsvirus from './images/euvsvirus.svg'
 import {useFadeInOnScroll} from '../../utils/animation';
 
 const PartnerList = () => {
@@ -16,17 +14,11 @@ const PartnerList = () => {
             <a href="https://hidora.com/" target="_blank" className="partner col fadeIn my-4" title="Visit the website of our fantastic hosting sponsor.">
                 <img src={hidora} alt="Hidora logo"/>
             </a>
-            <a className="partner col fadeIn my-4">
-                <img src={hug} alt=""/>
+            <a href="https://euvsvirus.org/" target="_blank" className="partner col fadeIn my-4">
+                <img src={euvsvirus} alt="The EUvsVirus logo" width="180"/>
             </a>
-            <a className="partner col fadeIn my-4">
-                <img src={oms} alt=""/>
-            </a>
-            <a className="partner col fadeIn my-4">
-                <img src={epfl} alt=""/>
-            </a>
-            <a className="partner col fadeIn my-4">
-                <img src={google} alt=""/>
+            <a href="https://www.google.com/" target="_blank" className="partner col fadeIn my-4">
+                <img src={google} alt="Google logo"/>
             </a>
         </div>
     );

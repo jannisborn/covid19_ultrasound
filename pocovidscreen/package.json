@@ -36,15 +36,16 @@
         "whatwg-fetch": "^3.0.0"
     },
     "dependencies": {
+        "bootstrap": "^4.4.1",
+        "gsap": "^3.2.6",
         "react": "^16.13.0",
         "react-dom": "^16.13.0",
-        "react-router-dom": "^5.1.2",
+        "react-dropzone": "^10.2.2",
         "react-helmet": "^6.0.0",
         "react-intl": "^4.4.0",
         "react-media-hook": "^0.4.6",
+        "react-router-dom": "^5.1.2",
         "react-scripts": "3.4.1",
-        "react-use": "^14.1.1",
-        "bootstrap": "^4.4.1",
-        "gsap": "^3.2.6"
+        "react-use": "^14.1.1"
     }
 }

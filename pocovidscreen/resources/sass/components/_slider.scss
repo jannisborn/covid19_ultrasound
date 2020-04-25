@@ -18,13 +18,13 @@
 }
 
 .slider-cards {
-  display: flex;
-  flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
 
-  > .slide-card {
-    padding-left: 0;
-    padding-right: 2rem;
-    flex: 0 0 auto;
-    opacity: .3;
-  }
+    > .slide-card {
+        padding-left: 0;
+        padding-right: 2rem;
+        flex: 0 0 auto;
+        opacity: .3;
+    }
 }

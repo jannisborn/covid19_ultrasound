@@ -1,4 +1,5 @@
 import React from 'react';
+import configuration from '../../utils/constants';
 
 const Footer = () => {
 
@@ -7,7 +8,7 @@ const Footer = () => {
             <div className="container mb-4">
                 <div className="row">
                     <div className="col-md-6 col-lg-5 mb-5 mb-md-0">
-                        <h2 className="mb-1">PocovidScreen</h2>
+                        <h2 className="mb-1">{configuration.appTitle}</h2>
                         <p>POCUS image analysis through AI to screen COVID-19 and pneumonia or healthy people.</p>
                     </div>
                     <div className="col-md-6 col-lg-5 offset-lg-2">

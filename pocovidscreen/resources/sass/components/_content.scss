@@ -1,22 +1,22 @@
 .text-image {
-  img {
-    border-radius: var(--border-radius-base);
-  }
+    img {
+        border-radius: var(--border-radius-base);
+    }
 }
 
 .text-image,
 .text {
-  h2 {
-    text-transform: uppercase;
-    font-size: 2.2rem;
-  }
+    h2 {
+        text-transform: uppercase;
+        font-size: 2.2rem;
+    }
 
-  header p {
-    font-size: .85rem;
-    text-transform: uppercase;
-  }
+    header p {
+        font-size: .85rem;
+        text-transform: uppercase;
+    }
 }
 
 .fadeIn {
-  opacity: 0;
+    opacity: 0;
 }

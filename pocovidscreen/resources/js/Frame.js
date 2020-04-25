@@ -8,6 +8,7 @@ import {Helmet} from 'react-helmet';
 import Button from './components/Button/Button';
 import GuestRoute from './router/GuestRoute';
 import AuthRoute from './router/AuthRoute';
+import configuration from './utils/constants';
 
 const Home = lazy(() => import('./pages/Home/Home'));
 const Train = lazy(() => import('./pages/Train/Train'));
@@ -45,7 +46,7 @@ const Frame = () => {
         <div className="app" ref={el => app = el}>
             <Helmet>
                 <meta charSet="utf-8"/>
-                <title>PocovidScreen</title>
+                <title>{configuration.appTitle}</title>
                 <link rel="canonical" href="http://mysite.com/example"/>
             </Helmet>
             <header className="app-header py-4 container">

@@ -10,7 +10,7 @@ const Logo = (props) => {
     }
 
     return (
-        <div className={`logo logo-${props.size}`}><img src={src} alt="PocovidScreen logo"/></div>
+        <a href="/" className={`logo logo-${props.size}`}><img src={src} alt="PocovidScreen logo"/></a>
     );
 };
 

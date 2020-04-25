@@ -26,7 +26,7 @@ export const resetPassword = ({token, email, password, password_confirmation}) =
 };
 
 export const logout = () => {
-    return client('/api/logout', {body: {}});
+    return client('/api/logout', {body: {test: 'test'}});
 };
 
 export const getUser = () => {

@@ -1,66 +1,66 @@
 .call-to-action {
-  transform: translateY(-50%);
-  border-radius: var(--border-radius-base);
-  color: #fff;
-  transition: transform .25s ease;
-
-  &:hover,
-  &:focus,
-  &.active {
-    text-decoration: none;
+    transform: translateY(-50%);
+    border-radius: var(--border-radius-base);
     color: #fff;
-    transform: translateY(-52%);
+    transition: transform .25s ease;
 
-    .call-to-action-link::after {
-      animation-name: left-to-right;
-      animation-duration: .5s;
-      animation-fill-mode: forwards;
-      animation-iteration-count: infinite;
+    &:hover,
+    &:focus,
+    &.active {
+        text-decoration: none;
+        color: #fff;
+        transform: translateY(-52%);
+
+        .call-to-action-link::after {
+            animation-name: left-to-right;
+            animation-duration: .5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
     }
-  }
 
-  &.primary {
-    background-color: var(--primary);
-  }
+    &.primary {
+        background-color: var(--primary);
+    }
 
-  &.secondary {
-    background-color: var(--secondary);
-  }
+    &.secondary {
+        background-color: var(--secondary);
+    }
 
-  h2 {
-    color: #fff;
-    font-size: 2.3rem;
-    font-weight: 500;
-    margin-bottom: 25px;
-  }
+    h2 {
+        color: #fff;
+        font-size: 2.3rem;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
 
-  p {
-    font-size: 1rem;
-    font-weight: 200;
-  }
+    p {
+        font-size: 1rem;
+        font-weight: 200;
+    }
 }
 
 .call-to-action-link {
-  font-family: 'Montserrat', sans-serif;
-  position: relative;
-  display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    display: inline-block;
 
-  &::after {
-    content: '>';
-    position: absolute;
-    right: -25px;
-    transition: transform .25s ease;
-  }
+    &::after {
+        content: '>';
+        position: absolute;
+        right: -25px;
+        transition: transform .25s ease;
+    }
 }
 
 @keyframes left-to-right {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }

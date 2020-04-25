@@ -5,12 +5,12 @@ import CallToAction from '../../components/CallToAction/CallToAction';
 import gsap from 'gsap';
 import VideoPresentation from '../../components/VideoPresentation/VideoPresentation';
 import {Helmet} from 'react-helmet';
-import Footer from '../../components/Footer/Footer';
 import Slider from '../../components/Slider/Slider';
 import StatisticList from '../../components/StatisticNumber/StatisticList';
 import PartnerList from '../../components/Partner/ParternList';
 import Layout from '../Layout';
 import Teaser from '../../components/Teaser/Teaser';
+import configuration from '../../utils/constants';
 
 const Home = () => {
     document.title = 'PocovidScreen - Home';
@@ -24,13 +24,12 @@ const Home = () => {
             .from('.teaser-text p', .7, {y: 20, opacity: 0, ease: 'power4.out'}, 1.45)
             .from('.screen', .65, {y: 200, opacity: 0, ease: 'power4.out'}, 1.7)
             .from('.train', .65, {y: 200, opacity: 0, ease: 'power4.out'}, 1.95);
-
     });
 
     return (
         <Layout className="page">
             <Helmet>
-                <title>PocovidScreen - Home</title>
+                <title>Home - {configuration.appTitle}</title>
             </Helmet>
             <Teaser teaser="POCUS image analysis through AI to screen COVID-19, pneumonia or healthy people"/>
             <section className="start container">
