@@ -109,3 +109,49 @@ acc: 0.8061
 sensitivity: 0.5342
 specificity: 0.9692
 ```
+
+## Installation
+
+- Clone the repo
+- Start the containers with ddev (will automatically install composer dependencies)
+- Install NPM dependencies.
+
+```bash
+ddev start
+```
+
+```bash
+cd pocovidscreen 
+npm install
+```
+
+- Copy .env.example to .env
+
+```bash
+cp .env.example .env
+```
+
+- Generate app key
+
+```bash
+ddev exec php artisan key:generate
+```
+
+- Run database migration
+
+```bash
+ddev exec php artisan migrate:fresh
+```
+
+- Generate JWT secret
+
+```bash
+ddev exec php artisan jwt:secret
+```
+
+- Start npm watcher
+```bash
+npm run watch
+```
+
+- Visit https://covidscreen.ddev.site/
