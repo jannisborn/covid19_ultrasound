@@ -1,19 +1,25 @@
 # Automatic Detection of COVID-19 from *Ultrasound* Data
 
-We developed a computer vision approach for the diagnosis of COVID-19 infections from Point-of-care Ultrasound (POCUS) recordings. In addition to the machine learning framework, here we also make our dataset available, complementing the current data collection initiaves that only focus on CT or X-Ray data. The data includes many videos of COVID 19 patients, as well as pneumonia and healthy lungs.
+We develop a computer vision approach for the diagnosis of COVID-19 infections from Point-of-care Ultrasound (POCUS) recordings. In addition to the machine learning framework, we also make a dataset available, complementing the current data collection initiaves that only focus on CT or X-Ray data. The data includes many videos of COVID 19 patients, as well as pneumonia and healthy lungs.
 
 ## Motivation:
 Ultrasound has not gained much attention in the context of COVID-19 so far, in contrast to CT and X-Ray scanning.
 However,  ultrasound data was shown to be highly
-correlated with CT, the gold standard for lung diseases. Instead of CT,
-ultrasound is non-invasive, cheap, portable, repeatable and available even in
-sparsely equipped medical facilities.  At the same time, detecting COVID-19 from
+**correlated with CT**, the gold standard for lung diseases. Instead of CT,
+ultrasound is **non-invasive**, **cheap**, **portable** (bedside execution), **repeatable** and available even in
+all medical facilities.
+At the same time, detecting COVID-19 from
 ultrasound data is challenging and time-consuming, even for trained medical
 doctors. Since the time of doctors is scarce, there is an urgent need to
-simplify, fasten & automatize the detection of COVID-19. This project is a proof of concept, showing that a CNN is able to learn to distinguish between COVID-10, Pneumonia and healthy patients with an accuracy of 89%.
+simplify, fasten & automatize the detection of COVID-19. This project is a proof
+of concept, showing that a CNN is able to learn to distinguish between COVID-10,
+Pneumonia and healthy patients with an **accuracy of 89%** and **sensitivity for
+COVID of 96\%**.
 
-# References:
-   - NIH link
+### Evidence (Why ultrasound)
+   - [NIH launched an initiative to use POCUS for risk stratificaton of COVID-19
+     patients.](https://clinicaltrials.gov/ct2/show/NCT04338100)
+   -   
 
 <p align="center">
 	<img src="pocovidnet/plots/overview.png" alt="photo not available" width="70%" height="70%">
@@ -24,6 +30,7 @@ The lung is normally aerated with horizontal A-lines.</em>
 
 
 ## Contribute!
+- You can donate your lung ultrasound recordings directly on our website: [](https://pocovidscreen.org)
 - Please help us to find more data! Open an
   [issue](https://github.com/jannisborn/covid19_pocus_ultrasound/issues) if you
   identified a promising data source. This could be:
