@@ -61,7 +61,7 @@ const Screen = () => {
         event.preventDefault();
         var formData = new FormData();
         files.map((file) => {
-            formData.append('files', file);
+            formData.append('image', file);
 
             fetch('/api/screen', {
                 method: 'POST',
@@ -86,7 +86,6 @@ const Screen = () => {
         }
     });
 
-
     const thumbs = files.map(file => (
         <div style={thumb} key={file.name}>
             <div style={thumbInner}>
@@ -102,7 +101,7 @@ const Screen = () => {
             </Helmet>
             <Teaser additionalClass="small" teaser="Select the images you want to analyses"/>
             <div className="container">
-                <form onSubmit={screen}>
+                <form action="/screen/result" onSubmit={screen}>
                     <div className="row">
                         <div className="col-lg-10 offset-lg-1">
                             <section className="custom-dropzone text-center">
