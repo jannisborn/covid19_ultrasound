@@ -1,4 +1,7 @@
 
+"""
+POCOVID-Net model.
+"""
 from tensorflow.keras.applications import VGG16
 from tensorflow.keras.layers import (
     AveragePooling2D, Dense, Dropout, Flatten, Input, BatchNormalization, ReLU
