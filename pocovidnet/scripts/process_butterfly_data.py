@@ -1,3 +1,7 @@
+"""
+Script to process the ultrasound videos from Butterfly:
+
+"""
 from pocovidnet.utils_butterfly_data import (
     makedirs, label_to_dir, get_paths, get_processing_info
 )
@@ -25,16 +29,7 @@ if __name__ == "__main__":
         default=30
     )
     args = parser.parse_args()
-    # TODO: specify cleaned_data_images folder
 
-    # # PARAMETER
-    # data_table_path = "../pocovid_data.csv"
-    # data_path = "/Users/ninawiedemann/Desktop/COVID
-    #  Clinical Gallery Butterfly Network/"
-    # # TODO: download into data directory
-    # FRAMERATE = 3 # saves automatically 3 frames per second
-    # MAX_FRAMES = 30
-    # OUT_DIR = "../../data/butterfly/images"
     del_upper = 100
     FRAMERATE = args.fr
     OUT_DIR = args.out
@@ -79,24 +74,24 @@ if __name__ == "__main__":
             # crop
             width_border = int(cap.get(3) * 0.15)
             width_box = int(cap.get(3)) - 2 * width_border
-            frame = frame[del_upper:width_box +
-                          del_upper, width_border:width_box + width_border]
+            frame = frame[del_upper:width_box + del_upper,
+                          width_border:width_box + width_border]
             # frame = frame[width_border:width_box+width_border]
             # detect green point
-            green_point = frame[:,:,1] - frame[:,:,0]
+            green_point = frame[:, :, 1] - frame[:, :, 0]
             # get first frame for green point deletion:
-            if frameId==0:
+            if frameId == 0:
                 frame_start = green_point
             # skip the green moving points
-            if np.any((green_point-frame_start)>100):
+            if np.any((green_point - frame_start) > 100):
                 continue
             # delete blue symbol
-            blue_symbol = np.where(green_point<-50)
-            frame[blue_symbol] = frame[0,0]
+            blue_symbol = np.where(green_point < -50)
+            frame[blue_symbol] = frame[0, 0]
             # delete green symbol
-            if np.any(green_point>220):
-                green_symbol = np.where(green_point>50)
-                frame[green_symbol] = frame[0,0]
+            if np.any(green_point > 220):
+                green_symbol = np.where(green_point > 50)
+                frame[green_symbol] = frame[0, 0]
 
             # SAVE
             if (frameId % every_x_image == 0):
