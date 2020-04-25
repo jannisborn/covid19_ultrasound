@@ -73,10 +73,6 @@ classes. For COVID-19, we achieve a sensitivity of 96%.
 Detailed performances:
 ![alt text](https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/result_table.png "Result table")
 
-Class specific ROC curves:
-![alt text](https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/roc_curve.png "ROC AUCs")
-
-
 # Contact 
 - If you experience problems with the code, please open an
 [issue](https://github.com/jannisborn/covid19_pocus_ultrasound/issues).
