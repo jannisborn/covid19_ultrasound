@@ -31,7 +31,7 @@ const Home = () => {
             <Helmet>
                 <title>Home - {configuration.appTitle}</title>
             </Helmet>
-            <Teaser teaser="POCUS image analysis through AI to screen COVID-19, pneumonia or healthy people"/>
+            <Teaser teaser="Ultrasound image analysis (POCUS) through AI for early screening of COVID-19 and pneumonia"/>
             <section className="start container">
                 <div className="row">
                     <div
@@ -49,7 +49,7 @@ const Home = () => {
             </section>
             <section className="container spacer">
                 <Text title="Our partners"
-                      text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, veniam, voluptatem? Assumenda at beatae culpa doloremque, id ipsam nesciunt nulla, porro qui quibusdam similique, ut? Incidunt magnam nobis porro veritatis?"/>
+                      text="We would like to address a special to all of our sponsors and partners. They are helping us with hosting, data collection, promotion and so on. Without them we would never have achieved what we did."/>
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
                         <PartnerList/>
@@ -58,7 +58,7 @@ const Home = () => {
             </section>
             <section className="container spacer">
                 <Text title="Statistics"
-                      text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, veniam, voluptatem? Assumenda at beatae culpa doloremque, id ipsam nesciunt nulla, porro qui quibusdam similique, ut? Incidunt magnam nobis porro veritatis?"/>
+                      text="Here are some statistics about our infrastructure. You can find the number of COVID-19 cases detected by the AI, the size of our dataset used to train the AI and the number of organizations that are working with us."/>
                 <StatisticList/>
             </section>
             <section className="container spacer pb-3">
@@ -66,7 +66,7 @@ const Home = () => {
             </section>
             <section className="container spacer pt-4">
                 <Text title="The team"
-                      text="We are all very proud of our collaboration, mixing a pediatrician, a medical geneticist (with expertise in AI), a deep learning and drug discovery specialist, a medical biophysics and data specialist, an economist data scientist and an actuary data scientist. Everyone brought major contribution to this project and we believe we found something that could actually help COVID-19 detection and therefore improve treatments when given at early stage."/>
+                      text="We are all very proud of our collaboration, mixing a pediatrician, a medical geneticist, a deep learning and drug discovery specialist, a medical biophysics and data specialist, an economist data scientist and an actuary data scientist. Everyone brought major contribution to this project and we believe we found something that could actually help COVID-19 detection and therefore improve treatments when given at early stage."/>
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
                         <Slider/>
@@ -76,7 +76,7 @@ const Home = () => {
             <section className="container spacer">
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
-                        <TextImage orientation="textLeft" title="Your title" subtitle="Subtitle"
+                        <TextImage orientation="textLeft" title="Early screening" subtitle="The impact"
                                    text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, veniam, voluptatem? Assumenda at beatae culpa doloremque."/>
                     </div>
                 </div>
@@ -84,8 +84,8 @@ const Home = () => {
             <section className="container spacer">
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
-                        <TextImage title="Your title" subtitle="Subtitle"
-                                   text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, veniam, voluptatem? Assumenda at beatae culpa doloremque."/>
+                        <TextImage title="Why POCUS?" subtitle="Focusing"
+                                   text="We focused on POCUS images, because ultrasound imaging is an easy, cost-effective and non-invasive method. It is available in almost any medical facility. Our model can identify with a 93% recall and 96% precision COVID-19 cases."/>
                     </div>
                 </div>
             </section>

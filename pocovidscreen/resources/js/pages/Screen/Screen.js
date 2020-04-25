@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import Teaser from '../../components/Teaser/Teaser';
 import Footer from '../../components/Footer/Footer';
 import {Helmet} from 'react-helmet';
@@ -6,9 +6,20 @@ import configuration from '../../utils/constants';
 import {useDropzone} from 'react-dropzone';
 import Layout from '../Layout';
 import download from './images/download.svg';
+import downloadDark from './images/download-dark.svg';
 import client from '../../api/client';
+import {AppContext} from '../../context/AppContext';
 
 const Screen = () => {
+
+    const context = useContext(AppContext);
+    const isLight = context.themeMode === 'light';
+
+    let downloadImage = downloadDark;
+    if (isLight) {
+        downloadImage = download;
+    }
+
     const thumbsContainer = {
         display: 'flex',
         flexDirection: 'row',
@@ -95,7 +106,7 @@ const Screen = () => {
                     <div className="row">
                         <div className="col-lg-10 offset-lg-1">
                             <section className="custom-dropzone text-center">
-                                <img src={download} className="mt-3 mb-2"/>
+                                <img src={downloadImage} className="mt-3 mb-2"/>
                                 <div {...getRootProps({className: 'dropzone'})}>
                                     <input {...getInputProps()}/>
                                     <button type="button" className="button primary round my-4 px-5" onClick={open}>

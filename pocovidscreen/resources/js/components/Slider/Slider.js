@@ -44,19 +44,25 @@ const Slider = () => {
         <div className="slider" ref={sliderWrapRef}>
             <div className="slider-cards" ref={el => sliderRef = el}>
                 <div className="slide-card col-6 col-md-4 fadeIn">
-                    <TeamMember fullName="John Doe" job="Data Scientist"/>
+                    <TeamMember fullName="Manuel Cossio" job="Medical genetician"/>
                 </div>
                 <div className="slide-card col-6 col-md-4 fadeIn">
-                    <TeamMember fullName="John Doe" job="Data Scientist"/>
+                    <TeamMember fullName="Jannis Born" job=" Deep learning expert"/>
                 </div>
                 <div className="slide-card col-6 col-md-4 fadeIn">
-                    <TeamMember fullName="John Doe" job="Data Scientist"/>
+                    <TeamMember fullName="Marion Disdier" job="Data scientist"/>
                 </div>
                 <div className="slide-card col-6 col-md-4 fadeIn">
-                    <TeamMember fullName="John Doe" job="Data Scientist"/>
+                    <TeamMember fullName="Dr. Gabriel Brändle" job="Medical doctor"/>
                 </div>
                 <div className="slide-card col-6 col-md-4 fadeIn">
-                    <TeamMember fullName="John Doe" job="Data Scientist"/>
+                    <TeamMember fullName="Julie Goulet" job="Theoretical biophysicist & data scientist"/>
+                </div>
+                <div className="slide-card col-6 col-md-4 fadeIn">
+                    <TeamMember fullName="Jérémie Roulin" job="Software engineer"/>
+                </div>
+                <div className="slide-card col-6 col-md-4 fadeIn">
+                    <TeamMember fullName="Nina Wiedemann" job="Neuroscientist & data scientist"/>
                 </div>
             </div>
             <div className="controls d-flex justify-content-between">
