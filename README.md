@@ -1,4 +1,4 @@
-# COVID Ultrasound data collection initiative
+# Automatic Detection of COVID-19 from *Ultrasound* Data
 
 ## Motivation:
 Here, we gather ultrasound data from human lungs, especially from COVID 19
@@ -23,27 +23,36 @@ The lung is normally aerated with horizontal A-lines.</em>
 
 
 ## Contribute!
-- Please help finding publications with ultrasound images/videos, in particular from
-  *healthy* lungs (at the moment we have *more* data for COVID than for healthy
+- Please help us to find more data! Open an
+  [issue](https://github.com/jannisborn/covid19_pocus_ultrasound/issues) if you
+  identified a promising data source. This could be:
+   - Publications with ultrasound images/videos
+   - Images/Videos that are available via Creative Commens license (e.g. CC
+     BY-NC-SA) in the web or on YouTube.
+   - Possible sources are:
+      - https://radiopaedia.org/
+   
+- *Note*: We are mostly looking for *healthy* lung recordings (at the moment we have *more* data for COVID than for healthy
   lungs)
-   - Open issues in this repository and paste links to publications (please
+- Open issues in this repository and paste links to publications (please
      check [here TODO]() before whether the data is already in the dataset)
-   - 
+
 
 ## Learn more about the project
 
 - [arXiv Paper (Coming)](https://devpost.com/software/automatic-detection-of-covid-19-from-pocus-ultrasound-data)
-- [Web Interface (POCOVIDScreen)](https://pocovidscreen.org)
+- Web Interface([https://pocovidscreen.org)](https://pocovidscreen.org))
 - [DevPost](https://devpost.com/software/automatic-detection-of-covid-19-from-pocus-ultrasound-data)   
-- Watch this video (2min pitch):
+- Watch this [video](https://www.youtube.com/watch?v=UY34-d_yHwo&) (2min pitch):
 [![IMAGE ALT TEXT](pocovidnet/plots/pitch.png)](https://www.youtube.com/watch?v=UY34-d_yHwo& "POCUS 4 COVID19")
 
 
 
 ## Installation and Training
 
-Find all details on how to get started in [pocovidnet](pocovidnet/README.md)
-To run the code, just install the package `pocovidnet` in editable mode:
+Find all details on how to get started in the [pocovidnet](pocovidnet/README.md)
+folder.
+To run the code, just clone the repo and install the package `pocovidnet` in editable mode:
 
 ```sh
 git clone https://github.com/jannisborn/covid19_pocus_ultrasound.git
