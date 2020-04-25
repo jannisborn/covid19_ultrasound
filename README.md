@@ -1,15 +1,16 @@
 # Automatic Detection of COVID-19 from *Ultrasound* Data
 
+We developed a computer vision approach for the diagnosis of COVID-19 infections from Point-of-care Ultrasound (POCUS) recordings. In addition to the machine learning framework, here we also make our dataset available, complementing the current data collection initiaves that only focus on CT or X-Ray data. The data includes many videos of COVID 19 patients, as well as pneumonia and healthy lungs.
+
 ## Motivation:
-Here, we gather ultrasound data from human lungs, especially from COVID 19
-patients. We want to complement the current data collection initiaves that
-instead focus on CT or X-Ray data. Ultrasound data was shown to be highly
+Ultrasound has not gained much attention in the context of COVID-19 so far, in contrast to CT and X-Ray scanning.
+However,  ultrasound data was shown to be highly
 correlated with CT, the gold standard for lung diseases. Instead of CT,
 ultrasound is non-invasive, cheap, portable, repeatable and available even in
 sparsely equipped medical facilities.  At the same time, detecting COVID-19 from
 ultrasound data is challenging and time-consuming, even for trained medical
 doctors. Since the time of doctors is scarce, there is an urgent need to
-simplify, fasten & automatize the detection of COVID-19.
+simplify, fasten & automatize the detection of COVID-19. This project is a proof of concept, showing that a CNN is able to learn to distinguish between COVID-10, Pneumonia and healthy patients with an accuracy of 89%.
 
 # References:
    - NIH link
