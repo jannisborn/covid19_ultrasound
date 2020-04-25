@@ -27,6 +27,26 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | The pocovidnet storage
+    |--------------------------------------------------------------------------
+    |
+    | The name of the pocovidnet storage (must ends with a slash).
+    |
+    */
+    'pocovidnet_storage' => env('POCOVIDNET_STORAGE', '/data/'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | The storage for the screenings
+    |--------------------------------------------------------------------------
+    |
+    | The storage for the screenings.
+    |
+    */
+    'screening_storage_folder' => env('SCREENING_STORAGE_FOLDER', 'screening'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Environment
     |--------------------------------------------------------------------------
     |

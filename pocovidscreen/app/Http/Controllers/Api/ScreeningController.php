@@ -17,8 +17,8 @@ class ScreeningController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $filePath = $request->file('files')->store('tmp_images');
-        $screeningResult = Http::get(config('app.pocovidnet') . '/predict?filename=/' . $filePath);
+        $filePath = $request->file('files')->store(config('app.screening_storage_folder'));
+        $screeningResult = Http::get(config('app.pocovidnet') . '/predict?filename=' . config('app.pocovidnet_storage') . $filePath);
 
         $screening = new Screening();
         $screening->user_id = 1;
