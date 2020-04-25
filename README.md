@@ -3,7 +3,7 @@
 #### Here, we gather ultrasound data from human lungs, especially from COVID 19 patients. Detecting COVID-19 from POCUS is challenging and time-consuming, even for trained medical doctors. Since the time of doctors is scarce, there is an urgent need to simplify, fasten & automatize the detection of COVID-19, especially non-invasively.  
 
 <p align="center">
-	<img src="pocovidnet/plots/overview_atlas.pdf" alt="photo not available" width="70%" height="70%">
+	<img src="pocovidnet/plots/overview_atlas.png" alt="photo not available" width="70%" height="70%">
 	<br>
    <em>Example lung ultrasound images. (A): A typical COVID-19 infected lung, showing small subpleural consolidation and pleural irregularities. (B): A pneumonia infected lung, with dynamic air bronchograms surrounded by alveolar consolidation. (C) Healthy lung. 
 The lung is normally aerated with horizontal A-lines.</em>
@@ -24,7 +24,7 @@ The lung is normally aerated with horizontal A-lines.</em>
 - [Web Interface (POCOVIDScreen)](https://pocovidscreen.org)
 - [DevPost](https://devpost.com/software/automatic-detection-of-covid-19-from-pocus-ultrasound-data)   
 - Watch this video (2min pitch):
-[![IMAGE ALT TEXT](pocovidnet/plots/pitch.png =400x400)](https://www.youtube.com/watch?v=UY34-d_yHwo& "POCUS 4 COVID19")
+[![IMAGE ALT TEXT](pocovidnet/plots/pitch.png)](https://www.youtube.com/watch?v=UY34-d_yHwo& "POCUS 4 COVID19")
 
 
 ## Here is the current performance of our model (POCUS-splitted data):
