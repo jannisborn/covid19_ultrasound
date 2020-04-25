@@ -11,7 +11,6 @@ DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 NUM_FOLDS = 5
 
 
-#%%
 class Evaluator(object):
 
     def __init__(self, ensemble=True, split=None):
