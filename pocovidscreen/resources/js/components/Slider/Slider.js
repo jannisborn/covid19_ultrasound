@@ -53,7 +53,7 @@ const Slider = () => {
                     <TeamMember fullName="Marion Disdier" job="Data scientist"/>
                 </div>
                 <div className="slide-card col-6 col-md-4 fadeIn">
-                    <TeamMember fullName="Dr. Gabriel Brändle" job="Medical doctor"/>
+                    <TeamMember fullName="Gabriel Brändle" job="Medical doctor"/>
                 </div>
                 <div className="slide-card col-6 col-md-4 fadeIn">
                     <TeamMember fullName="Julie Goulet" job="Theoretical biophysicist & data scientist"/>

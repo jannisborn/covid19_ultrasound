@@ -3,6 +3,7 @@
 @import "~bootstrap/scss/bootstrap-grid";
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/images";
+@import "components/auth";
 @import "components/home";
 @import "components/button";
 @import "components/call-to-action";
@@ -42,7 +43,8 @@
     --footer-bg: #{$light-white};
     --copyright-bg: #{$white};
     --link-color: #{$primary};
-    --light-primary: #{$light-primary}
+    --light-primary: #{$light-primary};
+    --input-bg: #{$white};
 }
 
 .dark {
@@ -56,7 +58,8 @@
     --footer-bg: #{$light-dark};
     --copyright-bg: #{$dark};
     --link-color: #{$white};
-    --light-primary: #{$light-dark-primary}
+    --light-primary: #{$light-dark-primary};
+    --input-bg: #{$input-bg-dark};
 }
 
 html,

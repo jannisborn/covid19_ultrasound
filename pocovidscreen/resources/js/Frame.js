@@ -9,6 +9,7 @@ import Button from './components/Button/Button';
 import GuestRoute from './router/GuestRoute';
 import AuthRoute from './router/AuthRoute';
 import configuration from './utils/constants';
+import ForgotPassword from './pages/Auth/ForgotPassword';
 
 const Home = lazy(() => import('./pages/Home/Home'));
 const Train = lazy(() => import('./pages/Train/Train'));
@@ -35,7 +36,6 @@ const Frame = () => {
 
             localStorage.setItem('animated-once', 'true');
         }
-
     })
 
     const addChild = (child, position) => {
@@ -66,13 +66,14 @@ const Frame = () => {
             <BrowserRouter>
                 <Switch>
                     <Suspense fallback={<LoadingMessage/>}>
-                        <GuestRoute exact path="/" component={() => <Home/>}/>
-                        <AuthRoute exact path="/train" alertMessage="You need to sign in before to train."
+                        <Route exact path="/" component={() => <Home/>}/>
+                        <Route exact path="/forgot-password" component={() => <ForgotPassword/>}/>
+                        <Route exact path="/train" alertMessage="You need to sign in before to train."
                                    component={() => <Train/>}/>
-                        <GuestRoute exact path="/screen" alertMessage="You need to sign in before to screen."
+                        <Route exact path="/screen" alertMessage="You need to sign in before to screen."
                                    component={() => <Screen/>}/>
-                        <GuestRoute exact path="/sign-in" component={() => <SignIn/>}/>
-                        <GuestRoute exact path="/sign-up" component={() => <SignUp/>}/>
+                        <Route exact path="/sign-in" component={() => <SignIn/>}/>
+                        <Route exact path="/sign-up" component={() => <SignUp/>}/>
                     </Suspense>
                     <Route render={() => <h2>404 Page Not Found</h2>}/>
                 </Switch>

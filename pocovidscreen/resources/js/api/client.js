@@ -30,7 +30,7 @@ function Client(endpoint, {method, body, ...customConfig} = {}) {
     if (body instanceof FormData) {
         config.body = body;
     } else if (body) {
-        JSON.stringify(body);
+        config.body = JSON.stringify(body);
     }
 
     if (method === 'GET') {

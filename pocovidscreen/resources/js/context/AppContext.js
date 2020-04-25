@@ -3,7 +3,7 @@ import {useMediaPredicate} from "react-media-hook";
 
 const AppContext = createContext();
 
-const AppProvider = props => {
+const AppProvider = ({children}) => {
     const preferredTheme = useMediaPredicate('(prefers-color-scheme: dark)') ? 'dark' : 'light';
     const [appData, setApp] = useState({
         themeMode: localStorage.getItem('theme-mode') || preferredTheme,
@@ -16,7 +16,7 @@ const AppProvider = props => {
         localStorage.setItem('theme-mode', appData.themeMode)
     }, [appData.themeMode])
 
-    return <AppContext.Provider value={appData}>{props.children}</AppContext.Provider>;
+    return <AppContext.Provider value={appData}>{children}</AppContext.Provider>;
 };
 
 export {AppContext, AppProvider};
