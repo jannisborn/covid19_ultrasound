@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Route, Redirect} from 'react-router-dom';
 import {setIntendedUrl} from '../utils/auth';
-import {useAuth} from '../context/AuthContext';
+import {AuthContext, AuthProvider, useAuth} from '../context/AuthContext';
 
 function AuthRoute({component: Component, title, alertMessage, ...rest}) {
 
-    let {authenticated} = useAuth();
+    let {authenticated} = useContext(AuthContext);
 
     return (
         <Route

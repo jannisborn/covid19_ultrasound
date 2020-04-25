@@ -7,7 +7,6 @@ import {useDropzone} from 'react-dropzone';
 import Layout from '../Layout';
 import download from './images/download.svg';
 import downloadDark from './images/download-dark.svg';
-import client from '../../api/client';
 import {AppContext} from '../../context/AppContext';
 
 const Screen = () => {

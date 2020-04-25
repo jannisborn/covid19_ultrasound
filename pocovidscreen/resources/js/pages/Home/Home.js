@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useContext, useEffect} from 'react';
 import Text from '../../components/Content/Text';
 import TextImage from '../../components/Content/TextImage';
 import CallToAction from '../../components/CallToAction/CallToAction';
@@ -13,7 +13,6 @@ import Teaser from '../../components/Teaser/Teaser';
 import configuration from '../../utils/constants';
 
 const Home = () => {
-    document.title = 'PocovidScreen - Home';
 
     let tl = gsap.timeline();
     useEffect(() => {

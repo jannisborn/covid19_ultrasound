@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Route, Redirect} from 'react-router-dom';
-import {useAuth} from '../context/AuthContext';
+import {AuthContext, useAuth} from '../context/AuthContext';
 
 function GuestRoute({component: Component, title, ...rest}) {
 
-    let {authenticated} = useAuth();
+    let {authenticated} = useContext(AuthContext);
 
     return (
         <Route

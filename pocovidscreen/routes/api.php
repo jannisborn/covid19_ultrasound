@@ -26,13 +26,19 @@ Route::name('api.')->namespace('Api')->group(function () {
         });
     });
 
-    Route::post('screen', 'ScreeningController')->name('screen');
+    Route::post('screen', 'ScreeningController@screen')->name('screen');
+    Route::post('screen/count', 'ScreeningController@count');
+    Route::get('screen/count-covid', 'ScreeningController@countCovid');
 
     // Protected routes
     Route::middleware('auth:api')->group(function () {
         Route::namespace('Auth')->group(function () {
             Route::get('me', 'MeController@me')->name('me');
             Route::post('logout', 'LogoutController@logout')->name('logout');
+
+            // API private routes
+            Route::post('train', 'TrainingController@train');
+            Route::get('train/count', 'TrainingController@count');
         });
     });
 });
