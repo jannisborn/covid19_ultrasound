@@ -37,13 +37,14 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | The storage for the screenings
+    | The storage for the screenings and trainings
     |--------------------------------------------------------------------------
     |
-    | The storage for the screenings.
+    | The storage for the screenings and trainings.
     |
     */
     'screening_storage_folder' => env('SCREENING_STORAGE_FOLDER', 'screening'),
+    'training_storage_folder' => env('TRAINING_STORAGE_FOLDER', 'training'),
 
     /*
     |--------------------------------------------------------------------------

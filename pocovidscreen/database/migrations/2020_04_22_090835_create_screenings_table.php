@@ -16,11 +16,13 @@ class CreateScreeningsTable extends Migration
         Schema::create('screenings', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->integer('user_id')->unsigned();
+            $table->integer('user_id')->unsigned()->nullable();
             $table->foreign('user_id')->references('id')->on('users');
             $table->json('result');
             $table->integer('type_id')->unsigned();
             $table->foreign('type_id')->references('id')->on('image_types');
+            $table->integer('file_id')->unsigned();
+            $table->foreign('file_id')->references('id')->on('files');
         });
     }
 

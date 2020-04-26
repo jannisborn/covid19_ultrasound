@@ -20,15 +20,15 @@ class ScreeningController extends Controller
         $filePath = $request->file('image')->store(config('app.screening_storage_folder'));
         $screeningResult = Http::get(config('app.pocovidnet') . '/predict?filename=' . config('app.pocovidnet_storage') . $filePath);
 
-        $screening = new Screening();
-        $screening->user_id = 1;
-        $screening->result = $screeningResult;
-        $screening->type_id = 3;
-        $screening->save();
-
         $file = new File();
         $file->path = $filePath;
-        $file->fileable()->associate($screening)->save();
+        $file->save();
+
+        $screening = new Screening();
+        $screening->result = $screeningResult;
+        $screening->type_id = 3;
+        $screening->file_id = $file->id;
+        $screening->save();
 
         return response()->json($screening);
     }

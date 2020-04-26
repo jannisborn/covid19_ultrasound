@@ -30,7 +30,7 @@ const Results = (props) => {
         <Layout>
             <div className="container spacer">
                 <Text title="Results"
-                      text="We highly recommend to follow approved clinical guidelines for the diagnosis and management of COVID19. By any means you should base your clinical decision solely on the result of this algorithm."/>
+                      text="We highly recommend to follow approved clinical guidelines for the diagnosis and management of COVID19. By no means you should base your clinical decision solely on the result of this algorithm."/>
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
                         <div className="placeholders" style={{minHeight: location.state.files.length * 400}}>

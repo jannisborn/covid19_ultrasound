@@ -194,7 +194,7 @@ return [
     */
 
     // Fully qualified namespace of the User model
-    'user_model_fqn' => App\User::class,
+    'user_model_fqn' => App\BackendUser::class,
 
     // The classes for the middleware to check if the visitor is an admin
     // Can be a single class or an array of clases
@@ -256,7 +256,7 @@ return [
     // of your project and it's used throughout all Backpack packages.
     //
     // You can rename this disk here. Default: root
-    'root_disk_name' => 'root',
+    'root_disk_name' => 'local',
 
     /*
     |--------------------------------------------------------------------------

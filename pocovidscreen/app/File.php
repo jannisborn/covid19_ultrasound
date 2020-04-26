@@ -27,14 +27,5 @@ use Illuminate\Database\Eloquent\Model;
  */
 class File extends Model
 {
-
-    protected $fillable = ['path', 'fileable_type', 'fileable_id'];
-
-    /**
-     * Get the owning fileable model.
-     */
-    public function fileable()
-    {
-        return $this->morphTo();
-    }
+    protected $fillable = ['path'];
 }

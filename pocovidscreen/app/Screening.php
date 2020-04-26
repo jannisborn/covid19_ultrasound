@@ -13,6 +13,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $user_id
  * @property string $result
  * @property int $type_id
+ * @property int file_id
  * @mixin \Eloquent
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Screening newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Screening newQuery()
@@ -25,24 +26,15 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\App\Screening whereUserId($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\File[] $images
  * @property-read int|null $images_count
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Screening whereFileId($value)
  */
 class Screening extends Model
 {
     protected $table = 'screenings';
-
-    protected $fillable = ['user_id', 'result', 'type_id'];
-
-    /**
-     * Get all images related to the screen
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\MorphToMany
-     */
-    public function images()
-    {
-        return $this->morphToMany('App\File', 'fileable');
-    }
+    protected $fillable = ['user_id', 'result', 'type_id', 'file_id'];
 
     /**
+     * @param $value
      * @return mixed
      */
     public function getResultAttribute($value) {
