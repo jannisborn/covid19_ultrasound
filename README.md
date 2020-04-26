@@ -12,8 +12,13 @@ as pneumonia and healthy lungs.
 
 
 ## Motivation:
-Ultrasound has not gained much attention in the context of COVID-19 so far, in contrast to CT and X-Ray scanning.
-However,  ultrasound data was shown to be highly
+From the machine learning community, ultrasound has not gained much attention in the context of COVID-19 so far, in contrast to CT and X-Ray scanning.
+Many voices from the medical community, however, have advocated for a more prominent role of ultrasound in the current pandemic.
+#### Why imaging?
+Biomedical imaging has the potential to complement conventional diagnostic procedures for COVID (such as RT-PCR or immuno assays). It can provide a fast assessment and guide downstream diagnostic tests, in particular in triage situations. In the current pandemic, prognostic predictions were already shown to help saving the scarce time of doctors by reducting the time spent to make the right decision [(Shan et. al., 2020)](https://arxiv.org/abs/2003.04655).
+Two studies reported that CT imaging can detect COVID-19 at higher sensitivity rate compared to RT-PCR (98% vs 71%, [Fang et. al., 2020](https://pubs.rsna.org/doi/full/10.1148/radiol.2020200432) and 88% vs. 59% [Ai et. al., 2020](https://pubs.rsna.org/doi/full/10.1148/radiol.2020200642)).
+#### Why ultrasound?
+However, ultrasound data was shown to be highly
 [**correlated with CT**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7165267/), the gold standard for lung diseases. Instead of CT,
 ultrasound is **non-invasive**, **cheap**, **portable** (bedside execution),
 **repeatable** and **available in almost all medical facilities**. But even for
@@ -25,14 +30,14 @@ This project is a **proof of concept**, showing that a CNN is able to learn to d
 Pneumonia and healthy patients with an **accuracy of 89%** and **sensitivity for
 COVID of 96\%**.
 
-### Evidence (Why ultrasound)
+### Evidence for ultrasound
    - Peer-reviewed publications from the medical community suggesting to use more **ultrasound
      for COVID-19**:
       - ["COVID-19 outbreak: less stethoscope, more ultrasound" in *The Lancet
         respiratory medicine* (IF:
         22)](https://www.thelancet.com/journals/lanres/article/PIIS2213-2600(20)30120-X/fulltext?fbclid=IwAR2kDbxpYTSjoj3Nl_B-nOhLZL66mQLUBVBCdzn6zEG5ObLKq9oXhPZDXHQ)
       - [[Smith et. al., 2020] in *Anaesthesia*](https://onlinelibrary.wiley.com/doi/abs/10.1111/anae.15082)
-      - [[Sofia et. al., 2020]*Journal of
+      - [[Sofia et. al., 2020] *Journal of
         Ultrasound*](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7159975/)
       - [[Soldati et. al., 2020] in *Journal of ultrasound in medicine*](https://onlinelibrary.wiley.com/doi/full/10.1002/jum.15284)
    - Ultrasound can evidence the same symptoms as CT: ([Point-by-point correspondance of CT
