@@ -5,16 +5,11 @@ assembled from publicly available resources in the web as well as from publicati
 
 
 ## Contribute!
-- Donate your lung ultrasound recordings directly on our website:
-  [https://pocovidscreen.org](https://pocovidscreen.org)
-    - *Note:* We will manually process the data (crop it, remove artifacts etc.)
-      and get it approved from medical doctors before it will be added to the
-      dataset.
-
+- You can donate your lung ultrasound recordings directly on our website: [](https://pocovidscreen.org)
 - Please help us to find more data! Open an
   [issue](https://github.com/jannisborn/covid19_pocus_ultrasound/issues) if you
-  identified a promising data source. Please check before [here](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) whether the
-  data is already included. Useful contributions could include:
+  identified a promising data source. Please check [here](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) whether the data is
+  already included. Useful contributions are:
    - Publications with ultrasound images/videos
    - Images/Videos that are available via Creative Commens license (e.g. CC
      BY-NC-SA) in the web or on YouTube.
@@ -22,13 +17,8 @@ assembled from publicly available resources in the web as well as from publicati
       - https://thepocusatlas.com
       - https://radiopaedia.org/
       - https://grepmed.com 
-
-   
-- *Note*: We are mostly looking for *healthy* lung recordings (at the moment we have *more* data for COVID than for healthy
+- We are mostly looking for *healthy* lung recordings (at the moment we have *more* data for COVID than for healthy
   lungs)
-- Open issues in this repository and paste links to publications (please
-     check [here TODO]() before whether the data is already in the dataset)
-
 
 
 ## Collect Data from Butterfly
@@ -54,3 +44,11 @@ the experiments from the paper, please first complete the following steps:
     before (see the [pocovidnet](../pocovidnet/) README how to do that).
     
 All current images should now be in `data/pocus_images`.
+
+
+## License Note:
+Most data here is available under [Creative Commons
+License](https://creativecommons.org/licenses/by-nc/4.0/).
+The following modifcations to videos/images were done:
+- Cropped to the center to remove measuring bars, text etc.
+- Removal of artifcats on the sample (few cases only)
