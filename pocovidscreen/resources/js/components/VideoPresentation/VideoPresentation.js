@@ -1,6 +1,7 @@
 import React, {useRef, useState} from 'react';
 import {useIntersection} from 'react-use';
 import {TimelineLite} from "gsap";
+import videoImage from '../../assets/images/video.png';
 import play from './images/play.svg';
 
 const VideoPresentation = (props) => {
@@ -16,7 +17,7 @@ const VideoPresentation = (props) => {
                 <div className="row">
                     <div className="col-10 offset-1">
                         <div className="presentation-video-thumbnail o0 animated-video">
-                            <img src={`https://img.youtube.com/vi/${props.videoId}/maxresdefault.jpg`}
+                            <img src={videoImage}
                                  alt="Video thumbnail" className="img-fluid animated-image"/>
                             <a title="Watch our presentation video"
                                href={`https://www.youtube.com/watch?v=${props.videoId}`}

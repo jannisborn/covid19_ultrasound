@@ -1,8 +1,25 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useContext, useEffect, useRef} from 'react';
 import TeamMember from '../TeamMember/TeamMember';
 import {TweenLite, Power3} from 'gsap';
+import chevronRightLight from './chevron-right.svg';
+import chevronLeftLight from './chevron-left.svg';
+import chevronRightDark from './chevron-right-dark.svg';
+import chevronLeftDark from './chevron-left-dark.svg';
+import {AppContext} from '../../context/AppContext';
+import downloadDark from '../../pages/Screen/images/download-dark.svg';
+import download from '../../pages/Screen/images/download.svg';
 
 const Slider = () => {
+
+    const context = useContext(AppContext);
+    const isLight = context.themeMode === 'light';
+
+    let chevronLeft = chevronLeftDark;
+    let chevronRight = chevronRightDark;
+    if (isLight) {
+        chevronLeft = chevronLeftLight;
+        chevronRight = chevronRightLight;
+    }
 
     const sliderWrapRef = useRef(null);
     let sliderRef = useRef(null);
@@ -66,8 +83,8 @@ const Slider = () => {
                 </div>
             </div>
             <div className="controls d-flex justify-content-between">
-                <button className="left" onClick={slideLeft}>left</button>
-                <button className="right" onClick={slideRight}>right</button>
+                <button className="left" onClick={slideLeft}><img src={chevronRight}/></button>
+                <button className="right" onClick={slideRight}><img src={chevronLeft}/></button>
             </div>
         </div>
     );

@@ -3,6 +3,8 @@ import Text from '../../components/Content/Text';
 import TextImage from '../../components/Content/TextImage';
 import CallToAction from '../../components/CallToAction/CallToAction';
 import gsap from 'gsap';
+import covid from '../../assets/images/covid19.png'
+import pocus from '../../assets/images/pocus.jpg'
 import VideoPresentation from '../../components/VideoPresentation/VideoPresentation';
 import {Helmet} from 'react-helmet';
 import Slider from '../../components/Slider/Slider';
@@ -75,7 +77,7 @@ const Home = () => {
             <section className="container spacer">
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
-                        <TextImage orientation="textLeft" title="Early screening" subtitle="The impact"
+                        <TextImage orientation="textLeft" title="Early screening" subtitle="The impact" image={covid}
                                    text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, veniam, voluptatem? Assumenda at beatae culpa doloremque."/>
                     </div>
                 </div>
@@ -83,7 +85,7 @@ const Home = () => {
             <section className="container spacer">
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
-                        <TextImage title="Why POCUS?" subtitle="Focusing"
+                        <TextImage title="Why POCUS?" subtitle="Focusing" image={pocus}
                                    text="We focused on POCUS images, because ultrasound imaging is an easy, cost-effective and non-invasive method. It is available in almost any medical facility. Our model can identify with a 93% recall and 96% precision COVID-19 cases."/>
                     </div>
                 </div>

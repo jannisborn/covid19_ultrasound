@@ -6,6 +6,11 @@
         width: 100%;
         top: 40%;
         transform: translateY(-50%);
+        opacity: .88;
+
+        button {
+            outline: none;
+        }
     }
 
     .left {
