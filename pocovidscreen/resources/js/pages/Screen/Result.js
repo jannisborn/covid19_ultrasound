@@ -6,7 +6,7 @@ const Result = ({image, data}) => {
     let colorClass = '';
 
     image.preview = URL.createObjectURL(image);
-    const res = JSON.parse(data.result)
+    const res = JSON.parse(data.result);
     const maxValueIndex = res.indexOf(Math.max(...res));
     const probability = Math.round(res[maxValueIndex] * 100);
 

@@ -3,12 +3,12 @@ import Layout from '../Layout';
 import Text from '../../components/Content/Text';
 import {useLocation} from 'react-router-dom';
 import Result from './Result';
-import StatisticList from '../../components/StatisticNumber/StatisticList';
 
 const Results = (props) => {
 
     const location = useLocation();
     const [results, setResults] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         let formData = new FormData();
@@ -20,6 +20,7 @@ const Results = (props) => {
             })
             .then(data => data.json())
             .then(data => {
+                setLoading(false);
                 setResults(results => results.concat({image: file, data: data}));
             })
         });
@@ -32,9 +33,12 @@ const Results = (props) => {
                       text="We highly recommend to follow approved clinical guidelines for the diagnosis and management of COVID19. By any means you should base your clinical decision solely on the result of this algorithm."/>
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
-                        {results.map((result, index) => (
-                            <Result key={index} data={result.data} image={result.image}/>
-                        ))}
+                        <div className="placeholders" style={{minHeight: location.state.files.length * 400}}>
+                            {loading && (<div>Loading...</div>)}
+                            {results.map((result, index) => (
+                                <Result key={index} data={result.data} image={result.image}/>
+                            ))}
+                        </div>
                     </div>
                 </div>
                 <div className="row">

@@ -1,5 +1,5 @@
 import {AppContext} from './context/AppContext';
-import React, {lazy, Suspense, useContext, useEffect, useRef} from 'react';
+import React, {Fragment, lazy, Suspense, useContext, useEffect, useRef} from 'react';
 import ThemeSwitcher from './components/ThemeSwitcher/ThemeSwitcher'
 import Logo from './components/Logo/Logo'
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
@@ -11,6 +11,7 @@ import AuthRoute from './router/AuthRoute';
 import configuration from './utils/constants';
 import ForgotPassword from './pages/Auth/ForgotPassword';
 import Results from './pages/Screen/Results';
+import { useLocation } from "react-router-dom";
 
 const Home = lazy(() => import('./pages/Home/Home'));
 const Train = lazy(() => import('./pages/Train/Train'));
@@ -43,6 +44,16 @@ const Frame = () => {
         masterTl.add(child, position);
     }
 
+    const ScrollToTop = (props) => {
+        const { pathname } = useLocation();
+
+        useEffect(() => {
+            window.scrollTo(0, 0);
+        }, [pathname]);
+
+        return null;
+    };
+
     return (
         <div className="app" ref={el => app = el}>
             <Helmet>
@@ -65,6 +76,7 @@ const Frame = () => {
                 </div>
             </header>
             <BrowserRouter>
+                <ScrollToTop />
                 <Switch>
                     <Suspense fallback={<LoadingMessage/>}>
                         <Route exact path="/" component={() => <Home/>}/>

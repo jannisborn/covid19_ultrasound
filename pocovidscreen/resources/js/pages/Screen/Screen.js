@@ -20,39 +20,7 @@ const Screen = () => {
         downloadImage = download;
     }
 
-    const thumbsContainer = {
-        display: 'flex',
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        marginTop: 16
-    };
-
-    const thumb = {
-        display: 'inline-flex',
-        borderRadius: 7,
-        marginBottom: 8,
-        marginRight: 8,
-        width: 150,
-        height: 150,
-        padding: 0,
-        overflow: 'hidden',
-        boxSizing: 'border-box'
-    };
-
-    const thumbInner = {
-        display: 'flex',
-        minWidth: 0,
-        overflow: 'hidden'
-    };
-
-    const img = {
-        display: 'block',
-        width: 'auto',
-        height: '100%'
-    };
-
     const [files, setFiles] = useState([]);
-
     useEffect(() => () => {
         files.forEach(file => URL.revokeObjectURL(file.preview));
     }, [files]);
@@ -70,9 +38,9 @@ const Screen = () => {
     });
 
     const thumbs = files.map(file => (
-        <div style={thumb} key={file.name}>
-            <div style={thumbInner}>
-                <img src={file.preview} style={img}/>
+        <div className="thumb" key={file.name}>
+            <div className="thumb-inner">
+                <img src={file.preview}/>
             </div>
         </div>
     ));
@@ -95,7 +63,7 @@ const Screen = () => {
                 <form onSubmit={handleSubmit}>
                     <div className="row">
                         <div className="col-lg-10 offset-lg-1">
-                            <section className="custom-dropzone text-center">
+                            <section className="file-upload-area text-center">
                                 <img src={downloadImage} className="mt-3 mb-2"/>
                                 <div {...getRootProps({className: 'dropzone'})}>
                                     <input {...getInputProps()}/>
@@ -107,7 +75,7 @@ const Screen = () => {
                             </section>
                         </div>
                     </div>
-                    <aside className="justify-content-center" style={thumbsContainer}>
+                    <aside className="thumbs-container justify-content-center">
                         {thumbs}
                     </aside>
                     <div className="row">
