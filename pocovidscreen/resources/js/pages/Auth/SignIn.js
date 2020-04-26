@@ -33,12 +33,11 @@ const SignIn = () => {
             <Helmet>
                 <title>{configuration.appTitle} - Sign in</title>
             </Helmet>
-            <Teaser additionalClass="small" teaser="Fill in the form to login"/>
+            <Teaser additionalClass="small" teaser="Sign in"/>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
                         <form onSubmit={handleSubmit} className="form p-5">
-                            <h2 className="text-center mb-5">Sign in</h2>
                             <label htmlFor="email">Email</label>
                             <div className="mb-4">
                                 <input id="email" name="email" type="email" required autoFocus className={`w-100 ${email.error ? 'border-red-500' : ''}`} placeholder="example@domain.com" {...email.bind}/>

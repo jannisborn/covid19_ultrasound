@@ -17,6 +17,7 @@
 @import "components/theme-switcher";
 @import "components/video-presentation";
 @import "components/dropzone";
+@import "components/result";
 @import "variables";
 
 :root {
@@ -27,9 +28,11 @@
 
 ::selection {
     background: $primary;
+    color: #fff;
 }
 ::-moz-selection {
     background: $primary;
+    color: #fff;
 }
 
 .light {
@@ -45,6 +48,13 @@
     --link-color: #{$primary};
     --light-primary: #{$light-primary};
     --input-bg: #{$white};
+    --result-bg-green: #{$result-bg-green-light};
+    --result-bg-orange: #{$result-bg-orange-light};
+    --result-bg-red: #{$result-bg-red-light};
+    --result-color-green: #{$result-color-green-light};
+    --result-color-orange: #{$result-color-orange-light};
+    --result-color-red: #{$result-color-red-light};
+    --result-spacer: #{$result-spacer-light};
 }
 
 .dark {
@@ -60,6 +70,13 @@
     --link-color: #{$white};
     --light-primary: #{$light-dark-primary};
     --input-bg: #{$input-bg-dark};
+    --result-bg-green: #{$result-bg-green-dark};
+    --result-bg-orange: #{$result-bg-orange-dark};
+    --result-bg-red: #{$result-bg-red-dark};
+    --result-color-green: #{$result-color-green-dark};
+    --result-color-orange: #{$result-color-orange-dark};
+    --result-color-red: #{$result-color-red-dark};
+    --result-spacer: #{$result-spacer-dark};
 }
 
 html,

@@ -8,7 +8,7 @@ const SignUp = () => {
 
     return (
         <Layout>
-            <Teaser teaser="Step 1 : choose your option"/>
+            <Teaser additionalClass="small" teaser=""/>
             <section className="start container">
                 <div className="row">
                     <div className="screen col-10 offset-1 col-sm-12 mb-5 mb-md-0 offset-sm-0 col-md-6 col-lg-5 offset-lg-1">

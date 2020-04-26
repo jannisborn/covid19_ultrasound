@@ -5,6 +5,7 @@ import {AppProvider} from './context/AppContext';
 import Frame from './Frame';
 import {IntlProvider} from 'react-intl';
 
+
 ReactDOM.render(
     <AuthProvider>
         <AppProvider>

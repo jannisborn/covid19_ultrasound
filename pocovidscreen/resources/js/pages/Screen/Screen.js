@@ -9,10 +9,10 @@ import downloadDark from './images/download-dark.svg';
 import {AppContext} from '../../context/AppContext';
 import {useHistory} from 'react-router-dom';
 
-const Screen = (props) => {
+const Screen = () => {
 
     const context = useContext(AppContext);
-    let history = useHistory();
+    const history = useHistory();
     const isLight = context.themeMode === 'light';
 
     let downloadImage = downloadDark;
@@ -52,7 +52,6 @@ const Screen = (props) => {
     };
 
     const [files, setFiles] = useState([]);
-    const [results, setResults] = useState([]);
 
     useEffect(() => () => {
         files.forEach(file => URL.revokeObjectURL(file.preview));
@@ -78,29 +77,12 @@ const Screen = (props) => {
         </div>
     ));
 
-
     const handleSubmit = (event) => {
         event.preventDefault();
-        let formData = new FormData();
-
-        files.map((file) => {
-            formData.append('image', file);
-
-            fetch('/api/screen', {
-                method: 'POST',
-                body: formData
-            }).then((data) => {
-                return data.json();
-            }).then(data => {
-                results.push({image: file, data: data});
-            })
-        });
-
         history.push({
             pathname: '/screen/results',
-            state: {results: results}
+            state: {files: files}
         })
-
     };
 
     return (

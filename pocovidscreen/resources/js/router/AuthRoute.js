@@ -6,7 +6,6 @@ import {AuthContext, AuthProvider, useAuth} from '../context/AuthContext';
 function AuthRoute({component: Component, title, alertMessage, ...rest}) {
 
     let {authenticated} = useContext(AuthContext);
-
     return (
         <Route
             {...rest}
