@@ -17,7 +17,7 @@ class ScreeningController extends Controller
      */
     public function screen(Request $request)
     {
-        $filePath = $request->file('image')->store(config('app.screening_storage_folder'));
+        $filePath = $request->file('image')->store(config('app.screening_storage_folder'), 'data');
         $screeningResult = Http::get(config('app.pocovidnet') . '/predict?filename=' . config('app.pocovidnet_storage') . $filePath);
 
         $file = new File();

@@ -18,8 +18,6 @@ working_dir:
 hooks:
   post-start:
     - exec: composer install
-    - exec: cd storage/app && ln -s ../../../data/tmp_images
-
 
 # This config.yaml was created with ddev version v1.13.1
 # webimage: drud/ddev-webserver:v1.13.1

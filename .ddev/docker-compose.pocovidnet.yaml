@@ -8,13 +8,13 @@ services:
       - "8000:8000"
     volumes:
       - ".:/mnt/ddev_config"
-      - "../data/tmp_images:/tmp_images"
+      - "./data:/data"
     labels:
       com.ddev.site-name: ${DDEV_SITENAME}
       com.ddev.approot: $DDEV_APPROOT
   web:
     volumes:
-      - "../data/tmp_images:/tmp_images"
+      - "./data:/data"
     depends_on:
       - pocovidnet
     links:
