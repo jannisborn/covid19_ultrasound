@@ -15,6 +15,7 @@ import manuel from '../../assets/images/team/manuel.jpg';
 import nina from '../../assets/images/team/nina.jpg';
 import janis from '../../assets/images/team/janis.jpg';
 import jay from '../../assets/images/team/jay.jpg';
+import lorenzo from '../../assets/images/team/lorenzo.jpg';
 
 const Slider = () => {
 
@@ -87,6 +88,9 @@ const Slider = () => {
                 </div>
                 <div className="slide-card col-6 col-md-4 fadeIn">
                     <TeamMember fullName="Nina Wiedemann" job="Neuroscientist & data scientist" image={nina}/>
+                </div>
+                <div className="slide-card col-6 col-md-4 fadeIn">
+                    <TeamMember fullName="Lorenzo Carotenuto" job="UI/UX & Motion Designer" image={lorenzo}/>
                 </div>
             </div>
             <div className="controls d-flex justify-content-between">

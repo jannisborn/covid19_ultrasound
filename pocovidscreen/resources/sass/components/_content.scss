@@ -17,6 +17,20 @@
     }
 }
 
+.with-line {
+    position: relative;
+
+    &::before {
+        content: '';
+        height: 40px;
+        width: 1px;
+        background-color: var(--black);
+        position: absolute;
+        top: -70px;
+        left: 50%;
+    }
+}
+
 .fadeIn {
     opacity: 0;
 }

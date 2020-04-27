@@ -57,9 +57,9 @@ const Train = () => {
             <Helmet>
                 <title>Train - {configuration.appTitle}</title>
             </Helmet>
-            <Teaser additionalClass="small" teaser="Select the images you want to send to train the AI."/>
+            <Teaser additionalClass="small" teaser="Select the images you want to send to train the AI"/>
             <div className="container">
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className="train-form">
                     <div className="row">
                         <div className="col-lg-10 offset-lg-1">
                             <section className="file-upload-area text-center">
@@ -77,8 +77,32 @@ const Train = () => {
                     <aside className="thumbs-container justify-content-center">
                         {thumbs}
                     </aside>
+                    <h2 className="text-center with-line">Choose the correct label for your images</h2>
                     <div className="row">
                         <div className="col-lg-10 offset-lg-1">
+                            <div className="train-labels text-center row">
+                                <div className="train-label-radio col-4">
+                                    <label htmlFor="covid19">
+                                        <input type="radio" id="covid19" name="label" value="2"/>
+                                        <div className="radio-background"></div>
+                                        COVID-19
+                                    </label>
+                                </div>
+                                <div className="train-label-radio col-4">
+                                    <label htmlFor="pneumonia">
+                                        <input type="radio" id="pneumonia" name="label" value="1"/>
+                                        <div className="radio-background"></div>
+                                        Pneumonia
+                                    </label>
+                                </div>
+                                <div className="train-label-radio col-4">
+                                    <label htmlFor="healthy">
+                                        <input type="radio" id="healthy" name="label" value="3"/>
+                                        <div className="radio-background"></div>
+                                        Healthy
+                                    </label>
+                                </div>
+                            </div>
                             <button className="button primary round w-100 text-uppercase mt-4">Confirm</button>
                         </div>
                     </div>

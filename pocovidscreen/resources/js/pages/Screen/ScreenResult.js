@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 
-const Result = ({image, data}) => {
+const ScreenResult = ({image, data}) => {
 
     let results = '';
     let colorClass = '';
@@ -56,4 +56,4 @@ const Result = ({image, data}) => {
     );
 };
 
-export default Result;
+export default ScreenResult;

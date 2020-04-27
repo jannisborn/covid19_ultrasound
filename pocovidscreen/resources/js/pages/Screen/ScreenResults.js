@@ -2,9 +2,9 @@ import React, {useEffect, useState} from 'react';
 import Layout from '../Layout';
 import Text from '../../components/Content/Text';
 import {useLocation} from 'react-router-dom';
-import Result from './Result';
+import ScreenResult from './ScreenResult';
 
-const Results = (props) => {
+const ScreenResults = () => {
 
     const location = useLocation();
     const [results, setResults] = useState([]);
@@ -36,7 +36,7 @@ const Results = (props) => {
                         <div className="placeholders" style={{minHeight: location.state.files.length * 400}}>
                             {loading && (<div>Loading...</div>)}
                             {results.map((result, index) => (
-                                <Result key={index} data={result.data} image={result.image}/>
+                                <ScreenResult key={index} data={result.data} image={result.image}/>
                             ))}
                         </div>
                     </div>
@@ -51,4 +51,4 @@ const Results = (props) => {
     );
 };
 
-export default Results;
+export default ScreenResults;

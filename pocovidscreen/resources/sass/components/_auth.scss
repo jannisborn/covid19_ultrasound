@@ -22,3 +22,12 @@
     }
 }
 
+.sign-up {
+    .call-to-action {
+        transform: translateY(-30%);
+
+        &:hover {
+            transform: translateY(-32%);
+        }
+    }
+}

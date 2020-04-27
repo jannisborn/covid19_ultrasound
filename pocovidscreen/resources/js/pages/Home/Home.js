@@ -78,7 +78,7 @@ const Home = () => {
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
                         <TextImage orientation="textLeft" title="Early screening" subtitle="The impact" image={covid}
-                                   text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, veniam, voluptatem? Assumenda at beatae culpa doloremque."/>
+                                   text="Early screening enables to save life by starting the therapy earlier and avoiding people to continue to contaminate others."/>
                     </div>
                 </div>
             </section>

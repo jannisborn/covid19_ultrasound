@@ -9,16 +9,16 @@ import Button from './components/Button/Button';
 import GuestRoute from './router/GuestRoute';
 import AuthRoute from './router/AuthRoute';
 import configuration from './utils/constants';
-import ForgotPassword from './pages/Auth/ForgotPassword';
-import Results from './pages/Screen/Results';
 import { useLocation } from "react-router-dom";
-import TrainResult from './pages/Train/TrainResult';
 
 const Home = lazy(() => import('./pages/Home/Home'));
 const Train = lazy(() => import('./pages/Train/Train'));
 const Screen = lazy(() => import('./pages/Screen/Screen'));
 const SignIn = lazy(() => import('./pages/Auth/SignIn'));
 const SignUp = lazy(() => import('./pages/Auth/SignUp'));
+const ForgotPassword = lazy(() => import('./pages/Auth/ForgotPassword'));
+const ScreenResults = lazy(() => import('./pages/Screen/ScreenResults'));
+const TrainResult = lazy(() => import('./pages/Train/TrainResult'));
 const LoadingMessage = () => `loading...`;
 
 const Frame = () => {
@@ -84,7 +84,7 @@ const Frame = () => {
                         <Route exact path="/forgot-password" component={() => <ForgotPassword/>}/>
                         <Route exact path="/train" alertMessage="You need to sign in before to train." component={() => <Train/>}/>
                         <Route exact path="/screen" alertMessage="You need to sign in before to screen." component={() => <Screen/>}/>
-                        <Route exact path="/screen/results" component={() => <Results/>}/>
+                        <Route exact path="/screen/results" component={() => <ScreenResults/>}/>
                         <Route exact path="/train/results" component={() => <TrainResult/>}/>
                         <Route exact path="/sign-in" component={() => <SignIn/>}/>
                         <Route exact path="/sign-up" component={() => <SignUp/>}/>
