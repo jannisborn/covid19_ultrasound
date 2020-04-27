@@ -68,7 +68,7 @@ const Slider = () => {
         <div className="slider" ref={sliderWrapRef}>
             <div className="slider-cards" ref={el => sliderRef = el}>
                 <div className="slide-card col-6 col-md-4 fadeIn">
-                    <TeamMember fullName="Manuel Cossio" job="Medical genetician" image={manuel}/>
+                    <TeamMember fullName="Manuel Cossio" job="Medical geneticist" image={manuel}/>
                 </div>
                 <div className="slide-card col-6 col-md-4 fadeIn">
                     <TeamMember fullName="Marion Disdier" job="Data scientist" image={marion}/>

@@ -63,7 +63,7 @@ const Home = () => {
                 <StatisticList/>
             </section>
             <section className="container spacer pb-3">
-                <VideoPresentation title="Presentation video" videoId="UY34-d_yHwo"/>
+                <VideoPresentation title="Presentation video" videoId="1hJaVLGvzng"/>
             </section>
             <section className="container spacer pt-4">
                 <Text title="The team"

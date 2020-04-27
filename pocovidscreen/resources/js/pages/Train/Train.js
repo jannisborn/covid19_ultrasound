@@ -47,7 +47,7 @@ const Train = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         history.push({
-            pathname: '/screen/results',
+            pathname: '/train/results',
             state: {files: files}
         })
     };

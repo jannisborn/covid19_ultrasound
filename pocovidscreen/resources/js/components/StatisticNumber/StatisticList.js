@@ -10,13 +10,13 @@ const StatisticNumberList = (props) => {
     return (
         <div className="row pt-5" ref={statsRef}>
             <div className="col-8 col-md offset-lg-1 fadeIn">
-                <StatisticNumber className="primary" number="3682" text="COVID-19 cases detected by the AI."/>
+                <StatisticNumber className="primary" number="64" text="videos edited by our data scientists."/>
             </div>
             <div className="col-8 col-md fadeIn">
-                <StatisticNumber className="secondary" number="12508" text="images that trained the AI."/>
+                <StatisticNumber className="secondary" number="1103" text="images that trained the AI."/>
             </div>
             <div className="col-8 col-md fadeIn">
-                <StatisticNumber className="primary" number="50" text="organisations collaborating with us."/>
+                <StatisticNumber className="primary" number="96%" text="sensititvity of our AI on COVID-19 cases."/>
             </div>
         </div>
     );

@@ -12,6 +12,7 @@ import configuration from './utils/constants';
 import ForgotPassword from './pages/Auth/ForgotPassword';
 import Results from './pages/Screen/Results';
 import { useLocation } from "react-router-dom";
+import TrainResult from './pages/Train/TrainResult';
 
 const Home = lazy(() => import('./pages/Home/Home'));
 const Train = lazy(() => import('./pages/Train/Train'));
@@ -84,6 +85,7 @@ const Frame = () => {
                         <Route exact path="/train" alertMessage="You need to sign in before to train." component={() => <Train/>}/>
                         <Route exact path="/screen" alertMessage="You need to sign in before to screen." component={() => <Screen/>}/>
                         <Route exact path="/screen/results" component={() => <Results/>}/>
+                        <Route exact path="/train/results" component={() => <TrainResult/>}/>
                         <Route exact path="/sign-in" component={() => <SignIn/>}/>
                         <Route exact path="/sign-up" component={() => <SignUp/>}/>
                     </Suspense>
