@@ -52,3 +52,19 @@ License](https://creativecommons.org/licenses/by-nc/4.0/).
 The following modifcations to videos/images were done:
 - Cropped to the center to remove measuring bars, text etc.
 - Removal of artifcats on the sample (few cases only)
+
+
+## Citation
+The paper is available [here](https://arxiv.org/abs/2004.12084).
+
+If you build upon our work or find it useful, please cite our paper:
+```bib
+@article{born2020pocovidnet,
+    title={POCOVID-Net: Automatic Detection of COVID-19 From a New Lung Ultrasound Imaging Dataset (POCUS)},
+    author={Jannis Born and Gabriel Brändle and Manuel Cossio and Marion Disdier and Julie Goulet and Jérémie Roulin and Nina Wiedemann},
+    year={2020},
+    eprint={2004.12084},
+    archivePrefix={arXiv},
+    primaryClass={eess.IV}
+}
+```

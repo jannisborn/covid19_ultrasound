@@ -83,9 +83,16 @@ Detailed performances:
 
 # Citation
 
-The paper is available [here](TODO)
+The paper is available [here](https://arxiv.org/abs/2004.12084).
 
 If you build upon our work or find it useful, please cite our paper:
 ```bib
-@article{TODO}
+@article{born2020pocovidnet,
+    title={POCOVID-Net: Automatic Detection of COVID-19 From a New Lung Ultrasound Imaging Dataset (POCUS)},
+    author={Jannis Born and Gabriel Brändle and Manuel Cossio and Marion Disdier and Julie Goulet and Jérémie Roulin and Nina Wiedemann},
+    year={2020},
+    eprint={2004.12084},
+    archivePrefix={arXiv},
+    primaryClass={eess.IV}
+}
 ```

@@ -1,7 +1,8 @@
 # Automatic Detection of COVID-19 from *Ultrasound* Data
 
 We develop a **computer vision** approach for the diagnosis of **COVID-19** infections
-from **Point-of-care Ultrasound** (POCUS) recordings. This is the **first
+from **Point-of-care Ultrasound** (POCUS) recordings. Find the arXiv preprint
+[here](https://arxiv.org/abs/2004.12084). This is the **first
 approach to automatically detect COVID-19 from ultrasound**. Next to the code
 for our model and our [website (https://pocovidscreen.org)](https://pocovidscreen.org), we also make a
 **dataset**
@@ -44,7 +45,7 @@ COVID of 96\%**.
      and ultrasound findings through COVID-19 disease process](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7165267/)) 
    - [NIH launched an initiative to use POCUS for risk stratificaton of COVID-19
      patients.](https://clinicaltrials.gov/ct2/show/NCT04338100)
-   - [**Read our full paper** (Coming..)]()
+   - [**Read our full paper**](https://arxiv.org/abs/2004.12084)
 
 <p align="center">
 	<img src="pocovidnet/plots/overview.png" alt="photo not available" width="70%" height="70%">
@@ -73,7 +74,7 @@ The lung is normally aerated with horizontal A-lines.</em>
 
 ## Learn more about the project
 
-- [arXiv Paper (Coming)](https://devpost.com/software/automatic-detection-of-covid-19-from-pocus-ultrasound-data)
+- [arXiv Paper](https://arxiv.org/abs/2004.12084)
 - Web Interface ([https://pocovidscreen.org](https://pocovidscreen.org))
 - [DevPost](https://devpost.com/software/automatic-detection-of-covid-19-from-pocus-ultrasound-data)   
 - Watch this [video](https://www.youtube.com/watch?v=1hJaVLGvzng) (2min pitch):
@@ -101,10 +102,16 @@ pip install -e .
 
 
 ## Citation
-
-The paper is available [here](TODO)
+The paper is available [here](https://arxiv.org/abs/2004.12084).
 
 If you build upon our work or find it useful, please cite our paper:
 ```bib
-@article{TODO}
+@article{born2020pocovidnet,
+    title={POCOVID-Net: Automatic Detection of COVID-19 From a New Lung Ultrasound Imaging Dataset (POCUS)},
+    author={Jannis Born and Gabriel Brändle and Manuel Cossio and Marion Disdier and Julie Goulet and Jérémie Roulin and Nina Wiedemann},
+    year={2020},
+    eprint={2004.12084},
+    archivePrefix={arXiv},
+    primaryClass={eess.IV}
+}
 ```
