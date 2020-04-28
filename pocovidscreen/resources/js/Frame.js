@@ -71,8 +71,6 @@ const Frame = () => {
                         <Logo/>
                     </div>
                     <div className="col text-right">
-                        <Button className="simple mr-3" href="/sign-in" text="Sign in"/>
-                        <Button className="round primary" href="/sign-up" text="Sign up"/>
                     </div>
                 </div>
             </header>
