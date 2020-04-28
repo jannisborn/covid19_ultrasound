@@ -14,8 +14,6 @@ use Backpack\CRUD\app\Http\Controllers\CrudController;
 class ScreeningCrudController extends CrudController
 {
     use \Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
-    use \Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
-    use \Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
 
     /**
      * @throws \Exception
@@ -34,8 +32,8 @@ class ScreeningCrudController extends CrudController
             $this->crud->addColumn([
                 'name' => 'file.path',
                 'label' => "Image",
-                'type' => 'Image',
-                'disk' => 'local',
+                'type' => 'customImage',
+                'disk' => 'data',
                 'width' => '200px',
                 'height' => '200px',
             ]);
@@ -49,10 +47,10 @@ class ScreeningCrudController extends CrudController
             $this->crud->addField([
                 'label' => 'Image',
                 'name' => 'file_id',
-                'type' => 'browse',
-                'entity'=> 'file',
-                'attribute' => 'path',
-                'model' => File::class
+                'type' => 'customImage',
+                'disk' => 'data',
+                'crop' => true,
+                'aspect_ratio' => 1
             ]);
         });
     }

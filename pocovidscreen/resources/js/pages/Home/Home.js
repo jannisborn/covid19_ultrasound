@@ -20,11 +20,11 @@ const Home = () => {
     useEffect(() => {
         gsap.to('.page', 0, {visibility: 'visible'});
         tl.from('.teaser-wrapper', 1.5, {y: 500, opacity: 0, ease: 'power4.out'}, .25)
-            .from('.teaser', 1.95, {scale: 2.5, autoRound: false, ease: 'power4.out'}, .05)
-            .from('.teaser-text h1', .7, {y: 20, opacity: 0, ease: 'power4.out'}, 1.2)
-            .from('.teaser-text p', .7, {y: 20, opacity: 0, ease: 'power4.out'}, 1.45)
-            .from('.screen', .65, {y: 200, opacity: 0, ease: 'power4.out'}, 1.7)
-            .from('.train', .65, {y: 200, opacity: 0, ease: 'power4.out'}, 1.95);
+             .from('.teaser', 1.95, {scale: 2.5, autoRound: false, ease: 'power4.out'}, .05)
+             .from('.teaser-text h1', .7, {y: 20, opacity: 0, ease: 'power4.out'}, 1.2)
+             .from('.teaser-text p', .7, {y: 20, opacity: 0, ease: 'power4.out'}, 1.45)
+             .from('.screen', .65, {y: 200, opacity: 0, ease: 'power4.out'}, 1.7)
+             .from('.train', .65, {y: 200, opacity: 0, ease: 'power4.out'}, 1.95);
     });
 
     return (
@@ -49,8 +49,8 @@ const Home = () => {
                 </div>
             </section>
             <section className="container spacer">
-                <Text title="Our partners"
-                      text="We would like to address a special to all of our sponsors and partners. They are helping us with hosting, data collection, promotion and so on. Without them we would never have achieved what we did."/>
+                <Text title="Our sponsors"
+                      text="We would like to address a special to all of our sponsors. They are helping us with hosting, data collection, promotion and so on. Without them we would never have achieved what we did."/>
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
                         <PartnerList/>

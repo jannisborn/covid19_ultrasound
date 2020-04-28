@@ -2,6 +2,7 @@ import React, {useRef} from 'react';
 import hidora from './images/hidora.png'
 import google from './images/google.svg'
 import euvsvirus from './images/euvsvirus.svg'
+import backpack from './images/backpack.png'
 import {useFadeInOnScroll} from '../../utils/animation';
 
 const PartnerList = () => {
@@ -19,6 +20,9 @@ const PartnerList = () => {
             </a>
             <a href="https://www.google.com/" target="_blank" className="partner col fadeIn my-4">
                 <img src={google} alt="Google logo"/>
+            </a>
+            <a href="https://backpackforlaravel.com/" target="_blank" className="partner col fadeIn my-4">
+                <img src={backpack} alt="Backpack logo" width="180"/>
             </a>
         </div>
     );
