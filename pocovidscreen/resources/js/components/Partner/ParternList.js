@@ -3,6 +3,7 @@ import hidora from './images/hidora.png'
 import google from './images/google.svg'
 import euvsvirus from './images/euvsvirus.svg'
 import backpack from './images/backpack.png'
+import checkdomain from './images/checkdomain.svg'
 import {useFadeInOnScroll} from '../../utils/animation';
 
 const PartnerList = () => {
@@ -15,14 +16,17 @@ const PartnerList = () => {
             <a href="https://hidora.com/" target="_blank" className="partner col fadeIn my-4" title="Visit the website of our fantastic hosting sponsor.">
                 <img src={hidora} alt="Hidora logo"/>
             </a>
-            <a href="https://euvsvirus.org/" target="_blank" className="partner col fadeIn my-4">
+            <a href="https://euvsvirus.org/" target="_blank" className="partner col fadeIn my-4" title="Event website">
                 <img src={euvsvirus} alt="The EUvsVirus logo" width="180"/>
             </a>
-            <a href="https://www.google.com/" target="_blank" className="partner col fadeIn my-4">
+            <a href="https://www.google.com/" target="_blank" className="partner col fadeIn my-4" title="Our cloud hosting provider.">
                 <img src={google} alt="Google logo"/>
             </a>
-            <a href="https://backpackforlaravel.com/" target="_blank" className="partner col fadeIn my-4">
+            <a href="https://backpackforlaravel.com/" target="_blank" className="partner col fadeIn my-4" title="Website of our backend provider.">
                 <img src={backpack} alt="Backpack logo" width="180"/>
+            </a>
+            <a href="https://www.checkdomain.net/" target="_blank" className="partner col fadeIn my-4" title="Our sponsor for the domain name.">
+                <img src={checkdomain} alt="Checkdomain logo"/>
             </a>
         </div>
     );

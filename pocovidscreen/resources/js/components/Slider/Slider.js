@@ -16,6 +16,7 @@ import nina from '../../assets/images/team/nina.jpg';
 import janis from '../../assets/images/team/janis.jpg';
 import jay from '../../assets/images/team/jay.jpg';
 import lorenzo from '../../assets/images/team/lorenzo.jpg';
+import saheli from '../../assets/images/team/saheli.jpg';
 
 const Slider = () => {
 
@@ -69,28 +70,31 @@ const Slider = () => {
         <div className="slider" ref={sliderWrapRef}>
             <div className="slider-cards" ref={el => sliderRef = el}>
                 <div className="slide-card col-6 col-md-4 fadeIn">
-                    <TeamMember fullName="Manuel Cossio" job="Medical geneticist" image={manuel}/>
+                    <TeamMember fullName="Manuel Cossio" job="Medical Geneticist" image={manuel}/>
                 </div>
                 <div className="slide-card col-6 col-md-4 fadeIn">
-                    <TeamMember fullName="Marion Disdier" job="Data scientist" image={marion}/>
+                    <TeamMember fullName="Marion Disdier" job="Data Scientist" image={marion}/>
                 </div>
                 <div className="slide-card col-6 col-md-4 fadeIn">
-                    <TeamMember fullName="Gabriel Brändle" job="Medical doctor" image={gabriel}/>
+                    <TeamMember fullName="Gabriel Brändle" job="Medical Doctor" image={gabriel}/>
                 </div>
                 <div className="slide-card col-6 col-md-4 fadeIn">
-                    <TeamMember fullName="Jannis Born" job=" Deep learning expert" image={janis}/>
+                    <TeamMember fullName="Jannis Born" job=" Deep learning Expert" image={janis}/>
                 </div>
                 <div className="slide-card col-6 col-md-4 fadeIn">
-                    <TeamMember fullName="Julie Goulet" job="Theoretical biophysicist & data scientist" image={julie}/>
+                    <TeamMember fullName="Julie Goulet" job="Theoretical biophysicist & Data Scientist" image={julie}/>
                 </div>
                 <div className="slide-card col-6 col-md-4 fadeIn">
-                    <TeamMember fullName="Jérémie Roulin" job="Software engineer" image={jay}/>
+                    <TeamMember fullName="Jérémie Roulin" job="Software Engineer" image={jay}/>
                 </div>
                 <div className="slide-card col-6 col-md-4 fadeIn">
-                    <TeamMember fullName="Nina Wiedemann" job="Neuroscientist & data scientist" image={nina}/>
+                    <TeamMember fullName="Nina Wiedemann" job="Neuroscientist & Data Scientist" image={nina}/>
                 </div>
                 <div className="slide-card col-6 col-md-4 fadeIn">
                     <TeamMember fullName="Lorenzo Carotenuto" job="UI/UX & Motion Designer" image={lorenzo}/>
+                </div>
+                <div className="slide-card col-6 col-md-4 fadeIn">
+                    <TeamMember fullName="Saheli De" job="AI Expert" image={saheli}/>
                 </div>
             </div>
             <div className="controls d-flex justify-content-between">
