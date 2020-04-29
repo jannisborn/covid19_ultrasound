@@ -44,9 +44,14 @@ ddev exec php artisan migrate:fresh
 ddev exec php artisan jwt:secret
 ```
 
-- Start npm watcher
+- Start npm watcher to start coding
 ```bash
 npm run watch
+```
+
+- Or run build for production
+```bash
+npm run prod
 ```
 
 - Visit https://covidscreen.ddev.site/
