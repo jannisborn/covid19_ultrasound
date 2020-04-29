@@ -32,7 +32,7 @@ const Home = () => {
             <Helmet>
                 <title>Home - {configuration.appTitle}</title>
             </Helmet>
-            <Teaser teaser="Ultrasound image analysis (POCUS) through AI for early screening of COVID-19 and pneumonia"/>
+            <Teaser teaser="An AI tool for early screening of COVID-19 & pneumonia from ultrasound recordings (POCUS)"/>
             <section className="start container">
                 <div className="row">
                     <div
