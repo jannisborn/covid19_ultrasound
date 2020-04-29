@@ -86,7 +86,7 @@ const Home = () => {
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
                         <TextImage title="Why POCUS?" subtitle="Focusing" image={pocus}
-                                   text="We focused on POCUS images, because ultrasound imaging is an easy, cost-effective and non-invasive method. It is available in almost any medical facility. Our model can identify with a 93% recall and 96% precision COVID-19 cases."/>
+                                   text="We focused on POCUS images, because ultrasound imaging is an easy, cost-effective and non-invasive method. It is available in almost any medical facility. Our model can identify with a 96% recall and 88% precision COVID-19 cases."/>
                     </div>
                 </div>
             </section>
