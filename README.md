@@ -80,19 +80,65 @@ The lung is normally aerated with horizontal A-lines.</em>
 - Watch this [video](https://www.youtube.com/watch?v=1hJaVLGvzng) (2min pitch):
 [![IMAGE ALT TEXT](pocovidnet/plots/pitch.png)](https://www.youtube.com/watch?v=1hJaVLGvzng "POCUS 4 COVID19")
 
+## Infrastructure
+![Main infrastructure](.ddev/doc/pocovidscreen_arch.png)
 
+![Screen process](.ddev/doc/screen_process.png)
 
-## Installation and Training
+## Installation
 
-Find all details on how to get started in the [pocovidnet](pocovidnet/README.md)
+To get more information about how to train the model with the dataset check inside the [pocovidnet](pocovidnet/README.md)
 folder.
-To run the code, just clone the repo and install the package `pocovidnet` in editable mode:
 
-```sh
-git clone https://github.com/jannisborn/covid19_pocus_ultrasound.git
-cd covid19_pocus_ultrasound
-pip install -e .
+To use the trained model with our web application *locally* follow those steps :
+
+- Clone the repo
+- Start the containers with [ddev](https://ddev.readthedocs.io/en/stable/) (will automatically install composer dependencies)
+
+```bash
+ddev start
 ```
+
+```bash
+cd pocovidscreen 
+npm install
+```
+
+- Copy .env.example to .env
+
+```bash
+cp .env.example .env
+```
+
+- Generate app key
+
+```bash
+ddev exec php artisan key:generate
+```
+
+- Run database migration
+
+```bash
+ddev exec php artisan migrate:fresh
+```
+
+- Generate JWT secret
+
+```bash
+ddev exec php artisan jwt:secret
+```
+
+- Start npm watcher to start coding
+```bash
+npm run watch
+```
+
+- Or run a build for production
+```bash
+npm run prod
+```
+
+- Visit https://covidscreen.ddev.site/
 
 
 ## Contact 
