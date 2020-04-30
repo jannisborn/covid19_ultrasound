@@ -82,6 +82,7 @@ The lung is normally aerated with horizontal A-lines.</em>
 ## Infrastructure
 <img src=".ddev/doc/pocovidscreen_arch.png" width="600"/>
 
+### Screening process
 <img src=".ddev/doc/screen_process.png" width="600"/>
 
 ## Installation
@@ -97,6 +98,8 @@ To use the trained model with our web application *locally* follow those steps :
 ```bash
 ddev start
 ```
+
+- Install npm dependencies
 
 ```bash
 cd pocovidscreen 
@@ -138,7 +141,6 @@ npm run prod
 ```
 
 - Visit https://covidscreen.ddev.site/
-
 
 ## Contact 
 - If you experience problems with the code, please open an
