@@ -13,14 +13,12 @@
 
     <!-- Scripts -->
     <script>
-        window.App = {!! json_encode([
-            'name' => config('app.name')
-        ]) !!};
+        window.App = {!! json_encode(['name' => config('app.name')]) !!};
     </script>
-    <script src="{{ secure_asset('js/app.js') }}" defer></script>
+    <script src="{{ mix('js/app.js') }}" defer></script>
 
     <!-- Styles -->
-    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 
 <body>

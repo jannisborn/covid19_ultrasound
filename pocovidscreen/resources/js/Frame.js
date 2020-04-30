@@ -1,5 +1,5 @@
 import {AppContext} from './context/AppContext';
-import React, {Fragment, lazy, Suspense, useContext, useEffect, useRef} from 'react';
+import React, {lazy, Suspense, useContext, useEffect, useRef} from 'react';
 import ThemeSwitcher from './components/ThemeSwitcher/ThemeSwitcher'
 import Logo from './components/Logo/Logo'
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
@@ -19,7 +19,8 @@ const SignUp = lazy(() => import('./pages/Auth/SignUp'));
 const ForgotPassword = lazy(() => import('./pages/Auth/ForgotPassword'));
 const ScreenResults = lazy(() => import('./pages/Screen/ScreenResults'));
 const TrainResult = lazy(() => import('./pages/Train/TrainResult'));
-const LoadingMessage = () => `loading...`;
+const About = lazy(() => import('./pages/About/About'));
+const LoadingMessage = () => ``;
 
 const Frame = () => {
     const context = useContext(AppContext);
@@ -39,13 +40,9 @@ const Frame = () => {
 
             localStorage.setItem('animated-once', 'true');
         }
-    })
+    });
 
-    const addChild = (child, position) => {
-        masterTl.add(child, position);
-    }
-
-    const ScrollToTop = (props) => {
+    const ScrollToTop = () => {
         const { pathname } = useLocation();
 
         useEffect(() => {
@@ -60,7 +57,6 @@ const Frame = () => {
             <Helmet>
                 <meta charSet="utf-8"/>
                 <title>{configuration.appTitle}</title>
-                <link rel="canonical" href="http://mysite.com/example"/>
             </Helmet>
             <header className="app-header py-4 container">
                 <div className="row justify-content-between" ref={el => headerItems = el}>
@@ -71,8 +67,8 @@ const Frame = () => {
                         <Logo/>
                     </div>
                     <div className="col text-right">
-                        {/*<Button className="simple mr-3" href="/sign-in" text="Sign in"/>*/}
-                        {/*<Button className="round primary" href="/sign-up" text="Sign up"/>*/}
+                        <Button className="simple mr-3" href="/sign-in" text="Sign in"/>
+                        <Button className="round primary" href="/sign-up" text="Sign up"/>
                     </div>
                 </div>
             </header>
@@ -86,6 +82,7 @@ const Frame = () => {
                         <Route exact path="/screen" alertMessage="You need to sign in before to screen." component={() => <Screen/>}/>
                         <Route exact path="/screen/results" component={() => <ScreenResults/>}/>
                         <Route exact path="/train/results" component={() => <TrainResult/>}/>
+                        <Route exact path="/about" component={() => <About/>}/>
                         <Route exact path="/sign-in" component={() => <SignIn/>}/>
                         <Route exact path="/sign-up" component={() => <SignUp/>}/>
                     </Suspense>

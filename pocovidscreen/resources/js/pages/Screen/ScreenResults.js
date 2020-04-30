@@ -3,6 +3,7 @@ import Layout from '../Layout';
 import Text from '../../components/Content/Text';
 import {useLocation} from 'react-router-dom';
 import ScreenResult from './ScreenResult';
+import gsap from "gsap";
 
 const ScreenResults = () => {
 
@@ -36,7 +37,7 @@ const ScreenResults = () => {
                         <div className="placeholders" style={{minHeight: location.state.files.length * 400}}>
                             {loading && (<div>Loading...</div>)}
                             {results.map((result, index) => (
-                                <ScreenResult key={index} data={result.data} image={result.image}/>
+                                <ScreenResult key={index} identifier={index} data={result.data} image={result.image}/>
                             ))}
                         </div>
                     </div>

@@ -6,8 +6,6 @@ import chevronLeftLight from './chevron-left.svg';
 import chevronRightDark from './chevron-right-dark.svg';
 import chevronLeftDark from './chevron-left-dark.svg';
 import {AppContext} from '../../context/AppContext';
-import downloadDark from '../../pages/Screen/images/download-dark.svg';
-import download from '../../pages/Screen/images/download.svg';
 import julie from '../../assets/images/team/julie.jpg';
 import marion from '../../assets/images/team/marion.jpg';
 import gabriel from '../../assets/images/team/gabriel.jpg';

@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
+import gsap from "gsap";
 
-const ScreenResult = ({image, data}) => {
+const ScreenResult = ({image, data, identifier}) => {
 
     let results = '';
     let colorClass = '';
@@ -30,8 +31,14 @@ const ScreenResult = ({image, data}) => {
         colorClass = 'green';
     }
 
+    let tl = gsap.timeline();
+    useEffect(() => {
+        let el = '#key-' + identifier;
+        tl.from(el, 1.2, {y: 80, opacity: 0, ease: 'power4.out'})
+    }, [identifier]);
+
     return (
-        <div className={`result ${colorClass} d-md-flex mb-5`}>
+        <div id={`key-${identifier}`} className={`result ${colorClass} d-md-flex mb-5`}>
             <div className="result-image">
                 <img src={image.preview} alt={`Result for ${image.path}`}/>
             </div>
