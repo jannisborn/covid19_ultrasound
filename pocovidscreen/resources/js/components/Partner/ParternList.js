@@ -2,6 +2,7 @@ import React, {useRef} from 'react';
 import hidora from './images/hidora.png'
 import google from './images/google.svg'
 import euvsvirus from './images/euvsvirus.svg'
+import hackzurich from './images/hackzurich.jpg'
 import backpack from './images/backpack.png'
 import checkdomain from './images/checkdomain.svg'
 import {useFadeInOnScroll} from '../../utils/animation';
@@ -15,6 +16,9 @@ const PartnerList = () => {
         <div className="row align-items-center justify-content-between pt-2" ref={partnersRef}>
             <a href="https://hidora.com/" target="_blank" className="partner col fadeIn my-4" title="Visit the website of our fantastic hosting sponsor.">
                 <img src={hidora} alt="Hidora logo"/>
+            </a>
+            <a href="https://digitalfestival.ch/en/HACK/" target="_blank" className="partner col fadeIn my-4" title="Event website">
+                <img src={hackzurich} alt="The Hack Zurich logo" width="110"/>
             </a>
             <a href="https://euvsvirus.org/" target="_blank" className="partner col fadeIn my-4" title="Event website">
                 <img src={euvsvirus} alt="The EUvsVirus logo" width="180"/>
