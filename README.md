@@ -81,9 +81,9 @@ The lung is normally aerated with horizontal A-lines.</em>
 [![IMAGE ALT TEXT](pocovidnet/plots/pitch.png)](https://www.youtube.com/watch?v=1hJaVLGvzng "POCUS 4 COVID19")
 
 ## Infrastructure
-![Main infrastructure](.ddev/doc/pocovidscreen_arch.png)
+<img src=".ddev/doc/pocovidscreen_arch.png" style="width: 65%"/>
 
-![Screen process](.ddev/doc/screen_process.png)
+<img src=".ddev/doc/screen_process.png" style="width: 65%"/>
 
 ## Installation
 
