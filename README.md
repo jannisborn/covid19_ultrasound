@@ -77,13 +77,12 @@ The lung is normally aerated with horizontal A-lines.</em>
 - [arXiv Paper](https://arxiv.org/abs/2004.12084)
 - Web Interface ([https://pocovidscreen.org](https://pocovidscreen.org))
 - [DevPost](https://devpost.com/software/automatic-detection-of-covid-19-from-pocus-ultrasound-data)   
-- Watch this [video](https://www.youtube.com/watch?v=1hJaVLGvzng) (2min pitch):
-[![IMAGE ALT TEXT](pocovidnet/plots/pitch.png)](https://www.youtube.com/watch?v=1hJaVLGvzng "POCUS 4 COVID19")
+- Watch this [video](https://www.youtube.com/watch?v=1hJaVLGvzng) (2min pitch)
 
 ## Infrastructure
-<img src=".ddev/doc/pocovidscreen_arch.png" style="width: 65%"/>
+<img src=".ddev/doc/pocovidscreen_arch.png" width="600"/>
 
-<img src=".ddev/doc/screen_process.png" style="width: 65%"/>
+<img src=".ddev/doc/screen_process.png" width="600"/>
 
 ## Installation
 
