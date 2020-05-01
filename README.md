@@ -31,7 +31,7 @@ This project is a **proof of concept**, showing that a CNN is able to learn to d
 Pneumonia and healthy patients with an **accuracy of 89%** and **sensitivity for
 COVID of 96\%**.
 
-### Evidence for ultrasound
+##### Evidence for ultrasound
    - Peer-reviewed publications from the medical community suggesting to use more **ultrasound
      for COVID-19**:
       - ["COVID-19 outbreak: less stethoscope, more ultrasound" in *The Lancet
@@ -56,7 +56,7 @@ The lung is normally aerated with horizontal A-lines.</em>
 
 
 ## Contribute!
-- You can donate your lung ultrasound recordings directly on our website: [](https://pocovidscreen.org)
+- You can donate your lung ultrasound recordings directly on our website: [https://pocovidscreen.org](https://pocovidscreen.org)
 - Please help us to find more data! Open an
   [issue](https://github.com/jannisborn/covid19_pocus_ultrasound/issues) if you
   identified a promising data source. Please check [here](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) whether the data is
@@ -74,10 +74,10 @@ The lung is normally aerated with horizontal A-lines.</em>
 
 ## Learn more about the project
 
-- [arXiv Paper](https://arxiv.org/abs/2004.12084)
+- [**Read our full arXiv manuscript**](https://arxiv.org/abs/2004.12084)
 - Web Interface ([https://pocovidscreen.org](https://pocovidscreen.org))
 - [DevPost](https://devpost.com/software/automatic-detection-of-covid-19-from-pocus-ultrasound-data)   
-- Watch this [video](https://www.youtube.com/watch?v=1hJaVLGvzng) (2min pitch)
+- Watch this [video](https://www.youtube.com/watch?v=qOayWwYTPOs) (3min pitch)
 
 ## Infrastructure
 <img src=".ddev/doc/pocovidscreen_arch.png" width="600"/>
@@ -85,10 +85,7 @@ The lung is normally aerated with horizontal A-lines.</em>
 ### Screening process
 <img src=".ddev/doc/screen_process.png" width="600"/>
 
-## Installation
-
-To get more information about how to train the model with the dataset check inside the [pocovidnet](pocovidnet/README.md)
-folder.
+## Installation (web application)
 
 To use the trained model with our web application *locally* follow those steps :
 
@@ -141,6 +138,83 @@ npm run prod
 ```
 
 - Visit https://covidscreen.ddev.site/
+
+
+## Installation (machine learning model)
+
+`pocovidnet` is a simple package to train deep learning models on ultrasound data for COVID19.
+
+The library itself has few dependencies (see [setup.py](pocovidnet/setup.py)) with loose requirements. 
+
+To run the code, just install the package `pocovidnet` in editable mode:
+
+```sh
+git clone https://github.com/jannisborn/covid19_pocus_ultrasound.git
+cd covid19_pocus_ultrasound
+pip install -e .
+```
+
+### Training the model
+
+
+#### Data collection
+*NOTE*: The vast majority of data we gathered thus far is available in the 
+[data folder](data).
+But unfortunately, not all data used to train/evaluate the model is in this repo
+as we do not have the right to host/distribute the data from
+[Butterfly](https://butterflynetwork.com).
+
+However, we provide a script that automatically processes the data. To reproduce
+the experiments from the paper, please first complete the following steps:
+
+1. Visit the [COVID-19 ultrasound_gallery](https://butterflynetwork.com/covid19/covid-19-ultrasound-gallery)
+   of Butterfly, scroll to the bottom and download the videos (we accessed this
+   source on 17.04.2020 for training our models. Please note that it is not
+   under control whether Butterfly will keep this data online. Feel free to
+   notify us if you observe any changes).
+2. Place the `.zip` folder into the [data folder](data).
+3. `cd` into the [data folder](data).
+3. Run:
+    ```sh
+    sh parse_butterfly.sh
+    ```
+    *NOTE*: This step requires that you installed the `pocovidnet` package
+    before (see "Installation").
+    
+All current images should now be in `data/pocus_images`.
+
+
+### Cross validation splitting
+The next step is to perform the datat split. You can use the script
+`cross_val_splitter.py` to perform a 5-fold cross validation:
+
+From the directory of this README, execute:
+```sh
+python3 pocovidnet/scripts/cross_val_splitter.py --splits 5
+```
+Now, your [data folder](data) should contain a new folder `cross_validation`
+with folders `fold_1`, `fold_2`. Each folder contains only the test data for
+that specific fold.
+
+### Train the model
+
+Afterwards you can train the model by:
+```sh
+python3 pocovidnet/scripts/train_covid19.py --data_dir data/cross_validation/ --fold 0 --epochs 2
+```
+*NOTE*: `train_covid19.py` will automatically utilize the data from all other
+folds for training.
+
+### Our results (`POCOVID-Net`)
+
+Current results (5-fold CV) are an accuracy of 0.89 (balanced accuracy 0.82) across all 3
+classes. For COVID-19, we achieve a sensitivity of 96%.
+
+![alt text](https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/confusion_matrix.png "Confusion matrix")
+
+Detailed performances:
+![alt text](https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/result_table.png "Result table")
+
 
 ## Contact 
 - If you experience problems with the code, please open an
