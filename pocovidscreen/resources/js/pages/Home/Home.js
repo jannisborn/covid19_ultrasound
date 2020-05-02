@@ -4,7 +4,7 @@ import TextImage from '../../components/Content/TextImage';
 import CallToAction from '../../components/CallToAction/CallToAction';
 import gsap from 'gsap';
 import covid from '../../assets/images/covid19.png'
-import pocus from '../../assets/images/pocus.jpg'
+import pocus from '../../assets/images/pocus-covid.gif'
 import VideoPresentation from '../../components/VideoPresentation/VideoPresentation';
 import {Helmet} from 'react-helmet';
 import Slider from '../../components/Slider/Slider';
