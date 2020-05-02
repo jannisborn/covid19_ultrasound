@@ -15,7 +15,7 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.utils import to_categorical
 
-from pocovidnet.model import get_model
+from pocovidnet import MODEL_FACTORY
 from pocovidnet.utils import Metrics
 
 # Suppress logging
@@ -35,6 +35,7 @@ ap.add_argument('-ep', '--epochs', type=int, default=20)
 ap.add_argument('-bs', '--batch_size', type=int, default=16)
 ap.add_argument('-t', '--trainable_base_layers', type=int, default=2)
 ap.add_argument('-i', '--img_size', type=tuple, default=(224, 224))
+ap.add_argument('-m', '--model_id', type=str, default='vgg_base')
 
 args = vars(ap.parse_args())
 
@@ -45,11 +46,18 @@ FOLD = args['fold']
 LR = args['learning_rate']
 EPOCHS = args['epochs']
 BATCH_SIZE = args['batch_size']
+MODEL_ID = args['model_id']
 TRAINABLE_BASE_LAYERS = args['trainable_base_layers']
 IMG_WIDTH, IMG_HEIGHT = args['img_size']
 
 model_name = f'pocus_fold_{FOLD}'
 plot_path = f'pocus_fold_{FOLD}'
+
+# Check if model class exists
+if MODEL_ID not in MODEL_FACTORY.keys():
+    raise ValueError(
+        f'Model {MODEL_ID} not implemented. Choose from {MODEL_FACTORY.keys()}'
+    )
 
 if not os.path.exists(MODEL_DIR):
     os.makedirs(MODEL_DIR)
@@ -136,17 +144,11 @@ trainAug = ImageDataGenerator(
 )
 
 # Load the VGG16 network
-model = get_model(
-    input_size=(IMG_WIDTH, IMG_HEIGHT, 3), num_classes=num_classes
+model = MODEL_FACTORY[MODEL_ID](
+    input_size=(IMG_WIDTH, IMG_HEIGHT, 3),
+    num_classes=num_classes,
+    trainable_layers=TRAINABLE_BASE_LAYERS
 )
-
-# Number of layers in model head (fresh weights), this is fixed in get_model.
-num_head_layers = 7
-# Freeze all VGG layers apart from the last layers (TRAINABLE_BASE_LAYERS)
-num_layers = len(model.layers)
-for ind, layer in enumerate(model.layers):
-    if ind < num_layers - num_head_layers - TRAINABLE_BASE_LAYERS:
-        layer.trainable = False
 
 # Define callbacks
 earlyStopping = EarlyStopping(
