@@ -1,12 +1,10 @@
-
-"""
-POCOVID-Net model.
-"""
+#POCOVID-Net model.
 from tensorflow.keras.applications import VGG16
 from tensorflow.keras.layers import (
     AveragePooling2D, Dense, Dropout, Flatten, Input, BatchNormalization, ReLU
 )
 from tensorflow.keras.models import Model
+from pocovidnet.layers import global_average_pooling
 
 
 def get_model(
@@ -34,6 +32,33 @@ def get_model(
     headModel = Dense(num_classes, activation="softmax")(headModel)
 
     # place the head FC model on top of the base model
+    model = Model(inputs=baseModel.input, outputs=headModel)
+
+    return model
+
+
+def get_cam_model(input_size: tuple = (224, 224, 3), num_classes: int = 3):
+    """
+    Get a VGG model that supports class activation maps
+
+    Keyword Arguments:
+        input_size {tuple} -- [description] (default: {(224, 224, 3)})
+        num_classes {int} -- [description] (default: {3})
+
+    Returns:
+        tensorflow.keras.models object
+    """
+
+    # load the VGG16 network, ensuring the head FC layer sets are left off
+    baseModel = VGG16(
+        weights="imagenet",
+        include_top=False,
+        input_tensor=Input(shape=input_size)
+    )
+    headModel = baseModel.output
+    headModel = global_average_pooling(headModel)
+    headModel = Dense(num_classes, activation="softmax")(headModel)
+
     model = Model(inputs=baseModel.input, outputs=headModel)
 
     return model
