@@ -6,7 +6,6 @@ import os
 import cv2
 import numpy as np
 
-from pocovidnet.model import get_model, get_cam_model
 from pocovidnet import MODEL_FACTORY
 
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
@@ -55,7 +54,8 @@ class Evaluator(object):
 
         self.class_mappings = ['covid', 'pneunomia', 'regular']
         self.models = [
-            MODEL_FACTORY[model_id]() for _ in range(len(self.weights_paths))
+            MODEL_FACTORY[self.model_id]()
+            for _ in range(len(self.weights_paths))
         ]
 
         # restore weights

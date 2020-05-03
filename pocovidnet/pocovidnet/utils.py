@@ -1,5 +1,4 @@
 import numpy as np
-import tensorflow
 from sklearn.metrics import balanced_accuracy_score
 from tensorflow.keras.callbacks import Callback
 
@@ -34,10 +33,7 @@ class Metrics(Callback):
         return self._data
 
 
-def fix_layers(
-    model: tensorflow.python.keras.engine.training.Model,
-    num_flex_layers: int = 1
-) -> tensorflow.python.keras.engine.training.Model:
+def fix_layers(model, num_flex_layers: int = 1):
     """
     Receives a model and freezes all layers but the last num_flex_layers ones.
 
@@ -48,7 +44,7 @@ def fix_layers(
         num_flex_layers {int} -- [Number of trainable layers] (default: {1})
 
     Returns:
-        tensorflow.python.keras.engine.training.Model -- updated model
+        Model -- updated model
     """
     num_layers = len(model.layers)
     for ind, layer in enumerate(model.layers):
