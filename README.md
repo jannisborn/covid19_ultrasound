@@ -85,11 +85,11 @@ The lung is normally aerated with horizontal A-lines.</em>
 
 ## Installation 
 
-## Ultrasound data
+### Ultrasound data
 Find all details on the current state of the database in the [data](data)
 folder.
 
-## Deep learning model (`pocovidnet`)
+### Deep learning model (`pocovidnet`)
 Find all details on how to reproduce our experiments and train your models on
 ultrasound data in the [pocovidnet](pocovidnet) folder.
 
@@ -97,9 +97,9 @@ ultrasound data in the [pocovidnet](pocovidnet) folder.
 Find all details on how to get started in the [pocovidscreen](pocovidscreen)
 folder.
 
-### Our results (`POCOVID-Net`)
+## Current results
 
-Current results (5-fold CV) are an accuracy of 0.89 (balanced accuracy 0.82) across all 3
+Current results of `POCOVID-Net` were obtained in a 5-fold CV and show an accuracy of 0.89 (balanced accuracy 0.82) across all 3
 classes. For COVID-19, we achieve a sensitivity of 96%.
 
 ![alt text](https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/confusion_matrix.png "Confusion matrix")

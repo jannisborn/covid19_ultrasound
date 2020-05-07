@@ -21,6 +21,7 @@ reproduce the results of our paper, use the repo's state of the `arxiv` tag:
 ```sh
 git checkout tags/arxiv
 ```
+Now you're set to follow below instructions.
 
 
 ### Data collection
