@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-data', type=str, default="butterfly")
-    parser.add_argument('-out', type=str, default="pocus_images")  # TODO
+    parser.add_argument('-out', type=str, default="pocus_images/Convex")
     parser.add_argument('-csv', type=str, default="pocovid_data.csv")
     parser.add_argument(
         '-fr',
@@ -74,8 +74,8 @@ if __name__ == "__main__":
             # crop
             width_border = int(cap.get(3) * 0.15)
             width_box = int(cap.get(3)) - 2 * width_border
-            frame = frame[del_upper:width_box + del_upper,
-                          width_border:width_box + width_border]
+            frame = frame[del_upper:width_box +
+                          del_upper, width_border:width_box + width_border]
             # frame = frame[width_border:width_box+width_border]
             # detect green point
             green_point = frame[:, :, 1] - frame[:, :, 0]

@@ -12,7 +12,7 @@ ap.add_argument(
     "-d",
     "--data_dir",
     type=str,
-    default="../data/pocus_images",
+    default="../data/pocus_images/Convex",
     help=(
         "Raw data path. Expects 3 subfolders: 'covid', 'pneumonia', 'regular'"
     )

@@ -41,7 +41,7 @@ the experiments from the paper, please first complete the following steps:
     *NOTE*: This step requires that you installed the `pocovidnet` package
     before (see "Installation").
     
-All current images should now be in `data/pocus_images`.
+All current images should now be in `data/pocus_images/Convex`.
 
 
 ### Cross validation splitting
