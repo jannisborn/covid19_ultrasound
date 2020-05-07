@@ -10,11 +10,17 @@ To run the code, just install the package `pocovidnet` in editable mode:
 
 ```sh
 git clone https://github.com/jannisborn/covid19_pocus_ultrasound.git
-cd covid19_pocus_ultrasound
+cd covid19_pocus_ultrasound/pocovidnet/
 pip install -e .
 ```
 
 ## Training the model
+
+*NOTE*: The repository is constantly updated with new data. If you want to
+reproduce the results of our paper, use the repo's state of the `arxiv` tag:
+```sh
+git checkout tags/arxiv
+```
 
 
 ### Data collection
@@ -87,12 +93,10 @@ The paper is available [here](https://arxiv.org/abs/2004.12084).
 
 If you build upon our work or find it useful, please cite our paper:
 ```bib
-@article{born2020pocovidnet,
-    title={POCOVID-Net: Automatic Detection of COVID-19 From a New Lung Ultrasound Imaging Dataset (POCUS)},
-    author={Jannis Born and Gabriel Brändle and Manuel Cossio and Marion Disdier and Julie Goulet and Jérémie Roulin and Nina Wiedemann},
-    year={2020},
-    eprint={2004.12084},
-    archivePrefix={arXiv},
-    primaryClass={eess.IV}
+@article{born2020pocovid,
+  title={POCOVID-Net: Automatic Detection of COVID-19 From a New Lung Ultrasound Imaging Dataset (POCUS)},
+  author={Born, Jannis and Br{\"a}ndle, Gabriel and Cossio, Manuel and Disdier, Marion and Goulet, Julie and Roulin, J{\'e}r{\'e}mie and Wiedemann, Nina},
+  journal={arXiv preprint arXiv:2004.12084},
+  year={2020}
 }
 ```
