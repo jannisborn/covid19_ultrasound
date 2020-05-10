@@ -12,9 +12,15 @@ require('laravel-mix-purgecss');
  |
  */
 
-mix.react('resources/js/app.js', 'public/js')
+const public_root ='public/'
+const output_dir = '../../web_root/'
+const htaccess_file = '.htaccess'
+
+mix.setPublicPath(output_dir)
+
+mix.react('src/app.js', output_dir + 'js')
   .version()
-  .sass('resources/sass/app.scss', 'public/css')
+  .sass('assets/sass/app.scss', output_dir + 'css')
   .purgeCss()
   .webpackConfig({
     externals: [
@@ -23,4 +29,7 @@ mix.react('resources/js/app.js', 'public/js')
     node: {
       fs: 'empty'
     }
-  }).sourceMaps();
+  })
+  .copy(public_root + '*.*', output_dir)
+  .copy(public_root + htaccess_file, output_dir + htaccess_file)
+  .sourceMaps();
