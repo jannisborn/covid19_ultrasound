@@ -36,11 +36,13 @@ button,
         background-color: var(--primary);
         color: #fff;
 
-        &:hover,
-        &:focus,
-        &.active {
-            background-color: darken($primary, 10%);
-            color: darken(#fff, 5%);
+        &:enabled {
+            &:hover,
+            &:focus,
+            &.active {
+                background-color: darken($primary, 10%);
+                color: darken(#fff, 5%);
+            }
         }
     }
 
@@ -48,11 +50,20 @@ button,
         background-color: var(--secondary);
         color: #fff;
 
-        &:hover,
-        &:focus,
-        &.active {
-            background-color: darken($secondary, 10%);
-            color: darken(#fff, 5%);
+        &:enabled {
+            &:hover,
+            &:focus,
+            &.active {
+                background-color: darken($secondary, 10%);
+                color: darken(#fff, 5%);
+            }
+        }
+    }
+
+    &:disabled {
+        opacity: .8;
+        &:hover {
+            cursor: not-allowed;
         }
     }
 }

@@ -103,7 +103,7 @@ const Train = () => {
                                     </label>
                                 </div>
                             </div>
-                            {files.length > 0 && (<button className="button primary round w-100 text-uppercase mt-4">Confirm</button>)}
+                            <button disabled={files.length === 0} className="button primary round w-100 text-uppercase mt-4">Confirm</button>
                         </div>
                     </div>
                 </form>

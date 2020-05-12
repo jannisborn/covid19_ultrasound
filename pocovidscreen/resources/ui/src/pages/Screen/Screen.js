@@ -80,7 +80,7 @@ const Screen = () => {
                     </aside>
                     <div className="row">
                         <div className="col-lg-10 offset-lg-1">
-                            {files.length > 0 && (<button className="button primary round w-100 text-uppercase mt-4" >Confirm</button>)}
+                            <button disabled={files.length === 0} className="button primary round w-100 text-uppercase mt-4">Confirm</button>
                         </div>
                     </div>
                 </form>

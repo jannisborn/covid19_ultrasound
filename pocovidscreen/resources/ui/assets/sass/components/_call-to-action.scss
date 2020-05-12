@@ -21,21 +21,11 @@
     }
 
     &.primary {
-        background-color: var(--primary);
-
-        &:hover,
-        &:focus {
-            background-color: var(--primary);
-        }
+        background-color: var(--primary) !important;;
     }
 
     &.secondary {
-        background-color: var(--secondary);
-
-        &:hover,
-        &:focus {
-            background-color: var(--secondary);
-        }
+        background-color: var(--secondary) !important;
     }
 
     h2 {
