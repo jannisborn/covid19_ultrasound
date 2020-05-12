@@ -3,6 +3,7 @@
 @import "~bootstrap/scss/bootstrap-grid";
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/images";
+@import "~rfs/scss";
 @import "components/auth";
 @import "components/home";
 @import "components/train";
@@ -19,6 +20,7 @@
 @import "components/video-presentation";
 @import "components/dropzone";
 @import "components/result";
+@import "components/teaser";
 @import "variables";
 
 :root {

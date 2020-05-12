@@ -8,7 +8,7 @@ const Teaser = (props) => {
                 <div className="teaser">
                     <div className="teaser-text col-12 col-lg-8 col-xl-6">
                         <header>
-                            <h1>{configuration.appTitle}</h1>
+                            <h1>PO<span className="text-blue">COVID</span>SCREEN</h1>
                             <p>{props.teaser}</p>
                         </header>
                     </div>
