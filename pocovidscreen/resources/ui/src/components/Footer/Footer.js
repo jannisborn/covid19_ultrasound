@@ -7,11 +7,11 @@ const Footer = () => {
         <footer className="app-footer pt-5">
             <div className="container mb-4">
                 <div className="row">
-                    <div className="col-md-6 col-lg-5 mb-5 mb-md-0">
+                    <div className="col-lg-5 mb-5 mb-lg-0">
                         <h2 className="mb-1">{configuration.appTitle}</h2>
                         <p>POCUS image analysis through AI to screen COVID-19 and pneumonia or healthy people.</p>
                     </div>
-                    <div className="col-md-6 col-lg-5 offset-lg-2">
+                    <div className="col-lg-6 col-xl-5 offset-xl-2 offset-lg-1">
                         <div className="row">
                             <div className="col">
                                 <h3 className="mb-4">Legal</h3>

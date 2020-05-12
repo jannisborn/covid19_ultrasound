@@ -12,7 +12,7 @@ const About = () => {
             <Helmet>
                 <title>{configuration.appTitle} - About</title>
             </Helmet>
-            <div className="spacer">
+            <div className="spacer-small">
                 <div className="container">
                     <div className="text row mb-5">
                         <div className="col-8 col-lg-8 col-xl-6 offset-lg-1">

@@ -78,6 +78,7 @@ const Train = () => {
                         {thumbs}
                     </aside>
                     <h2 className="text-center with-line">Choose the correct label for your images</h2>
+                    <p className="text-center">If you are not sure or you do not know which label to choose, leave it blank.</p>
                     <div className="row">
                         <div className="col-lg-10 offset-lg-1">
                             <div className="train-labels text-center row">

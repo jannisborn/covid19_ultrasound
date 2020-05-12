@@ -11,7 +11,7 @@ const Terms = () => {
             <Helmet>
                 <title>{configuration.appTitle} - Terms and conditions</title>
             </Helmet>
-            <div className="spacer">
+            <div className="spacer-small">
                 <div className="container">
                     <div className="text row mb-5">
                         <div className="col-lg-10 offset-lg-1 terms">
