@@ -1,14 +1,15 @@
 .call-to-action {
     transform: translateY(-50%);
     border-radius: var(--border-radius-base);
-    color: #fff;
-    transition: transform .25s ease;
+    color: #fff !important;
+    transition: transform .25s ease, background-color .25s ease-in-out;
+    text-align: left;
+    white-space: normal;
 
     &:hover,
     &:focus,
     &.active {
         text-decoration: none;
-        color: #fff;
         transform: translateY(-52%);
 
         .call-to-action-link::after {
@@ -21,10 +22,20 @@
 
     &.primary {
         background-color: var(--primary);
+
+        &:hover,
+        &:focus {
+            background-color: var(--primary);
+        }
     }
 
     &.secondary {
         background-color: var(--secondary);
+
+        &:hover,
+        &:focus {
+            background-color: var(--secondary);
+        }
     }
 
     h2 {
@@ -46,9 +57,11 @@
     display: inline-block;
 
     &::after {
-        content: '>';
+        display: inline-block;
+        content: url("../../images/arrow.svg");
         position: absolute;
         right: -25px;
+        top: 1px;
         transition: transform .25s ease;
     }
 }

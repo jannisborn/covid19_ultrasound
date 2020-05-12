@@ -21,6 +21,7 @@
 @import "components/dropzone";
 @import "components/result";
 @import "components/teaser";
+@import "components/modal";
 @import "variables";
 
 :root {
@@ -89,11 +90,11 @@ body {
     transition: color,background-color .25s ease;
     visibility: hidden;
     overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $montserrat;
     color:var(--black);
 }
 
@@ -143,6 +144,6 @@ p {
 }
 
 .spacer {
-    margin-top: 9rem;
-    margin-bottom: 9rem;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
 }

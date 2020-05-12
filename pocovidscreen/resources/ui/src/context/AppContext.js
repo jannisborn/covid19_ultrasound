@@ -7,6 +7,7 @@ const AppProvider = ({children}) => {
     const preferredTheme = useMediaPredicate('(prefers-color-scheme: dark)') ? 'dark' : 'light';
     const [appData, setApp] = useState({
         themeMode: localStorage.getItem('theme-mode') || preferredTheme,
+        disclaimerAccepted: !!localStorage.getItem('disclaimer-accepted'),
         changeTheme: mode => setApp(data => (
             {...data, themeMode: mode}
         ))
@@ -19,4 +20,8 @@ const AppProvider = ({children}) => {
     return <AppContext.Provider value={appData}>{children}</AppContext.Provider>;
 };
 
-export {AppContext, AppProvider};
+const acceptDisclaimer = () => {
+    localStorage.setItem('disclaimer-accepted', 'true')
+};
+
+export {AppContext, AppProvider, acceptDisclaimer};

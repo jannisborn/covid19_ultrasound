@@ -1,3 +1,5 @@
+@import "../variables";
+
 .result {
     border-radius: var(--border-radius-base);
     overflow: hidden;
@@ -65,7 +67,7 @@
     }
 
     h3 {
-        font-family: 'Roboto', sans-serif;
+        font-family: $roboto;
         margin-bottom: .2rem;
         font-weight: normal;
     }

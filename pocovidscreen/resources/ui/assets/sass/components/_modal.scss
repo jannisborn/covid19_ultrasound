@@ -1,0 +1,63 @@
+@import "../variables";
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($dark, 0.9);
+    z-index: 100;
+}
+
+.modal-main {
+    position: fixed;
+    background: $white;
+    width: 45%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: var(--border-radius-base);
+}
+
+.modal-content {
+    position: relative;
+    padding: 4rem 3rem;
+
+    h2 {
+        color: $dark;
+        font-family: $roboto;
+        font-size: 2.1rem;
+        margin-bottom: 1.6rem;
+    }
+
+    p {
+        color: $dark-gray;
+    }
+
+    .close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    a {
+        color: var(--primary);
+
+        &:hover,
+        &:focus,
+        &.active {
+            color: var(--primary);
+            opacity: .86;
+        }
+    }
+}
+
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}

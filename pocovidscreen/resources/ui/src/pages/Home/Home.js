@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import Text from '../../components/Content/Text';
 import TextImage from '../../components/Content/TextImage';
 import CallToAction from '../../components/CallToAction/CallToAction';
@@ -13,8 +13,32 @@ import PartnerList from '../../components/Partner/ParternList';
 import Layout from '../Layout';
 import Teaser from '../../components/Teaser/Teaser';
 import configuration from '../../utils/constants';
+import Modal from '../../components/Modal/Modal';
+import {acceptDisclaimer, AppContext} from '../../context/AppContext';
+import {useHistory} from 'react-router-dom';
 
 const Home = () => {
+
+    const [modalOpened, setModalOpened] = useState(false);
+    const context = useContext(AppContext);
+    const history = useHistory();
+
+    const showDisclaimerModal = () => {
+        if (context.disclaimerAccepted) {
+            history.push('/screen');
+        } else {
+            setModalOpened(true);
+        }
+    };
+
+    const hideDisclaimerModal = () => {
+        setModalOpened(false);
+    };
+
+    const startScreening = () => {
+        acceptDisclaimer();
+        history.push('/screen');
+    };
 
     let tl = gsap.timeline();
     useEffect(() => {
@@ -25,7 +49,7 @@ const Home = () => {
              .from('.teaser-text p', .7, {y: 20, opacity: 0, ease: 'power4.out'}, 1.45)
              .from('.screen', .65, {y: 200, opacity: 0, ease: 'power4.out'}, 1.7)
              .from('.train', .65, {y: 200, opacity: 0, ease: 'power4.out'}, 1.95);
-    });
+    }, []);
 
     return (
         <Layout className="page">
@@ -37,7 +61,7 @@ const Home = () => {
                 <div className="row">
                     <div
                         className="screen col-10 offset-1 col-sm-12 mb-5 mb-md-0 offset-sm-0 col-md-6 col-lg-5 offset-lg-1">
-                        <CallToAction action="/screen" title="Screen"
+                        <CallToAction onClick={showDisclaimerModal} title="Screen"
                                       text="Use our AI to detect COVID-19, pneumonia or healthy patient from POCUS images."
                                       linkTitle="Start screening" className="primary"/>
                     </div>
@@ -90,6 +114,15 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <Modal show={modalOpened} handleClose={hideDisclaimerModal}>
+                <h2>Disclaimer</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequuntur cupiditate dolore
+                    dolorem eius, fugiat impedit incidunt maxime nesciunt nisi nobis nulla optio quam sint sunt
+                    suscipit <a href="/terms-and-conditions">tempora totam ut</a>!
+                </p>
+                <button type="button" onClick={startScreening} className="button primary round mt-4 px-5">Continue</button>
+            </Modal>
         </Layout>
     );
 };
