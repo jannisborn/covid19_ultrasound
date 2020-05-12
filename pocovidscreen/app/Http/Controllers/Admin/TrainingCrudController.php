@@ -26,26 +26,31 @@ class TrainingCrudController extends CrudController
         $this->crud->setModel(Training::class);
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/training');
         $this->crud->setEntityNameStrings('Training', 'Trainings');
-    }
 
-    protected function setupListOperation()
-    {
-        $this->crud->addColumn([
-            'name' => 'created_at',
-            'label' => "Creation date",
-        ]);
-        $this->crud->addColumn([
-            'name' => 'file.path',
-            'label' => "Image",
-            'type' => 'Image',
-            'disk' => 'local',
-            'width' => '200px',
-            'height' => '200px',
-        ]);
-    }
+        $this->crud->operation('list', function () {
+            $this->crud->addColumn([
+                'name' => 'created_at',
+                'label' => "Creation date",
+            ]);
+            $this->crud->addColumn([
+                'name' => 'file.path',
+                'label' => "Image",
+                'type' => 'customImage',
+                'disk' => 'data',
+                'width' => '200px',
+                'height' => '200px',
+            ]);
+        });
 
-    protected function setupUpdateOperation()
-    {
-
+        $this->crud->operation('update', function () {
+            $this->crud->addField([
+                'label' => 'Image',
+                'name' => 'file_id',
+                'type' => 'customImage',
+                'disk' => 'data',
+                'crop' => true,
+                'aspect_ratio' => 1
+            ]);
+        });
     }
 }

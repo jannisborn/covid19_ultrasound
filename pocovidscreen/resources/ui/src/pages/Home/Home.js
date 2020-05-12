@@ -117,11 +117,11 @@ const Home = () => {
             <Modal show={modalOpened} handleClose={hideDisclaimerModal}>
                 <h2>Disclaimer</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequuntur cupiditate dolore
-                    dolorem eius, fugiat impedit incidunt maxime nesciunt nisi nobis nulla optio quam sint sunt
-                    suscipit <a href="/terms-and-conditions">tempora totam ut</a>!
+                    We highly recommend to follow approved clinical guidelines for the diagnosis and management of
+                    COVID-19. By no means you should base your clinical decision solely on the result of this algorithm.
+                    You should also read carefully our <a href="/terms-and-conditions">terms and conditions</a>.
                 </p>
-                <button type="button" onClick={startScreening} className="button primary round mt-4 px-5">Continue</button>
+                <button type="button" onClick={startScreening} className="button primary round mt-4 px-5">Agree</button>
             </Modal>
         </Layout>
     );

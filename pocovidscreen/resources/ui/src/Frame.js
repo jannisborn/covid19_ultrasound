@@ -83,7 +83,7 @@ const Frame = () => {
                         <Route exact path="/train" alertMessage="You need to sign in before to train." component={() => <Train/>}/>
                         <Route exact path="/screen" alertMessage="You need to sign in before to screen." component={() => <Screen/>}/>
                         <Route exact path="/screen/results" component={() => <ScreenResults/>}/>
-                        <Route exact path="/train/results" component={() => <TrainResult/>}/>
+                        <Route exact path="/train/result" component={() => <TrainResult/>}/>
                         <Route exact path="/about" component={() => <About/>}/>
                         <Route exact path="/sign-in" component={() => <SignIn/>}/>
                         <Route exact path="/sign-up" component={() => <SignUp/>}/>

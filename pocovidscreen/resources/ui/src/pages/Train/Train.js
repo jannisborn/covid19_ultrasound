@@ -20,6 +20,7 @@ const Train = () => {
     }
 
     const [files, setFiles] = useState([]);
+    const [label, setLabel] = useState('4');
     useEffect(() => () => {
         files.forEach(file => URL.revokeObjectURL(file.preview));
     }, [files]);
@@ -47,9 +48,13 @@ const Train = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         history.push({
-            pathname: '/train/results',
-            state: {files: files}
+            pathname: '/train/result',
+            state: {files: files, label: label}
         })
+    };
+
+    const handleLabelChange = (event) => {
+        setLabel(event.target.value)
     };
 
     return (
@@ -84,21 +89,21 @@ const Train = () => {
                             <div className="train-labels text-center row">
                                 <div className="train-label-radio col-4">
                                     <label htmlFor="covid19">
-                                        <input type="radio" id="covid19" name="label" value="2"/>
+                                        <input type="radio" id="covid19" name="label" value="2" onChange={handleLabelChange}/>
                                         <div className="radio-background"></div>
                                         COVID-19
                                     </label>
                                 </div>
                                 <div className="train-label-radio col-4">
                                     <label htmlFor="pneumonia">
-                                        <input type="radio" id="pneumonia" name="label" value="1"/>
+                                        <input type="radio" id="pneumonia" name="label" value="1" onChange={handleLabelChange}/>
                                         <div className="radio-background"></div>
                                         Pneumonia
                                     </label>
                                 </div>
                                 <div className="train-label-radio col-4">
                                     <label htmlFor="healthy">
-                                        <input type="radio" id="healthy" name="label" value="3"/>
+                                        <input type="radio" id="healthy" name="label" value="3" onChange={handleLabelChange}/>
                                         <div className="radio-background"></div>
                                         Healthy
                                     </label>

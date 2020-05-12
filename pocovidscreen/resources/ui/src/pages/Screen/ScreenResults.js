@@ -29,7 +29,7 @@ const ScreenResults = () => {
 
     return (
         <Layout>
-            <div className="container spacer">
+            <div className="container spacer-small">
                 <Text title="Results"
                       text="We highly recommend to follow approved clinical guidelines for the diagnosis and management of COVID19. By no means you should base your clinical decision solely on the result of this algorithm."/>
                 <div className="row">

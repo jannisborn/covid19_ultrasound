@@ -21,6 +21,8 @@ class TrainingController extends Controller
         $file->save();
 
         $training = new Training();
+        // @todo add the connected user id... Training are done by authenticated users only.
+        $training->user_id = 1;
         $training->type_id = 3;
         $training->file_id = $file->id;
         $training->pathology_id = $request->input('label');

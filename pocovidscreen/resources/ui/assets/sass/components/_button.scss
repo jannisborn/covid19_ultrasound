@@ -6,7 +6,7 @@ button,
     background-color: transparent;
     color: var(--main-color);
     border: none;
-    transition: color, background-color, opacity .25s ease;
+    transition: background-color .25s ease, opacity .25s ease;
     white-space: nowrap;
 
     &:hover,
@@ -36,7 +36,7 @@ button,
         background-color: var(--primary);
         color: #fff;
 
-        &:enabled {
+        &:not(:disabled) {
             &:hover,
             &:focus,
             &.active {
@@ -50,7 +50,7 @@ button,
         background-color: var(--secondary);
         color: #fff;
 
-        &:enabled {
+        &:not(:disabled) {
             &:hover,
             &:focus,
             &.active {
