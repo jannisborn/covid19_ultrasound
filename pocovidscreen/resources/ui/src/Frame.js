@@ -20,6 +20,7 @@ const ForgotPassword = lazy(() => import('./pages/Auth/ForgotPassword'));
 const ScreenResults = lazy(() => import('./pages/Screen/ScreenResults'));
 const TrainResult = lazy(() => import('./pages/Train/TrainResult'));
 const About = lazy(() => import('./pages/About/About'));
+const Terms = lazy(() => import('./pages/About/Terms'));
 const LoadingMessage = () => ``;
 
 const Frame = () => {
@@ -77,6 +78,7 @@ const Frame = () => {
                 <Switch>
                     <Suspense fallback={<LoadingMessage/>}>
                         <Route exact path="/" component={() => <Home/>}/>
+                        <Route exact path="/terms-and-conditions" component={() => <Terms/>}/>
                         <Route exact path="/forgot-password" component={() => <ForgotPassword/>}/>
                         <Route exact path="/train" alertMessage="You need to sign in before to train." component={() => <Train/>}/>
                         <Route exact path="/screen" alertMessage="You need to sign in before to screen." component={() => <Screen/>}/>

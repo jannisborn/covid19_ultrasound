@@ -16,8 +16,8 @@ const Footer = () => {
                             <div className="col">
                                 <h3 className="mb-4">Legal</h3>
                                 <ul className="app-footer-links">
-                                    <li><a href="">Data privacy</a></li>
-                                    <li><a href="">Terms of service</a></li>
+                                    <li><a href="/data-privacy">Data privacy</a></li>
+                                    <li><a href="/terms-and-conditions">Terms and conditions</a></li>
                                 </ul>
                             </div>
                             <div className="col offset-1">
