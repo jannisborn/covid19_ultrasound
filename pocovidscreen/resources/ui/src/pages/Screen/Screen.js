@@ -62,7 +62,7 @@ const Screen = () => {
             <div className="container">
                 <form onSubmit={handleSubmit}>
                     <div className="row">
-                        <div className="col-lg-10 offset-lg-1">
+                        <div className="col-10 offset-1">
                             <section className="file-upload-area text-center">
                                 <img src={downloadImage} className="mt-3 mb-2"/>
                                 <div {...getRootProps({className: 'dropzone'})}>
