@@ -14,4 +14,9 @@ npm-debug.log
 yarn-error.log
 .env
 .DS_Store
-web_root
+web_root/*
+!web_root/.htaccess
+!web_root/robots.txt
+!web_root/index.php
+!web_root/favicon.ico
+

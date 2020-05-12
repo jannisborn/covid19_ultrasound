@@ -12,9 +12,7 @@ require('laravel-mix-purgecss');
  |
  */
 
-const public_root ='public/'
 const output_dir = '../../web_root/'
-const htaccess_file = '.htaccess'
 
 mix.setPublicPath(output_dir)
 
@@ -30,6 +28,4 @@ mix.react('src/app.js', output_dir + 'js')
       fs: 'empty'
     }
   })
-  .copy(public_root + '*.*', output_dir)
-  .copy(public_root + htaccess_file, output_dir + htaccess_file)
   .sourceMaps();
