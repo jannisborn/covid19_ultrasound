@@ -20,6 +20,10 @@ assembled from publicly available resources in the web as well as from publicati
 - We are mostly looking for *healthy* lung recordings (at the moment we have *more* data for COVID than for healthy
   lungs)
 
+## Updates
+- **16.5.2020**: The [ICLUS
+  project](https://www.disi.unitn.it/iclus) released ~60 videos
+  from COVID-patients (register [here](https://covid19.disi.unitn.it/iclusdb/login)).
 
 ## Collect Data from Butterfly
 Unfortunately, not all data used to train/evaluate the model is in this repo
