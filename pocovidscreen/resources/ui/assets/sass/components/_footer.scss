@@ -1,0 +1,23 @@
+.copyright {
+    font-size: .8rem;
+
+    a {
+        color: var(--primary);
+    }
+}
+
+.app-footer {
+    .app-footer-links {
+        margin-top: 2.1rem;
+        padding-top: 3.1rem;
+        border-top: 1px solid #C8C8C8;
+
+        li {
+            padding-bottom: .4rem;
+        }
+
+        a {
+            color: var(--main-color);
+        }
+    }
+}

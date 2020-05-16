@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
-use Illuminate\Database\Eloquent\Model;
+use App\File;
 
 class Training extends \App\Training
 {
@@ -28,6 +28,10 @@ class Training extends \App\Training
     | RELATIONS
     |--------------------------------------------------------------------------
     */
+    public function file()
+    {
+        return $this->belongsTo(File::class, 'file_id');
+    }
 
     /*
     |--------------------------------------------------------------------------

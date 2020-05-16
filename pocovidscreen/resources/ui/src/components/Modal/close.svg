@@ -1,0 +1,17 @@
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="COVID-19" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="000---modal-example-(-Black-)-(-Desktop-)" transform="translate(-1086.000000, -340.000000)">
+            <g id="MODAL-MESSAGE" fill="#000000">
+                <g id="MODAL" transform="translate(405.000000, 300.000000)">
+                    <g id="CONTENT" transform="translate(50.000000, 40.000000)">
+                        <g id="icon/close" transform="translate(631.000000, 0.000000)">
+                            <g>
+                                <path d="M9.27745705,7.1561367 L16.4335938,2.84217094e-14 L18.5549141,2.12132034 L11.3987774,9.27745705 L18.5549141,16.4335938 L16.4335938,18.5549141 L9.27745705,11.3987774 L2.12132034,18.5549141 L0,16.4335938 L7.1561367,9.27745705 L0,2.12132034 L2.12132034,2.84217094e-14 L9.27745705,7.1561367 Z"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

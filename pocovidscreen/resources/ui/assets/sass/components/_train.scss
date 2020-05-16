@@ -1,0 +1,42 @@
+.train-form h2 {
+    margin-top: 7rem;
+    text-transform: uppercase;
+}
+
+.train-label-radio {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 1.3rem;
+        user-select: none;
+        color: var(--black);
+
+       &:hover input ~ .radio-background {
+            background-color: #ccc;
+        }
+
+        input:checked ~ .radio-background {
+            background-color: var(--primary);
+        }
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .radio-background {
+        transition: background-color .3s ease-out;
+        background-color: var(--footer-bg);
+        border-radius: var(--border-radius-base);
+        height: 200px;
+        margin-bottom: 1.3rem;
+    }
+}
