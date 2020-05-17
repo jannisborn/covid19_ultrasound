@@ -4,7 +4,6 @@ Core Module for Grad CAM Algorithm
 import numpy as np
 import cv2
 import tensorflow as tf
-from tf_explain.utils.saver import save_rgb
 
 
 class GradCAM:
@@ -158,13 +157,3 @@ class GradCAM:
         cam = tf.reduce_sum(tf.multiply(weights, output), axis=-1)
 
         return cam
-
-    def save(self, grid, output_dir, output_name):
-        """
-        Save the output to a specific dir.
-        Args:
-            grid (numpy.ndarray): Grid of all the heatmaps
-            output_dir (str): Output directory path
-            output_name (str): Output name
-        """
-        save_rgb(grid, output_dir, output_name)
