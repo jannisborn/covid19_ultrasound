@@ -40,6 +40,8 @@ def get_class_activation_map(
         img = np.expand_dims(img, 0)
     if img.shape[1] == 3:
         img = img.transpose(0, 2, 3, 1)
+    if img.shape[1:3] != size:
+        raise ValueError(f'Img has size {img.shape}, should have {size}.')
     # In the CAM case, second to last layer is used
     class_weights = model.layers[-1].get_weights()[0]
     final_conv_layer = get_output_layer(model, layer_name)
