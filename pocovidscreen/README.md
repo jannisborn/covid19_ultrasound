@@ -5,7 +5,7 @@
 <img src="../.ddev/doc/screen_process.png" width="600"/>
 
 ## Installation (web application)
-
+[![Build Status](https://travis-ci.com/jannisborn/covid19_pocus_ultrasound.svg?branch=master)](https://travis-ci.com/jannisborn/covid19_pocus_ultrasound)
 To use the trained model with our web application *locally* follow those steps :
 
 - Clone the repo
