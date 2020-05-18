@@ -1,6 +1,6 @@
-from tensorflow.keras.callbacks import Callback
 import numpy as np
 from sklearn.metrics import balanced_accuracy_score
+from tensorflow.keras.callbacks import Callback
 
 
 # A class to show balanced accuracy.
@@ -31,3 +31,24 @@ class Metrics(Callback):
 
     def get_data(self):
         return self._data
+
+
+def fix_layers(model, num_flex_layers: int = 1):
+    """
+    Receives a model and freezes all layers but the last num_flex_layers ones.
+
+    Arguments:
+        model {tensorflow.python.keras.engine.training.Model} -- model
+
+    Keyword Arguments:
+        num_flex_layers {int} -- [Number of trainable layers] (default: {1})
+
+    Returns:
+        Model -- updated model
+    """
+    num_layers = len(model.layers)
+    for ind, layer in enumerate(model.layers):
+        if ind < num_layers - num_flex_layers:
+            layer.trainable = False
+
+    return model

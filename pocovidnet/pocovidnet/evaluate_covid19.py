@@ -6,14 +6,15 @@ import os
 import cv2
 import numpy as np
 
-from pocovidnet.model import get_model
+from pocovidnet import MODEL_FACTORY
+
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 NUM_FOLDS = 5
 
 
 class Evaluator(object):
 
-    def __init__(self, ensemble=True, split=None):
+    def __init__(self, ensemble=True, split=None, model_id=None):
         """
         Constructor of COVID model evaluator class.
         
@@ -23,6 +24,14 @@ class Evaluator(object):
         self.root = os.path.join('/', *DIR_PATH.split('/')[:-1])
         self.split = split
         self.ensemble = ensemble
+        if model_id is None:
+            self.model_id = 'vgg_base'
+        elif model_id not in MODEL_FACTORY.keys():
+            raise ValueError(
+                f'Wrong model {model_id}. Options are:{MODEL_FACTORY.keys()}'
+            )
+        else:
+            self.model_id = model_id
 
         if ensemble:
             # retores 5 weight paths
@@ -44,7 +53,10 @@ class Evaluator(object):
             ]
 
         self.class_mappings = ['covid', 'pneunomia', 'regular']
-        self.models = [get_model() for _ in range(len(self.weights_paths))]
+        self.models = [
+            MODEL_FACTORY[self.model_id]()
+            for _ in range(len(self.weights_paths))
+        ]
 
         # restore weights
         try:
