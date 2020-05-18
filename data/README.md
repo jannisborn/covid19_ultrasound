@@ -17,13 +17,17 @@ assembled from publicly available resources in the web as well as from publicati
       - https://thepocusatlas.com
       - https://radiopaedia.org/
       - https://grepmed.com 
-- We are mostly looking for *healthy* lung recordings (at the moment we have *more* data for COVID than for healthy
-  lungs)
+  
+## Current dataset size (May 2020)
+- Linear: 15 videos (4x COVID, 1x bacterial pneumonia, 10x healthy)
+- Convex: 69 videos (40x COVID, 14x bacterial pneumonia, 15x healthy)
+- Soon more will be added!
 
 ## Updates
 - **16.5.2020**: The [ICLUS
   project](https://www.disi.unitn.it/iclus) released ~60 videos
-  from COVID-patients (register [here](https://covid19.disi.unitn.it/iclusdb/login)).
+  from COVID-patients (register [here](https://covid19.disi.unitn.it/iclusdb/login)). This data may be added directly here in the future.
+  
 
 ## Collect Data from Butterfly
 Unfortunately, not all data used to train/evaluate the model is in this repo
