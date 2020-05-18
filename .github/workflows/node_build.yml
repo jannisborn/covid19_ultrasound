@@ -13,9 +13,17 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - run: npm install
-    - working-directory: ${{env.working-directory}}
-    - run: npm run prod
-    - working-directory: ${{env.working-directory}}
+    - name: Build
+      run: |
+        cd pocovidscreen/resources/ui
+        npm install
+        npm run prod
+        cd ../../web_root
+        tar cvzf build.tar.gz *
       env:
         CI: true
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: build.tar.gz
+        path: ./pocovidscreen/web_root/build.tar.gz
