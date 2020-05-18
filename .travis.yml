@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+    - "12"
+script:
+    - cd pocovidscreen/resources/ui
+    - npm install
+    - npm run prod
+    - cd ../../web_root
+    - tar cvzf web_root.tar.gz *
