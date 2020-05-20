@@ -6,15 +6,15 @@ import chevronLeftLight from './chevron-left.svg';
 import chevronRightDark from './chevron-right-dark.svg';
 import chevronLeftDark from './chevron-left-dark.svg';
 import {AppContext} from '../../context/AppContext';
-import julie from '../../../assets/images/team/julie.jpg';
-import marion from '../../../assets/images/team/marion.jpg';
-import gabriel from '../../../assets/images/team/gabriel.jpg';
-import manuel from '../../../assets/images/team/manuel.jpg';
-import nina from '../../../assets/images/team/nina.jpg';
-import janis from '../../../assets/images/team/janis.jpg';
-import jay from '../../../assets/images/team/jay.jpg';
-import lorenzo from '../../../assets/images/team/lorenzo.jpg';
-import saheli from '../../../assets/images/team/saheli.jpg';
+import julie from '../../images/team/julie.jpg';
+import marion from '../../images/team/marion.jpg';
+import gabriel from '../../images/team/gabriel.jpg';
+import manuel from '../../images/team/manuel.jpg';
+import nina from '../../images/team/nina.jpg';
+import janis from '../../images/team/janis.jpg';
+import jay from '../../images/team/jay.jpg';
+import lorenzo from '../../images/team/lorenzo.jpg';
+import saheli from '../../images/team/saheli.jpg';
 
 const Slider = () => {
 

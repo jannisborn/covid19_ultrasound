@@ -4,7 +4,7 @@ import React from 'react';
 import {AppProvider} from './context/AppContext';
 import Frame from './Frame';
 import {IntlProvider} from 'react-intl';
-
+import './sass/app.scss'
 
 ReactDOM.render(
     <AuthProvider>
@@ -14,5 +14,5 @@ ReactDOM.render(
             </IntlProvider>
         </AppProvider>
     </AuthProvider>,
-    document.getElementById('app')
+    document.getElementById('root')
 );
