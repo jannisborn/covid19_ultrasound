@@ -16,8 +16,8 @@ jobs:
     - name: Build
       run: |
         cd pocovidscreen/resources/ui
-        npm install
-        npm run prod
+        yarn install
+        yarn run build
         cd ../../web_root
         tar cvzf build.tar.gz *
       env:
