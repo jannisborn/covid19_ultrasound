@@ -3,7 +3,6 @@ import Layout from '../Layout';
 import Text from '../../components/Content/Text';
 import {useLocation} from 'react-router-dom';
 import ScreenResult from './ScreenResult';
-import gsap from "gsap";
 
 const ScreenResults = () => {
 
@@ -24,6 +23,7 @@ const ScreenResults = () => {
                 setLoading(false);
                 setResults(results => results.concat({image: file, data: data}));
             })
+            return file
         });
     }, [location]);
 

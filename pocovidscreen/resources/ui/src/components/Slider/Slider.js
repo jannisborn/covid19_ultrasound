@@ -96,8 +96,8 @@ const Slider = () => {
                 </div>
             </div>
             <div className="controls d-flex justify-content-between">
-                <button className="left" onClick={slideLeft}><img src={chevronRight}/></button>
-                <button className="right" onClick={slideRight}><img src={chevronLeft}/></button>
+                <button className="left" onClick={slideLeft}><img src={chevronRight} alt=""/></button>
+                <button className="right" onClick={slideRight}><img src={chevronLeft} alt=""/></button>
             </div>
         </div>
     );

@@ -40,7 +40,7 @@ const Screen = () => {
     const thumbs = files.map(file => (
         <div className="thumb" key={file.name}>
             <div className="thumb-inner">
-                <img src={file.preview}/>
+                <img src={file.preview} alt=""/>
             </div>
         </div>
     ));
@@ -64,7 +64,7 @@ const Screen = () => {
                     <div className="row">
                         <div className="col-10 offset-1">
                             <section className="file-upload-area text-center">
-                                <img src={downloadImage} className="mt-3 mb-2"/>
+                                <img src={downloadImage} className="mt-3 mb-2" alt=""/>
                                 <div {...getRootProps({className: 'dropzone'})}>
                                     <input {...getInputProps()}/>
                                     <button type="button" className="button primary round my-4 px-5" onClick={open}>

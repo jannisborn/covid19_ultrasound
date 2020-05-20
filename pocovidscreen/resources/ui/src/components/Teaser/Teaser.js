@@ -1,5 +1,4 @@
 import React from 'react';
-import configuration from '../../utils/constants'
 
 const Teaser = (props) => {
     return (

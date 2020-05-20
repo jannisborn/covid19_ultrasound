@@ -7,7 +7,7 @@ import {forgotPassword} from '../../api/auth';
 import useInputValue from '../../utils/input-value';
 
 const ForgotPassword = () => {
-    let [resetFeedback, setResetFeedback] = useState('');
+    let [, setResetFeedback] = useState('');
     let email = useInputValue('email');
 
     const handleSubmit = e => {

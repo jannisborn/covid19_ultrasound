@@ -1,9 +1,6 @@
 import React from 'react';
-import {useIntl} from 'react-intl';
 
 const StatisticNumber = (props) => {
-
-    const intl = useIntl();
 
     return (
         <div className={`statistic-number ${props.className} pt-5`}>

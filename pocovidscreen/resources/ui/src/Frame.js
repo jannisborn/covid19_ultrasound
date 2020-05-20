@@ -6,8 +6,6 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {Power3, TimelineLite, TweenMax} from 'gsap';
 import {Helmet} from 'react-helmet';
 import Button from './components/Button/Button';
-import GuestRoute from './router/GuestRoute';
-import AuthRoute from './router/AuthRoute';
 import configuration from './utils/constants';
 import { useLocation } from "react-router-dom";
 

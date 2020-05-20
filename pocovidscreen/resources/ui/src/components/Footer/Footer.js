@@ -23,9 +23,9 @@ const Footer = () => {
                             <div className="col offset-1">
                                 <h3 className="mb-4">Handy links</h3>
                                 <ul className="app-footer-links">
-                                    <li><a href="https://arxiv.org/abs/2004.12084" title="Read our scientific article" target="_blank">Scientific article</a></li>
-                                    <li><a href="https://github.com/jannisborn/covid19_pocus_ultrasound" target="_blank" title="Find out how we achieved this">GitHub repository</a></li>
-                                    <li><a href="https://devpost.com/software/automatic-detection-of-covid-19-from-pocus-ultrasound-data" target="_blank" title="Read our DevPost">DevPost</a></li>
+                                    <li><a href="https://arxiv.org/abs/2004.12084" title="Read our scientific article" target="_blank" rel="noopener noreferrer">Scientific article</a></li>
+                                    <li><a href="https://github.com/jannisborn/covid19_pocus_ultrasound" target="_blank" rel="noopener noreferrer" title="Find out how we achieved this">GitHub repository</a></li>
+                                    <li><a href="https://devpost.com/software/automatic-detection-of-covid-19-from-pocus-ultrasound-data" target="_blank" rel="noopener noreferrer" title="Read our DevPost">DevPost</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -36,8 +36,8 @@ const Footer = () => {
                 <div className="container">
                     <div className="row justify-content-between">
                         <div className="col">© Copyright {(new Date().getFullYear())}</div>
-                        <div className="col text-right">A <a href="https://www.codevscovid19.org/" target="_blank"
-                                                             title="Visit the official event page">#CodeVsCovid19</a>, <a href="https://euvsvirus.org/" target="_blank"
+                        <div className="col text-right">A <a href="https://www.codevscovid19.org/" target="_blank" rel="noopener noreferrer"
+                                                             title="Visit the official event page">#CodeVsCovid19</a>, <a href="https://euvsvirus.org/" target="_blank" rel="noopener noreferrer"
                                                                                                                           title="Visit the official event page">#EUvsVirus</a>  project
                         </div>
                     </div>

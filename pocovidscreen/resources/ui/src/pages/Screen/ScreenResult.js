@@ -21,6 +21,8 @@ const ScreenResult = ({image, data, identifier}) => {
         case 2:
             results = 'Healthy';
             break;
+        default:
+            break;
     }
 
     if (probability >= 0 && probability < 50) {
@@ -35,7 +37,7 @@ const ScreenResult = ({image, data, identifier}) => {
     useEffect(() => {
         let el = '#key-' + identifier;
         tl.from(el, 1.2, {y: 80, opacity: 0, ease: 'power4.out'})
-    }, [identifier]);
+    }, [identifier, tl]);
 
     return (
         <div id={`key-${identifier}`} className={`result ${colorClass} d-md-flex mb-5`}>

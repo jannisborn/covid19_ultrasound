@@ -49,7 +49,7 @@ const Home = () => {
              .from('.teaser-text p', .7, {y: 20, opacity: 0, ease: 'power4.out'}, 1.45)
              .from('.screen', .65, {y: 200, opacity: 0, ease: 'power4.out'}, 1.7)
              .from('.train', .65, {y: 200, opacity: 0, ease: 'power4.out'}, 1.95);
-    }, []);
+    }, [tl]);
 
     return (
         <Layout className="page">

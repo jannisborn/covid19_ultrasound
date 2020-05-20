@@ -22,7 +22,7 @@ const VideoPresentation = (props) => {
                             <a title="Watch our presentation video"
                                href={`https://www.youtube.com/watch?v=${props.videoId}`}
                                className="presentation-video-play d-block" target="_blank" rel="noopener noreferrer">
-                                <img className="play" src={play}/>
+                                <img className="play" alt="play" src={play}/>
                             </a>
                         </div>
                     </div>

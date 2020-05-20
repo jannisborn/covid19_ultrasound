@@ -1,5 +1,4 @@
 import React, {useContext} from 'react';
-import {Route, Switch, useHistory, useLocation} from 'react-router-dom';
 import Layout from '../Layout';
 import {Helmet} from 'react-helmet';
 import Teaser from '../../components/Teaser/Teaser';

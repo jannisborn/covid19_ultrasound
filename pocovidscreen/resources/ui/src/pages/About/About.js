@@ -1,9 +1,7 @@
 import React from 'react';
-import {Route, Switch, useHistory, useLocation} from 'react-router-dom';
 import Layout from '../Layout';
 import {Helmet} from 'react-helmet';
 import configuration from '../../utils/constants';
-import TextSimple from '../../components/Content/TextSimple';
 
 const About = () => {
 

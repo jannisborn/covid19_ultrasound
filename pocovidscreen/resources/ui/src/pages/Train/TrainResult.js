@@ -6,7 +6,7 @@ const TrainResult = () => {
 
     const location = useLocation();
     const [results, setResults] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const [, setLoading] = useState(true);
 
     useEffect(() => {
         let formData = new FormData();
@@ -23,6 +23,7 @@ const TrainResult = () => {
                     let preview = URL.createObjectURL(file);
                     setResults(results => results.concat({image: file, data: data, preview: preview}));
                 })
+            return file
         });
     }, [location]);
 
