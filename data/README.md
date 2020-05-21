@@ -16,7 +16,8 @@ assembled from publicly available resources in the web as well as from publicati
    - Possible sources are:
       - https://thepocusatlas.com
       - https://radiopaedia.org/
-      - https://grepmed.com 
+      - https://grepmed.com
+      - https://litfl.com/ultrasound-library/
   
 ## Current dataset size (May 2020)
 - Linear: 15 videos (4x COVID, 1x bacterial pneumonia, 10x healthy)
@@ -29,12 +30,13 @@ assembled from publicly available resources in the web as well as from publicati
   from COVID-patients (register [here](https://covid19.disi.unitn.it/iclusdb/login)). This data may be added directly here in the future.
   
 
-## Collect Data from Butterfly
+## Collect Data from sources without CC license (Butterfly & ICLUS)
+
 Unfortunately, not all data used to train/evaluate the model is in this repo
 as we do not have the right to host/distribute the data from
-[Butterfly](https://butterflynetwork.com).
+[Butterfly](https://butterflynetwork.com) and [ICLUS](https://iclus-web.bluetensor.ai/login/?next=/).
 
-However, we provide a script that automatically processes the data. To reproduce
+However, we **provide a script that automatically processes the data from Butterfly**. To reproduce
 the experiments from the paper, please first complete the following steps:
 
 1. Visit the [COVID-19 ultrasound_gallery](https://butterflynetwork.com/covid19/covid-19-ultrasound-gallery)
@@ -79,6 +81,8 @@ The following modifcations to videos/images were done:
 - Cropped to the center to remove measuring bars, text etc.
 - Removal of artifcats on the sample (few cases only)
 
+
+We are deeply thankful to the authors and contributors to our datset, in particular to the maintainers of https://thepocusatlas.com, https://radiopaedia.org/, https://grepmed.com and https://litfl.com/ultrasound-library/ (thanks for Dr. Rippey who helped us personally), and to Charlotte Buhre for recording data herself just for our dataset.
 
 ## Citation
 The paper is available [here](https://arxiv.org/abs/2004.12084).

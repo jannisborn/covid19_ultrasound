@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-data', type=str, default="butterfly")
-    parser.add_argument('-out', type=str, default="pocus_images/Convex")
+    parser.add_argument('-out', type=str, default="image_dataset")
     parser.add_argument('-csv', type=str, default="pocovid_data.csv")
     parser.add_argument(
         '-fr',

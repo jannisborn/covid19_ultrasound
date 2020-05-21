@@ -23,8 +23,23 @@ git checkout tags/arxiv
 ```
 Now you're set to follow below instructions.
 
+### Videos to images
 
-### Data collection
+First, one has to merge the videos and images to create an image dataset. 
+You can use the script `cross_val_splitter.py` to copy from [pocus images](../data/pocus_images) and [pocus videos](../data/pocus_videos). It will cope the images automatically and process all videos (read the frames and save every x-th frame dependent on the framerate supplied in args).
+
+Note: In the script, it is hard-coded that only convex POCUS data is taken, and only the classes `covid`, `pneumonia`, `regular` (there is not enough data for `viral`yet). You can change this selection in the script.
+
+From the directory of this README, execute:
+```sh
+python3 scripts/build_image_dataset.py
+```
+
+Now, your [data folder](../data) should contain a new folder `image_dataset`
+with folders `covid`, `pneumonia`, `regular` and `viral` or a subset of those dependent on your selection.
+
+### Add butterfly data
+
 *NOTE*: The vast majority of data we gathered thus far is available in the 
 [data folder](../data).
 But unfortunately, not all data used to train/evaluate the model is in this repo
@@ -48,12 +63,12 @@ the experiments from the paper, please first complete the following steps:
     *NOTE*: This step requires that you installed the `pocovidnet` package
     before (see "Installation").
     
-All current images should now be in `data/pocus_images/Convex`.
+The butterfly images should now be added to `data/image_dataset`.
 
 
 ### Cross validation splitting
 The next step is to perform the datat split. You can use the script
-`cross_val_splitter.py` to perform a 5-fold cross validation:
+`cross_val_splitter.py` to perform a 5-fold cross validation (it will use the data from `data/image_dataset` by default):
 
 From the directory of this README, execute:
 ```sh
