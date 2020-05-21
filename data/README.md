@@ -20,8 +20,13 @@ assembled from publicly available resources in the web as well as from publicati
       - https://litfl.com/ultrasound-library/
   
 ## Current dataset size (May 2020)
-- Linear: 15 videos (4x COVID, 1x bacterial pneumonia, 10x healthy)
-- Convex: 69 videos (40x COVID, 14x bacterial pneumonia, 15x healthy)
+- Convex:
+  - 87 videos (40x COVID, 24x bacterial pneumonia, 20x healthy, 3x viral pneumonia)
+  - 28 images (16x COVID, 7x bacterial pneumonia, 5x healthy)
+- Linear: 
+  - 20 videos (4x COVID, 2x bacterial pneumonia, 10x healthy, 4x viral pneumonia)
+  - 5 images (3x COVID, 2x bacterial pneumonia)
+
 - Soon more will be added!
 
 ## Updates
