@@ -10,15 +10,16 @@ To use the trained model with our web application *locally* follow those steps :
 
 - Clone the repo
 - Start the containers with [ddev](https://ddev.readthedocs.io/en/stable/) (will automatically install composer dependencies)
+- You will need yarn to work with the web UI. You can get it [here](https://classic.yarnpkg.com/en/docs/install)
 
 ```bash
 ddev start
 ```
 
-- Install npm dependencies
+- Install dependencies
 
 ```bash
-npm install
+yarn install
 ```
 
 - Copy .env.example to .env
@@ -45,14 +46,14 @@ ddev exec php artisan migrate:fresh
 ddev exec php artisan jwt:secret
 ```
 
-- Start npm watcher to start coding
+- Start development server
 ```bash
-npm run watch
+yarn run start
 ```
 
 - Or run a build for production
 ```bash
-npm run prod
+yarn run build
 ```
 
-- Visit https://covidscreen.ddev.site/
+- Visit http://localhost:3000
