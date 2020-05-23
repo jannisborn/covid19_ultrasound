@@ -4,6 +4,7 @@ import os
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np
+# import pandas as pd
 import tensorflow as tf
 from imutils import paths
 from sklearn.metrics import classification_report, confusion_matrix
@@ -33,9 +34,9 @@ ap.add_argument(
 ap.add_argument('-lr', '--learning_rate', type=float, default=1e-4)
 ap.add_argument('-ep', '--epochs', type=int, default=20)
 ap.add_argument('-bs', '--batch_size', type=int, default=16)
-ap.add_argument('-t', '--trainable_base_layers', type=int, default=2)
+ap.add_argument('-t', '--trainable_base_layers', type=int, default=1)
 ap.add_argument('-i', '--img_size', type=tuple, default=(224, 224))
-ap.add_argument('-m', '--model_id', type=str, default='vgg_base')
+ap.add_argument('-id', '--model_id', type=str, default='vgg_base')
 
 args = vars(ap.parse_args())
 
@@ -74,6 +75,7 @@ print(f'selected fold: {FOLD}')
 
 train_labels, test_labels = [], []
 train_data, test_data = [], []
+# test_files = []
 
 # loop over folds
 for imagePath in imagePaths:
@@ -93,6 +95,7 @@ for imagePath in imagePaths:
     if train_test == str(FOLD):
         test_labels.append(label)
         test_data.append(image)
+        # test_files.append(path_parts[-1])
     else:
         train_labels.append(label)
         train_data.append(image)
@@ -201,6 +204,10 @@ H = model.fit_generator(
 # make predictions on the testing set
 print('Evaluating network...')
 predIdxs = model.predict(testX, batch_size=BATCH_SIZE)
+
+# CSV: save predictions for inspection:
+# df = pd.DataFrame(predIdxs, index=test_files)
+# df.to_csv(os.path.join(MODEL_DIR, model_name + "_preds.csv"))
 
 # for each image in the testing set we need to find the index of the
 # label with corresponding largest predicted probability

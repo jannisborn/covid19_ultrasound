@@ -13,7 +13,7 @@ def get_model(
     hidden_size: int = 64,
     dropout: float = 0.5,
     num_classes: int = 3,
-    trainable_layers: int = 3
+    trainable_layers: int = 1
 ):
 
     # load the VGG16 network, ensuring the head FC layer sets are left off
@@ -36,7 +36,7 @@ def get_model(
     # place the head FC model on top of the base model
     model = Model(inputs=baseModel.input, outputs=headModel)
 
-    model = fix_layers(model, num_flex_layers=trainable_layers)
+    model = fix_layers(model, num_flex_layers=trainable_layers + 8)
 
     return model
 
@@ -44,7 +44,7 @@ def get_model(
 def get_cam_model(
     input_size: tuple = (224, 224, 3),
     num_classes: int = 3,
-    trainable_layers: int = 3
+    trainable_layers: int = 1
 ):
     """
     Get a VGG model that supports class activation maps
@@ -69,6 +69,6 @@ def get_cam_model(
     headModel = Dense(num_classes, activation="softmax")(headModel)
 
     model = Model(inputs=baseModel.input, outputs=headModel)
-    model = fix_layers(model, num_flex_layers=trainable_layers)
+    model = fix_layers(model, num_flex_layers=trainable_layers + 2)
 
     return model
