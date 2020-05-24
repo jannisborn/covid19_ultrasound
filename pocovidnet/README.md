@@ -21,11 +21,14 @@ reproduce the results of our paper, use the repo's state of the `arxiv` tag:
 ```sh
 git checkout tags/arxiv
 ```
-Now you're set to follow below instructions.
+Then, please follow the instructions of the `README.md` *at that state* (see
+[here](https://github.com/jannisborn/covid19_pocus_ultrasound/tree/6c74e05b5f4ccdf96485eb5030035775d5f5c895/pocovidnet)).
+
+If you want to use the latest version of the database, read below:
 
 ### Videos to images
 
-First, one has to merge the videos and images to create an image dataset. 
+First, we have to merge the videos and images to create an image dataset. 
 You can use the script `cross_val_splitter.py` to copy from [pocus images](../data/pocus_images) and [pocus videos](../data/pocus_videos). It will cope the images automatically and process all videos (read the frames and save every x-th frame dependent on the framerate supplied in args).
 
 Note: In the script, it is hard-coded that only convex POCUS data is taken, and only the classes `covid`, `pneumonia`, `regular` (there is not enough data for `viral`yet). You can change this selection in the script.
@@ -64,6 +67,9 @@ the experiments from the paper, please first complete the following steps:
     before (see "Installation").
     
 The butterfly images should now be added to `data/image_dataset`.
+
+#### Uninformative data
+If you want to add data from an *uninformative* class, see [here](https://github.com/jannisborn/covid19_pocus_ultrasound/tree/master/data#add-class-uninformative).
 
 
 ### Cross validation splitting

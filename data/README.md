@@ -67,7 +67,7 @@ In order to prevent this, we decided to include a fourth class called "uninforma
 
 Download the data [here](https://drive.google.com/open?id=1bAbCJCq-U5vIxbG0ySUKanAW_pW_z2O4) from google drive. It contains a folder *uniform_class_nerves* and one *uniform_class_imagenet*.
 
-The data can be immediatly used for training, simply combine it in a folder *uninformative* next to the *covid*, *pneumonia* and *regular* folders.
+The data can be immediately used for training, simply combine it in a folder *uninformative* next to the *covid*, *pneumonia* and *regular* folders.
 
 If you want to add them to an existing cross validation split (e.g after executing [cross_val_splitter](../pocovidnet/scripts/cross_val_splitter.py)), we also provide a script:
 
