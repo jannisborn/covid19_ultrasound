@@ -189,7 +189,10 @@ opt = Adam(lr=LR, decay=LR / EPOCHS)
 loss = (
     tf.keras.losses.CategoricalCrossentropy() if not LOG_SOFTMAX else (
         lambda labels, targets: tf.reduce_mean(
-            tf.reduce_sum(-1 * tf.math.multiply(labels, targets), axis=1)
+            tf.reduce_sum(
+                -1 * tf.math.multiply(tf.cast(labels, tf.float32), targets),
+                axis=1
+            )
         )
     )
 )
