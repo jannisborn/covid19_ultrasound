@@ -37,6 +37,7 @@ ap.add_argument('-bs', '--batch_size', type=int, default=16)
 ap.add_argument('-t', '--trainable_base_layers', type=int, default=1)
 ap.add_argument('-i', '--img_size', type=tuple, default=(224, 224))
 ap.add_argument('-id', '--model_id', type=str, default='vgg_base')
+ap.add_argument('-ls', '--log_softmax', type=bool, default=False)
 
 args = vars(ap.parse_args())
 
@@ -50,6 +51,7 @@ BATCH_SIZE = args['batch_size']
 MODEL_ID = args['model_id']
 TRAINABLE_BASE_LAYERS = args['trainable_base_layers']
 IMG_WIDTH, IMG_HEIGHT = args['img_size']
+LOG_SOFTMAX = args['log_softmax']
 
 model_name = f'pocus_fold_{FOLD}'
 plot_path = f'pocus_fold_{FOLD}'
@@ -150,7 +152,8 @@ trainAug = ImageDataGenerator(
 model = MODEL_FACTORY[MODEL_ID](
     input_size=(IMG_WIDTH, IMG_HEIGHT, 3),
     num_classes=num_classes,
-    trainable_layers=TRAINABLE_BASE_LAYERS
+    trainable_layers=TRAINABLE_BASE_LAYERS,
+    log_softmax=LOG_SOFTMAX
 )
 
 # Define callbacks
@@ -183,9 +186,15 @@ metrics = Metrics((testX, testY), model)
 # compile model
 print('Compiling model...')
 opt = Adam(lr=LR, decay=LR / EPOCHS)
-model.compile(
-    loss='categorical_crossentropy', optimizer=opt, metrics=['accuracy']
+loss = (
+    tf.keras.losses.CategoricalCrossentropy() if not LOG_SOFTMAX else (
+        lambda labels, targets: tf.reduce_mean(
+            tf.reduce_sum(-1 * tf.math.multiply(labels, targets), axis=1)
+        )
+    )
 )
+
+model.compile(loss=loss, optimizer=opt, metrics=['accuracy'])
 
 print(f'Model has {model.count_params()} parameters')
 print(f'Model summary {model.summary()}')

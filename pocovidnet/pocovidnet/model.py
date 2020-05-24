@@ -1,4 +1,5 @@
 #POCOVID-Net model.
+import tensorflow as tf
 from tensorflow.keras.applications import VGG16
 from tensorflow.keras.layers import (
     AveragePooling2D, Dense, Dropout, Flatten, Input, BatchNormalization, ReLU
@@ -13,8 +14,10 @@ def get_model(
     hidden_size: int = 64,
     dropout: float = 0.5,
     num_classes: int = 3,
-    trainable_layers: int = 1
+    trainable_layers: int = 1,
+    log_softmax: bool = False
 ):
+    act_fn = tf.nn.softmax if not log_softmax else tf.nn.log_softmax
 
     # load the VGG16 network, ensuring the head FC layer sets are left off
     baseModel = VGG16(
@@ -31,7 +34,7 @@ def get_model(
     headModel = BatchNormalization()(headModel)
     headModel = ReLU()(headModel)
     headModel = Dropout(dropout)(headModel)
-    headModel = Dense(num_classes, activation="softmax")(headModel)
+    headModel = Dense(num_classes, activation=act_fn)(headModel)
 
     # place the head FC model on top of the base model
     model = Model(inputs=baseModel.input, outputs=headModel)
@@ -44,7 +47,8 @@ def get_model(
 def get_cam_model(
     input_size: tuple = (224, 224, 3),
     num_classes: int = 3,
-    trainable_layers: int = 1
+    trainable_layers: int = 1,
+    log_softmax: bool = False
 ):
     """
     Get a VGG model that supports class activation maps
@@ -57,6 +61,7 @@ def get_cam_model(
     Returns:
         tensorflow.keras.models object
     """
+    act_fn = tf.nn.softmax if not log_softmax else tf.nn.log_softmax
 
     # load the VGG16 network, ensuring the head FC layer sets are left off
     baseModel = VGG16(
@@ -66,7 +71,7 @@ def get_cam_model(
     )
     headModel = baseModel.output
     headModel = global_average_pooling(headModel)
-    headModel = Dense(num_classes, activation="softmax")(headModel)
+    headModel = Dense(num_classes, activation=act_fn)(headModel)
 
     model = Model(inputs=baseModel.input, outputs=headModel)
     model = fix_layers(model, num_flex_layers=trainable_layers + 2)
