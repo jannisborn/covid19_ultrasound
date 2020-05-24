@@ -1,8 +1,10 @@
 """
 Core Module for Grad CAM Algorithm
 """
-import numpy as np
+from pathlib import Path
+
 import cv2
+import numpy as np
 import tensorflow as tf
 
 
@@ -19,9 +21,10 @@ class GradCAM:
         model,
         class_index,
         layer_name=None,
-        colormap=cv2.COLORMAP_VIRIDIS,
+        colormap=cv2.COLORMAP_JET,
         zeroing=0.4,
-        heatmap_weight=0.4,
+        image_weight=0.4,
+        heatmap_weight=0.3,
         return_map=True
     ):
         """
@@ -36,6 +39,7 @@ class GradCAM:
             colormap (int): OpenCV Colormap to use for heatmap visualization
             zeroing -- Threshold between 0 and 1. Areas with a score below will
                 be zeroed in the heatmap.
+            image_weight -- float used to weight image when added to heatmap.
             heatmap_weight -- float used to weight heatmap when added to image.
             return_map --  Whether the heatmap is returned in addition to the
                 image overlayed with the heatmap.
@@ -51,12 +55,22 @@ class GradCAM:
 
         cams = GradCAM.generate_ponderated_output(outputs, guided_grads)
         cam = cams[0].numpy()
-        cam = cv2.resize(cam, (image.shape[0], image.shape[0]))
+        cam = cv2.resize(cam, (image.shape[1], image.shape[0]))
 
         cam = (cam - np.min(cam)) / (cam.max() - cam.min())
-        heatmap = cv2.applyColorMap(np.uint8(255 * cam), cv2.COLORMAP_JET)
+
+        heatmap = cv2.applyColorMap(
+            cv2.cvtColor((cam * 255).astype("uint8"), cv2.COLOR_GRAY2BGR),
+            colormap
+        )
         heatmap[np.where(cam < zeroing)] = 0
-        overlay = heatmap * heatmap_weight + image
+
+        overlay = cv2.cvtColor(
+            cv2.addWeighted(
+                cv2.cvtColor(image.astype('uint8'), cv2.COLOR_RGB2BGR),
+                image_weight, heatmap, heatmap_weight, 0
+            ), cv2.COLOR_BGR2RGB
+        )
         if return_map:
             return overlay, heatmap
         else:
@@ -157,3 +171,19 @@ class GradCAM:
         cam = tf.reduce_sum(tf.multiply(weights, output), axis=-1)
 
         return cam
+
+    def save(self, image, output_dir, output_name):
+        """
+            Save the output to a specific dir.
+            Save a 3D Numpy array (H, W, 3) as an image.
+            Args:
+                image (numpy.ndarray): Image.
+                output_dir (str): Output directory path
+                output_name (str): Output name
+            """
+        Path.mkdir(Path(output_dir), parents=True, exist_ok=True)
+
+        cv2.imwrite(
+            str(Path(output_dir) / output_name),
+            cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+        )
