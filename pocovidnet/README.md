@@ -68,9 +68,6 @@ the experiments from the paper, please first complete the following steps:
     
 The butterfly images should now be added to `data/image_dataset`.
 
-#### Uninformative data
-If you want to add data from an *uninformative* class, see [here](https://github.com/jannisborn/covid19_pocus_ultrasound/tree/master/data#add-class-uninformative).
-
 
 ### Cross validation splitting
 The next step is to perform the datat split. You can use the script
@@ -83,6 +80,9 @@ python3 scripts/cross_val_splitter.py --splits 5
 Now, your [data folder](../data) should contain a new folder `cross_validation`
 with folders `fold_1`, `fold_2`. Each folder contains only the test data for
 that specific fold.
+
+#### Uninformative data
+If you want to add data from an *uninformative* class, see [here](https://github.com/jannisborn/covid19_pocus_ultrasound/tree/master/data#add-class-uninformative).
 
 ### Train the model
 
