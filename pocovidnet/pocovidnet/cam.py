@@ -10,7 +10,7 @@ def get_class_activation_map(
     layer_name: str = 'block5_conv3',
     return_map: bool = False,
     size: tuple = (224, 224),
-    zeroing: float = 0.3,
+    zeroing: float = 0.5,
     heatmap_weight: float = 0.25
 ):
     """
@@ -21,6 +21,7 @@ def get_class_activation_map(
         model {[type]} -- Keras model object. Should have no nonlinearities and
             only single dense layer after the last convolution
         img {[type]} -- Input image for CAM computation
+            image must be (1, 224, 224, 3) and values between 0 and 1.0
         class_id {[type]} -- ID of class for which CAM is computed
         return_map --  Whether the heatmap is returned in addition to the image
             overlayed with the heatmap.
@@ -49,19 +50,21 @@ def get_class_activation_map(
         [model.layers[0].input],
         [final_conv_layer.output, model.layers[-1].output]
     )
-    [conv_outputs, predictions] = get_output([img])
+    [conv_outputs, predictions] = get_output(img)
+    # print(predictions, np.max(img), img.shape)
     conv_outputs = conv_outputs[0, :, :, :]
+    if np.max(img) <= 1:
+        img = (img * 255).astype(int)
 
     #Create the class activation map.
     cam = np.zeros(dtype=np.float32, shape=conv_outputs.shape[0:2])
     for i, w in enumerate(class_weights[:, class_id]):
         cam += w * conv_outputs[:, :, i]
-    print("predictions", predictions)
     cam /= np.max(cam)
     cam = cv2.resize(cam, size)
     heatmap = cv2.applyColorMap(np.uint8(255 * cam), cv2.COLORMAP_JET)
     heatmap[np.where(cam < zeroing)] = 0
-    img = heatmap * heatmap_weight + img
+    img = np.clip(heatmap * heatmap_weight + img, 0, 255)
     if return_map:
         return img[0, :, :, :], heatmap
     else:

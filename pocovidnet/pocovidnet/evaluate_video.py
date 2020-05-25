@@ -12,9 +12,15 @@ class VideoEvaluator(Evaluator):
     decisive frames
     """
 
-    def __init__(self, ensemble=True, split=None, model_id=None):
+    def __init__(
+        self, ensemble=True, split=None, model_id=None, num_classes=3
+    ):
         Evaluator.__init__(
-            self, ensemble=ensemble, split=split, model_id=model_id
+            self,
+            ensemble=ensemble,
+            split=split,
+            model_id=model_id,
+            num_classes=num_classes
         )
 
     def __call__(self, video_path):
