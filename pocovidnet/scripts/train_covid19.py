@@ -38,13 +38,14 @@ ap.add_argument('-t', '--trainable_base_layers', type=int, default=1)
 ap.add_argument('-i', '--img_size', type=tuple, default=(224, 224))
 ap.add_argument('-id', '--model_id', type=str, default='vgg_base')
 ap.add_argument('-ls', '--log_softmax', type=bool, default=False)
-
+ap.add_argument('-n', '--model_name', type=str, default='test')
 args = vars(ap.parse_args())
 
 # Initialize hyperparameters
 DATA_DIR = args['data_dir']
-MODEL_DIR = args['model_dir']
+MODEL_NAME = args['model_name']
 FOLD = args['fold']
+MODEL_DIR = os.path.join(args['model_dir'], MODEL_NAME, f'_fold_{FOLD}')
 LR = args['learning_rate']
 EPOCHS = args['epochs']
 BATCH_SIZE = args['batch_size']
@@ -52,9 +53,6 @@ MODEL_ID = args['model_id']
 TRAINABLE_BASE_LAYERS = args['trainable_base_layers']
 IMG_WIDTH, IMG_HEIGHT = args['img_size']
 LOG_SOFTMAX = args['log_softmax']
-
-model_name = f'pocus_fold_{FOLD}'
-plot_path = f'pocus_fold_{FOLD}'
 
 # Check if model class exists
 if MODEL_ID not in MODEL_FACTORY.keys():
@@ -64,7 +62,7 @@ if MODEL_ID not in MODEL_FACTORY.keys():
 
 if not os.path.exists(MODEL_DIR):
     os.makedirs(MODEL_DIR)
-
+print(f'Model parameters: {args}')
 # grab the list of images in our dataset directory, then initialize
 # the list of data (i.e., images) and class images
 print('Loading images...')
@@ -72,7 +70,6 @@ imagePaths = list(paths.list_images(DATA_DIR))
 data = []
 labels = []
 
-print(f'Model is called : {model_name}')
 print(f'selected fold: {FOLD}')
 
 train_labels, test_labels = [], []
@@ -218,8 +215,8 @@ print('Evaluating network...')
 predIdxs = model.predict(testX, batch_size=BATCH_SIZE)
 
 # CSV: save predictions for inspection:
-# df = pd.DataFrame(predIdxs, index=test_files)
-# df.to_csv(os.path.join(MODEL_DIR, model_name + "_preds.csv"))
+df = pd.DataFrame(predIdxs, index=test_files)
+df.to_csv(os.path.join(MODEL_DIR,"_preds_last_epoch.csv"))
 
 # for each image in the testing set we need to find the index of the
 # label with corresponding largest predicted probability
@@ -240,8 +237,8 @@ cm = confusion_matrix(testY.argmax(axis=1), predIdxs)
 print(cm)
 
 # serialize the model to disk
-print(f'Saving COVID-19 detector model on {model_name} data...')
-model.save(os.path.join(MODEL_DIR, model_name), save_format='h5')
+print(f'Saving COVID-19 detector model on {MODEL_DIR} data...')
+model.save(os.path.join(MODEL_DIR,'last_epoch'), save_format='h5')
 
 # plot the training loss and accuracy
 N = EPOCHS
@@ -255,6 +252,6 @@ plt.title('Training Loss and Accuracy on COVID-19 Dataset')
 plt.xlabel('Epoch #')
 plt.ylabel('Loss/Accuracy')
 plt.legend(loc='lower left')
-plt.savefig(os.path.join(MODEL_DIR, plot_path))
+plt.savefig(os.path.join(MODEL_DIR, 'loss.png'))
 
 print('Done, shuttting down!')
