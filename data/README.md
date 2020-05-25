@@ -74,7 +74,7 @@ If you want to add them to an existing cross validation split (e.g after executi
 Run:
 ```
 cd ..
-python pocovidnet/scripts/add_uninformative_class.py -i path/to/uniform_class_imagenet -u path/to/uniform_class_nerves -o path/to/cross_validation -s split
+python ../pocovidnet/scripts/add_uninformative_class.py -i uniform_class_imagenet -u uniform_class_nerves -o cross_validation -s 5
 ```
 
 This script will split the data in the *uniform_class_nerves* and *uniform_class_imagenet* folders and add them in a folder *uninformative* to each fold.

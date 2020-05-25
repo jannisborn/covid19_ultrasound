@@ -4,7 +4,7 @@ import os
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np
-# import pandas as pd
+import pandas as pd
 import tensorflow as tf
 from imutils import paths
 from sklearn.metrics import classification_report, confusion_matrix
@@ -29,7 +29,7 @@ ap.add_argument(
 )
 ap.add_argument('-m', '--model_dir', type=str, default='models/')
 ap.add_argument(
-    '-s', '--fold', type=int, default='0', help='fold to take as test data'
+    '-f', '--fold', type=int, default='0', help='fold to take as test data'
 )
 ap.add_argument('-lr', '--learning_rate', type=float, default=1e-4)
 ap.add_argument('-ep', '--epochs', type=int, default=20)
@@ -216,7 +216,7 @@ predIdxs = model.predict(testX, batch_size=BATCH_SIZE)
 
 # CSV: save predictions for inspection:
 df = pd.DataFrame(predIdxs, index=test_files)
-df.to_csv(os.path.join(MODEL_DIR,"_preds_last_epoch.csv"))
+df.to_csv(os.path.join(MODEL_DIR, "_preds_last_epoch.csv"))
 
 # for each image in the testing set we need to find the index of the
 # label with corresponding largest predicted probability
@@ -238,7 +238,7 @@ print(cm)
 
 # serialize the model to disk
 print(f'Saving COVID-19 detector model on {MODEL_DIR} data...')
-model.save(os.path.join(MODEL_DIR,'last_epoch'), save_format='h5')
+model.save(os.path.join(MODEL_DIR, 'last_epoch'), save_format='h5')
 
 # plot the training loss and accuracy
 N = EPOCHS
