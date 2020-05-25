@@ -95,6 +95,7 @@ class VideoEvaluator(Evaluator):
                     return_map=False,
                     layer_name="block5_conv3",
                     zeroing=zeroing,
+                    image_weight=1,
                     heatmap_weight=0.25
                 )
 
@@ -104,11 +105,16 @@ class VideoEvaluator(Evaluator):
             for j in range(return_cams):
                 copied_arr[best_frames[j]] = cams[j]
             copied_arr = np.repeat(copied_arr, 3, axis=0)
-            io.vwrite(
-                save_video_path + ".mpeg",
-                copied_arr,
-                outputdict={"-vcodec": "mpeg2video"}
-            )
+            # io.vwrite(
+            #     save_video_path + ".mpeg",
+            #     copied_arr,
+            #     outputdict={"-vcodec": "mpeg2video"}
+            # )
+            fourcc = cv2.VideoWriter_fourcc(*'XVID')
+            writer = cv2.VideoWriter('output.avi', fourcc, 20.0, (224, 224))
+            for x in copied_arr:
+                writer.write(x.astype("uint8"))
+            writer.release()
 
     def read_video(self, video_path):
         assert os.path.exists(video_path), "video file not found"
