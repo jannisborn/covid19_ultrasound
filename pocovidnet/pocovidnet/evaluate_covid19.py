@@ -10,20 +10,29 @@ from pocovidnet import MODEL_FACTORY
 
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 NUM_FOLDS = 5
+CLASS_MAPPING = {
+    3: ['covid', 'pneunomia', 'regular'],
+    4: ['covid', 'pneunomia', 'regular', 'uninformative']
+}
 
 
 class Evaluator(object):
 
-    def __init__(self, ensemble=True, split=None, model_id=None):
+    def __init__(
+        self, ensemble=True, split=None, model_id=None, num_classes=3
+    ):
         """
         Constructor of COVID model evaluator class.
         
         Arguments:
             ensemble {str} -- Whether the model ensemble is used.
+            num_classes: must be 3 or 4, how many classes the model was
+            trained on
         """
         self.root = os.path.join('/', *DIR_PATH.split('/')[:-1])
         self.split = split
         self.ensemble = ensemble
+        assert num_classes == 3 or num_classes == 4, "must be 3 or 4 classes"
         if model_id is None:
             self.model_id = 'vgg_base'
         elif model_id not in MODEL_FACTORY.keys():
@@ -52,9 +61,9 @@ class Evaluator(object):
                 )
             ]
 
-        self.class_mappings = ['covid', 'pneunomia', 'regular']
+        self.class_mappings = CLASS_MAPPING[num_classes]
         self.models = [
-            MODEL_FACTORY[self.model_id]()
+            MODEL_FACTORY[self.model_id](num_classes=num_classes)
             for _ in range(len(self.weights_paths))
         ]
 
