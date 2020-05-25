@@ -17,7 +17,7 @@ class VideoEvaluator(Evaluator):
             self, ensemble=ensemble, split=split, model_id=model_id
         )
 
-    def __call__(self, video_path, return_cams=5):
+    def __call__(self, video_path):
         """Performs a forward pass through the restored model
 
         Arguments:
@@ -35,54 +35,82 @@ class VideoEvaluator(Evaluator):
                         Contains class probabilities per frame
         """
 
-        image_arr = self.read_video(video_path)
-        predictions = np.stack(
-            [model.predict(image_arr) for model in self.models]
+        self.image_arr = self.read_video(video_path)
+        self.predictions = np.stack(
+            [model.predict(self.image_arr) for model in self.models]
         )
 
-        mean_preds = np.mean(predictions, axis=0, keepdims=False)
+        mean_preds = np.mean(self.predictions, axis=0, keepdims=False)
         class_idx = np.argmax(np.mean(np.array(mean_preds), axis=0))
 
-        if return_cams > 0:
-            best_frames = self.important_frames(
-                mean_preds, class_idx, n_return=return_cams
-            )
+        return mean_preds
 
-            print("processing cams ....")
-            print(
-                "class preds:", np.mean(mean_preds, axis=0), " - using class",
-                class_idx
-            )
-            cams = np.zeros((len(self.models), return_cams, 224, 224, 3))
-            for i, model in enumerate(self.models):
-                for j, b_frame in enumerate(best_frames):
-                    if "cam" in self.model_id:
-                        cams[i, j] = get_class_activation_map(
-                            model, image_arr[b_frame], class_idx
-                        )
-                    else:
-                        # run grad cam for other models
-                        gradcam = GradCAM()
-                        cams[i, j] = (
-                            gradcam.explain(
-                                image_arr[b_frame],
-                                model,
-                                class_idx,
-                                return_map=False
-                            )
-                        )
-            return cams, mean_preds
+    def cam_important_frames(
+        self, threshold=0.75, nr_cams=None, zeroing=0.65, save_video_path=None
+    ):
+        """
+        Compute CAMs on most decisive frames and save as video
+        Arguments:
+            EITHER treshold or nr_cams will be selected
+            threshold: float between 0 and 1, minimum prediction probability
+                        to select a frame
+            nr_cams: int - if not None then the number of frames to take
+            zeroing: for grad cam
+            save_video_path: output path (without ending!)
+        """
+        mean_preds = np.mean(self.predictions, axis=0, keepdims=False)
+        # compute general video class
+        class_idx = np.argmax(np.mean(np.array(mean_preds), axis=0))
+        # get most important frames (the ones above threshold)
+        if nr_cams is not None:
+            best_frames = np.argsort(mean_preds[:, class_idx])[-nr_cams:]
         else:
-            return mean_preds
+            best_frames = np.where(mean_preds[:, class_idx] > threshold)[0]
+        print("pred class:", class_idx, "frames above threshold", best_frames)
+        return_cams = len(best_frames)
+
+        # copy image arr - need values between 0 and 255
+        copied_arr = (self.image_arr.copy() * 255).astype(int)
+
+        cams = np.zeros((return_cams, 224, 224, 3))
+        for j, b_frame in enumerate(best_frames):
+            # get highest prob model for these frames
+            model_idx = np.argmax(
+                self.predictions[:, b_frame, class_idx], axis=0
+            )
+            take_model = self.models[model_idx]
+            if "cam" in self.model_id:
+                in_img = np.expand_dims(self.image_arr[b_frame], 0)
+                # print(in_img.shape)
+                cams[j] = get_class_activation_map(
+                    take_model, in_img, class_idx, zeroing=zeroing
+                ).astype(int)
+            else:
+                # run grad cam for other models
+                gradcam = GradCAM()
+                cams[j] = gradcam.explain(
+                    self.image_arr[b_frame],
+                    take_model,
+                    class_idx,
+                    return_map=False,
+                    layer_name="block5_conv3",
+                    zeroing=zeroing,
+                    heatmap_weight=0.25
+                )
+
+        if save_video_path is None:
+            return cams
+        else:
+            for j in range(return_cams):
+                copied_arr[best_frames[j]] = cams[j]
+            copied_arr = np.repeat(copied_arr, 3, axis=0)
+            io.vwrite(
+                save_video_path + ".mpeg",
+                copied_arr,
+                outputdict={"-vcodec": "mpeg2video"}
+            )
 
     def read_video(self, video_path):
-        """
-        Read in video and resize frames
-        Arguments:
-            video_path: str -- file path to video file
-        Returns:
-            3D array of frames (size 224x224x3)
-        """
         assert os.path.exists(video_path), "video file not found"
 
         cap = cv2.VideoCapture(video_path)
@@ -97,15 +125,6 @@ class VideoEvaluator(Evaluator):
         return np.array(images)
 
     def important_frames(self, preds, predicted_class, n_return=5):
-        """
-        Compute most important frames
-        Arguments:
-            preds: 2D array with class predictions per frame
-            predicted_class: int
-            n_return: int - how many to return
-        Returns:
-            integer array of indices of most important frames (sorted)
-        """
         preds_arr = np.array(preds)
         frame_scores = preds_arr[:, predicted_class]
         best_frames = np.argsort(frame_scores)[-n_return:]

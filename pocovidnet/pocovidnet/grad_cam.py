@@ -23,8 +23,8 @@ class GradCAM:
         layer_name=None,
         colormap=cv2.COLORMAP_JET,
         zeroing=0.4,
-        image_weight=0.4,
-        heatmap_weight=0.3,
+        image_weight=1,
+        heatmap_weight=0.25,
         return_map=True
     ):
         """
@@ -64,7 +64,8 @@ class GradCAM:
             colormap
         )
         heatmap[np.where(cam < zeroing)] = 0
-
+        if np.max(image) <= 1:
+            image = (image * 255).astype(int)
         overlay = cv2.cvtColor(
             cv2.addWeighted(
                 cv2.cvtColor(image.astype('uint8'), cv2.COLOR_RGB2BGR),
