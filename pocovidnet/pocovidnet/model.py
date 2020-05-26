@@ -48,7 +48,9 @@ def get_cam_model(
     input_size: tuple = (224, 224, 3),
     num_classes: int = 3,
     trainable_layers: int = 1,
-    log_softmax: bool = False
+    log_softmax: bool = False,
+    *args,
+    **kwargs
 ):
     """
     Get a VGG model that supports class activation maps w/o guided gradients
