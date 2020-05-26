@@ -84,7 +84,7 @@ def get_mobilenet_v2_model(
     hidden_size: int = 64,
     dropout: float = 0.5,
     num_classes: int = 3,
-    trainable_layers: int = 1,
+    trainable_layers: int = 0,
     log_softmax: bool = False
 ):
     """Get a MobileNetV2 model
@@ -94,7 +94,7 @@ def get_mobilenet_v2_model(
         hidden_size {int} -- [description] (default: {64})
         dropout {float} -- [description] (default: {0.5})
         num_classes {int} -- [description] (default: {3})
-        trainable_layers {int} -- [description] (default: {1})
+        trainable_layers {int} -- [description] (default: {0})
         log_softmax {bool} -- [description] (default: {False})
 
     Returns:
