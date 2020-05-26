@@ -35,10 +35,11 @@ ap.add_argument('-lr', '--learning_rate', type=float, default=1e-4)
 ap.add_argument('-ep', '--epochs', type=int, default=20)
 ap.add_argument('-bs', '--batch_size', type=int, default=16)
 ap.add_argument('-t', '--trainable_base_layers', type=int, default=1)
-ap.add_argument('-i', '--img_size', type=tuple, default=(224, 224))
+ap.add_argument('-i', '--img_size', type=str, default=(224, 224))
 ap.add_argument('-id', '--model_id', type=str, default='vgg_base')
 ap.add_argument('-ls', '--log_softmax', type=bool, default=False)
 ap.add_argument('-n', '--model_name', type=str, default='test')
+ap.add_argument('-h', '--hidden_size', type=int, default=64)
 args = vars(ap.parse_args())
 
 # Initialize hyperparameters
@@ -51,8 +52,9 @@ EPOCHS = args['epochs']
 BATCH_SIZE = args['batch_size']
 MODEL_ID = args['model_id']
 TRAINABLE_BASE_LAYERS = args['trainable_base_layers']
-IMG_WIDTH, IMG_HEIGHT = args['img_size']
+IMG_WIDTH, IMG_HEIGHT = eval(args['img_size'])
 LOG_SOFTMAX = args['log_softmax']
+HIDDEN_SIZE = args['hidden_size']
 
 # Check if model class exists
 if MODEL_ID not in MODEL_FACTORY.keys():
@@ -150,7 +152,8 @@ model = MODEL_FACTORY[MODEL_ID](
     input_size=(IMG_WIDTH, IMG_HEIGHT, 3),
     num_classes=num_classes,
     trainable_layers=TRAINABLE_BASE_LAYERS,
-    log_softmax=LOG_SOFTMAX
+    log_softmax=LOG_SOFTMAX,
+    hidden_size=HIDDEN_SIZE
 )
 
 # Define callbacks
