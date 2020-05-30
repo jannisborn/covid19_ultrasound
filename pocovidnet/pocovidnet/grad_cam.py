@@ -73,7 +73,7 @@ class GradCAM:
             ), cv2.COLOR_BGR2RGB
         )
         if return_map:
-            return overlay, heatmap
+            return overlay, cam
         else:
             return overlay
 

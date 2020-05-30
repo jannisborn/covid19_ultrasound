@@ -11,6 +11,7 @@ def get_class_activation_map(
     return_map: bool = False,
     size: tuple = (224, 224),
     zeroing: float = 0.5,
+    image_weight=1,
     heatmap_weight: float = 0.25
 ):
     """
@@ -62,13 +63,31 @@ def get_class_activation_map(
         cam += w * conv_outputs[:, :, i]
     cam /= np.max(cam)
     cam = cv2.resize(cam, size)
-    heatmap = cv2.applyColorMap(np.uint8(255 * cam), cv2.COLORMAP_JET)
+
+    # heatmap = cv2.applyColorMap(np.uint8(255 * cam), cv2.COLORMAP_JET)
+    # heatmap[np.where(cam < zeroing)] = 0
+    # img = np.clip(heatmap * heatmap_weight + img, 0, 255)
+
+    heatmap = cv2.applyColorMap(
+        cv2.cvtColor((cam * 255).astype("uint8"), cv2.COLOR_GRAY2BGR),
+        cv2.COLORMAP_JET
+    )
     heatmap[np.where(cam < zeroing)] = 0
-    img = np.clip(heatmap * heatmap_weight + img, 0, 255)
+    # define image to plot on
+    image = img[0, :, :, :]
+    if np.max(image) <= 1:
+        image = (image * 255).astype(int)
+    overlay = cv2.cvtColor(
+        cv2.addWeighted(
+            cv2.cvtColor(image.astype('uint8'), cv2.COLOR_RGB2BGR),
+            image_weight, heatmap, heatmap_weight, 0
+        ), cv2.COLOR_BGR2RGB
+    )
+
     if return_map:
-        return img[0, :, :, :], heatmap
+        return overlay, cam
     else:
-        return img[0, :, :, :]
+        return overlay
 
 
 def get_output_layer(model, layer_name):
