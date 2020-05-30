@@ -219,7 +219,7 @@ print('Evaluating network...')
 predIdxs = model.predict(testX, batch_size=BATCH_SIZE)
 
 # CSV: save predictions for inspection:
-df = pd.DataFrame(predIdxs, index=test_files)
+df = pd.DataFrame(predIdxs)
 df.to_csv(os.path.join(MODEL_DIR, "_preds_last_epoch.csv"))
 
 # for each image in the testing set we need to find the index of the
