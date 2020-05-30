@@ -74,7 +74,7 @@ if __name__ == "__main__":
 
             # skip non video files
             if vid_files[i][-3:].lower() not in [
-                "mpeg", "gif", "mp4", "m4v", "avi", "mov"
+                "peg", "gif", "mp4", "m4v", "avi", "mov"
             ]:
                 continue
 

@@ -103,6 +103,30 @@ classes. For COVID-19, we achieve a sensitivity of 96%.
 Detailed performances:
 ![alt text](https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/result_table.png "Result table")
 
+## Video classification
+
+We have explored method for video classification to exploit temporal information in the videos. With the following instructions one can train a video classifier based on 3D convolutions.
+
+### Add Butterfly data
+
+As described above, the data from butterfly must be downloaded manually. We provide an automatic script to add the videos to the `data/pocus_videos/convex` folder:
+
+Assuming that you have already downloaded and unzipped the butterfly folder and renamed it to `butterfly`, `cd` into the [data folder](../data).
+Then run:
+```sh
+python ../pocovidnet/scripts/process_butterfly_videos.py  
+```
+Now all usable butterfly videos should be added to `data/pocus_videos/convex`.
+
+### Train
+
+A [json file](../data/video_input_data/cross_val.json) is provided that corresponds to the cross validation split in `data/cross_validation`. To train a 3D CNN on a split, `cd` into the folder of this README and run
+```sh
+python scripts/video_classification.py --output models --fold 0 --epoch 40  
+```
+
+The models will be saved to the directory specified in the `output` flag.
+
 # Contact 
 - If you experience problems with the code, please open an
 [issue](https://github.com/jannisborn/covid19_pocus_ultrasound/issues).
