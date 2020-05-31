@@ -90,7 +90,9 @@ class GenesisEvaluator():
             [video_path], ["cov"]
         )  # cov as dummy label
         print(X_test.shape)
-        assert len(np.unique(fn)) == 1
+        if len(np.unique(fn)) != 1:
+            print("ERROR WRONG FILE!")
+            return np.zeros((1, 1, 3))
 
         # prepare for genesis
         X_test = np.transpose(X_test, [0, 4, 2, 3, 1])

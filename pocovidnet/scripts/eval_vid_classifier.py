@@ -54,13 +54,14 @@ def main():
             # run cam model
             K.set_image_data_format("channels_last")
             preds_framebased = normal_eval(os.path.join(VIDEO_DIR, f))
-            frame_pred = np.argmax(np.mean(preds_framebased, axis=(0, 1)))
+            frame_pred = np.argmax(np.mean(preds_framebased, axis=0))
             all_frame_preds.append(preds_framebased)
             print(preds.shape, preds_framebased.shape)
             print(
                 "genesis pred", vid_pred_genesis, "frame based pred",
                 frame_pred
             )
+            print("-------------")
     with open("evaluation_outputs.dat", "wb") as outfile:
         pickle.dump((all_genesis_preds, all_frame_preds), outfile)
 
