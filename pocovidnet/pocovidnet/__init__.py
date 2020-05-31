@@ -1,6 +1,8 @@
 from .model import (
     get_cam_model, get_model, get_mobilenet_v2_model, get_nasnet_model
 )
+from .video_model import get_video_model
+from .unet3d_genesis import unet_model_3d
 
 MODEL_FACTORY = {
     'vgg_base': get_model,
@@ -8,3 +10,5 @@ MODEL_FACTORY = {
     'mobilenet_v2': get_mobilenet_v2_model,
     'nasnet': get_nasnet_model
 }
+
+VIDEO_MODEL_FACTORY = {'base': get_video_model, 'genesis': unet_model_3d}
