@@ -47,10 +47,12 @@ def main():
         for f in files:
             print("evaluate", f)
             # run genesis model
+            K.set_image_data_format("channels_first")
             preds = gen_eval(os.path.join(VIDEO_DIR, f))
             vid_pred_genesis = np.argmax(np.mean(preds, axis=(0, 1)))
             all_genesis_preds.append(preds)
             # run cam model
+            K.set_image_data_format("channels_last")
             preds_framebased = normal_eval(os.path.join(VIDEO_DIR, f))
             frame_pred = np.argmax(np.mean(preds_framebased, axis=(0, 1)))
             all_frame_preds.append(preds_framebased)

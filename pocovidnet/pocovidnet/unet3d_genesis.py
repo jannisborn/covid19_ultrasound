@@ -6,8 +6,6 @@ from tensorflow.keras.layers import (
     MaxPooling3D, PReLU, UpSampling3D
 )
 
-K.set_image_data_format("channels_first")
-
 
 def unet_model_3d(
     input_shape,
@@ -39,6 +37,7 @@ def unet_model_3d(
     increases the amount memory required during training.
     :return: Untrained 3D UNet Model
     """
+    K.set_image_data_format("channels_first")
     inputs = Input(input_shape)
     current_layer = inputs
     levels = list()
