@@ -38,7 +38,7 @@ def main():
     )
     parser.add_argument('--output', type=str, required=True)
     parser.add_argument('--fold', type=int, default=0)
-    parser.add_argument('--load', type=bool, default=True)
+    parser.add_argument('--load', type=bool, default=False)
     parser.add_argument('--fr', type=int, default=5)
     parser.add_argument('--depth', type=int, default=5)
     parser.add_argument('--model_id', type=str, default='base')
@@ -55,8 +55,9 @@ def main():
 
     # Out model directory
     MODEL_D = args.output
-    if not os.path.isdir(args.output):
-        os.makedirs(args.output)
+    if not os.path.isdir(MODEL_D):
+        if not os.path.exists(MODEL_D):
+            os.makedirs(args.output)
 
     # Initialize video converter
     vid3d = Videoto3D(
