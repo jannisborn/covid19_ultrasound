@@ -1,32 +1,23 @@
 import argparse
+import json
 import os
+import pickle
 import warnings
-warnings.filterwarnings("ignore")
 
-import matplotlib
-matplotlib.use('AGG')
-import matplotlib.pyplot as plt
 import numpy as np
-from tensorflow.keras.datasets import cifar10
-from tensorflow.keras.layers import (
-    Activation, Conv3D, Dense, Dropout, Flatten, MaxPooling3D
-)
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.preprocessing import LabelBinarizer
 from tensorflow.keras.callbacks import (
     EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
 )
-from tensorflow.keras.layers import LeakyReLU, BatchNormalization
+from tensorflow.keras.layers import Dense, GlobalAveragePooling3D
 from tensorflow.keras.losses import categorical_crossentropy
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.utils import to_categorical
-# from tensorflow.keras.utils.vis_utils import plot_model
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelBinarizer
-from sklearn.metrics import classification_report, confusion_matrix
+from tensorflow.keras.models import Model
 
+from pocovidnet import VIDEO_MODEL_FACTORY
 from videoto3d import Videoto3D
-import pickle
-import json
+
+warnings.filterwarnings("ignore")
 
 
 def main():
@@ -46,9 +37,17 @@ def main():
     )
     parser.add_argument('--output', type=str, required=True)
     parser.add_argument('--fold', type=int, default=0)
-    parser.add_argument('--load', type=bool, default=False)
+    parser.add_argument('--load', type=bool, default=True)
     parser.add_argument('--fr', type=int, default=5)
     parser.add_argument('--depth', type=int, default=5)
+    parser.add_argument('--model_id', type=str, default='base')
+    parser.add_argument(
+        '--save', type=str, default='../data/video_input_data/'
+    )
+    parser.add_argument(
+        '--weight_path', type=str, default='../Genesis_Chest_CT.h5'
+    )
+
     args = parser.parse_args()
 
     # Out model directory
@@ -58,20 +57,20 @@ def main():
 
     # Initialize video converter
     vid3d = Videoto3D(
-        args.videos,
-        width=100,
-        height=100,
-        depth=args.depth,
-        framerate=args.fr
+        args.videos, width=64, height=64, depth=args.depth, framerate=args.fr
     )
     # Load saved data or read in videos
     if args.load:
         with open(
-            "../data/video_input_data/vid_class_test100.dat", "rb"
+            os.path.join(
+                args.save, 'conv3d_test_fold_' + str(args.fold) + '.dat'
+            ), 'rb'
         ) as infile:
             X_test, test_labels_text, test_files = pickle.load(infile)
         with open(
-            "../data/video_input_data/vid_class_train100.dat", "rb"
+            os.path.join(
+                args.save, 'conv3d_train_fold_' + str(args.fold) + '.dat'
+            ), 'rb'
         ) as infile:
             X_train, train_labels_text, train_files = pickle.load(infile)
     else:
@@ -115,6 +114,7 @@ def main():
     print(nb_classes, np.max(X_train))
     print("unique in train", np.unique(train_labels_text, return_counts=True))
     print("unique in test", np.unique(test_labels_text, return_counts=True))
+
     # Define callbacks
     earlyStopping = EarlyStopping(
         monitor='val_loss',
@@ -139,42 +139,36 @@ def main():
         epsilon=1e-4,
         mode='min'
     )
+    if args.model_id == 'base':
+        input_shape = X_train.shape[1:]
+        model = VIDEO_MODEL_FACTORY[args.model_id](input_shape, nb_classes)
+    elif args.model_id == 'genesis':
 
-    # Define model
-    model = Sequential()
-    model.add(
-        Conv3D(
-            32,
-            kernel_size=(3, 3, 3),
-            input_shape=(X_train.shape[1:]),
-            padding='same'
+        input_shape = 42
+        input_shape = 1, 64, 64, 32
+
+        print(X_train.shape, X_test.shape)
+
+        X_train = np.transpose(X_train, [0, 4, 2, 3, 1])
+        X_test = np.transpose(X_test, [0, 4, 2, 3, 1])
+        print(X_train.shape, X_test.shape)
+        X_test = np.repeat(X_test, [6, 7, 7, 6, 6], axis=-1)
+        X_train = np.repeat(X_train, [6, 7, 7, 6, 6], axis=-1)
+        print(X_train.shape, X_test.shape)
+
+        model = VIDEO_MODEL_FACTORY[args.model_id
+                                    ](input_shape, batch_normalization=True)
+        model.load_weights(args.weight_path)
+        x = model.get_layer('depth_7_relu').output
+        x = GlobalAveragePooling3D()(x)
+        x = Dense(1024, activation='relu')(x)
+        output = Dense(nb_classes, activation='softmax')(x)
+        model = Model(inputs=model.input, outputs=output)
+        model.compile(
+            optimizer="adam",
+            loss=categorical_crossentropy,
+            metrics=['accuracy']
         )
-    )
-    model.add(Activation('relu'))
-    model.add(Conv3D(32, kernel_size=(3, 3, 3), padding='same'))
-    model.add(Activation('softmax'))
-    model.add(MaxPooling3D(pool_size=(3, 3, 3), padding='same'))
-    model.add(Dropout(0.5))
-
-    model.add(Conv3D(32, kernel_size=(3, 3, 3), padding='same'))
-    model.add(Activation('relu'))
-    model.add(Conv3D(32, kernel_size=(3, 3, 3), padding='same'))
-    model.add(Activation('softmax'))
-    model.add(MaxPooling3D(pool_size=(3, 3, 3), padding='same'))
-    model.add(Dropout(0.5))
-
-    model.add(Flatten())
-    model.add(Dense(64, activation=None))
-    model.add(BatchNormalization())
-    model.add(Activation('sigmoid'))
-    model.add(Dropout(0.5))
-    model.add(Dense(nb_classes, activation='softmax'))
-
-    model.compile(
-        loss=categorical_crossentropy, optimizer=Adam(), metrics=['accuracy']
-    )
-    model.summary()
-
     history = model.fit(
         X_train,
         Y_train,
