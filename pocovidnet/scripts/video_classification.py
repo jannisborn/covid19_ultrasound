@@ -14,7 +14,7 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.layers import Dense, GlobalAveragePooling3D
 from tensorflow.keras.losses import categorical_crossentropy
 from tensorflow.keras.models import Model
-from .utils import fix_layers
+from pocovidnet.utils import fix_layers
 
 from pocovidnet import VIDEO_MODEL_FACTORY
 from videoto3d import Videoto3D
@@ -167,7 +167,9 @@ def main():
         x = Dense(1024, activation='relu')(x)
         output = Dense(nb_classes, activation='softmax')(x)
         model = Model(inputs=model.input, outputs=output)
-        model = fix_layers(model, num_flex_layers=args.trainable_layers + 4)
+        model = fix_layers(
+            model, num_flex_layers=args.trainable_base_layers + 4
+        )
 
     print(model.summary())
     opt = Adam(lr=args.lr, decay=args.lr / args.epoch)
