@@ -5,6 +5,7 @@ import pickle
 import numpy as np
 from pocovidnet.evaluate_genesis import GenesisEvaluator
 from pocovidnet.evaluate_video import VideoEvaluator
+from tensorflow.keras import backend as K
 
 
 def main():
@@ -33,6 +34,7 @@ def main():
         gen_eval = GenesisEvaluator(
             weights_dir=args.genesis_weights, ensemble=False, split=i
         )
+        K.set_image_data_format("channels_last")
         normal_eval = VideoEvaluator(
             weights_dir=args.cam_weights,
             ensemble=False,
