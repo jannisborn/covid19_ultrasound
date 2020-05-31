@@ -39,8 +39,4 @@ def get_video_model(input_shape, nb_classes):
     model.add(Dropout(0.5))
     model.add(Dense(nb_classes, activation='softmax'))
 
-    model.compile(
-        loss=categorical_crossentropy, optimizer=Adam(), metrics=['accuracy']
-    )
-    print(model.summary())
     return model

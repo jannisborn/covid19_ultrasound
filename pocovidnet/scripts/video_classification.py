@@ -10,6 +10,7 @@ from sklearn.preprocessing import LabelBinarizer
 from tensorflow.keras.callbacks import (
     EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
 )
+from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.layers import Dense, GlobalAveragePooling3D
 from tensorflow.keras.losses import categorical_crossentropy
 from tensorflow.keras.models import Model
@@ -41,6 +42,8 @@ def main():
     parser.add_argument('--fr', type=int, default=5)
     parser.add_argument('--depth', type=int, default=5)
     parser.add_argument('--model_id', type=str, default='base')
+    parser.add_argument('--lr', type=float, default=1e-4)
+
     parser.add_argument(
         '--save', type=str, default='../data/video_input_data/'
     )
@@ -144,17 +147,15 @@ def main():
         model = VIDEO_MODEL_FACTORY[args.model_id](input_shape, nb_classes)
     elif args.model_id == 'genesis':
 
+        # For Genesis models inputs are shrinked to 64,64
         input_shape = 42
         input_shape = 1, 64, 64, 32
 
-        print(X_train.shape, X_test.shape)
-
         X_train = np.transpose(X_train, [0, 4, 2, 3, 1])
         X_test = np.transpose(X_test, [0, 4, 2, 3, 1])
-        print(X_train.shape, X_test.shape)
+        # Frames are also repeated 6-7 times since depth of model is 32
         X_test = np.repeat(X_test, [6, 7, 7, 6, 6], axis=-1)
         X_train = np.repeat(X_train, [6, 7, 7, 6, 6], axis=-1)
-        print(X_train.shape, X_test.shape)
 
         model = VIDEO_MODEL_FACTORY[args.model_id
                                     ](input_shape, batch_normalization=True)
@@ -164,11 +165,12 @@ def main():
         x = Dense(1024, activation='relu')(x)
         output = Dense(nb_classes, activation='softmax')(x)
         model = Model(inputs=model.input, outputs=output)
-        model.compile(
-            optimizer="adam",
-            loss=categorical_crossentropy,
-            metrics=['accuracy']
-        )
+
+    print(model.summary())
+    opt = Adam(lr=args.lr, decay=args.lr / args.epoch)
+    model.compile(
+        optimizer=opt, loss=categorical_crossentropy, metrics=['accuracy']
+    )
     history = model.fit(
         X_train,
         Y_train,
