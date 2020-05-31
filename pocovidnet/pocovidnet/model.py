@@ -131,7 +131,7 @@ def get_mobilenet_v2_model(
 
 def get_nasnet_model(
     input_size: tuple = (224, 224, 3),
-    hidden_size: int = 64,
+    hidden_size: int = 512,
     dropout: float = 0.5,
     num_classes: int = 3,
     trainable_layers: int = 0,

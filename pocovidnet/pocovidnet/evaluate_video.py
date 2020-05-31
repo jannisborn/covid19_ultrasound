@@ -13,10 +13,16 @@ class VideoEvaluator(Evaluator):
     """
 
     def __init__(
-        self, ensemble=True, split=None, model_id=None, num_classes=3
+        self,
+        weights_dir="trained_models",
+        ensemble=True,
+        split=None,
+        model_id=None,
+        num_classes=3
     ):
         Evaluator.__init__(
             self,
+            weights_dir=weights_dir,
             ensemble=ensemble,
             split=split,
             model_id=model_id,
@@ -52,7 +58,11 @@ class VideoEvaluator(Evaluator):
         return mean_preds
 
     def cam_important_frames(
-        self, threshold=0.75, nr_cams=None, zeroing=0.65, save_video_path=None
+        self,
+        threshold=0.75,
+        nr_cams=None,
+        zeroing=0.65,
+        save_video_path=None
     ):
         """
         Compute CAMs on most decisive frames and save as video

@@ -19,7 +19,12 @@ CLASS_MAPPING = {
 class Evaluator(object):
 
     def __init__(
-        self, ensemble=True, split=None, model_id=None, num_classes=3
+        self,
+        weights_dir=None,
+        ensemble=True,
+        split=None,
+        model_id=None,
+        num_classes=3
     ):
         """
         Constructor of COVID model evaluator class.
@@ -30,6 +35,8 @@ class Evaluator(object):
             trained on
         """
         self.root = os.path.join('/', *DIR_PATH.split('/')[:-1])
+        if weights_dir is None:
+            weights_dir = os.path.join(self.root, "trained_models")
         self.split = split
         self.ensemble = ensemble
         assert num_classes == 3 or num_classes == 4, "must be 3 or 4 classes"
@@ -46,8 +53,7 @@ class Evaluator(object):
             # retores 5 weight paths
             self.weights_paths = [
                 os.path.join(
-                    self.root, 'trained_models', 'fold_' + str(fold),
-                    "variables", "variables"
+                    weights_dir, 'fold_' + str(fold), "variables", "variables"
                 ) for fold in range(NUM_FOLDS)
             ]
         else:
@@ -56,8 +62,7 @@ class Evaluator(object):
             fold = split
             self.weights_paths = [
                 os.path.join(
-                    self.root, 'trained_models', 'fold_' + str(fold),
-                    "variables", "variables"
+                    weights_dir, 'fold_' + str(fold), "variables", "variables"
                 )
             ]
 

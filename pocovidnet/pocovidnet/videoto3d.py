@@ -19,7 +19,7 @@ class Videoto3D:
         with open(save_path, "wb") as outfile:
             pickle.dump((data_3d, labels_3d, files_3d), outfile)
 
-    def video3d(self, vid_files, labels, max_vid_parts=5, save=None):
+    def video3d(self, vid_files, labels, save=None):
         # iterate to fill data
         data_3d, labels_3d, files_3d = [], [], []
         for train_vid, train_lab in zip(vid_files, labels):
