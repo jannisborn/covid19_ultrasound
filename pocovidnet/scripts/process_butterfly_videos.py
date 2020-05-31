@@ -1,7 +1,6 @@
 from pocovidnet.utils_butterfly_data import (
     get_processing_info, get_paths, label_to_dir
 )
-from skvideo import io
 import os
 import cv2
 import numpy as np
