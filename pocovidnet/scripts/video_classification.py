@@ -128,7 +128,7 @@ def main():
     )
 
     mcp_save = ModelCheckpoint(
-        os.path.join(MODEL_D, 'fold_' + str(args.fold) + '_epoch_{epoch:02d}'),
+        os.path.join(MODEL_D, 'fold_' + str(args.fold), 'epoch_{epoch:02d}'),
         save_best_only=True,
         monitor='val_accuracy',
         mode='max',
@@ -184,11 +184,15 @@ def main():
     model.evaluate(X_test, Y_test, verbose=0)
     model_json = model.to_json()
     with open(
-        os.path.join(args.output, '3dcnnmodel' + str(args.fold) + '.json'), 'w'
+        os.path.join(
+            MODEL_D, 'fold_' + str(args.fold), '3dcnnmodel_final.json'
+        ), 'w'
     ) as json_file:
         json_file.write(model_json)
     model.save_weights(
-        os.path.join(args.output, '3dcnnmodel' + str(args.fold) + '.hd5')
+        os.path.join(
+            MODEL_D, 'fold_' + str(args.fold), '3dcnnmodel_final.hd5'
+        )
     )
 
     loss, acc = model.evaluate(X_test, Y_test, verbose=0)
