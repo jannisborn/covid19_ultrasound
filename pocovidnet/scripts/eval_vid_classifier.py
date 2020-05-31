@@ -53,7 +53,7 @@ def main():
             X_test, _, fn = vid3d.video3d(
                 [os.path.join(VIDEO_DIR, f)], ["cov"]
             )
-            if len(fn) != 1:
+            if len(np.unique(fn)) != 1:
                 print("ERROR: WRONG FILE!")
                 print(fn)
                 print(X_test.shape)
