@@ -6,6 +6,7 @@ import numpy as np
 from pocovidnet.evaluate_genesis import GenesisEvaluator
 from pocovidnet.evaluate_video import VideoEvaluator
 from tensorflow.keras import backend as K
+from pocovidnet.videoto3d import Videoto3D
 
 
 def main():
@@ -46,6 +47,17 @@ def main():
         # print(files)
         for f in files:
             print("evaluate", f)
+            # TEST if the video is working
+            vid3d = Videoto3D("", 64, 64, 5, 5)
+            vid3d.max_vid = {"cov": 20, "pne": 20, "reg": 20}
+            X_test, _, fn = vid3d.video3d(
+                [os.path.join(VIDEO_DIR, f)], ["cov"]
+            )
+            if len(fn) != 1:
+                print("ERROR: WRONG FILE!")
+                print(fn)
+                print(X_test.shape)
+                continue
             # run genesis model
             K.set_image_data_format("channels_first")
             preds = gen_eval(os.path.join(VIDEO_DIR, f))
