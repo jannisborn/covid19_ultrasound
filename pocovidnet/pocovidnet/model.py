@@ -15,7 +15,8 @@ def get_model(
     dropout: float = 0.5,
     num_classes: int = 3,
     trainable_layers: int = 1,
-    log_softmax: bool = True
+    log_softmax: bool = True,
+    mc_dropout: bool = False
 ):
     act_fn = tf.nn.softmax if not log_softmax else tf.nn.log_softmax
 
@@ -33,7 +34,10 @@ def get_model(
     headModel = Dense(hidden_size)(headModel)
     headModel = BatchNormalization()(headModel)
     headModel = ReLU()(headModel)
-    headModel = Dropout(dropout)(headModel)
+    headModel = (
+        Dropout(dropout)(headModel, training=True)
+        if mc_dropout else Dropout(dropout)(headModel)
+    )
     headModel = Dense(num_classes, activation=act_fn)(headModel)
 
     # place the head FC model on top of the base model
