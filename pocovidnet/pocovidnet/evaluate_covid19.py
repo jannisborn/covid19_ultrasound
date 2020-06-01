@@ -7,6 +7,7 @@ import cv2
 import numpy as np
 
 from pocovidnet import MODEL_FACTORY
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 NUM_FOLDS = 5
@@ -24,7 +25,9 @@ class Evaluator(object):
         ensemble=True,
         split=None,
         model_id=None,
-        num_classes=3
+        num_classes=3,
+        mc_dropout: bool = False,
+        test_augment: bool = False
     ):
         """
         Constructor of COVID model evaluator class.
@@ -68,9 +71,19 @@ class Evaluator(object):
 
         self.class_mappings = CLASS_MAPPING[num_classes]
         self.models = [
-            MODEL_FACTORY[self.model_id](num_classes=num_classes)
+            MODEL_FACTORY[self.model_id]
+            (num_classes=num_classes, mc_dropout=mc_dropout)
             for _ in range(len(self.weights_paths))
         ]
+        self.mc_dropout = mc_dropout
+        self.augmentor = ImageDataGenerator(
+            rotation_range=10,
+            fill_mode='nearest',
+            horizontal_flip=True,
+            vertical_flip=True,
+            width_shift_range=0.1,
+            height_shift_range=0.1
+        )
 
         # restore weights
         try:
@@ -81,7 +94,7 @@ class Evaluator(object):
 
         print(f'Model restored. Class mappings are {self.class_mappings}')
 
-    def __call__(self, image):
+    def __call__(self, image, augment: bool = False):
         """Performs a forward pass through the restored model
 
         Arguments:
@@ -95,6 +108,8 @@ class Evaluator(object):
         """
 
         image = self.preprocess(image)
+        if augment:
+            image = next(self.augmentor.flow(image))
         predictions = np.squeeze(
             np.stack([model.predict(image) for model in self.models]), axis=1
         )
