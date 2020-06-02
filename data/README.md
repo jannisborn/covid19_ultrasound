@@ -32,7 +32,7 @@ assembled from publicly available resources in the web as well as from publicati
 ## Updates
 - **16.5.2020**: The [ICLUS
   project](https://www.disi.unitn.it/iclus) released ~60 videos
-  from COVID-patients (register [here](https://covid19.disi.unitn.it/iclusdb/login)). This data may be added directly here in the future.
+  from COVID-patients (register [here](https://covid19.disi.unitn.it/iclusdb/login)). 
   
 
 ## Collect Data from sources without CC license (Butterfly & ICLUS)
