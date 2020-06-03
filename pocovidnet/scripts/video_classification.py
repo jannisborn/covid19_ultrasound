@@ -97,14 +97,16 @@ def main():
         X_train, train_labels_text, train_files = vid3d.video3d(
             train_files,
             train_labels,
-            save="../data/video_input_data/conv3d_train_fold_" +
-            str(args.fold) + ".dat"
+            save=os.path.join(
+                args.save, "conv3d_train_fold_" + str(args.fold) + ".dat"
+            )
         )
         X_test, test_labels_text, test_files = vid3d.video3d(
             test_files,
             test_labels,
-            save="../data/video_input_data/conv3d_test_fold_" +
-            str(args.fold) + ".dat"
+            save=os.path.join(
+                args.save, "conv3d_test_fold_" + str(args.fold) + ".dat"
+            )
         )
     # One-hot encoding
     lb = LabelBinarizer()
