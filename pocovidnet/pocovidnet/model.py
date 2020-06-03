@@ -2,7 +2,8 @@
 import tensorflow as tf
 from tensorflow.keras.applications import VGG16, MobileNetV2, NASNetMobile
 from tensorflow.keras.layers import (
-    AveragePooling2D, Dense, Dropout, Flatten, Input, BatchNormalization, ReLU
+    AveragePooling2D, Dense, Dropout, Flatten, Input, BatchNormalization, ReLU,
+    LeakyReLU
 )
 from tensorflow.keras.models import Model
 from pocovidnet.layers import global_average_pooling
@@ -176,5 +177,49 @@ def get_nasnet_model(
     model = Model(inputs=baseModel.input, outputs=headModel)
 
     model = fix_layers(model, num_flex_layers=trainable_layers + 8)
+
+    return model
+
+
+def get_dense_model(
+    input_size: int = 320,
+    hidden_sizes: list = [512, 256],
+    dropout: float = 0.5,
+    num_classes: int = 4,
+    batch_norm: bool = False,
+    log_softmax: bool = False
+):
+    """Get a NasNet model
+
+    Keyword Arguments:
+        input_size {tuple} -- [size of input images] (default: {(224, 224, 3)})
+        hidden_size {int} -- [description] (default: {64})
+        dropout {float} -- [description] (default: {0.5})
+        num_classes {int} -- [description] (default: {3})
+        trainable_layers {int} -- [description] (default: {0})
+        log_softmax {bool} -- [description] (default: {False})
+
+    Returns:
+        [type] -- [description]
+    """
+    out_fn = tf.nn.softmax if not log_softmax else tf.nn.log_softmax
+
+    # construct the head of the model that will be placed on top of the
+    # the base model
+
+    inputs = tf.keras.Input(shape=(input_size, ))
+    inter = inputs
+
+    for hidden_size in hidden_sizes:
+        inter = Dense(hidden_size)(inter)
+        if batch_norm:
+            inter = BatchNormalization()(inter)
+        inter = LeakyReLU()(inter)
+        if dropout > 0.:
+            inter = Dropout(dropout)(inter)
+
+    outputs = Dense(num_classes, activation=out_fn)(inter)
+
+    model = tf.keras.Model(inputs=inputs, outputs=outputs)
 
     return model
