@@ -63,7 +63,7 @@ All current images should now be in `data/image_dataset`.
 
 ## Add class "uninformative"
 In the current state, a user could input any image, e.g. of a house, and still receive a classification result as covid / pneumonia / healthy.
-In order to prevent this, we decided to include a fourth class called "uninformative", where we add Imagenet images and neck-ultrasound data from 
+In order to prevent this, we decided to include a fourth class called "uninformative", where we add Imagenet images and neck-ultrasound data from the Kaggle Nerve Segmentation Challenge.
 
 Download the data [here](https://drive.google.com/open?id=1bAbCJCq-U5vIxbG0ySUKanAW_pW_z2O4) from google drive. It contains a folder *uniform_class_nerves* and one *uniform_class_imagenet*.
 

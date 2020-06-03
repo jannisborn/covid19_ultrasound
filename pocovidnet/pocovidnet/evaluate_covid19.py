@@ -12,8 +12,8 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 NUM_FOLDS = 5
 CLASS_MAPPING = {
-    3: ['covid', 'pneunomia', 'regular'],
-    4: ['covid', 'pneunomia', 'regular', 'uninformative']
+    3: ['covid', 'pneumonia', 'regular'],
+    4: ['covid', 'pneumonia', 'regular', 'uninformative']
 }
 
 
