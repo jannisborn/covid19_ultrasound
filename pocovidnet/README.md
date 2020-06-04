@@ -1,6 +1,6 @@
-# pocovidnet
+# Accelerating COVID-19 Detection with ExplainableUltrasound Image Analysis
 
-A simple package to train deep learning models on ultrasound data for COVID19.
+This codebase is the official implementation of our submission **Accelerating COVID-19 Detection with ExplainableUltrasound Image Analysis**.
 
 ## Requirements
 
@@ -113,11 +113,18 @@ python3 scripts/train_covid19.py --data_dir ../data/cross_validation/ --fold 0 -
 *NOTE*: `train_covid19.py` will automatically utilize the data from all other
 folds for training.
 
+To reproduce the results reported in our submission, run the script with the following parameters:
+
+```sh
+python scripts/train_covid19.py -d ../data/cross_validation/ -t 0
+    -m models/ -id 'vgg_base' -lr 1e-3 -e 40 -bs 8 -ls True
+```
+
 ## Video classification
 
 We have explored method for video classification to exploit temporal information in the videos. With the following instructions one can train a video classifier based on 3D convolutions.
 
-### Add Butterfly data
+#### Add Butterfly data
 
 As described above, the data from butterfly must be downloaded manually. We provide an automatic script to add the videos to the `data/pocus_videos/convex` folder:
 
@@ -128,43 +135,61 @@ python ../pocovidnet/scripts/process_butterfly_videos.py
 ```
 Now all usable butterfly videos should be added to `data/pocus_videos/convex`.
 
-### Train video classifier
+#### Train video classifier
 
-A [json file](../data/video_input_data/cross_val.json) is provided that corresponds to the cross validation split in `data/cross_validation`. To train a 3D CNN on a split, `cd` into the folder of this README and run
+A [json file](../data/video_input_data/cross_val.json) is provided that corresponds to the cross validation split in `data/cross_validation`. The followings script will automatically process the data listed in this json file. There are two video classification model: A simple 3D CNN that is trained from scratch (--model_id base) or a pre-trained 3D CNN provided by Models Genesis (--model_id genesis). For the latter, the pre-trained model needs to be requested [here](https://www.wjx.top/jq/46747127.aspx).
+
+To reproduce the reported video classification results with model genesis, `cd` into the folder of this README and run
 ```sh
-python scripts/video_classification.py --output models --fold 0 --epoch 40
+python scripts/video_classification.py --model_id genesis
 ```
 
 The models will be saved to the directory specified in the `output` flag.
 
 ## Evaluation
 
-### Pre-trained models
+#### Pre-trained models and input data
 
-Pre-trained models of the VGG, VGG-CAM and NASNetMobile architectures can be downloaded from TODO.
+**All models and data can be downloaded [here](https://drive.google.com/drive/folders/1c_B4V-Ejs45pVyl1QNPEXgT4_Kg0o-Lt?usp=sharing)**
+To reproduce our results, download the trained models, as well as our cross validation split.
 
-### Testing
+#### Test
 
-To reproduce our results, download the trained models, as well as our cross validation split TODO.
+General usage of test script:
 
 ```sh
 python scripts/test.py [-h] [--data DATA] [--weights WEIGHTS] [--m_id M_ID] [--classes CLASSES] [--folds FOLDS] [--save_path SAVE_PATH]
 ```
 
-Specifically, we provide the three models VGG, VGG_CAM and NASNetMobile, which can be tested with the following configurations (assuming the models were downloaded into the folder of this README):
+To reproduce our evaluation, download the trained_models folder from Drive and put them into the directory of this README (pocovidnet). Also, download the cross validation split folder and unzip it in the [data](../data) folder (see paths in commands below).
+
+The first three models use the raw data as input, which is in the [cross_validation](../data/cross_validation) folder
 
 VGG-model:
 ```sh
-python scripts/test.py --data ../data/cross_validation --weights trained_models_VGG --m_id vgg_base --classes 4 --folds 5 --save_path logits_VGG.dat
+python scripts/test.py --data ../data/cross_validation --weights trained_models_vgg --m_id vgg_base --save_path results_VGG
 ```
 VGG-CAM-model:
 ```sh
-python scripts/test.py --data ../data/cross_validation --weights trained_models_VGG_CAM --m_id vgg_cam --classes 4 --folds 5 --save_path logits_VGG_CAM.dat
+python scripts/test.py --data ../data/cross_validation --weights trained_models_cam --m_id vgg_cam --save_path results_VGG_CAM
 ```
 NASNet-model:
 ```sh
-python scripts/test.py --data ../data/cross_validation --weights trained_models_NAS --m_id nasnet --classes 4 --folds 5 --save_path logits_NAS.dat
+python scripts/test.py --data ../data/cross_validation --weights trained_models_NAS --m_id nasnet --save_path results_NAS
 ```
+
+The other two models are trained on segmented images or encoding layers, which are provided in the [cross_validation_segmented](../data/cross_validation_segmented) folder.
+
+VGG-Segment:
+```sh
+python scripts/test.py --data ../data/cross_validation_segmented --weights trained_models_vgg_segment --m_id vgg_base --save_path results_segment
+```
+Segment-Enc:
+```sh
+python scripts/test.py --data ../data/cross_validation_segmented --weights trained_models_encoding --m_id dense --save_path results_encode
+```
+
+All results will be dumped as .dat files containing the raw logits, as well as csv files with tables containing the results in the specified save_path location (in this case, in the files results_encode.dat, results_encode_mean.csv and results_encode_std.csv etc). Both results with and without the uninformative class will be produced (indicated by _3 added to the file name).
 
 ## Results
 
