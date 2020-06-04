@@ -17,7 +17,7 @@ from tensorflow.keras.models import Model
 from pocovidnet.utils import fix_layers
 
 from pocovidnet import VIDEO_MODEL_FACTORY
-from videoto3d import Videoto3D
+from pocovidnet.videoto3d import Videoto3D
 
 warnings.filterwarnings("ignore")
 
@@ -37,12 +37,12 @@ def main():
     parser.add_argument(
         '--json', type=str, default="../data/video_input_data/cross_val.json"
     )
-    parser.add_argument('--output', type=str, required=True)
+    parser.add_argument('--output', type=str, default="video_model_outputs")
     parser.add_argument('--fold', type=int, default=0)
     parser.add_argument('--load', type=bool, default=False)
     parser.add_argument('--fr', type=int, default=5)
     parser.add_argument('--depth', type=int, default=5)
-    parser.add_argument('--model_id', type=str, default='base')
+    parser.add_argument('--model_id', type=str, default='genesis')
     parser.add_argument('--lr', type=float, default=1e-4)
     parser.add_argument('--trainable_base_layers', type=int, default=0)
     parser.add_argument(

@@ -17,7 +17,8 @@ def get_model(
     num_classes: int = 3,
     trainable_layers: int = 1,
     log_softmax: bool = True,
-    mc_dropout: bool = False
+    mc_dropout: bool = False,
+    **kwargs
 ):
     act_fn = tf.nn.softmax if not log_softmax else tf.nn.log_softmax
 
@@ -92,7 +93,8 @@ def get_mobilenet_v2_model(
     dropout: float = 0.5,
     num_classes: int = 3,
     trainable_layers: int = 0,
-    log_softmax: bool = False
+    log_softmax: bool = False,
+    **kwargs
 ):
     """Get a MobileNetV2 model
 
@@ -140,7 +142,8 @@ def get_nasnet_model(
     dropout: float = 0.5,
     num_classes: int = 3,
     trainable_layers: int = 0,
-    log_softmax: bool = False
+    log_softmax: bool = False,
+    **kwargs
 ):
     """Get a NasNet model
 
@@ -187,7 +190,8 @@ def get_dense_model(
     dropout: float = 0.5,
     num_classes: int = 4,
     batch_norm: bool = True,
-    log_softmax: bool = False
+    log_softmax: bool = False,
+    **kwargs
 ):
     """Get a NasNet model
 
