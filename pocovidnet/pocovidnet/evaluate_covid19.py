@@ -94,7 +94,7 @@ class Evaluator(object):
 
         print(f'Model restored. Class mappings are {self.class_mappings}')
 
-    def __call__(self, image, augment: bool = False):
+    def __call__(self, image, augment: bool = False, preprocess: bool = True):
         """Performs a forward pass through the restored model
 
         Arguments:
@@ -106,8 +106,8 @@ class Evaluator(object):
         Returns:
             logits {list} -- Length 3 num_classes). Class probabilities.
         """
-
-        image = self.preprocess(image)
+        if preprocess:
+            image = self.preprocess(image)
         if augment:
             image = next(self.augmentor.flow(image))
         predictions = np.squeeze(

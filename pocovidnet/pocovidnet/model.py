@@ -182,11 +182,11 @@ def get_nasnet_model(
 
 
 def get_dense_model(
-    input_size: int = 320,
+    input_size: int = 640,
     hidden_sizes: list = [512, 256],
     dropout: float = 0.5,
     num_classes: int = 4,
-    batch_norm: bool = False,
+    batch_norm: bool = True,
     log_softmax: bool = False
 ):
     """Get a NasNet model
