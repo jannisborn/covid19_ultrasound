@@ -1,6 +1,6 @@
 # Accelerating COVID-19 Detection with ExplainableUltrasound Image Analysis
 
-This codebase is the official implementation of our submission **Accelerating COVID-19 Detection with ExplainableUltrasound Image Analysis**.
+This codebase is the official implementation of our submission **Accelerating COVID-19 Detection with Explainable Ultrasound Image Analysis**.
 
 ## Requirements
 
@@ -9,16 +9,15 @@ The library itself has few dependencies (see [setup.py](setup.py)) with loose re
 To run the code, just install the package `pocovidnet` in editable mode:
 
 ```sh
-git clone https://github.com/jannisborn/covid19_pocus_ultrasound.git
-cd covid19_pocus_ultrasound/pocovidnet/
+cd pocovidnet/
 pip install -e .
 ```
 
-Packages that will be installed include OpenCV, Tensorflow, Scikit-learn and Matplotlib.
+Requirements (that will be installed) include OpenCV, Tensorflow, Scikit-learn and Matplotlib.
 
 ## Dataset
 
-We provide the largest dataset of lung POCUS videos and images. It contains samples from convex and linear probes:
+We provide the largest publicly available dataset of lung POCUS videos and images. It contains 106 videos and 33 images recorded with convex and linear probes:
 
 - Convex:
   - 86 videos (40x COVID, 23x bacterial pneumonia, 20x healthy, 3x viral pneumonia)
@@ -113,12 +112,30 @@ python3 scripts/train_covid19.py --data_dir ../data/cross_validation/ --fold 0 -
 *NOTE*: `train_covid19.py` will automatically utilize the data from all other
 folds for training.
 
-To reproduce the results reported in our submission, run the script with the following parameters:
+To reproduce the results reported in our submission, run the script with the following parameters, executed from the directory of this README.
 
+VGG:
 ```sh
-python scripts/train_covid19.py -d ../data/cross_validation/ -t 0
-    -m models/ -id 'vgg_base' -lr 1e-3 -e 40 -bs 8 -ls True
+python scripts/train_covid19.py -d ../data/cross_validation/ -t 3  -m ../models/ -n vgg_base_model -id vgg_base -lr 1e-3 -e 40 -bs 8 -ls True
 ```
+VGG-CAM:
+```sh
+python scripts/train_covid19.py -d ../data/cross_validation/ -t 3  -m ../models/ -n vgg_cam_model -id vgg_cam -lr 1e-3 -e 40 -bs 8 -ls True
+```
+VGG-Segment:
+```sh
+python scripts/train_covid19.py -d ../data/cross_validation_segmented/ -t 3  -m ../models/ -n vgg_base_segment_model -id vgg_base -lr 1e-3 -e 40 -bs 8 -ls True
+```
+Segment-Enc:
+```sh
+python scripts/train_on_encoding.py -d ../data/cross_validation_segmented/
+```
+NASNet-Mobile:
+```sh
+python3 scripts/train_covid19.py -d ../data/cross_validation -t 15 -m models -n NasNet_B -id nasnet -lr 1e-4 -e 10 -bs 8 -hs 512 -ls True -f 0
+```
+
+These command will train the corresponding model and save the weights to a `models/` folder in the main directory.
 
 ## Video classification
 
@@ -126,7 +143,7 @@ We have explored method for video classification to exploit temporal information
 
 #### Add Butterfly data
 
-As described above, the data from butterfly must be downloaded manually. We provide an automatic script to add the videos to the `data/pocus_videos/convex` folder:
+As described above, the data from butterfly must be downloaded manually. We provide an automatic script to add the videos to the `data/pocus_videos/convex` folder (the script mentioned above only generates images from the butterfly data, here we require videos though).
 
 Assuming that you have already downloaded and unzipped the butterfly folder and renamed it to `butterfly`, `cd` into the [data folder](../data).
 Then run:
@@ -153,7 +170,7 @@ The models will be saved to the directory specified in the `output` flag.
 **All models and data can be downloaded [here](https://drive.google.com/drive/folders/1c_B4V-Ejs45pVyl1QNPEXgT4_Kg0o-Lt?usp=sharing)**
 To reproduce our results, download the trained models, as well as our cross validation split.
 
-#### Test
+### Test
 
 General usage of test script:
 
@@ -190,6 +207,13 @@ python scripts/test.py --data ../data/cross_validation_segmented --weights train
 ```
 
 All results will be dumped as .dat files containing the raw logits, as well as csv files with tables containing the results in the specified save_path location (in this case, in the files results_encode.dat, results_encode_mean.csv and results_encode_std.csv etc). Both results with and without the uninformative class will be produced (indicated by _3 added to the file name).
+
+### Video classifier evaluation
+
+To compare Models Genesis, the 3D CNN, to our frame-based approach, run
+```sh
+python scripts/eval_vid_classifier.py [-h] [--json ../data/video_input_data/cross_val.json] [--genesis_weights GENESIS_WEIGHTS][--cam_weights CAM_WEIGHTS] [--videos ../data/pocus_videos/convex]
+```
 
 ## Results
 
