@@ -1,36 +1,30 @@
-# Accelerating COVID-19 Detection with ExplainableUltrasound Image Analysis
+# pocovidnet
 
-This codebase is the official implementation of our submission **Accelerating COVID-19 Detection with Explainable Ultrasound Image Analysis**.
+A simple package to train deep learning models on ultrasound data for COVID19.
 
-## Requirements
+## Installation
 
 The library itself has few dependencies (see [setup.py](setup.py)) with loose requirements. 
 
 To run the code, just install the package `pocovidnet` in editable mode:
 
 ```sh
-cd pocovidnet/
+git clone https://github.com/jannisborn/covid19_pocus_ultrasound.git
+cd covid19_pocus_ultrasound/pocovidnet/
 pip install -e .
 ```
 
-Requirements (that will be installed) include OpenCV, Tensorflow, Scikit-learn and Matplotlib.
+## Training the model
 
-## Dataset
+*NOTE*: The repository is constantly updated with new data. If you want to
+reproduce the results of our paper, use the repo's state of the `arxiv` tag:
+```sh
+git checkout tags/arxiv
+```
+Then, please follow the instructions of the `README.md` *at that state* (see
+[here](https://github.com/jannisborn/covid19_pocus_ultrasound/tree/6c74e05b5f4ccdf96485eb5030035775d5f5c895/pocovidnet)).
 
-We provide the largest publicly available dataset of lung POCUS videos and images. It contains 106 videos and 33 images recorded with convex and linear probes:
-
-- Convex:
-  - 86 videos (40x COVID, 23x bacterial pneumonia, 20x healthy, 3x viral pneumonia)
-  - 28 images (16x COVID, 7x bacterial pneumonia, 5x healthy)
-- Linear: 
-  - 20 videos (4x COVID, 2x bacterial pneumonia, 10x healthy, 4x viral pneumonia)
-  - 5 images (3x COVID, 2x bacterial pneumonia)
-
-
-In order to train the model on this data, a folder containing our cross validation split can be downloaded [here](https://drive.google.com/file/d/1E9Cih7QdZNhaD7ns9sPcx7zOCBTYF-Wb/view?usp=sharing). Download the directory into the [data folder](../data) and unzip it. **Note: In this case, all further steps until the train-section can be skipped**
-
-Otherwise, the data can be collected, pre-processed and split with the steps explained in the following. Note that in this case the split will be different,
-since the splitting procedure is non-deterministic, and thus the results might vary.
+If you want to use the latest version of the database, read below:
 
 ### Videos to images
 
@@ -88,62 +82,11 @@ with folders `fold_1`, `fold_2`. Each folder contains only the test data for
 that specific fold.
 
 #### Uninformative data
+If you want to add data from an *uninformative* class, see [here](https://github.com/jannisborn/covid19_pocus_ultrasound/tree/master/data#add-class-uninformative).
 
-In order to detect out of distribution samples we decided to include a fourth class called "uninformative", where we add Imagenet images and neck-ultrasound data from the Kaggle Nerve Segmentation Challenge.
+### Add Butterfly data
 
-Download the data [here](https://drive.google.com/open?id=1bAbCJCq-U5vIxbG0ySUKanAW_pW_z2O4) from google drive. It contains a folder *uniform_class_nerves* and one *uniform_class_imagenet*. These two folders need to be downloaded into the [data folder](../data), and can be directly used for training there.
-
-If you want to add them to an existing cross validation split (e.g after executing [cross_val_splitter](../pocovidnet/scripts/cross_val_splitter.py)), we also provide a script:
-
-Run (from the directory of this README):
-```
-cd ../data
-python ../pocovidnet/scripts/add_uninformative_class.py -i uniform_class_imagenet -u uniform_class_nerves -o cross_validation -s 5
-```
-
-This script will split the data in the *uniform_class_nerves* and *uniform_class_imagenet* folders and add them in a folder *uninformative* to each fold.
-
-## Train the model
-
-Given an existing cross validation folder, train the model on fold 0 by running:
-```sh
-python3 scripts/train_covid19.py --data_dir ../data/cross_validation/ --fold 0 --epochs 20
-```
-*NOTE*: `train_covid19.py` will automatically utilize the data from all other
-folds for training.
-
-To reproduce the results reported in our submission, run the script with the following parameters, executed from the directory of this README.
-
-VGG:
-```sh
-python scripts/train_covid19.py -d ../data/cross_validation/ -t 3  -m ../models/ -n vgg_base_model -id vgg_base -lr 1e-3 -e 40 -bs 8 -ls True
-```
-VGG-CAM:
-```sh
-python scripts/train_covid19.py -d ../data/cross_validation/ -t 3  -m ../models/ -n vgg_cam_model -id vgg_cam -lr 1e-3 -e 40 -bs 8 -ls True
-```
-VGG-Segment:
-```sh
-python scripts/train_covid19.py -d ../data/cross_validation_segmented/ -t 3  -m ../models/ -n vgg_base_segment_model -id vgg_base -lr 1e-3 -e 40 -bs 8 -ls True
-```
-Segment-Enc:
-```sh
-python scripts/train_on_encoding.py -d ../data/cross_validation_segmented/
-```
-NASNet-Mobile:
-```sh
-python3 scripts/train_covid19.py -d ../data/cross_validation -t 15 -m models -n NasNet_B -id nasnet -lr 1e-4 -e 10 -bs 8 -hs 512 -ls True -f 0
-```
-
-These command will train the corresponding model and save the weights to a `models/` folder in the main directory.
-
-## Video classification
-
-We have explored method for video classification to exploit temporal information in the videos. With the following instructions one can train a video classifier based on 3D convolutions.
-
-#### Add Butterfly data
-
-As described above, the data from butterfly must be downloaded manually. We provide an automatic script to add the videos to the `data/pocus_videos/convex` folder (the script mentioned above only generates images from the butterfly data, here we require videos though).
+As described above, the data from butterfly must be downloaded manually. We provide an automatic script to add the videos to the `data/pocus_videos/convex` folder:
 
 Assuming that you have already downloaded and unzipped the butterfly folder and renamed it to `butterfly`, `cd` into the [data folder](../data).
 Then run:
@@ -152,72 +95,41 @@ python ../pocovidnet/scripts/process_butterfly_videos.py
 ```
 Now all usable butterfly videos should be added to `data/pocus_videos/convex`.
 
-#### Train video classifier
+### Train the model
 
-A [json file](../data/video_input_data/cross_val.json) is provided that corresponds to the cross validation split in `data/cross_validation`. The followings script will automatically process the data listed in this json file. There are two video classification model: A simple 3D CNN that is trained from scratch (--model_id base) or a pre-trained 3D CNN provided by Models Genesis (--model_id genesis). For the latter, the pre-trained model needs to be requested [here](https://www.wjx.top/jq/46747127.aspx).
-
-To reproduce the reported video classification results with model genesis, `cd` into the folder of this README and run
+Afterwards you can train the model by:
 ```sh
-python scripts/video_classification.py --model_id genesis
+python3 scripts/train_covid19.py --data_dir ../data/cross_validation/ --fold 0 --epochs 2
 ```
+*NOTE*: `train_covid19.py` will automatically utilize the data from all other
+folds for training.
 
-The models will be saved to the directory specified in the `output` flag.
+### Test the model
 
-## Evaluation
-
-#### Pre-trained models and input data
-
-**All models and data can be downloaded [here](https://drive.google.com/drive/folders/1c_B4V-Ejs45pVyl1QNPEXgT4_Kg0o-Lt?usp=sharing)**
-To reproduce our results, download the trained models, as well as our cross validation split.
-
-### Test
-
-General usage of test script:
+Given a pre-trained model, it can be evaluated on a cross validations split (`--data`) with the following command:
 
 ```sh
 python scripts/test.py [-h] [--data DATA] [--weights WEIGHTS] [--m_id M_ID] [--classes CLASSES] [--folds FOLDS] [--save_path SAVE_PATH]
 ```
 
-To reproduce our evaluation, download the trained_models folder from Drive and put them into the directory of this README (pocovidnet). Also, download the cross validation split folder and unzip it in the [data](../data) folder (see paths in commands below).
+## Video classification
 
-The first three models use the raw data as input, which is in the [cross_validation](../data/cross_validation) folder
+We have explored method for video classification to exploit temporal information in the videos. With the following instructions one can train a video classifier based on 3D convolutions.
 
-VGG-model:
-```sh
-python scripts/test.py --data ../data/cross_validation --weights trained_models_vgg --m_id vgg_base --save_path results_VGG
-```
-VGG-CAM-model:
-```sh
-python scripts/test.py --data ../data/cross_validation --weights trained_models_cam --m_id vgg_cam --save_path results_VGG_CAM
-```
-NASNet-model:
-```sh
-python scripts/test.py --data ../data/cross_validation --weights trained_models_NAS --m_id nasnet --save_path results_NAS
-```
-
-The other two models are trained on segmented images or encoding layers, which are provided in the [cross_validation_segmented](../data/cross_validation_segmented) folder.
-
-VGG-Segment:
-```sh
-python scripts/test.py --data ../data/cross_validation_segmented --weights trained_models_vgg_segment --m_id vgg_base --save_path results_segment
-```
-Segment-Enc:
-```sh
-python scripts/test.py --data ../data/cross_validation_segmented --weights trained_models_encoding --m_id dense --save_path results_encode
-```
-
-All results will be dumped as .dat files containing the raw logits, as well as csv files with tables containing the results in the specified save_path location (in this case, in the files results_encode.dat, results_encode_mean.csv and results_encode_std.csv etc). Both results with and without the uninformative class will be produced (indicated by _3 added to the file name).
-
-### Video classifier evaluation
-
-To compare Models Genesis, the 3D CNN, to our frame-based approach, run
 ```sh
 python scripts/eval_vid_classifier.py [-h] [--json ../data/video_input_data/cross_val.json] [--genesis_weights GENESIS_WEIGHTS][--cam_weights CAM_WEIGHTS] [--videos ../data/pocus_videos/convex]
 ```
 
-## Results
+A [json file](../data/video_input_data/cross_val.json) is provided that corresponds to the cross validation split in `data/cross_validation`. To train a 3D CNN on a split, `cd` into the folder of this README and run
+```sh
+python scripts/video_classification.py --output models --fold 0 --epoch 40  
+```
 
-Frame-based classification results obtained in 5-fold cross validation:
+The models will be saved to the directory specified in the `output` flag.
+
+## Our results (`POCOVID-Net`)
+
+Current results (5-fold CV) are
 
 | Model                  | Accuracy  |      Balanced | 
 | ------------------ |---------------- | -------------- |
@@ -225,6 +137,28 @@ Frame-based classification results obtained in 5-fold cross validation:
 | VGG-CAM  |     89.5% +-2%     |      88.1%  +- 3% 
 | NASNetMobile  |     75.7% +-9%     |      71.1%  +- 7% 
 
-When averaging the frame-wise probabilities to obtain a video classification, VGG-CAM achieves 94% accuracy (93% balanced).
+![alt text](https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/confusion_matrix.png "Confusion matrix")
 
-The video classification model using 3D convolutions described above, Model Genesis, meanwhile exhibits 87% accuracy.
+Detailed performances:
+![alt text](https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/result_table.png "Result table")
+
+
+# Contact 
+- If you experience problems with the code, please open an
+[issue](https://github.com/jannisborn/covid19_pocus_ultrasound/issues).
+- If you have questions about the project, please reach out: `jborn@ethz.ch`.
+
+
+# Citation
+
+The paper is available [here](https://arxiv.org/abs/2004.12084).
+
+If you build upon our work or find it useful, please cite our paper:
+```bib
+@article{born2020pocovid,
+  title={POCOVID-Net: Automatic Detection of COVID-19 From a New Lung Ultrasound Imaging Dataset (POCUS)},
+  author={Born, Jannis and Br{\"a}ndle, Gabriel and Cossio, Manuel and Disdier, Marion and Goulet, Julie and Roulin, J{\'e}r{\'e}mie and Wiedemann, Nina},
+  journal={arXiv preprint arXiv:2004.12084},
+  year={2020}
+}
+```
