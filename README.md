@@ -1,6 +1,7 @@
 # **Automatic Detection of COVID-19 from *Ultrasound* Data**
 
 ![Node.js CI](https://github.com/jannisborn/covid19_pocus_ultrasound/workflows/Node.js%20CI/badge.svg)
+[![Build Status](https://travis-ci.com/jannisborn/covid19_pocus_ultrasound.svg?branch=master)](https://travis-ci.com/jannisborn/covid19_pocus_ultrasound)
 
 **NOTE**: This is an ultrasound data collection initiative for COVID-19. Please
 help growing the database or contribute new models.

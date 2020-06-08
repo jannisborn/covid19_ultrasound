@@ -1,5 +1,5 @@
 # pocovidnet
-
+[![Build Status](https://travis-ci.com/jannisborn/covid19_pocus_ultrasound.svg?branch=master)](https://travis-ci.com/jannisborn/covid19_pocus_ultrasound)
 A simple package to train deep learning models on ultrasound data for COVID19.
 
 ## Installation
