@@ -17,6 +17,7 @@ jobs:
       run: |
         cd pocovidscreen/resources/ui
         npm install
+        npm update
         npm run prod
         cd ../../web_root
         tar cvzf build.tar.gz *
