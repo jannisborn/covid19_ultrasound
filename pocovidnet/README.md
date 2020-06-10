@@ -142,6 +142,9 @@ Current results (5-fold CV) are
 Detailed performances:
 ![alt text](https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/result_table.png "Result table")
 
+### Pretrained models
+To access the pre-trained models, have a look [here](https://drive.google.com/drive/folders/1c_B4V-Ejs45pVyl1QNPEXgT4_Kg0o-Lt). The default configuration in the evaluation class `Evaluator` in `evaluate_covid19.py` uses the `vgg_base` model which is stored in the Google Drive folder `trained_models_vgg`. You can place the 5 folders named `fold_1` ... `fold_5` into `pocovidnet/trained_models` and should be ready to go to use the `Evaluator` class.
+
 
 # Contact 
 - If you experience problems with the code, please open an
