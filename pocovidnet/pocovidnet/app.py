@@ -65,7 +65,7 @@ def upload():
         file = request.files['file']
         file_dir = ''.join(random.choices(string.ascii_uppercase +
                              string.digits, k = 24)) 
-        if allowed_file_video(file.filename):
+        if (allowed_file_video(file.filename) or allowed_file(file.filename)):
             file.save(os.path.join(app.config['UPLOAD_FOLDER'] + "/" + file_dir, file.filename))
             return jsonify(app.config['UPLOAD_FOLDER'] + "/" + file_dir + file.filename)
         return jsonify("filename not allowed: " + file.filename)
