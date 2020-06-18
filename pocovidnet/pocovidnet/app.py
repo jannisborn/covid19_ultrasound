@@ -2,11 +2,14 @@ from flask import Flask, jsonify, request
 import cv2
 import os
 from pocovidnet.evaluate_covid19 import Evaluator
+from evaluate_video import VideoEvaluator
 
 import string 
 import random
 
 model = Evaluator(ensemble=True)
+
+videoModel = VideoEvaluator()
 
 app = Flask(__name__)
 
@@ -68,6 +71,20 @@ def upload():
         if (allowed_file_video(file.filename) or allowed_file(file.filename)):
             file.save(os.path.join(app.config['UPLOAD_FOLDER'] + "/" + file_dir, file.filename))
             return jsonify(app.config['UPLOAD_FOLDER'] + "/" + file_dir + file.filename)
+        return jsonify("filename not allowed: " + file.filename)
+
+@app.route("/video_predict", methods=['POST'])
+def video_predict():
+    if request.method == 'POST':
+        if 'file' not in request.files:
+            return jsonify("Need to pass argument filename to request! (empty)")
+        file = request.files['file']
+        file_dir = ''.join(random.choices(string.ascii_uppercase +
+                             string.digits, k = 24)) 
+        if (allowed_file_video(file.filename)):
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'] + "/" + file_dir, file.filename))
+            filepath = app.config['UPLOAD_FOLDER'] + "/" + file_dir + file.filename
+            return jsonify(videoModel(filepath))
         return jsonify("filename not allowed: " + file.filename)
 
 if __name__ == '__main__':
