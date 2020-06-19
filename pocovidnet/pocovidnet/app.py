@@ -83,8 +83,11 @@ def video_predict():
                              string.digits, k = 24)) 
         if (allowed_file_video(file.filename)):
             file.save(os.path.join(app.config['UPLOAD_FOLDER'] + "/" + file_dir, file.filename))
-            filepath = app.config['UPLOAD_FOLDER'] + "/" + file_dir + file.filename
-            return jsonify(videoModel(filepath))
+            filepath = app.config['UPLOAD_FOLDER'] + "/" + file_dir + "/" +file.filename
+            vidpath = app.config['UPLOAD_FOLDER'] + "/" + file_dir + "/" + "heatmap.mp4"
+            preds = str(videoModel(filepath))
+            videoModel.cam_important_frames(vidpath)
+            return jsonify(videoModel(filepath) + vidpath)
         return jsonify("filename not allowed: " + file.filename)
 
 if __name__ == '__main__':
