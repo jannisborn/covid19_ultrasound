@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="main">
+  <div class="title">
+    <h3>Image Classifier</h3>
+    <!-- <p>
+      <small>A web app demo</small>
+    </p> -->
+  </div>
+
+  <div class="panel">
+    <input id="file-upload" class="hidden" type="file" accept="image/x-png,image/gif,image/jpeg" />
+    <label for="file-upload" id="file-drag" class="upload-box">
+      <div id="upload-caption">Drop image here or click to select</div>
+      <img id="image-preview" class="hidden" />
+    </label>
+  </div>
+  <div style="margin-bottom: 2rem;">
+    <input type="button" value="COVID-19" class="button" onclick="setCovid();" />
+    <input type="button" value="Pneumonia" class="button" onclick="setPneumonia();" />
+    <input type="button" value="Healthy" class="button" onclick="setHealthy();" />
+</div>
+  <div style="margin-bottom: 2rem;">
+    <input type="button" value="Submit" class="button" onclick="uploadImage();" />
+    <input type="button" value="Clear" class="button" onclick="clearImage();" />
+  </div>
+
+  <div id="image-box">
+    <img id="image-display" />
+    <div id="pred-result" class="hidden"></div>
+    <svg id="loader" class="hidden" viewBox="0 0 32 32" width="32" height="32">
+      <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+    </svg>
+  </div>
+</div>
+
+<footer>
+    <script src="{{ url_for('static',filename='upload.js') }}"></script>
+  </footer>
+
+{% endblock %}

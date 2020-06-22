@@ -10,10 +10,9 @@ We develop a **computer vision** approach for the diagnosis of **COVID-19** infe
 from **Point-of-care Ultrasound** (POCUS) recordings. Find the arXiv preprint
 [here](https://arxiv.org/abs/2004.12084). This is the **first
 approach to automatically detect COVID-19 from ultrasound**. Next to the code
-for our model and our websitet on [https://pocovidscreen.org](https://pocovidscreen.org), we also make a
+for our model and our website on [https://pocovidscreen.org](https://pocovidscreen.org), we also make a
 **dataset** available. This complements the current data collection initiaves that only focus
-on CT or X-Ray data. The data includes a total of >70 videos (> 1000 images) of COVID 19 patients, as well
-as pneumonia and healthy lungs. 
+on CT or X-Ray data. The data includes a total of >100 videos and >30 images of 3 classes (COVID-19, pneumonia, healthy lungs). With frame-based prediction models this easily makes up for a dataset of >1000 images.
 **Please help growing the database!**
 
 

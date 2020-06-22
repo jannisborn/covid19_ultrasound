@@ -54,7 +54,9 @@ def get_cam_model(
     input_size: tuple = (224, 224, 3),
     num_classes: int = 3,
     trainable_layers: int = 1,
+    dropout: float = 0.5,
     log_softmax: bool = False,
+    mc_dropout: bool = False,
     *args,
     **kwargs
 ):
@@ -79,6 +81,10 @@ def get_cam_model(
     )
     headModel = baseModel.output
     headModel = global_average_pooling(headModel)
+    headModel = (
+        Dropout(dropout)(headModel, training=True)
+        if mc_dropout else Dropout(dropout)(headModel)
+    )
     headModel = Dense(num_classes, activation=act_fn)(headModel)
 
     model = Model(inputs=baseModel.input, outputs=headModel)
