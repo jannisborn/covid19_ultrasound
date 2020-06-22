@@ -21,10 +21,10 @@ assembled from publicly available resources in the web as well as from publicati
   
 ## Current dataset size (May 2020)
 - Convex:
-  - 86 videos (40x COVID, 23x bacterial pneumonia, 20x healthy, 3x viral pneumonia)
+  - 132 videos (58x COVID, 24x bacterial pneumonia, 47x healthy, 3x viral pneumonia)
   - 28 images (16x COVID, 7x bacterial pneumonia, 5x healthy)
 - Linear: 
-  - 20 videos (4x COVID, 2x bacterial pneumonia, 10x healthy, 4x viral pneumonia)
+  - 21 videos (4x COVID, 2x bacterial pneumonia, 11x healthy, 4x viral pneumonia)
   - 5 images (3x COVID, 2x bacterial pneumonia)
 
 - Soon more will be added!
