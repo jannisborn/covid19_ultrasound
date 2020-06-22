@@ -86,8 +86,141 @@ The following modifcations to videos/images were done:
 - Cropped to the center to remove measuring bars, text etc.
 - Removal of artifcats on the sample (few cases only)
 
-
 We are deeply thankful to the authors and contributors to our datset, in particular to the maintainers of https://thepocusatlas.com, https://radiopaedia.org/, https://grepmed.com and https://litfl.com/ultrasound-library/ (thanks for Dr. Rippey who helped us personally), and to Charlotte Buhre for recording data herself just for our dataset.
+Also, we appreciate the availability of videos on [Stemlyn's blog](https://www.stemlynsblog.org/combatting-covid19-is-lung-ultrasound-an-option/).
+
+Also, we obtained videos and images from publications on ultrasound, and we appreciate very much that we could include data from the following publications in our database:
+
+* 3 COVID-19 images from [@inchingolo2020diagnosis] - [The Diagnosis of Pneumonia in a Pregnant Woman with COVID-19 Using Maternal Lung Ultrasound](https://www.ajog.org/action/showPdf?pii=S0002-9378%2820%2930468-3)
+* 8 COVID-19 images from [@huang2020preliminary] - [A Preliminary Study on the Ultrasonic Manifestations of Peripulmonary Lesions of Non-Critical Novel Coronavirus Pneumonia (COVID-19)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3544750)
+* 4 videos (healthy and pneumonia) from [@irwin2016advances] - [Advances in Point-of-Care Thoracic Ultrasound](https://www.sciencedirect.com/science/article/pii/S0733862715000772#appsec2)
+* 2 videos (healthy and pneumonia) from [@bouhemad2007clinical] - [Clinical review: Bedside lung ultrasound in critical care practice](https://link.springer.com/article/10.1186/cc5668#Abs1)
+* 3 COVID-19 images from [@lomoro2020covid] - [COVID-19 pneumonia manifestations at the admission on chest ultrasound, radiographs, and CT: single-center study and comprehensive radiologic literature review](https://www.sciencedirect.com/science/article/pii/S2352047720300204)
+* 2 viral pneumonia videos (H1N1) from [@testa2012early] - [Early recognition of the 2009 pandemic influenza A (H1N1) pneumonia by chest ultrasound](https://link.springer.com/article/10.1186/cc11201)
+* 1 healthy and 7 COVID-19 videos from [@yassa2020lung] - [Lung Ultrasound Can Influence the Clinical Treatment of Pregnant Women With COVID ‐19](https://onlinelibrary.wiley.com/doi/full/10.1002/jum.15367#jum15367-fig-0001)
+* 2 healthy and 1 viral image from [@stadler2017lung] - [Lung ultrasound for the diagnosis of community-acquired pneumonia in children](https://link.springer.com/content/pdf/10.1007/s00247-017-3910-1.pdf)
+* 1 healthy and 2 regular images from [@reissig2014lung] - [Lung Ultrasound in Community-Acquired Pneumonia and in Interstitial Lung Diseases](https://www.karger.com/Article/Pdf/357449)
+* 4 pneumonia images from [@claes2017performance] - [Performance of chest ultrasound in pediatric pneumonia](https://www.sciencedirect.com/science/article/pii/S0720048X16304260?casa_token=W82e3087RfcAAAAA:plbCnRIJAeD9tj369F72kUDp0vChQMU9CwO0pBJvd6_RKsTSozgLFdPijaG4sFM7m5Auov988b4)
+* 4 videos (viral and bacterial pneumonia) from [@tsung2012prospective] - [Prospective application of clinician-performed lung ultrasonography during the 2009 H1N1 influenza A pandemic: distinguishing viral from bacterial pneumonia](https://theultrasoundjournal.springeropen.com/articles/10.1186/2036-7902-4-16)
+* 6 videos (COVID-19, healthy, bacterial pneumonia) from [@vieira2020role] - [Role of point-of-care ultrasound during the COVID-19 pandemic: our recommendations in the management of dialytic patients](https://theultrasoundjournal.springeropen.com/articles/10.1186/s13089-020-00177-4)
+* 9 COVID-19 images from [@sofia2020thoracic] - [Thoracic ultrasound and SARS-COVID-19: a pictorial essay](https://link.springer.com/content/pdf/10.1007/s40477-020-00458-7.pdf)
+
+```bib
+@article{inchingolo2020diagnosis,
+  title={The Diagnosis of Pneumonia in a Pregnant Woman with COVID-19 Using Maternal Lung Ultrasound},
+  author={Inchingolo, Riccardo and Smargiassi, Andrea and Moro, Francesca and Buonsenso, Danilo and Salvi, Silvia and Del Giacomo, Paola and Scoppettuolo, Giancarlo and Demi, Libertario and Soldati, Gino and Testa, Antonia Carla},
+  journal={American Journal of Obstetrics and Gynecology},
+  year={2020},
+  publisher={Elsevier}
+}
+@article{huang2020preliminary,
+  title={A preliminary study on the ultrasonic manifestations of peripulmonary lesions of non-critical novel coronavirus pneumonia (COVID-19)},
+  author={Huang, Yi and Wang, Sihan and Liu, Yue and Zhang, Yaohui and Zheng, Chuyun and Zheng, Yu and Zhang, Chaoyang and Min, Weili and Zhou, Huihui and Yu, Ming and others},
+  journal={Available at SSRN 3544750},
+  year={2020}
+}
+@article{irwin2016advances,
+  title={Advances in point-of-care thoracic ultrasound},
+  author={Irwin, Zareth and Cook, Justin O},
+  journal={Emerg Med Clin North Am},
+  volume={34},
+  number={1},
+  pages={151--7},
+  year={2016}
+}
+@article{bouhemad2007clinical,
+  title={Clinical review: bedside lung ultrasound in critical care practice},
+  author={Bouhemad, B{\'e}la{\"\i}d and Zhang, Mao and Lu, Qin and Rouby, Jean-Jacques},
+  journal={Critical care},
+  volume={11},
+  number={1},
+  pages={205},
+  year={2007},
+  publisher={Springer}
+}
+@article{lomoro2020covid,
+  title={COVID-19 pneumonia manifestations at the admission on chest ultrasound, radiographs, and CT: single-center study and comprehensive radiologic literature review},
+  author={Lomoro, Pascal and Verde, Francesco and Zerboni, Filippo and Simonetti, Igino and Borghi, Claudia and Fachinetti, Camilla and Natalizi, Anna and Martegani, Alberto},
+  journal={European journal of radiology open},
+  pages={100231},
+  year={2020},
+  publisher={Elsevier}
+}
+@article{testa2012early,
+  title={Early recognition of the 2009 pandemic influenza A (H1N1) pneumonia by chest ultrasound},
+  author={Testa, Americo and Soldati, Gino and Copetti, Roberto and Giannuzzi, Rosangela and Portale, Grazia and Gentiloni-Silveri, Nicol{\`o}},
+  journal={Critical Care},
+  volume={16},
+  number={1},
+  pages={R30},
+  year={2012},
+  publisher={Springer}
+}
+@article{yassa2020lung,
+  title={Lung Ultrasound Can Influence the Clinical Treatment of Pregnant Women With COVID-19},
+  author={Yassa, Murat and Birol, Pinar and Mutlu, Ali Memis and Tekin, Arzu Bilge and Sandal, Kemal and Tug, Niyazi},
+  journal={Journal of Ultrasound in Medicine},
+  year={2020},
+  publisher={Wiley Online Library}
+}
+@article{stadler2017lung,
+  title={Lung ultrasound for the diagnosis of community-acquired pneumonia in children},
+  author={Stadler, Jacob AM and Andronikou, Savvas and Zar, Heather J},
+  journal={Pediatric radiology},
+  volume={47},
+  number={11},
+  pages={1412--1419},
+  year={2017},
+  publisher={Springer}
+}
+@article{reissig2014lung,
+  title={Lung ultrasound in community-acquired pneumonia and in interstitial lung diseases},
+  author={Reissig, Angelika and Copetti, Roberto},
+  journal={Respiration},
+  volume={87},
+  number={3},
+  pages={179--189},
+  year={2014},
+  publisher={Karger Publishers}
+}
+@article{claes2017performance,
+  title={Performance of chest ultrasound in pediatric pneumonia},
+  author={Claes, Anne-Sophie and Clapuyt, Philippe and Menten, Renaud and Michoux, Nicolas and Dumitriu, Dana},
+  journal={European journal of radiology},
+  volume={88},
+  pages={82--87},
+  year={2017},
+  publisher={Elsevier}
+}
+@article{tsung2012prospective,
+  title={Prospective application of clinician-performed lung ultrasonography during the 2009 H1N1 influenza A pandemic: distinguishing viral from bacterial pneumonia},
+  author={Tsung, James W and Kessler, David O and Shah, Vaishali P},
+  journal={Critical ultrasound journal},
+  volume={4},
+  number={1},
+  pages={1--10},
+  year={2012},
+  publisher={SpringerOpen}
+}
+@article{vieira2020role,
+  title={Role of point-of-care ultrasound during the COVID-19 pandemic: our recommendations in the management of dialytic patients},
+  author={Vieira, Ana Luisa Silveira and J{\'u}nior, Jos{\'e} Muniz Pazeli and Bastos, Marcus Gomes},
+  journal={The Ultrasound Journal},
+  volume={12},
+  number={1},
+  pages={1--9},
+  year={2020},
+  publisher={SpringerOpen}
+}
+@article{sofia2020thoracic,
+  title={Thoracic ultrasound and SARS-COVID-19: a pictorial essay},
+  author={Sofia, Soccorsa and Boccatonda, Andrea and Montanari, Marco and Spampinato, Michele and D’ardes, Damiano and Cocco, Giulio and Accogli, Esterita and Cipollone, Francesco and Schiavone, Cosima},
+  journal={Journal of ultrasound},
+  pages={1--5},
+  year={2020},
+  publisher={Springer}
+}
+```
 
 ## Citation
 The paper is available [here](https://arxiv.org/abs/2004.12084).
