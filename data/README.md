@@ -19,7 +19,7 @@ assembled from publicly available resources in the web as well as from publicati
       - https://grepmed.com
       - https://litfl.com/ultrasound-library/
   
-## Current dataset size (May 2020)
+## Current dataset size (June 2020)
 - Convex:
   - 132 videos (58x COVID, 24x bacterial pneumonia, 47x healthy, 3x viral pneumonia)
   - 28 images (16x COVID, 7x bacterial pneumonia, 5x healthy)
@@ -30,6 +30,7 @@ assembled from publicly available resources in the web as well as from publicati
 - Soon more will be added!
 
 ## Updates
+- **22.6.2020**: Database update - We added 46 new videos (18x COVID, 1x bacterial pneumonia, 27x healthy).
 - **16.5.2020**: The [ICLUS
   project](https://www.disi.unitn.it/iclus) released ~60 videos
   from COVID-patients (register [here](https://covid19.disi.unitn.it/iclusdb/login)). 
