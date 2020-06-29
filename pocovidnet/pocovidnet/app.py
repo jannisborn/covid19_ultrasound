@@ -87,7 +87,7 @@ def video_predict():
             vidpath = app.config['UPLOAD_FOLDER'] + "/" + file_dir + "/" + "heatmap.mp4"
             preds = str(videoModel(filepath))
             videoModel.cam_important_frames(vidpath)
-            return jsonify(videoModel(filepath) + vidpath)
+            return jsonify(preds) + "\n" + vidpath
         return jsonify("filename not allowed: " + file.filename)
 
 if __name__ == '__main__':
