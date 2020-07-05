@@ -76,9 +76,9 @@ def upload():
 @app.route("/video_predict", methods=['POST'])
 def video_predict():
     if request.method == 'POST':
-        if 'file' not in request.files:
+        if 'image' not in request.files:
             return jsonify("Need to pass argument filename to request! (empty)")
-        file = request.files['file']
+        file = request.files['image']
         file_dir = ''.join(random.choices(string.ascii_uppercase +
                              string.digits, k = 24)) 
         if (allowed_file_video(file.filename)):

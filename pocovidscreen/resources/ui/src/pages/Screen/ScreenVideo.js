@@ -9,7 +9,7 @@ import downloadDark from './images/download-dark.svg';
 import {AppContext} from '../../context/AppContext';
 import {useHistory} from 'react-router-dom';
 
-const Screen = () => {
+const ScreenVideo = () => {
 
     const context = useContext(AppContext);
     const history = useHistory();
@@ -90,4 +90,4 @@ const Screen = () => {
     );
 };
 
-export default Screen;
+export default ScreenVideo;

@@ -1,44 +1,61 @@
 import React, {useEffect} from 'react';
 import gsap from "gsap";
 
-const ScreenResult = ({image, data, identifier}) => {
+const ScreenVideoResult = ({image, data, identifier}) => {
 
     let results = '';
     let colorClass = '';
+    let url = ''
 
-    image.preview = URL.createObjectURL(image);
-    const res = JSON.parse(data.result.split("\n")[0]);
-    const url = JSON.parse(data.result.split("\n")[1])
-    
-
-    const maxValueIndex = res.indexOf(Math.max(...res));
-    const probability = Math.round(res[maxValueIndex] * 100);
-
-    switch (maxValueIndex) {
-        case 0:
-            results = 'COVID-19 symptoms';
-            break;
-        case 1:
-            results = 'Pneumonia symptoms';
-            break;
-        case 2:
-            results = 'Healthy';
-            break;
-    }
-
-    if (probability >= 0 && probability < 50) {
-        colorClass = 'red';
-    } else if (probability >= 50 && probability < 80) {
-        colorClass = 'orange';
-    } else {
-        colorClass = 'green';
-    }
-
-    let tl = gsap.timeline();
     useEffect(() => {
-        let el = '#key-' + identifier;
-        tl.from(el, 1.2, {y: 80, opacity: 0, ease: 'power4.out'})
-    }, [identifier]);
+        let formData = new FormData();
+        location.state.files.map((file) => {
+            formData.append('image', file);
+            fetch('/pyapi/screen_video', {
+                method: 'POST',
+                body: formData
+            })
+            .then(data => data.json())
+            .then(data => {
+                image.preview = URL.createObjectURL(image);
+                res = JSON.parse(data.result.split("\n")[0]);
+                url = data.result.split("\n")[1]
+                
+            
+                const maxValueIndex = res.indexOf(Math.max(...res));
+                const probability = Math.round(res[maxValueIndex] * 100);
+            
+                switch (maxValueIndex) {
+                    case 0:
+                        results = 'COVID-19 symptoms';
+                        break;
+                    case 1:
+                        results = 'Pneumonia symptoms';
+                        break;
+                    case 2:
+                        results = 'Healthy';
+                        break;
+                }
+            
+                if (probability >= 0 && probability < 50) {
+                    colorClass = 'red';
+                } else if (probability >= 50 && probability < 80) {
+                    colorClass = 'orange';
+                } else {
+                    colorClass = 'green';
+                }
+            
+                let tl = gsap.timeline();
+                useEffect(() => {
+                    let el = '#key-' + identifier;
+                    tl.from(el, 1.2, {y: 80, opacity: 0, ease: 'power4.out'})
+                }, [identifier]);
+            })
+        });
+    }, [location]);
+
+
+
 
     return (
         <div id={`key-${identifier}`} className={`result ${colorClass} d-md-flex mb-5`}>
@@ -72,4 +89,4 @@ const ScreenResult = ({image, data, identifier}) => {
     );
 };
 
-export default ScreenResult;
+export default ScreenVideoResult;
