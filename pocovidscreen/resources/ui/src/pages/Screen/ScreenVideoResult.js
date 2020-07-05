@@ -11,7 +11,7 @@ const ScreenVideoResult = ({image, data, identifier}) => {
         let formData = new FormData();
         location.state.files.map((file) => {
             formData.append('image', file);
-            fetch('/pyapi/screen_video', {
+            fetch('/pyapi/video_predict', {
                 method: 'POST',
                 body: formData
             })
