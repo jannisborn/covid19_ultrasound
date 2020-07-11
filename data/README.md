@@ -19,17 +19,19 @@ assembled from publicly available resources in the web as well as from publicati
       - https://grepmed.com
       - https://litfl.com/ultrasound-library/
   
-## Current dataset size (June 2020)
+## Current dataset size (July 2020)
 - Convex:
-  - 132 videos (58x COVID, 24x bacterial pneumonia, 47x healthy, 3x viral pneumonia)
-  - 28 images (16x COVID, 7x bacterial pneumonia, 5x healthy)
+  - 110 videos (34x  COVID, 23x bacterial pneumonia, 50x healthy, 3x viral pneumonia)
+  - 45 images (16x COVID, 7x bacterial pneumonia, 22x healthy)
+  - 21 videos from the Butterfly dataset (19 COVID, 2 healthy, see below how to use the provided scripts to process the data)
 - Linear: 
-  - 21 videos (4x COVID, 2x bacterial pneumonia, 11x healthy, 4x viral pneumonia)
+  - 20 videos (4x COVID, 2x bacterial pneumonia, 10x healthy, 4x viral pneumonia)
   - 5 images (3x COVID, 2x bacterial pneumonia)
 
-- Soon more will be added!
+- We are constantly updating the dataset with new data - any contributions are appreciated!
 
 ## Updates
+- **11.7.2020**: Database update - We added an up to date csv file with all metadata, and new videos that were contributed from the Northumbria Specialist Emergency Care Hospital (17 images and 4 videos of healthy patients)
 - **22.6.2020**: Database update - We added 46 new videos (18x COVID, 1x bacterial pneumonia, 27x healthy).
 - **16.5.2020**: The [ICLUS
   project](https://www.disi.unitn.it/iclus) released ~60 videos
@@ -87,8 +89,11 @@ The following modifcations to videos/images were done:
 - Cropped to the center to remove measuring bars, text etc.
 - Removal of artifcats on the sample (few cases only)
 
-We are deeply thankful to the authors and contributors to our datset, in particular to the maintainers of https://thepocusatlas.com, https://radiopaedia.org/, https://grepmed.com and https://litfl.com/ultrasound-library/ (thanks for Dr. Rippey who helped us personally), and to Charlotte Buhre for recording data herself just for our dataset.
-Also, we appreciate the availability of videos on [Stemlyn's blog](https://www.stemlynsblog.org/combatting-covid19-is-lung-ultrasound-an-option/).
+We are deeply thankful to the authors and contributors to our datset, in particular
+* Dr Avinash Aujayeb (MBBS MRCP (Edin 2008) PgCert ClinEd FHEA), Pleural Medicine Lead and Consultant in Respiratory and Acute Medicine for the Trustee for Mesothelioma UK and Northumbria Specialist Emergency Care Hospital, who contributes regularly to our database with clinical data. We greatly appreciate their efforts for open-access data.
+* The maintainers of https://thepocusatlas.com, https://radiopaedia.org/, https://grepmed.com and https://litfl.com/ultrasound-library/ (thanks for Dr. Rippey in particular who gave interesting advice)
+* Charlotte Buhre for recording data herself just for our dataset.
+* The contributers to [Stemlyn's blog](https://www.stemlynsblog.org/combatting-covid19-is-lung-ultrasound-an-option/).
 
 Also, we obtained videos and images from publications on ultrasound, and we appreciate very much that we could include data from the following publications in our database:
 
