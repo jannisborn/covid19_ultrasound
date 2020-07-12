@@ -26,7 +26,7 @@ def allowed_file(filename):
 
 def allowed_file_video(filename):
     return '.' in filename and \
-           filename.split('.')[-1].lower() in ["mp4", "aac", "mov"]
+           filename.split('.')[-1].lower() in ["mp4", "mpg", "mov", "mpeg"]
 
 
 @app.route('/predict', methods=['GET'])

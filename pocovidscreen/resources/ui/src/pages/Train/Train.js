@@ -112,7 +112,7 @@ const Train = () => {
                             <button disabled={files.length === 0} className="button primary round w-100 text-uppercase mt-4">Confirm</button>
                         </div>
                     </div>
-                    <p className="text-center">Do you have a larger dataset or would like to partner with us? Email us at <a href="mailto:info@pocovidscreen.org">mailto:info@pocovidscreen.org</a>, and we will get back to you ASAP.</a></p>
+                    <p className="text-center">Do you have a larger dataset or would like to partner with us? Email us at <a href="mailto:info@pocovidscreen.org">mailto:info@pocovidscreen.org</a>, and we will get back to you ASAP.</p>
                 </form>
             </div>
             <div className="spacer"></div>

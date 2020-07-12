@@ -74,8 +74,8 @@ const Home = () => {
                                       linkTitle="Start screening" className="primary"/>
                     </div>
                     <div className="train col-10 offset-1 col-sm-12 offset-sm-0 col-md-6 col-lg-5">
-                        <CallToAction action="/train" title="Train the AI"
-                                      text="Send us your POCUS images & videos to train our AI about COVID-19, pneumonia or healthy patient."
+                        <CallToAction action="/train" title="Donate your data"
+                                      text="Send us your POCUS images & recordings to train our AI about COVID-19, pneumonia or healthy patient."
                                       linkTitle="Start training" className="secondary"/>
                     </div>
                 </div>
