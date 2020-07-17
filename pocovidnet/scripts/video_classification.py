@@ -35,7 +35,7 @@ def main():
         help='directory where videos are stored'
     )
     parser.add_argument(
-        '--json', type=str, default="../data/video_input_data/cross_val.json"
+        '--json', type=str, default="../data/cross_val.json"
     )
     parser.add_argument('--output', type=str, default="video_model_outputs")
     parser.add_argument('--fold', type=int, default=0)
@@ -59,6 +59,8 @@ def main():
     if not os.path.isdir(MODEL_D):
         if not os.path.exists(MODEL_D):
             os.makedirs(args.output)
+    if not os.path.isdir(args.save):
+        os.makedirs(args.save)
 
     # Initialize video converter
     vid3d = Videoto3D(

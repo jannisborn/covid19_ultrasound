@@ -11,9 +11,7 @@ from pocovidnet.videoto3d import Videoto3D
 
 def main():
     parser = argparse.ArgumentParser(description='Evaluate genesis and cam')
-    parser.add_argument(
-        '--json', type=str, default="../data/video_input_data/cross_val.json"
-    )
+    parser.add_argument('--json', type=str, default="../data/cross_val.json")
     parser.add_argument(
         '--genesis_weights', type=str, default='video_genesis_lr1e4'
     )
