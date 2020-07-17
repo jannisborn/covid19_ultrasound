@@ -75,10 +75,8 @@ class VideoEvaluator(Evaluator):
             uncertainty_method: None if don't wont to show uncertainty,
                 otherwise one of 'epistemic' or 'aleatoric
         """
-        if uncertainty_method is not None and cam_dims != (1000, 1000):
-            raise ValueError(
-                'When using uncertainty estimation, output size is restricted to (1000,1000).'
-            )
+        if uncertainty_method is not None:
+            cam_dims = (1000, 1000)
         if uncertainty_method == 'epistemic':
             self.make_dropout_evaluator()
 
@@ -138,8 +136,10 @@ class VideoEvaluator(Evaluator):
 
         # Output
         if save_video_path is None:
+            # output raw cams
             return cams
         else:
+            # save image or video
             for j in range(len(best_frames)):
                 copied_arr[best_frames[j]] = cams[j]
 
@@ -148,14 +148,20 @@ class VideoEvaluator(Evaluator):
                     copied_arr[best_frames[j]] = overlay_precision_gauge(
                         copied_arr[best_frames[j]], precision_best_frames[j][0]
                     )
-
-            fourcc = cv2.VideoWriter_fourcc(*'XVID')
-            writer = cv2.VideoWriter(
-                save_video_path + '.avi', fourcc, 10.0, cam_dims
-            )
-            for x in copied_arr:
-                writer.write(x.astype("uint8"))
-            writer.release()
+            # image processing
+            if len(copied_arr) == 1:
+                cv2.imwrite(save_video_path + ".png", copied_arr[0])
+                return save_video_path + ".png"
+            # or video processing
+            else:
+                fourcc = cv2.VideoWriter_fourcc(*'XVID')
+                writer = cv2.VideoWriter(
+                    save_video_path + '.avi', fourcc, 10.0, cam_dims
+                )
+                for x in copied_arr:
+                    writer.write(x.astype("uint8"))
+                writer.release()
+                return save_video_path + ".avi"
 
     def compute_cam(
         self, in_img, model_idx, class_idx, zeroing, out_size=(224, 224)

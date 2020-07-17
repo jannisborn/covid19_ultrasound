@@ -6,10 +6,15 @@ from evaluate_video import VideoEvaluator
 
 import string
 import random
+import numpy as np
 
-model = Evaluator(ensemble=True)
-
-# TODO: fill parameters for correct model
+# TODO: fill correct parameters for path to the weights
+# model = Evaluator(
+#     weights_dir="../trained_models_cam",
+#     ensemble=True,
+#     model_id="vgg_cam",
+#     num_classes=4
+# )
 videoModel = VideoEvaluator(
     weights_dir="../trained_models_cam",
     ensemble=True,
@@ -109,7 +114,7 @@ def video_predict():
         file_dir = ''.join(
             random.choices(string.ascii_uppercase + string.digits, k=24)
         )
-        if (allowed_file_video(file.filename)):
+        if (allowed_file_video(file.filename)) or allowed_file(file.filename):
             file.save(
                 os.path.join(
                     app.config['UPLOAD_FOLDER'] + "/" + file_dir, file.filename
@@ -118,12 +123,15 @@ def video_predict():
             filepath = app.config['UPLOAD_FOLDER'
                                   ] + "/" + file_dir + "/" + file.filename
             vidpath = app.config['UPLOAD_FOLDER'
-                                 ] + "/" + file_dir + "/" + "heatmap.mp4"
-            preds = str(videoModel(filepath))
-            videoModel.cam_important_frames(
+                                 ] + "/" + file_dir + "/" + "heatmap"
+            # get the predictions per frame
+            vid_preds = videoModel(filepath)
+            # take average
+            preds = str(np.mean(vid_preds, axis=0))
+            saved_path = videoModel.cam_important_frames(
                 save_video_path=vidpath, uncertainty_method="epistemic"
             )
-            return jsonify(preds + "\n" + vidpath)
+            return jsonify(preds + "\n" + saved_path)
         return jsonify("filename not allowed: " + file.filename)
 
 
