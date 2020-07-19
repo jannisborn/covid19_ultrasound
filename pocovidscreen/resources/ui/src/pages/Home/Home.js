@@ -31,6 +31,14 @@ const Home = () => {
         }
     };
 
+    const showDisclaimerModalVideo = () => {
+        if (context.disclaimerAccepted) {
+            history.push('/screenvideo');
+        } else {
+            setModalOpened(true);
+        }
+    };
+
     const hideDisclaimerModal = () => {
         setModalOpened(false);
     };
@@ -66,15 +74,23 @@ const Home = () => {
                                       linkTitle="Start screening" className="primary"/>
                     </div>
                     <div className="train col-10 offset-1 col-sm-12 offset-sm-0 col-md-6 col-lg-5">
-                        <CallToAction action="/train" title="Train the AI"
-                                      text="Send us your POCUS images to train our AI about COVID-19, pneumonia or healthy patient."
+                        <CallToAction action="/train" title="Donate your data"
+                                      text="Send us your POCUS images & recordings to train our AI about COVID-19, pneumonia or healthy patient."
                                       linkTitle="Start training" className="secondary"/>
+                    </div>
+                </div>
+                <div className="row">
+                    <div
+                        className="screen col-10 offset-1 col-sm-12 mb-5 mb-md-0 offset-sm-0 col-md-6 col-lg-5 offset-lg-1">
+                        <CallToAction onClick={showDisclaimerModalVideo} title="Screen Video"
+                                      text="Use our AI to detect COVID-19, pneumonia or healthy patient from POCUS videos and view a heatmap of what the AI sees."
+                                      linkTitle="Start video screening" className="primary"/>
                     </div>
                 </div>
             </section>
             <section className="container spacer">
                 <Text title="Our sponsors"
-                      text="We would like to address a special to all of our sponsors. They are helping us with hosting, data collection, promotion and so on. Without them we would never have achieved what we did."/>
+                      text="We would like to address a special thank you to all of our sponsors. They are helping us with hosting, data collection, promotion and so on. Without them we would never have achieved what we did."/>
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
                         <PartnerList/>
