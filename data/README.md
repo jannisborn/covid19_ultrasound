@@ -21,15 +21,18 @@ assembled from publicly available resources in the web as well as from publicati
   
 ## Current dataset size (July 2020)
 - Convex:
-  - 131 videos (58x COVID, 24x bacterial pneumonia, 46x healthy, 3x viral pneumonia)
-  - 28 images (16x COVID, 7x bacterial pneumonia, 5x healthy)
-- Linear: 
+  - 108 videos (33x  COVID, 23x bacterial pneumonia, 49x healthy, 3x viral pneumonia)
+  - 33 images (18x COVID, 7x bacterial pneumonia, 8x healthy)
+  - 21 videos from the Butterfly dataset (19 COVID, 2 healthy, see below how to use the provided scripts to process the data)
+- Linear:
   - 20 videos (4x COVID, 2x bacterial pneumonia, 10x healthy, 4x viral pneumonia)
-  - 5 images (3x COVID, 2x bacterial pneumonia)
+  - 6 images (4x COVID, 2x bacterial pneumonia)
+- Data with artifacts (30 images, 2 videos): For the sake of completion, we provide a folder with images and videos that we found but did not include in our dataset due to artifacts (arrows, bars) in the image or because of unclear labels. For more information and comments by medical experts, see our [metadata](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) sheet or metadata [csv](dataset_metadata.csv).
 
-- Soon more will be added!
+- We are constantly updating the dataset with new data - any contributions are appreciated!
 
 ## Updates
+- **11.7.2020**: Database update - We added an up to date csv file with all metadata, and new videos that were contributed from the Northumbria Specialist Emergency Care Hospital (17 images and 4 videos of healthy patients)
 - **22.6.2020**: Database update - We added 46 new videos (18x COVID, 1x bacterial pneumonia, 27x healthy).
 - **16.5.2020**: The [ICLUS
   project](https://www.disi.unitn.it/iclus) released ~60 videos
@@ -87,8 +90,11 @@ The following modifcations to videos/images were done:
 - Cropped to the center to remove measuring bars, text etc.
 - Removal of artifcats on the sample (few cases only)
 
-We are deeply thankful to the authors and contributors to our datset, in particular to the maintainers of https://thepocusatlas.com, https://radiopaedia.org/, https://grepmed.com and https://litfl.com/ultrasound-library/ (thanks for Dr. Rippey who helped us personally), and to Charlotte Buhre for recording data herself just for our dataset.
-Also, we appreciate the availability of videos on [Stemlyn's blog](https://www.stemlynsblog.org/combatting-covid19-is-lung-ultrasound-an-option/).
+We are deeply thankful to the authors and contributors to our datset, in particular
+* Dr Avinash Aujayeb (MBBS MRCP (Edin 2008) PgCert ClinEd FHEA), Pleural Medicine Lead and Consultant in Respiratory and Acute Medicine for the Trustee for Mesothelioma UK and Northumbria Specialist Emergency Care Hospital, who contributes regularly to our database with clinical data. We greatly appreciate their efforts for open-access data.
+* The maintainers of https://thepocusatlas.com, https://radiopaedia.org/, https://grepmed.com and https://litfl.com/ultrasound-library/ (thanks for Dr. Rippey in particular who gave interesting advice)
+* Charlotte Buhre for recording data herself just for our dataset.
+* The contributers to [Stemlyn's blog](https://www.stemlynsblog.org/combatting-covid19-is-lung-ultrasound-an-option/).
 
 Also, we obtained videos and images from publications on ultrasound, and we appreciate very much that we could include data from the following publications in our database:
 

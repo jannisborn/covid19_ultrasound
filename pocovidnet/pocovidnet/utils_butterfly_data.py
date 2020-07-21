@@ -1,14 +1,13 @@
 import os
-import pandas as pd
+import json
 
 
 def get_paths(data_table_path):
     """
     Get the filenames of our data from csv file
     """
-    data_table = pd.read_csv(data_table_path)
-    butterfly = data_table["Filename"].values
-    butterfly = [b for b in butterfly if "utterfly" in b]
+    with open(data_table_path, "r") as infile:
+        butterfly = json.load(infile)
     actual_names = [b.split("Butterfly-")[-1] for b in butterfly]
     labels = [b[:3] for b in butterfly]
     return actual_names, labels

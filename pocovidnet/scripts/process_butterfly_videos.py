@@ -12,13 +12,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-data', type=str, default="butterfly")
     parser.add_argument('-out', type=str, default="pocus_videos/convex")
-    parser.add_argument('-csv', type=str, default="pocovid_data.csv")
+    parser.add_argument('-json', type=str, default="data_from_butterfly.json")
     args = parser.parse_args()
 
     butterfly_dir = args.data
     out_dir = args.out
 
-    actual_names, labels = get_paths(args.csv)
+    actual_names, labels = get_paths(args.json)
     # manually add the ones which I know are in the data
     files_to_process, labs_to_process = get_processing_info(
         butterfly_dir, actual_names, labels
@@ -63,8 +63,8 @@ if __name__ == "__main__":
             if width_box + del_upper > cap.get(4):
                 width_box = int(cap.get(4) - del_upper)
                 width_border = int(cap.get(3) / 2 - width_box / 2)
-            frame = frame[del_upper:width_box + del_upper,
-                          width_border:width_box + width_border]
+            frame = frame[del_upper:width_box +
+                          del_upper, width_border:width_box + width_border]
 
             # detect green point
             green_point = frame[:, :, 1] - frame[:, :, 0]
