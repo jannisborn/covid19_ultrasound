@@ -21,8 +21,8 @@ assembled from publicly available resources in the web as well as from publicati
   
 ## Current dataset size (July 2020)
 - Convex:
-  - 108 videos (33x  COVID, 23x bacterial pneumonia, 49x healthy, 3x viral pneumonia)
-  - 33 images (18x COVID, 7x bacterial pneumonia, 8x healthy)
+  - 112 videos (33x  COVID, 23x bacterial pneumonia, 53x healthy, 3x viral pneumonia)
+  - 40 images (18x COVID, 7x bacterial pneumonia, 15x healthy)
   - 21 videos from the Butterfly dataset (19 COVID, 2 healthy, see below how to use the provided scripts to process the data)
 - Linear:
   - 20 videos (4x COVID, 2x bacterial pneumonia, 10x healthy, 4x viral pneumonia)
