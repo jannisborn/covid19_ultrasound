@@ -21,8 +21,8 @@ assembled from publicly available resources in the web as well as from publicati
   
 ## Current dataset size (July 2020)
 - Convex:
-  - 108 videos (33x  COVID, 23x bacterial pneumonia, 49x healthy, 3x viral pneumonia)
-  - 33 images (18x COVID, 7x bacterial pneumonia, 8x healthy)
+  - 111 videos (32x  COVID, 23x bacterial pneumonia, 53x healthy, 3x viral pneumonia)
+  - 40 images (18x COVID, 7x bacterial pneumonia, 15x healthy)
   - 21 videos from the Butterfly dataset (19 COVID, 2 healthy, see below how to use the provided scripts to process the data)
 - Linear:
   - 20 videos (4x COVID, 2x bacterial pneumonia, 10x healthy, 4x viral pneumonia)
@@ -32,6 +32,7 @@ assembled from publicly available resources in the web as well as from publicati
 - We are constantly updating the dataset with new data - any contributions are appreciated!
 
 ## Updates
+- **28.7.2020**: Update - added 4 new videos and 7 new images from the Northumbria hospital
 - **11.7.2020**: Database update - We added an up to date csv file with all metadata, and new videos that were contributed from the Northumbria Specialist Emergency Care Hospital (17 images and 4 videos of healthy patients)
 - **22.6.2020**: Database update - We added 46 new videos (18x COVID, 1x bacterial pneumonia, 27x healthy).
 - **16.5.2020**: The [ICLUS
