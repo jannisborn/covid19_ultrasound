@@ -33,8 +33,10 @@ const TrainResult = () => {
                     <div className="col-lg-8 offset-lg-2">
                         <div className="text-center">
                             <h2>Thanks for training the AI</h2>
-                            <p className="mb-4">We really appreciate your donation. Your images are going to be checked by our ata
-                            Scientists and Medical Doctors. After that, the images will be added to our dataset.</p>
+                            <p className="mb-4">We really appreciate your donation.
+                                Your data will be verified by our medical doctors and, if approved, will be added to our database.
+                                If you would like to be recognized as donator or would to discuss further collaboration, please contact
+                                <a href="mailto:info@pocovidscrenen.org">info@pocovidscreen.org</a>.</p>
                         </div>
                     </div>
                 </div>
