@@ -49,7 +49,7 @@ const TrainResult = () => {
                 </aside>
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
-                        <a href="/train" title="Train the AI again" className="button primary round w-100 text-uppercase mt-4 d-block text-center">Train the AI again</a>
+                        <a href="/train" title="Train the AI again" className="button primary round w-100 text-uppercase mt-4 d-block text-center">Donate data again</a>
                     </div>
                 </div>
             </div>

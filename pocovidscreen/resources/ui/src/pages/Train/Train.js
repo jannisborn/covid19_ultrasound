@@ -62,7 +62,7 @@ const Train = () => {
             <Helmet>
                 <title>Train - {configuration.appTitle}</title>
             </Helmet>
-            <Teaser additionalClass="small" teaser="Select the images you want to send to train the AI"/>
+            <Teaser additionalClass="small" teaser="Select the images you want to send to donate data"/>
             <div className="container">
                 <form onSubmit={handleSubmit} className="train-form">
                     <div className="row">

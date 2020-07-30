@@ -70,12 +70,12 @@ const Home = () => {
                     <div
                         className="screen col-10 offset-1 col-sm-12 mb-5 mb-md-0 offset-sm-0 col-md-6 col-lg-5 offset-lg-1">
                         <CallToAction onClick={showDisclaimerModal} title="Screen"
-                                      text="Use our AI to detect COVID-19, pneumonia or healthy patient from POCUS images."
+                                      text="Use our AI to detect COVID-19, pneumonia or healthy patient from POCUS data."
                                       linkTitle="Start screening" className="primary"/>
                     </div>
                     <div className="train col-10 offset-1 col-sm-12 offset-sm-0 col-md-6 col-lg-5">
                         <CallToAction action="/train" title="Donate your data"
-                                      text="Send us your POCUS images & recordings to train our AI about COVID-19, pneumonia or healthy patient."
+                                      text="Send us your POCUS data & recordings to train our AI about COVID-19, pneumonia or healthy patient."
                                       linkTitle="Start training" className="secondary"/>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ const Home = () => {
             </section>
             <section className="container spacer">
                 <Text title="Statistics"
-                      text="Here are some statistics about our infrastructure. You can find the number of COVID-19 cases detected by the AI, the size of our dataset used to train the AI and the number of organizations that are working with us."/>
+                      text="Here are some statistics about our infrastructure. You can find the number of COVID-19 cases detected by the AI, the size of our dataset used to donate data and the number of organizations that are working with us."/>
                 <StatisticList/>
             </section>
             <section className="container spacer pb-3">
@@ -126,7 +126,7 @@ const Home = () => {
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
                         <TextImage title="Why POCUS?" subtitle="Focusing" image={pocus}
-                                   text="We focused on POCUS images, because ultrasound imaging is an easy, cost-effective and non-invasive method. It is available in almost any medical facility. Our model can identify with a 96% recall and 88% precision COVID-19 cases."/>
+                                   text="We focused on POCUS data, because ultrasound imaging is an easy, cost-effective and non-invasive method. It is available in almost any medical facility. Our model can identify with a 96% recall and 88% precision COVID-19 cases."/>
                     </div>
                 </div>
             </section>
