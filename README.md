@@ -3,8 +3,7 @@
 ![Node.js CI](https://github.com/jannisborn/covid19_pocus_ultrasound/workflows/Node.js%20CI/badge.svg)
 [![Build Status](https://travis-ci.com/jannisborn/covid19_pocus_ultrasound.svg?branch=master)](https://travis-ci.com/jannisborn/covid19_pocus_ultrasound)
 
-**NOTE**: This is an ultrasound data collection initiative for COVID-19. Please
-help growing the database or contribute new models.
+This is an ultrasound data collection initiative for COVID-19. Please help growing the database or contribute new models.
 
 We develop a **computer vision** approach for the diagnosis of **COVID-19** infections
 from **Point-of-care Ultrasound** (POCUS) recordings. Find the arXiv preprint
@@ -17,14 +16,15 @@ on CT or X-Ray data. The data includes a total of >150 videos and >30 images of 
 
 
 ## Motivation:
-From the machine learning community, ultrasound has not gained much attention in the context of COVID-19 so far, in contrast to CT and X-Ray scanning.
-Many voices from the medical community, however, have advocated for a more
-prominent role of ultrasound in the current pandemic (details below).
+From the machine learning community, ultrasound has not gained much attention in the context of COVID-19 so far, in contrast to CT and X-Ray imaging.
+Many voices from the medical community, however, have advocated for a more prominent role of ultrasound in the current pandemic (details below).
 #### Why imaging?
-Biomedical imaging has the potential to complement conventional diagnostic procedures for COVID (such as RT-PCR or immuno assays). It can provide a fast assessment and guide downstream diagnostic tests, in particular in triage situations. In the current pandemic, prognostic predictions were already shown to help saving the scarce time of doctors by reducing the time spent to make the right decision [(Shan et. al., 2020)](https://arxiv.org/abs/2003.04655).
-Two studies reported that CT imaging can detect COVID-19 at higher sensitivity rate compared to RT-PCR (98% vs 71%, [Fang et. al., 2020](https://pubs.rsna.org/doi/full/10.1148/radiol.2020200432) and 88% vs. 59% [Ai et. al., 2020](https://pubs.rsna.org/doi/full/10.1148/radiol.2020200642)).
+Biomedical imaging has the potential to complement conventional diagnostic procedures for COVID (such as RT-PCR or immuno assays). It can provide a fast assessment and guide downstream diagnostic tests, in particular in triage situations or low-resource settings. 
+Although RT-PCR has a sensitivity that is not higher than 80% for any moment in time after infection [(Kucirka et al., Annals of Internal Medicine)](https://www.acpjournals.org/doi/full/10.7326/M20-1495), it is the sole recommendation for COVID-19 diagnosis according to the ACR. Several studies reported that CT imaging can detect COVID-19 at higher sensitivity rate compared to RT-PCR (98% vs 71%, [Fang et. al., 2020](https://pubs.rsna.org/doi/full/10.1148/radiol.2020200432) and 88% vs. 59% [Ai et. al., 2020](https://pubs.rsna.org/doi/full/10.1148/radiol.2020200642)). In any case: Even if sensitivity of PCR would be 100%, we have to recognize that both PCR and CT are not available to the majority of the world's population. 
+This calls into play surrogate imaging modalities (chest X-Ray and lung ultrasound) to rapidly screen and stratify COVID-19 suspects.
+
 #### Why ultrasound?
-However, ultrasound data was shown to be highly
+Ultrasound data was shown to be highly
 [**correlated with CT**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7165267/), the gold standard for lung diseases. Instead of CT,
 ultrasound is **non-invasive**, **cheap**, **portable** (bedside execution),
 **repeatable** and **available in almost all medical facilities**. But even for
@@ -38,8 +38,8 @@ COVID of 96\%**. This is by no means clinically relevant and a lot of further
 work needs to be done, e.g. on differentiating COVID from other viral pneumonias.
 
 #### Evidence for ultrasound
-   - Peer-reviewed publications from the medical community suggesting to use more **ultrasound
-     for COVID-19**:
+   - [LUS is more sensitive than X-Ray in diagnosing COVID-19](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7390587/) 
+   - Advocacy for lung ultrasound for the COVID-19 pandemic:
       - ["COVID-19 outbreak: less stethoscope, more ultrasound" in *The Lancet
         respiratory medicine* (IF:
         22)](https://www.thelancet.com/journals/lanres/article/PIIS2213-2600(20)30120-X/fulltext?fbclid=IwAR2kDbxpYTSjoj3Nl_B-nOhLZL66mQLUBVBCdzn6zEG5ObLKq9oXhPZDXHQ)
@@ -49,8 +49,6 @@ work needs to be done, e.g. on differentiating COVID from other viral pneumonias
       - [[Soldati et. al., 2020] in *Journal of ultrasound in medicine*](https://onlinelibrary.wiley.com/doi/full/10.1002/jum.15284)
    - Ultrasound can evidence the same symptoms as CT: ([Point-by-point correspondance of CT
      and ultrasound findings through COVID-19 disease process](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7165267/)) 
-   - [NIH launched an initiative to use POCUS for risk stratificaton of COVID-19
-     patients.](https://clinicaltrials.gov/ct2/show/NCT04338100)
 
 <p align="center">
 	<img src="pocovidnet/plots/overview.png" alt="photo not available" width="70%" height="70%">
