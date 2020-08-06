@@ -11,9 +11,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+pocovidnet/notebooks/*.dat
 # C extensions
 *.so
+data/pocus_videos/convex/*Butterfly*
+pocovidnet/models
 
 # Distribution / packaging
 .Python

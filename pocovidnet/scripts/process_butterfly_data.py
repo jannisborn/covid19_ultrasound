@@ -15,7 +15,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-data', type=str, default="butterfly")
     parser.add_argument('-out', type=str, default="image_dataset")
-    parser.add_argument('-csv', type=str, default="pocovid_data.csv")
+    parser.add_argument('-json', type=str, default="data_from_butterfly.json")
     parser.add_argument(
         '-fr',
         help="framerate - at how much Hz to sample",
@@ -39,7 +39,7 @@ if __name__ == "__main__":
     print("SELECT FRAMES AT", args.fr, "Hz")
     print("SELECT MAXIMUM OF", args.max, "frames")
 
-    actual_names, labels = get_paths(args.csv)
+    actual_names, labels = get_paths(args.json)
     # manually add the ones which I know are in the data
     files_to_process, labs_to_process = get_processing_info(
         args.data, actual_names, labels
