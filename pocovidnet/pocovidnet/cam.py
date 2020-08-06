@@ -26,7 +26,7 @@ def get_class_activation_map(
         class_id {[type]} -- ID of class for which CAM is computed
         return_map --  Whether the heatmap is returned in addition to the image
             overlayed with the heatmap.
-        size -- Input size of the image
+        size -- Output size of the overlay 
         zeroing -- Threshold between 0 and 1. Areas with a score below will be
             zeroed in the heatmap.
         heatmap_weight -- float used to weight heatmap when added to image.
@@ -37,13 +37,22 @@ def get_class_activation_map(
     Returns:
         [type] -- [description]
     """
+    
+    if size is None or not (isinstance(size, tuple) and len(size) == 2):
+        print(f'size left undefined or not a 2-tuple - defaulting to (1000,1000)')
+        FINAL_RES = (1000,1000)
+    else:
+        FINAL_RES = size
 
     if len(img.shape) == 3:
         img = np.expand_dims(img, 0)
     if img.shape[1] == 3:
         img = img.transpose(0, 2, 3, 1)
-    if img.shape[1:3] != size:
-        raise ValueError(f'Img has size {img.shape}, should have {size}.')
+    #if img.shape[1:3] != size:
+    #    raise ValueError(f'Img has size {img.shape}, should have {size}.')
+    
+    img_raw = 1*img
+
     # In the CAM case, second to last layer is used
     class_weights = model.layers[-1].get_weights()[0]
     final_conv_layer = get_output_layer(model, layer_name)
@@ -51,7 +60,9 @@ def get_class_activation_map(
         [model.layers[0].input],
         [final_conv_layer.output, model.layers[-1].output]
     )
+
     [conv_outputs, predictions] = get_output(img)
+
     # print(predictions, np.max(img), img.shape)
     conv_outputs = conv_outputs[0, :, :, :]
     if np.max(img) <= 1:
@@ -62,7 +73,9 @@ def get_class_activation_map(
     for i, w in enumerate(class_weights[:, class_id]):
         cam += w * conv_outputs[:, :, i]
     cam /= np.max(cam)
-    cam = cv2.resize(cam, size)
+
+    img = np.expand_dims(cv2.resize(np.squeeze(img_raw), FINAL_RES), 0)
+    cam = cv2.resize(cam, FINAL_RES)
 
     # heatmap = cv2.applyColorMap(np.uint8(255 * cam), cv2.COLORMAP_JET)
     # heatmap[np.where(cam < zeroing)] = 0
@@ -83,6 +96,8 @@ def get_class_activation_map(
             image_weight, heatmap, heatmap_weight, 0
         ), cv2.COLOR_BGR2RGB
     )
+
+    overlay = cv2.resize(overlay, FINAL_RES)
 
     if return_map:
         return overlay, cam
