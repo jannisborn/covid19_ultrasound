@@ -36,7 +36,8 @@ def fetch_precision_overlay(precision):
     """
 
     overlay_folder = os.path.join(
-        os.path.dirname(os.path.realpath(__file__)), '../precision_overlays'
+        os.path.dirname(os.path.realpath(__file__)),
+        '../assets/precision_overlays'
     )
 
     img_path = os.path.join(
@@ -71,6 +72,6 @@ def confidence_bar(img, value):
     normed_height_val = int(value * block_height)
 
     # color the coloured part
-    img[bottom - normed_height_val:bottom,
-        left:right] = [100, normed_col_val, 100]
+    img[bottom -
+        normed_height_val:bottom, left:right] = [100, normed_col_val, 100]
     return img

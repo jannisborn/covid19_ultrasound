@@ -61,7 +61,8 @@ class VideoEvaluator(Evaluator):
         zeroing=0.65,
         save_video_path=None,
         uncertainty_method=None,
-        cam_dims=(224, 224)
+        cam_layer_name="block5_conv3",
+        cam_output_size=(224, 224)
     ):
         """
         Compute CAMs on most decisive frames and save as video
@@ -76,12 +77,13 @@ class VideoEvaluator(Evaluator):
                 otherwise one of 'epistemic' or 'aleatoric
         """
         if uncertainty_method is not None:
-            cam_dims = (1000, 1000)
+            # To display the gauge, we need a 1000 x 1000 image
+            cam_output_size = (1000, 1000)
         if uncertainty_method == 'epistemic':
             self.make_dropout_evaluator()
 
         # Unpack target dimensions
-        cam_dim_x, cam_dim_y = cam_dims
+        cam_dim_x, cam_dim_y = cam_output_size
 
         # Get predictions
         mean_preds = np.mean(self.predictions, axis=0, keepdims=False)
@@ -124,7 +126,12 @@ class VideoEvaluator(Evaluator):
             # compute cam
             in_img = self.image_arr[b_frame]
             cams[j] = self.compute_cam(
-                in_img, model_idx, class_idx, zeroing, out_size=cam_dims
+                in_img,
+                model_idx,
+                class_idx,
+                zeroing,
+                layer_name=cam_layer_name,
+                out_size=cam_output_size
             )
 
             # compute uncertainty
@@ -156,7 +163,7 @@ class VideoEvaluator(Evaluator):
             else:
                 fourcc = cv2.VideoWriter_fourcc(*'XVID')
                 writer = cv2.VideoWriter(
-                    save_video_path + '.avi', fourcc, 10.0, cam_dims
+                    save_video_path + '.avi', fourcc, 10.0, cam_output_size
                 )
                 for x in copied_arr:
                     writer.write(x.astype("uint8"))
@@ -164,7 +171,13 @@ class VideoEvaluator(Evaluator):
                 return save_video_path + ".avi"
 
     def compute_cam(
-        self, in_img, model_idx, class_idx, zeroing, out_size=(224, 224)
+        self,
+        in_img,
+        model_idx,
+        class_idx,
+        zeroing,
+        layer_name="block5_conv3",
+        out_size=(224, 224)
     ):
         if "cam" in self.model_id:
             in_img = np.expand_dims(in_img, 0)
@@ -183,7 +196,7 @@ class VideoEvaluator(Evaluator):
                 self.models[model_idx],
                 class_idx,
                 return_map=False,
-                layer_name="block5_conv3",
+                layer_name=layer_name,
                 zeroing=zeroing,
                 image_weight=1,
                 heatmap_weight=0.25

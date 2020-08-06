@@ -8,7 +8,6 @@ import string
 import random
 import numpy as np
 
-# TODO: fill correct parameters for path to the weights
 # model = Evaluator(
 #     weights_dir="../trained_models_cam",
 #     ensemble=True,
@@ -38,7 +37,7 @@ def allowed_file(filename):
 
 def allowed_file_video(filename):
     return '.' in filename and \
-           filename.split('.')[-1].lower() in ["mp4", "mpg", "mov", "mpeg", "avi"]
+           filename.split('.')[-1].lower() in ["mp4", "mpg", "mov", "mpeg", "avi", "gif"]
 
 
 @app.route('/predict', methods=['GET'])
@@ -48,11 +47,6 @@ def predict():
     GoogleMaps API). Can be called in GET or in POST mode.
     In any case, 'source' and 'destination' should be given in URL.
     """
-
-    # OPTION 1: pass file
-    # image = request.files['file']
-    # filename = image.filename
-    # OPTION 2: pass only the filename as argument
     filename = str(request.args.get('filename'))
     if filename is None or filename == "None":
         return jsonify("Need to pass argument filename to request! (empty)")
@@ -98,6 +92,13 @@ def upload():
 @app.route("/video_predict", methods=['POST'])
 def video_predict():
     """
+    Receives query to screen a video: Predicts class and frame-wise confidence
+    scores, and overlays the video with CAMs and certainty-gauge
+    Arguments:
+        The input video must be in the UPLOAD_FOLDER specified above!
+        POST request must specify a file name, e.g. curl -F "image=@test.mp4"
+    Returns:
+        Predictions and file path to output video
     Debugging:
     - change file_dir (see comment bellow)
     - put a test video in a folder data/tmp_images/1234 (here named test.mp4)
