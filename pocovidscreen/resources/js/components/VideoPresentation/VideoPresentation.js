@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useIntersection } from 'react-use';
 import { TimelineLite } from "gsap";
-import videoImage from '../../assets/images/video.png';
+import videoImage from '../../assets/images/video_teaser.png';
 import play from './images/play.svg';
 
 const VideoPresentation = (props) => {
