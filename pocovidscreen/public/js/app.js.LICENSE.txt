@@ -8,7 +8,7 @@ object-assign
  * @license MIT */
 
 /*!
- * CSSPlugin 3.2.6
+ * CSSPlugin 3.4.2
  * https://greensock.com
  *
  * Copyright 2008-2020, GreenSock. All rights reserved.
@@ -18,7 +18,7 @@ object-assign
 */
 
 /*!
- * GSAP 3.2.6
+ * GSAP 3.4.2
  * https://greensock.com
  *
  * @license Copyright 2008-2020, GreenSock. All rights reserved.
