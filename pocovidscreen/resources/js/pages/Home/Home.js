@@ -64,18 +64,18 @@ const Home = () => {
             <Helmet>
                 <title>Home - {configuration.appTitle}</title>
             </Helmet>
-            <Teaser teaser="An AI tool for early screening of COVID-19 & pneumonia from ultrasound recordings (POCUS)" />
+            <Teaser teaser="An AI tool for interpretable screening of COVID-19 and other forms of pneumonia from (point-of-care) lung ultrasound (POCUS/LUS)" />
             <section className="start container">
                 <div className="row">
                     <div
                         className="screen col-10 offset-1 col-sm-12 mb-5 mb-md-0 offset-sm-0 col-md-6 col-lg-5 offset-lg-1">
                         <CallToAction onClick={showDisclaimerModal} title="Screen"
-                            text="Use our AI to detect COVID-19, pneumonia or healthy patient from POCUS data."
+                            text="Use our AI on your LUS data to screen for COVID-19, pneumonia or healthy lungs."
                             linkTitle="Start screening" className="primary" />
                     </div>
                     <div className="train col-10 offset-1 col-sm-12 offset-sm-0 col-md-6 col-lg-5">
                         <CallToAction action="/train" title="Donate your data"
-                            text="Send us your POCUS data & recordings to train our AI about COVID-19, pneumonia or healthy patient."
+                            text="Send us your LUS recordings to train and improve our AI."
                             linkTitle="Start training" className="secondary" />
                     </div>
                 </div>
@@ -90,7 +90,7 @@ const Home = () => {
             </section>
             <section className="container spacer">
                 <Text title="Our sponsors"
-                    text="We would like to address a special thank you to all of our sponsors. They are helping us with hosting, data collection, promotion and so on. Without them we would never have achieved what we did." />
+                    text="We would like to deeply thank all of our sponsors. We received support in web hosting, data collection, promotion and more." />
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
                         <PartnerList />
@@ -99,15 +99,15 @@ const Home = () => {
             </section>
             <section className="container spacer">
                 <Text title="Statistics"
-                    text="Here are some statistics about our infrastructure. You can find the performance of our model in detecting COVID-19 pneumonia and the size of our dataset." />
+                    text="Here are some statistics about our infrastructure, the performance on COVID-19 and the size of our dataset." />
                 <StatisticList />
             </section>
             <section className="container spacer pb-3">
-                <VideoPresentation title="Presentation video" videoId="1hJaVLGvzng" />
+                <VideoPresentation title="Presentation video" videoId="qOayWwYTPOs" />
             </section>
             <section className="container spacer pt-4">
                 <Text title="The team"
-                    text="We are all very proud of our collaboration, mixing a pediatrician, a medical geneticist, a deep learning and drug discovery specialist, a medical biophysics and data specialist, an economist data scientist and an actuary data scientist. Everyone brought major contribution to this project and we believe we found something that could actually help COVID-19 detection and therefore improve treatments when given at early stage." />
+                    text="We are an interdisciplinary team of doctors, scientists and developers. Everyone brought major contribution to this project and we believe we found something that could actually help COVID-19 detection and therefore improve treatments when given at early stage." />
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
                         <Slider />
@@ -118,7 +118,7 @@ const Home = () => {
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
                         <TextImage orientation="textLeft" title="Early screening" subtitle="The impact" image={covid}
-                            text="Early screening enables to save life by starting the therapy earlier and avoiding people to continue to contaminate others." />
+                            text="In a global pandemic, early screening and rapid patient stratification is crucial to save lives." />
                     </div>
                 </div>
             </section>
@@ -126,7 +126,7 @@ const Home = () => {
                 <div className="row">
                     <div className="col-lg-10 offset-lg-1">
                         <TextImage title="Why POCUS?" subtitle="Focusing" image={pocus}
-                            text="We focused on POCUS data, because ultrasound imaging is an easy, cost-effective and non-invasive method. It is available in almost any medical facility. Our model can identify with a 96% recall and 88% precision COVID-19 cases." />
+                            text="We focused on POCUS data, because ultrasound imaging is an easy, cost-effective and non-invasive method. It is available in almost any medical facility. Our model can identify with a 98% sensitivity and 91% specificity COVID-19 cases." />
                     </div>
                 </div>
             </section>
