@@ -15,16 +15,6 @@ jobs:
         node-version: '13.x'
     - name: Build
       run: |
-        cd pocovidscreen/resources/ui
-        npm install
-        npm update
-        npm run prod
-        cd ../../web_root
-        tar cvzf build.tar.gz *
+        echo 'Done'
       env:
         CI: true
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v1
-      with:
-        name: build.tar.gz
-        path: ./pocovidscreen/web_root/build.tar.gz

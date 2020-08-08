@@ -8773,6 +8773,7 @@ button:disabled:hover,
 
 .call-to-action-link::after {
   display: inline-block;
+  content: url(/images/arrow.svg?6372c3c6215f8e02b91e820de09f8a1c);
   position: absolute;
   right: -25px;
   top: 1px;
@@ -9260,6 +9261,7 @@ button:disabled:hover,
 }
 
 .teaser {
+  background: url(/images/covid.png?5d270d63ecb161f14d1d2c3d5f44a0f1) no-repeat center;
   background-size: cover;
   position: relative;
   padding-top: 10rem;
