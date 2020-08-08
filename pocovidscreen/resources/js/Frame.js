@@ -1,10 +1,10 @@
-import {AppContext} from './context/AppContext';
-import React, {lazy, Suspense, useContext, useEffect, useRef} from 'react';
+import { AppContext } from './context/AppContext';
+import React, { lazy, Suspense, useContext, useEffect, useRef } from 'react';
 import ThemeSwitcher from './components/ThemeSwitcher/ThemeSwitcher'
 import Logo from './components/Logo/Logo'
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import {Power3, TimelineLite, TweenMax} from 'gsap';
-import {Helmet} from 'react-helmet';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Power3, TimelineLite, TweenMax } from 'gsap';
+import { Helmet } from 'react-helmet';
 import Button from './components/Button/Button';
 import GuestRoute from './router/GuestRoute';
 import AuthRoute from './router/AuthRoute';
@@ -21,6 +21,7 @@ const ScreenResults = lazy(() => import('./pages/Screen/ScreenResults'));
 const TrainResult = lazy(() => import('./pages/Train/TrainResult'));
 const About = lazy(() => import('./pages/About/About'));
 const Terms = lazy(() => import('./pages/About/Terms'));
+const Privacy = lazy(() => import('./pages/About/Privacy'));
 const LoadingMessage = () => ``;
 
 const Frame = () => {
@@ -33,11 +34,11 @@ const Frame = () => {
     let masterTl = new TimelineLite();
 
     useEffect(() => {
-        TweenMax.to(app, 0, {css: {visibility: 'visible'}});
+        TweenMax.to(app, 0, { css: { visibility: 'visible' } });
         if (localStorage.getItem('animated-once') === null) {
-            masterTl.from(headerItems.children[0], 1, {opacity: 0, delay: .8, ease: Power3.easeOut}, 'Start master')
-                .from(headerItems.children[1], 1, {opacity: 0, delay: .8, ease: Power3.easeOut}, .3)
-                .from(headerItems.children[2], 1, {opacity: 0, delay: .8, ease: Power3.easeOut}, .3);
+            masterTl.from(headerItems.children[0], 1, { opacity: 0, delay: .8, ease: Power3.easeOut }, 'Start master')
+                .from(headerItems.children[1], 1, { opacity: 0, delay: .8, ease: Power3.easeOut }, .3)
+                .from(headerItems.children[2], 1, { opacity: 0, delay: .8, ease: Power3.easeOut }, .3);
 
             localStorage.setItem('animated-once', 'true');
         }
@@ -56,39 +57,40 @@ const Frame = () => {
     return (
         <div className="app" ref={el => app = el}>
             <Helmet>
-                <meta charSet="utf-8"/>
+                <meta charSet="utf-8" />
                 <title>{configuration.appTitle}</title>
             </Helmet>
             <header className="app-header py-4 container">
                 <div className="row justify-content-between" ref={el => headerItems = el}>
                     <div className="col text-left">
-                        <ThemeSwitcher/>
+                        <ThemeSwitcher />
                     </div>
                     <div className="col d-none d-md-block text-center">
-                        <Logo/>
+                        <Logo />
                     </div>
                     <div className="col text-right">
-                        <Button className="simple mr-3" href="/sign-in" text="Sign in"/>
-                        <Button className="round primary" href="/sign-up" text="Sign up"/>
+                        <Button className="simple mr-3" href="/sign-in" text="Sign in" />
+                        <Button className="round primary" href="/sign-up" text="Sign up" />
                     </div>
                 </div>
             </header>
             <BrowserRouter>
                 <ScrollToTop />
                 <Switch>
-                    <Suspense fallback={<LoadingMessage/>}>
-                        <Route exact path="/" component={() => <Home/>}/>
-                        <Route exact path="/terms-and-conditions" component={() => <Terms/>}/>
-                        <Route exact path="/forgot-password" component={() => <ForgotPassword/>}/>
-                        <Route exact path="/train" alertMessage="You need to sign in before to train." component={() => <Train/>}/>
-                        <Route exact path="/screen" alertMessage="You need to sign in before to screen." component={() => <Screen/>}/>
-                        <Route exact path="/screen/results" component={() => <ScreenResults/>}/>
-                        <Route exact path="/train/result" component={() => <TrainResult/>}/>
-                        <Route exact path="/about" component={() => <About/>}/>
-                        <Route exact path="/sign-in" component={() => <SignIn/>}/>
-                        <Route exact path="/sign-up" component={() => <SignUp/>}/>
+                    <Suspense fallback={<LoadingMessage />}>
+                        <Route exact path="/" component={() => <Home />} />
+                        <Route exact path="/terms-and-conditions" component={() => <Terms />} />
+                        <Route exact path="/data-privacy" component={() => <Privacy />} />
+                        <Route exact path="/forgot-password" component={() => <ForgotPassword />} />
+                        <Route exact path="/train" alertMessage="You need to sign in before to train." component={() => <Train />} />
+                        <Route exact path="/screen" alertMessage="You need to sign in before to screen." component={() => <Screen />} />
+                        <Route exact path="/screen/results" component={() => <ScreenResults />} />
+                        <Route exact path="/train/result" component={() => <TrainResult />} />
+                        <Route exact path="/about" component={() => <About />} />
+                        <Route exact path="/sign-in" component={() => <SignIn />} />
+                        <Route exact path="/sign-up" component={() => <SignUp />} />
                     </Suspense>
-                    <Route render={() => <h2>404 Page Not Found</h2>}/>
+                    <Route render={() => <h2>404 Page Not Found</h2>} />
                 </Switch>
             </BrowserRouter>
         </div>
