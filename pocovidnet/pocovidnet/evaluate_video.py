@@ -50,6 +50,9 @@ class VideoEvaluator(Evaluator):
         self.predictions = np.stack(
             [model.predict(self.image_arr) for model in self.models]
         )
+        # output probabilities instead of log probs
+        if np.any(self.predictions < 0):
+            self.predictions = np.exp(self.predictions)
         # Take average over all frames
         mean_preds = np.mean(self.predictions, axis=0, keepdims=False)
         return mean_preds
@@ -199,7 +202,8 @@ class VideoEvaluator(Evaluator):
                 layer_name=layer_name,
                 zeroing=zeroing,
                 image_weight=1,
-                heatmap_weight=0.25
+                heatmap_weight=0.25,
+                size=out_size
             )
         return cam
 
@@ -245,7 +249,9 @@ class VideoEvaluator(Evaluator):
             model = self.dropout_evaluator.models[model_idx]
         elif method == 'aleatoric':
             model = self.models[model_idx]
-            image = next(self.augmentor.flow(image))
+            image = np.squeeze(
+                next(self.augmentor.flow(np.expand_dims(image, 0)))
+            )
         else:
             print(
                 f"invalid method '{method}', must be 'epistemic' or 'aleatoric'"

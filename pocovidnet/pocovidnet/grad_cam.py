@@ -25,7 +25,8 @@ class GradCAM:
         zeroing=0.4,
         image_weight=1,
         heatmap_weight=0.25,
-        return_map=True
+        return_map=True,
+        size=(1000, 1000)
     ):
         """
         Compute GradCAM for a specific class index.
@@ -46,6 +47,13 @@ class GradCAM:
         Returns:
             numpy.ndarray: Grid of all the GradCAM
         """
+        if size is None or not (isinstance(size, tuple) and len(size) == 2):
+            print(
+                f'size left undefined or not a 2-tuple - defaulting to (1000,1000)'
+            )
+            FINAL_RES = (1000, 1000)
+        else:
+            FINAL_RES = size
 
         if layer_name is None:
             layer_name = self.infer_grad_cam_target_layer(model)
@@ -72,6 +80,7 @@ class GradCAM:
                 image_weight, heatmap, heatmap_weight, 0
             ), cv2.COLOR_BGR2RGB
         )
+        overlay = cv2.resize(overlay, FINAL_RES)
         if return_map:
             return overlay, cam
         else:
