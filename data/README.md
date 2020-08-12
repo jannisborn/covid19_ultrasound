@@ -21,17 +21,18 @@ assembled from publicly available resources in the web as well as from publicati
   
 ## Current dataset size (July 2020)
 - Convex:
-  - 111 videos (32x  COVID, 23x bacterial pneumonia, 53x healthy, 3x viral pneumonia)
+  - 124 videos (45x  COVID, 23x bacterial pneumonia, 53x healthy, 3x viral pneumonia)
   - 40 images (18x COVID, 7x bacterial pneumonia, 15x healthy)
   - 21 videos from the Butterfly dataset (19 COVID, 2 healthy, see below how to use the provided scripts to process the data)
 - Linear:
-  - 20 videos (4x COVID, 2x bacterial pneumonia, 10x healthy, 4x viral pneumonia)
+  - 21 videos (5x COVID, 2x bacterial pneumonia, 10x healthy, 4x viral pneumonia)
   - 6 images (4x COVID, 2x bacterial pneumonia)
 - Data with artifacts (30 images, 2 videos): For the sake of completion, we provide a folder with images and videos that we found but did not include in our dataset due to artifacts (arrows, bars) in the image or because of unclear labels. For more information and comments by medical experts, see our [metadata](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) sheet or metadata [csv](dataset_metadata.csv).
 
 - We are constantly updating the dataset with new data - any contributions are appreciated!
 
 ## Updates
+- **12.8.2020**: Update - added 14 new COVID videos from publications
 - **28.7.2020**: Update - added 4 new videos and 7 new images from the Northumbria hospital
 - **11.7.2020**: Database update - We added an up to date csv file with all metadata, and new videos that were contributed from the Northumbria Specialist Emergency Care Hospital (17 images and 4 videos of healthy patients)
 - **22.6.2020**: Database update - We added 46 new videos (18x COVID, 1x bacterial pneumonia, 27x healthy).
@@ -78,7 +79,6 @@ If you want to add them to an existing cross validation split (e.g after executi
 
 Run:
 ```
-cd ..
 python ../pocovidnet/scripts/add_uninformative_class.py -i uniform_class_imagenet -u uniform_class_nerves -o cross_validation -s 5
 ```
 
@@ -112,8 +112,38 @@ Also, we obtained videos and images from publications on ultrasound, and we appr
 * 4 videos (viral and bacterial pneumonia) from [@tsung2012prospective] - [Prospective application of clinician-performed lung ultrasonography during the 2009 H1N1 influenza A pandemic: distinguishing viral from bacterial pneumonia](https://theultrasoundjournal.springeropen.com/articles/10.1186/2036-7902-4-16)
 * 6 videos (COVID-19, healthy, bacterial pneumonia) from [@vieira2020role] - [Role of point-of-care ultrasound during the COVID-19 pandemic: our recommendations in the management of dialytic patients](https://theultrasoundjournal.springeropen.com/articles/10.1186/s13089-020-00177-4)
 * 9 COVID-19 images from [@sofia2020thoracic] - [Thoracic ultrasound and SARS-COVID-19: a pictorial essay](https://link.springer.com/content/pdf/10.1007/s40477-020-00458-7.pdf)
+* 8 COVID-19 videos from [@denault2020proposed]  - [A proposed lung ultrasound and phenotypic algorithm for the care of COVID-19 patients with acute respiratory failure](https://link.springer.com/article/10.1007%2Fs12630-020-01704-6#Abs1)
+* 5 COVID-19 videos from [@volpicelli2020sonographic]  - [Sonographic signs and patterns of COVID-19 pneumonia](https://theultrasoundjournal.springeropen.com/articles/10.1186/s13089-020-00171-w)
+* 1 COVID-19 videos from [@abramspoint] - [Point-of-Care Ultrasound in the Evaluation of COVID-19](https://www.jem-journal.com/article/S0736-4679(20)30581-3/fulltext)
+
 
 ```bib
+@article{abramspoint,
+  title={Point-of-Care Ultrasound in the Evaluation of COVID-19},
+  author={Abrams, Eric R and Rose, Gabriel and Fields, J Matthew and Esener, Dasia},
+  journal={The Journal of emergency medicine},
+  pages={S0736--4679}
+}
+
+@article{volpicelli2020sonographic,
+  title={Sonographic signs and patterns of COVID-19 pneumonia},
+  author={Volpicelli, Giovanni and Gargani, Luna},
+  journal={The Ultrasound Journal},
+  volume={12},
+  number={1},
+  pages={1--3},
+  year={2020},
+  publisher={SpringerOpen}
+}
+
+@article{denault2020proposed,
+  title={A proposed lung ultrasound and phenotypic algorithm for the care of COVID-19 patients with acute respiratory failure},
+  author={Denault, Andr{\'e} Y and Delisle, St{\'e}phane and Canty, David and Royse, Alistair and Royse, Colin and Serra, Ximena Cid and Gebhard, Caroline E and Couture, {\'E}tienne J and Girard, Martin and Cavayas, Yiorgos Alexandros and others},
+  journal={Canadian Journal of Anaesthesia},
+  pages={1},
+  year={2020},
+  publisher={Nature Publishing Group}
+}
 @article{inchingolo2020diagnosis,
   title={The Diagnosis of Pneumonia in a Pregnant Woman with COVID-19 Using Maternal Lung Ultrasound},
   author={Inchingolo, Riccardo and Smargiassi, Andrea and Moro, Francesca and Buonsenso, Danilo and Salvi, Silvia and Del Giacomo, Paola and Scoppettuolo, Giancarlo and Demi, Libertario and Soldati, Gino and Testa, Antonia Carla},

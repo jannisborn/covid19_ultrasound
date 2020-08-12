@@ -59,7 +59,7 @@ if __name__ == "__main__":
     # copy all images from pocus_images
     for mode in TAKE_MODE:
         for fp in os.listdir(os.path.join(POCUS_IMAGE_DIR, mode)):
-            if fp[-3:] in ["png", "jpg", "jpeg"]:
+            if fp[-3:] in ["png", "jpg", "peg", "JPG", "PNG"]:
                 label_dir = label_to_dir(fp[:3])
                 if label_dir in TAKE_CLASSES:
                     shutil.copy(
