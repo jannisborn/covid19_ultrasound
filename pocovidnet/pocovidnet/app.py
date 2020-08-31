@@ -3,27 +3,19 @@ import cv2
 import os
 from pocovidnet.evaluate_covid19 import Evaluator
 from evaluate_video import VideoEvaluator
-import string 
+import string
 import random
 
 import string
 import random
 import numpy as np
 
-# model = Evaluator(
-#     weights_dir="../trained_models_cam",
-#     ensemble=True,
-#     model_id="vgg_cam",
-#     num_classes=4
-# )
 videoModel = VideoEvaluator(
     weights_dir="../trained_models_cam",
     ensemble=True,
     model_id="vgg_cam",
     num_classes=4
 )
-
-videoModel = VideoEvaluator()
 
 app = Flask(__name__)
 
@@ -37,6 +29,7 @@ app.config['UPLOAD_FOLDER'] = os.path.join(
 def allowed_file(filename):
     return '.' in filename and \
            filename.split('.')[-1].lower() in ["jpg", "png", "jpeg"]
+
 
 def allowed_file_video(filename):
     return '.' in filename and \
@@ -73,35 +66,6 @@ def predict():
         return jsonify(out_preds)
     return jsonify("filename not allowed: " + filename)
 
-@app.route("/upload", methods=['POST'])
-def upload():
-    if request.method == 'POST':
-        if 'file' not in request.files:
-            return jsonify("Need to pass argument filename to request! (empty)")
-        file = request.files['file']
-        file_dir = ''.join(random.choices(string.ascii_uppercase +
-                             string.digits, k = 24)) 
-        if (allowed_file_video(file.filename) or allowed_file(file.filename)):
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'] + "/" + file_dir, file.filename))
-            return jsonify(app.config['UPLOAD_FOLDER'] + "/" + file_dir + file.filename)
-        return jsonify("filename not allowed: " + file.filename)
-
-@app.route("/video_predict", methods=['POST'])
-def video_predict():
-    if request.method == 'POST':
-        if 'image' not in request.files:
-            return jsonify("Need to pass argument filename to request! (empty)")
-        file = request.files['image']
-        file_dir = ''.join(random.choices(string.ascii_uppercase +
-                             string.digits, k = 24)) 
-        if (allowed_file_video(file.filename)):
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'] + "/" + file_dir, file.filename))
-            filepath = app.config['UPLOAD_FOLDER'] + "/" + file_dir + "/" +file.filename
-            vidpath = app.config['UPLOAD_FOLDER'] + "/" + file_dir + "/" + "heatmap.mp4"
-            preds = str(videoModel(filepath))
-            videoModel.cam_important_frames(vidpath)
-            return jsonify(preds) + "\n" + vidpath
-        return jsonify("filename not allowed: " + file.filename)
 
 @app.route("/upload", methods=['POST'])
 def upload():
@@ -148,10 +112,10 @@ def video_predict():
                 "Need to pass argument filename to request! (empty)"
             )
         file = request.files['image']
-        # file_dir = "1234"  # for debugging:
         file_dir = ''.join(
             random.choices(string.ascii_uppercase + string.digits, k=24)
         )
+        # file_dir = "1234"  # for debugging:
         if (allowed_file_video(file.filename)) or allowed_file(file.filename):
             file.save(
                 os.path.join(
