@@ -6,7 +6,6 @@ import chevronLeftLight from './chevron-left.svg';
 import chevronRightDark from './chevron-right-dark.svg';
 import chevronLeftDark from './chevron-left-dark.svg';
 import { AppContext } from '../../context/AppContext';
-import julie from '../../assets/images/team/julie.jpg';
 import marion from '../../assets/images/team/marion.jpg';
 import gabriel from '../../assets/images/team/gabriel.jpg';
 import charlotte from '../../assets/images/team/charlotte.jpg';
@@ -80,9 +79,6 @@ const Slider = () => {
                 </div>
                 <div className="slide-card col-6 col-md-4 fadeIn">
                     <TeamMember fullName="Jannis Born" job=" Deep learning in Bioinformatics" image={janis} />
-                </div>
-                <div className="slide-card col-6 col-md-4 fadeIn">
-                    <TeamMember fullName="Julie Goulet" job="Theoretical biophysicist & Data Scientist" image={julie} />
                 </div>
                 <div className="slide-card col-6 col-md-4 fadeIn">
                     <TeamMember fullName="Jérémie Roulin" job="Software Engineer" image={jay} />
