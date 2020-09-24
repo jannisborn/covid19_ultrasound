@@ -35,10 +35,12 @@ if not os.path.exists(OUTPUT_DIR):
     os.makedirs(OUTPUT_DIR)
 
 ############ INSERT HERE CODE TO RESTORE THE MODEL ######
-model = Evaluator(
+models = Evaluator(
     weights_dir=MODEL_DIR, ensemble=False, split=1, num_classes=3
 )
-print(model.models[0].summary())
+model = models.models[-1]
+print(model.summary())
+
 ############ INSERT HERE CODE TO RESTORE THE MODEL #######
 
 gradcam = GradCAM()
@@ -53,7 +55,7 @@ for idx, filename in enumerate(os.listdir(DATA_DIR)):
     filepath = os.path.join(DATA_DIR, filename)
     img_loaded = cv2.imread(filepath)
     #### TODO: Apply any image preprocessing here if applicable (?) ###
-    img = model.preprocess(img_loaded)[0]
+    img = models.preprocess(img_loaded)[0]
     #### TODO: Apply any image preprocessing here if applicable (?) ###
 
     #### TODO: Infer class index (for which class the CAM should be computed)
@@ -62,7 +64,7 @@ for idx, filename in enumerate(os.listdir(DATA_DIR)):
 
     overlay = gradcam.explain(
         img,
-        model.models[-1],
+        model,
         class_index,
         return_map=False,
         image_weight=1,
