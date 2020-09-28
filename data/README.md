@@ -25,14 +25,15 @@ assembled from publicly available resources in the web as well as from publicati
   - 53 images (18x COVID, 20x bacterial pneumonia, 15x healthy)
   - 21 videos from the Butterfly dataset (19 COVID, 2 healthy, see below how to use the provided scripts to process the data)
 - Linear:
-  - 66 videos (50x COVID, 2x bacterial pneumonia, 10x healthy, 4x viral pneumonia)
+  - 21 videos (5x COVID, 2x bacterial pneumonia, 10x healthy, 4x viral pneumonia)
   - 6 images (4x COVID, 2x bacterial pneumonia)
-- Data with artifacts (30 images, 2 videos): For the sake of completion, we provide a folder with images and videos that we found but did not include in our dataset due to artifacts (arrows, bars) in the image or because of unclear labels. For more information and comments by medical experts, see our [metadata](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) sheet or metadata [csv](dataset_metadata.csv).
+  - 45 videos of *possible* COVID-19 patients collected in Piacenza at the peak of the crisis in Italy; there were not enough PCR tests available, so the label is not clear
+For more information and comments by medical experts, see our [metadata](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) sheet or metadata [csv](dataset_metadata.csv).
 
 - We are constantly updating the dataset with new data - any contributions are appreciated!
 
 ## Updates
-- **26.9.2020**: Major update to the database: 30 videos from Dr Avinash Aujayeb from Northumbria, and 45 linear videos of COVID-19 patients sponsored by Bolzano
+- **26.9.2020**: Major update to the database: 30 videos from Dr Avinash Aujayeb from Northumbria, and 45 linear videos of COVID-19 patients sponsored by Bolzano AG
 - **25.8.2020**: Update - added 10 new videos from the Northumbria hospital
 - **12.8.2020**: Update - added 14 new COVID videos from publications
 - **28.7.2020**: Update - added 4 new videos and 7 new images from the Northumbria hospital
