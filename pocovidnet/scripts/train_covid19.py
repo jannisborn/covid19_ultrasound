@@ -167,7 +167,8 @@ earlyStopping = EarlyStopping(
 )
 
 mcp_save = ModelCheckpoint(
-    os.path.join(MODEL_DIR, 'fold_' + str(FOLD) + '_epoch_{epoch:02d}'),
+    # os.path.join(MODEL_DIR, 'fold_' + str(FOLD) + '_epoch_{epoch:02d}'),
+    os.path.join(MODEL_DIR, 'best_weights'),
     save_best_only=True,
     monitor='val_accuracy',
     mode='max',
@@ -175,7 +176,7 @@ mcp_save = ModelCheckpoint(
 )
 reduce_lr_loss = ReduceLROnPlateau(
     monitor='val_loss',
-    factor=0.1,
+    factor=0.7,
     patience=7,
     verbose=1,
     epsilon=1e-4,
@@ -239,10 +240,6 @@ print('confusion matrix:')
 cm = confusion_matrix(testY.argmax(axis=1), predIdxs)
 # show the confusion matrix, accuracy, sensitivity, and specificity
 print(cm)
-
-# serialize the model to disk
-print(f'Saving COVID-19 detector model on {MODEL_DIR} data...')
-model.save(os.path.join(MODEL_DIR, 'last_epoch'), save_format='h5')
 
 # plot the training loss and accuracy
 N = EPOCHS
