@@ -11,7 +11,7 @@ from **Point-of-care Ultrasound** (POCUS) recordings. Find the arXiv preprint
 approach to automatically detect COVID-19 from ultrasound**. Next to the code
 for our model and our website on [https://pocovidscreen.org](https://pocovidscreen.org), we also make a
 **dataset** available. This complements the current data collection initiaves that only focus
-on CT or X-Ray data. The data includes a total of >150 videos and >30 images of 3 classes (COVID-19, pneumonia, healthy lungs). With frame-based prediction models this easily makes up for a dataset of 2000 images.
+on CT or X-Ray data. The data includes a total of >200 videos and >60 images of 3 classes (COVID-19, pneumonia, healthy lungs). With frame-based prediction models this easily makes up for a dataset of thousands of images.
 **Please help growing the database!**
 
 
