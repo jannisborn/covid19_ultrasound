@@ -4,7 +4,13 @@ from tensorflow.keras.applications import (
     VGG16, MobileNetV2, NASNetMobile, ResNet50, ResNet152V2
 )
 from tensorflow.keras.layers import (
-    AveragePooling2D, Dense, Dropout, Flatten, Input, BatchNormalization, ReLU,
+    AveragePooling2D,
+    Dense,
+    Dropout,
+    Flatten,
+    Input,
+    BatchNormalization,
+    ReLU,
     LeakyReLU
 )
 from tensorflow.keras.models import Model
@@ -179,9 +185,9 @@ def get_nasnet_model(
     headModel = AveragePooling2D(pool_size=(4, 4))(headModel)
     headModel = Flatten(name="flatten")(headModel)
     headModel = Dense(hidden_size)(headModel)
-    headModel = BatchNormalization()(headModel)
     headModel = ReLU()(headModel)
     headModel = Dropout(dropout)(headModel)
+    headModel = BatchNormalization()(headModel)
     headModel = Dense(num_classes, activation=act_fn)(headModel)
 
     # place the head FC model on top of the base model
