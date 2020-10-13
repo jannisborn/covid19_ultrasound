@@ -21,18 +21,20 @@ assembled from publicly available resources in the web as well as from publicati
   
 ## Current dataset size (July 2020)
 - Convex:
-  - 134 videos (45x  COVID, 29x bacterial pneumonia, 57x healthy, 3x viral pneumonia)
-  - 40 images (18x COVID, 7x bacterial pneumonia, 15x healthy)
+  - 180 videos (61x COVID, 49x bacterial pneumonia, 67x healthy, 3x viral pneumonia)
+  - 53 images (18x COVID, 20x bacterial pneumonia, 15x healthy)
   - 21 videos from the Butterfly dataset (19 COVID, 2 healthy, see below how to use the provided scripts to process the data)
 - Linear:
   - 21 videos (5x COVID, 2x bacterial pneumonia, 10x healthy, 4x viral pneumonia)
   - 6 images (4x COVID, 2x bacterial pneumonia)
-- Data with artifacts (30 images, 2 videos): For the sake of completion, we provide a folder with images and videos that we found but did not include in our dataset due to artifacts (arrows, bars) in the image or because of unclear labels. For more information and comments by medical experts, see our [metadata](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) sheet or metadata [csv](dataset_metadata.csv).
+  - 45 videos of *possible* COVID-19 patients collected in Piacenza at the peak of the crisis in Italy; there were not enough PCR tests available, so the label is not clear
+For more information and comments by medical experts, see our [metadata](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) sheet or metadata [csv](dataset_metadata.csv).
 
 - We are constantly updating the dataset with new data - any contributions are appreciated!
 
 ## Updates
-- **25.8.2020**: Update - added 10 new videos from the Nurthumbrian hospital
+- **26.9.2020**: Major update to the database: 30 videos from Dr Avinash Aujayeb from Northumbria, and 45 linear videos of COVID-19 patients sponsored by Bolzano AG
+- **25.8.2020**: Update - added 10 new videos from the Northumbria hospital
 - **12.8.2020**: Update - added 14 new COVID videos from publications
 - **28.7.2020**: Update - added 4 new videos and 7 new images from the Northumbria hospital
 - **11.7.2020**: Database update - We added an up to date csv file with all metadata, and new videos that were contributed from the Northumbria Specialist Emergency Care Hospital (17 images and 4 videos of healthy patients)
