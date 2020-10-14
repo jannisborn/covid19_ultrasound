@@ -60,14 +60,14 @@ print(
 
 for i in range(len(table)):
     fn = table.iloc[i]["Filename"]
-    if pd.isnull(table.iloc[i]["Current location"]):
-        continue
     location = table.iloc[i]["Current location"].lower()
+    if pd.isnull(location) or 'data_with_artifacts' in location:
+        continue
     if location.startswith("data/"):
         location = location[5:]
 
     if not os.path.exists(os.path.join(base, location, fn)):
-        if not ("not" in location or "utterfly" in fn):
+        if not ("not" in location or "Butterfly" in fn):
             # if not os.path.exists(os.path.join(base, location, fn + ".png")):
             print(fn, "missing at", location, "searching in", os.path.join(base, location, fn))
 
@@ -76,7 +76,7 @@ print("----------------------")
 print("Find which filenames appear in folder but not in sheet")
 
 folders = [
-    "data_with_artifacts", "pocus_images/convex", "pocus_images/linear",
+    "pocus_images/convex", "pocus_images/linear",
     "pocus_videos/linear", "pocus_videos/convex"
 ]
 
@@ -84,7 +84,7 @@ filenames_in_table = table["Filename"].values
 
 for fold in folders:
     for fn in os.listdir(os.path.join(base, fold)):
-        if not (fn.startswith(".") or "utterfly" in fn):
+        if not (fn.startswith(".") or "Butterfly" in fn):
             if not (
                 fn in filenames_in_table
                 or fn.split(".")[0] in filenames_in_table

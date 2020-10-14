@@ -147,7 +147,8 @@ def main():
         'dense': ['npz'],
         'vgg_base': ['gif', 'jpg', 'png', 'peg'],
         'vgg_cam': ['jpg', 'png', 'peg'],
-        'nasnet': ['jpg', 'png', 'peg']
+        'nasnet': ['jpg', 'png', 'peg'],
+        'mobilenet_v2': ['jpg', 'png', 'peg']
     }
 
     for i in range(args.folds):
