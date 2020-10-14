@@ -23,19 +23,24 @@ class Videoto3D:
         # iterate to fill data
         data_3d, labels_3d, files_3d = [], [], []
         for train_vid, train_lab in zip(vid_files, labels):
-            cap = cv2.VideoCapture(os.path.join(self.vid_path, train_vid))
+            curr_vid_path = os.path.join(self.vid_path, train_vid)
+            if ~os.path.exists(curr_vid_path):
+                print("-----------------------")
+                print("WARNING: video not found", curr_vid_path)
+                print("-----------------------")
+            cap = cv2.VideoCapture()
             fr = cap.get(5)
             show_every = round(fr / self.framerate)
-            print(
-                train_vid, fr, cap.get(7), "available frames:",
-                cap.get(7) / show_every
-            )
             frames_available = cap.get(7) / show_every
             end_is_close = frames_available % self.depth >= 4
             number_selected = int(
                 end_is_close
             ) + frames_available // self.depth
-            print(number_selected, cap.get(7), "show every", show_every)
+            print()
+            print(
+                train_vid, fr, "nr frames", cap.get(7), "select every",
+                show_every, "selected", number_selected
+            )
             vid_part_count = 0
             current_data = []
             # for frame_id in range(int(cap.get(7))):
@@ -60,7 +65,7 @@ class Videoto3D:
                     current_data = []
                     vid_part_count += 1
                 if vid_part_count >= self.max_vid[train_lab]:
-                    print("already 5 parts of this video")
+                    print("cut of at 5 parts of one video")
                     break
             cap.release()
         data = np.expand_dims(np.asarray(data_3d), 4) / 255

@@ -46,7 +46,7 @@ def main():
     parser.add_argument('--lr', type=float, default=1e-4)
     parser.add_argument('--trainable_base_layers', type=int, default=0)
     parser.add_argument(
-        '--save', type=str, default='../data/'
+        '--save', type=str, default='../data/video_input_data'
     )
     parser.add_argument(
         '--weight_path', type=str, default='../Genesis_Chest_CT.h5'
