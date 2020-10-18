@@ -19,13 +19,13 @@ assembled from publicly available resources in the web as well as from publicati
       - https://grepmed.com
       - https://litfl.com/ultrasound-library/
   
-## Current dataset size (July 2020)
+## Current dataset size (October 2020)
 - Convex:
-  - 180 videos (61x COVID, 49x bacterial pneumonia, 67x healthy, 3x viral pneumonia)
-  - 53 images (18x COVID, 20x bacterial pneumonia, 15x healthy)
+  - 162 videos (45x COVID, 49x bacterial pneumonia, 65x healthy, 3x viral pneumonia)
   - 21 videos from the Butterfly dataset (19 COVID, 2 healthy, see below how to use the provided scripts to process the data)
+  - 53 images (18x COVID, 20x bacterial pneumonia, 15x healthy)
 - Linear:
-  - 21 videos (5x COVID, 2x bacterial pneumonia, 10x healthy, 4x viral pneumonia)
+  - 20 videos (5x COVID, 2x bacterial pneumonia, 10x healthy, 3x viral pneumonia)
   - 6 images (4x COVID, 2x bacterial pneumonia)
   - 45 videos of *possible* COVID-19 patients collected in Piacenza at the peak of the crisis in Italy; there were not enough PCR tests available, so the label is not clear
 For more information and comments by medical experts, see our [metadata](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) sheet or metadata [csv](dataset_metadata.csv).
