@@ -2,11 +2,32 @@ import shutil
 import numpy as np
 import pandas as pd
 import os
+import json
 
 base = "../../data/"
 metadata = base + "dataset_metadata.csv"
-out = "missing_MD_comments"
+out = None # "missing_MD_comments"
 
+# Analyze numbers in dataset
+base_dir = "../../data/"
+out_table = pd.DataFrame(index=['cov', 'pne', 'reg', 'vir'])
+for modality in ["convex", "linear"]:
+    for datatype in ["videos", "images"]:
+        path = os.path.join(base_dir, "pocus_"+datatype, modality)
+        file_list = filter(lambda x: (x[0]!="." and os.path.isfile(os.path.join(path,x)) and not "_Butterfly" in x), os.listdir(path))
+        label_list = [f[:3].lower() for f in file_list]
+        counts = [label_list.count(lab) for lab in ['cov', 'pne', 'reg', 'vir']]
+        out_table[modality+"_"+datatype] = counts
+print("Data without Butterfly:")
+print(out_table)
+
+# add butterfly data
+with open("../../data/data_from_butterfly.json", "r") as infile:
+    butterfly = json.load(infile)
+labs = [t[:3] for t in butterfly]
+print("Data from butterfly:", np.unique(labs, return_counts = True))
+
+# Check metadata table
 table = pd.read_csv(metadata)
 
 # Find and copy the ones that have no MD comment
@@ -29,13 +50,14 @@ for i in range(len(table)):
                 location = location[5:]
             for ending in ["", ".jpeg", ".png", ".jpg", ".mp4", ".JPG"]:
                 try:
-                    shutil.copy(
-                        os.path.join(
-                            base, location,
-                            table.iloc[i]["Filename"] + ending
-                        ), out
-                    )
-                    print("copied successfully")
+                    if out is not None:
+                        shutil.copy(
+                            os.path.join(
+                                base, location,
+                                table.iloc[i]["Filename"] + ending
+                            ), out
+                        )
+                        print("copied successfully")
                     if ending != "":
                         print(
                             table.iloc[i]["Filename"], "worked with ending",
