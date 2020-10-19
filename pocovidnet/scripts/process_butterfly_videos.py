@@ -25,7 +25,7 @@ if __name__ == "__main__":
     )
 
     del_upper = 100
-    for i in range(1, len(files_to_process)):
+    for i in range(len(files_to_process)):
         vid_arr = []
         fp = files_to_process[i]
         fn = fp.split(os.sep)[-1]
@@ -63,8 +63,8 @@ if __name__ == "__main__":
             if width_box + del_upper > cap.get(4):
                 width_box = int(cap.get(4) - del_upper)
                 width_border = int(cap.get(3) / 2 - width_box / 2)
-            frame = frame[del_upper:width_box +
-                          del_upper, width_border:width_box + width_border]
+            frame = frame[del_upper:width_box + del_upper,
+                          width_border:width_box + width_border]
 
             # detect green point
             green_point = frame[:, :, 1] - frame[:, :, 0]

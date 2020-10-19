@@ -67,7 +67,7 @@ the experiments from the paper, please first complete the following steps:
     *NOTE*: This step requires that you installed the `pocovidnet` package
     before (see the [pocovidnet](../pocovidnet/) README how to do that).
     
-All current images should now be in `data/image_dataset`.
+All butterfly videos should have be added to `data/pocus_videos/convex`.
 
 
 ## Add class "uninformative"
