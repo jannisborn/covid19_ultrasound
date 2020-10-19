@@ -1,7 +1,7 @@
 #POCOVID-Net model.
 import tensorflow as tf
 from tensorflow.keras.applications import (
-    VGG16, MobileNetV2, NASNetMobile, ResNet50, ResNet152V2
+    VGG16, MobileNetV2, NASNetMobile, ResNet50
 )
 from tensorflow.keras.layers import (
     AveragePooling2D,

@@ -50,7 +50,7 @@ class GenesisEvaluator():
                 os.path.join(
                     # self.root
                     weights_dir,
-                    'fold_' + str(self.split),
+                    'fold_' + str(self.split), "best_weights",
                     "variables",
                     "variables"
                 )
