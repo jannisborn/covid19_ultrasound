@@ -1,6 +1,6 @@
 from .model import (
     get_cam_model, get_model, get_mobilenet_v2_model, get_nasnet_model,
-    get_dense_model, get_resnet50_model, get_resnet152_v2_model
+    get_dense_model, get_resnet50_model
 )
 from .video_model import get_video_model
 from .unet3d_genesis import unet_model_3d
