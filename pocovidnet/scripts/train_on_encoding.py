@@ -48,7 +48,7 @@ args = vars(ap.parse_args())
 DATA_DIR = args['data_dir']
 MODEL_NAME = args['model_name']
 FOLD = args['fold']
-MODEL_DIR = os.path.join(args['model_dir'], MODEL_NAME, f'_fold_{FOLD}')
+MODEL_DIR = os.path.join(args['model_dir'], MODEL_NAME, f'fold_{FOLD}')
 LR = args['learning_rate']
 EPOCHS = args['epochs']
 BATCH_SIZE = args['batch_size']
@@ -184,7 +184,7 @@ earlyStopping = EarlyStopping(
 )
 
 mcp_save = ModelCheckpoint(
-    os.path.join(MODEL_DIR, 'fold_' + str(FOLD) + '_epoch_{epoch:02d}'),
+    os.path.join(MODEL_DIR, 'best_weights'),
     save_best_only=True,
     monitor='val_accuracy',
     mode='max',
