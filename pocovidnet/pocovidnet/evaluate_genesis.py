@@ -40,7 +40,11 @@ class GenesisEvaluator():
             # retores 5 weight paths
             self.weights_paths = [
                 os.path.join(
-                    weights_dir, 'fold_' + str(fold), "variables", "variables"
+                    weights_dir,
+                    'fold_' + str(fold),
+                    "best_weights",
+                    "variables",
+                    "variables"
                 ) for fold in range(NUM_FOLDS)
             ]
         else:
@@ -50,7 +54,8 @@ class GenesisEvaluator():
                 os.path.join(
                     # self.root
                     weights_dir,
-                    'fold_' + str(self.split),
+                    'fold_' + str(self.split), 
+                    "best_weights",
                     "variables",
                     "variables"
                 )

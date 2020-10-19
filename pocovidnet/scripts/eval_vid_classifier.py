@@ -16,12 +16,24 @@ def main():
         '--genesis_weights', type=str, default='video_genesis_lr1e4'
     )
     parser.add_argument(
-        '--cam_weights', type=str, default='trained_models_cam'
+        '--frame_model_weights', type=str, default='trained_models_cam'
+    )
+    parser.add_argument(
+        '--frame_model_id', type=str, default='vgg_cam'
     )
     parser.add_argument(
         '--videos', type=str, default='../data/pocus_videos/convex'
     )
+    parser.add_argument(
+        '--output_dir', type=str, default='evaluation_outputs.dat'
+    )
     args = parser.parse_args()
+
+    K.clear_session()
+
+    print("---------------------------------")
+    print("WARNING: THIS SCRIPT MUST BE RUN ON A GPU")
+    print("---------------------------------")
 
     with open(args.json, "r") as infile:
         cross_val_split = json.load(infile)
@@ -35,10 +47,10 @@ def main():
         )
         K.set_image_data_format("channels_last")
         normal_eval = VideoEvaluator(
-            weights_dir=args.cam_weights,
+            weights_dir=args.frame_model_weights,
             ensemble=False,
             split=i,
-            model_id="vgg_cam",
+            model_id=args.frame_model_id,
             num_classes=4
         )
         files = cross_val_split[str(i)]["test"][0]
@@ -72,7 +84,7 @@ def main():
                 frame_pred
             )
             print("-------------")
-    with open("evaluation_outputs.dat", "wb") as outfile:
+    with open(args.output_dir, "wb") as outfile:
         pickle.dump((all_genesis_preds, all_frame_preds), outfile)
 
 

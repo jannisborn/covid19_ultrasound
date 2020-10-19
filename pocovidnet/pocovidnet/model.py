@@ -1,7 +1,7 @@
 #POCOVID-Net model.
 import tensorflow as tf
 from tensorflow.keras.applications import (
-    VGG16, MobileNetV2, NASNetMobile, ResNet50, ResNet152V2
+    VGG16, MobileNetV2, NASNetMobile, ResNet50
 )
 from tensorflow.keras.layers import (
     AveragePooling2D,
@@ -257,46 +257,6 @@ def get_resnet50_model(
 
     # load the VGG16 network, ensuring the head FC layer sets are left off
     baseModel = ResNet50(
-        weights="imagenet",
-        include_top=False,
-        input_tensor=Input(shape=input_size)
-    )
-    # construct the head of the model that will be placed on top of the
-    # the base model
-    headModel = baseModel.output
-    headModel = AveragePooling2D(pool_size=(4, 4))(headModel)
-    headModel = Flatten(name="flatten")(headModel)
-    headModel = Dense(hidden_size)(headModel)
-    headModel = BatchNormalization()(headModel)
-    headModel = ReLU()(headModel)
-    headModel = (
-        Dropout(dropout)(headModel, training=True)
-        if mc_dropout else Dropout(dropout)(headModel)
-    )
-    headModel = Dense(num_classes, activation=act_fn)(headModel)
-
-    # place the head FC model on top of the base model
-    model = Model(inputs=baseModel.input, outputs=headModel)
-
-    model = fix_layers(model, num_flex_layers=trainable_layers + 8)
-
-    return model
-
-
-def get_resnet152_v2_model(
-    input_size: tuple = (224, 224, 3),
-    hidden_size: int = 64,
-    dropout: float = 0.5,
-    num_classes: int = 3,
-    trainable_layers: int = 3,
-    log_softmax: bool = True,
-    mc_dropout: bool = False,
-    **kwargs
-):
-    act_fn = tf.nn.softmax if not log_softmax else tf.nn.log_softmax
-
-    # load the VGG16 network, ensuring the head FC layer sets are left off
-    baseModel = ResNet152V2(
         weights="imagenet",
         include_top=False,
         input_tensor=Input(shape=input_size)

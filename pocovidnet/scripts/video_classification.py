@@ -134,7 +134,7 @@ def main():
     )
 
     mcp_save = ModelCheckpoint(
-        os.path.join(MODEL_D, 'fold_' + str(args.fold), 'epoch_{epoch:02d}'),
+        os.path.join(MODEL_D, 'fold_' + str(args.fold), 'best_weights'),
         save_best_only=True,
         monitor='val_accuracy',
         mode='max',
