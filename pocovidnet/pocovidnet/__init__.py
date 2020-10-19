@@ -11,8 +11,7 @@ MODEL_FACTORY = {
     'mobilenet_v2': get_mobilenet_v2_model,
     'nasnet': get_nasnet_model,
     'dense': get_dense_model,
-    'resnet50': get_resnet50_model,
-    'resnet152_v2': get_resnet152_v2_model
+    'resnet50': get_resnet50_model
 }
 
 VIDEO_MODEL_FACTORY = {'base': get_video_model, 'genesis': unet_model_3d}
