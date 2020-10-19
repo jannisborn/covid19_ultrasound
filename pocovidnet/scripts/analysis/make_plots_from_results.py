@@ -7,8 +7,8 @@ import seaborn as sn
 import matplotlib.pyplot as plt
 import pickle
 
-OUT_DIR = "results_oct/plots"
-IN_DIR = "results_oct/"
+OUT_DIR = "../results_oct/plots"
+IN_DIR = "../results_oct/"
 BEST_MODEL = "base_new_3.dat"
 
 compare_model_list = [

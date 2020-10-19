@@ -30,7 +30,7 @@ class IclusEvaluator(VideoEvaluator):
         count = 0
         while cap.isOpened():
             ret, frame = cap.read()
-            if (ret != 1): #  or count > 3
+            if (ret != 1):  #  or count > 3
                 break
             img_processed = self.preprocess(frame[bottom:top, left:right])[0]
             images.append(img_processed)
@@ -42,13 +42,22 @@ class IclusEvaluator(VideoEvaluator):
 # Construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument(
-    '-d', '--data_dir', default="../data/ICLUS", help='Path to input dataset'
+    '-d',
+    '--data_dir',
+    default="../../data/ICLUS",
+    help='Path to input dataset'
 )
 ap.add_argument(
-    '-m', '--model_dir', default="models/oct_base", help='Path to model weights'
+    '-m',
+    '--model_dir',
+    default="../models/oct_base",
+    help='Path to model weights'
 )
 ap.add_argument(
-    '-o', '--output_dir', default="results_oct/iclus/base", help='Path to save heatmaps'
+    '-o',
+    '--output_dir',
+    default="../results_oct/iclus/base",
+    help='Path to save heatmaps'
 )
 ap.add_argument('--m_id', type=str, default='vgg_base')
 
@@ -79,7 +88,10 @@ with open(os.path.join(args.data_dir, 'ICLUS_cropping.json'), "r") as infile:
     frame_cut = json.load(infile)
 
 for subfolder in os.listdir(args.data_dir):
-    if "linear" in subfolder.lower() or subfolder.startswith(".") or os.path.isfile(os.path.join(args.data_dir, subfolder)):
+    if "linear" in subfolder.lower(
+    ) or subfolder.startswith(".") or os.path.isfile(
+        os.path.join(args.data_dir, subfolder)
+    ):
         continue
     for vid in os.listdir(os.path.join(args.data_dir, subfolder)):
         vid_id = vid.split(".")[0]
@@ -107,4 +119,3 @@ for subfolder in os.listdir(args.data_dir):
         pred_plot(preds, os.path.join(out_iclus_data, "cam_" + vid_id))
         print("saved plot")
         # evaluator.cam_important_frames(GT_CLASS, save_video_path=os.path.join(out_iclus_data, "cam_"+vid_id))
-
