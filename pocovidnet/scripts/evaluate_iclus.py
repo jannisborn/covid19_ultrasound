@@ -79,7 +79,7 @@ with open(os.path.join(args.data_dir, 'ICLUS_cropping.json'), "r") as infile:
     frame_cut = json.load(infile)
 
 for subfolder in os.listdir(args.data_dir):
-    if "linear" in subfolder.lower() or subfolder.startswith(".") or "pdf" in subfolder:
+    if "linear" in subfolder.lower() or subfolder.startswith(".") or os.path.isfile(os.path.join(args.data_dir, subfolder)):
         continue
     for vid in os.listdir(os.path.join(args.data_dir, subfolder)):
         vid_id = vid.split(".")[0]
@@ -107,7 +107,4 @@ for subfolder in os.listdir(args.data_dir):
         pred_plot(preds, os.path.join(out_iclus_data, "cam_" + vid_id))
         print("saved plot")
         # evaluator.cam_important_frames(GT_CLASS, save_video_path=os.path.join(out_iclus_data, "cam_"+vid_id))
-# except KeyboardInterrupt:
-    # save crop indices
-    # with open(os.path.join(out_iclus_data, 'frame_cut.json'), "w") as infile:
-    #     json.dump(frame_cut, infile)
+

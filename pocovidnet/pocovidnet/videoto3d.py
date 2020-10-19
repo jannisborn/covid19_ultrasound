@@ -24,11 +24,13 @@ class Videoto3D:
         data_3d, labels_3d, files_3d = [], [], []
         for train_vid, train_lab in zip(vid_files, labels):
             curr_vid_path = os.path.join(self.vid_path, train_vid)
-            if ~os.path.exists(curr_vid_path):
+            if not os.path.exists(curr_vid_path):
                 print("-----------------------")
+                print(os.path.exists(train_vid))
+                print(os.path.exists(curr_vid_path))
                 print("WARNING: video not found", curr_vid_path)
                 print("-----------------------")
-            cap = cv2.VideoCapture()
+            cap = cv2.VideoCapture(curr_vid_path)
             fr = cap.get(5)
             show_every = round(fr / self.framerate)
             frames_available = cap.get(7) / show_every
