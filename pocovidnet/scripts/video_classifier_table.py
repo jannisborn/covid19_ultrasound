@@ -6,9 +6,9 @@ import os
 import pandas as pd
 import numpy as np
 import json
-IN_DIR = "evaluation_outputs.dat"
+IN_DIR = "results_oct/evaluation_outputs.dat"
 OUT_DIR = "results_oct"
-CROSS_VAL = "../data/cross_val.json'"
+CROSS_VAL = "../data/cross_val.json"
 
 with open(IN_DIR, "rb") as infile:
     vidbased, frame_based = pickle.load(infile)
