@@ -118,9 +118,19 @@ def check_crossval(cross_val_directory="../data/cross_validation"):
                 file_list.append(file)
                 uni.append(file.split(".")[0])
             print(folder, classe, len(np.unique(uni)), len(uni), is_image)
-    assert len(file_list) == len(np.unique(file_list))
-    print(len(file_list))
+    if len(file_list) != len(np.unique(file_list)):
+        print("PROBLEM: FILES THAT APPEAR TWICE")
+        # print(len(file_list), len(np.unique(file_list)))
+        uni, counts = np.unique(file_list, return_counts=True)
+        for i in range(len(counts)):
+            if counts[i] > 1:
+                print(uni[i])
+    else:
+        print("Fine, every file is unique")
 
+
+# check whether all files are unique
+check_crossval()
 
 # MAKE VIDEO CROSS VAL FILE --> corresponds to json cross val
 
