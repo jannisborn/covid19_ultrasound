@@ -2,6 +2,7 @@ import os
 import argparse
 import numpy as np
 import shutil
+import json
 
 # NOTE: To use the default parameters, execute this from the main directory of
 # the package.
@@ -21,6 +22,13 @@ ap.add_argument(
     type=str,
     default="../data/cross_validation/",
     help=("Output path where images for cross validation will be stored.")
+)
+ap.add_argument(
+    "-v",
+    "--video_dir",
+    type=str,
+    default="../data/pocus_videos/convex/",
+    help=("Path where the videos of the database are stored")
 )
 ap.add_argument(
     "-s",
@@ -110,64 +118,76 @@ def check_crossval(cross_val_directory="../data/cross_validation"):
                 file_list.append(file)
                 uni.append(file.split(".")[0])
             print(folder, classe, len(np.unique(uni)), len(uni), is_image)
-    assert len(file_list) == len(np.unique(file_list))
-    print(len(file_list))
+    if len(file_list) != len(np.unique(file_list)):
+        print("PROBLEM: FILES THAT APPEAR TWICE")
+        # print(len(file_list), len(np.unique(file_list)))
+        uni, counts = np.unique(file_list, return_counts=True)
+        for i in range(len(counts)):
+            if counts[i] > 1:
+                print(uni[i])
+    else:
+        print("Fine, every file is unique")
 
 
-# MAKE SPLIT OF APPROXIMATELY DIFFERENT SIZE
-# split_test = [{} for _ in range(NUM_FOLDS)]
-# num_scans_per_video = []
-# for modality in ['covid', 'pneumonia', 'regular']:
-#     p_vids = []
-#     p_fn = []
-#     for cov_data in os.listdir(os.path.join(DATA_DIR, modality)):
-#         if cov_data[0] == '.':
-#             continue
-#         p_fn.append(cov_data)
-#         p_vids.append(cov_data.split('.')[0])
-#     vid_names, count1 = np.unique(p_vids, return_counts=True)
-#     count = count1.copy()
-#     name_list = [[v] for v in vid_names]
+# check whether all files are unique
+check_crossval()
 
-#     # summarize to number of split (always merge the ones with smallest count)
-#     while len(count) > NUM_FOLDS:
-#         arg_inds = np.argsort(count)
-#         # merge smallest counts
-#         count[arg_inds[0]] = count[arg_inds[0]] + count[arg_inds[1]]
-#         count = np.delete(count, arg_inds[1])
-#         # merge video names in smallest counts
-#         name_list[arg_inds[0]].extend(name_list[arg_inds[1]])
-#         del name_list[arg_inds[1]]
-#     for i in range(len(name_list)):
-#         print(name_list[i], count[i])
-#         num_scans_per_video.append(count1[i])
+# MAKE VIDEO CROSS VAL FILE --> corresponds to json cross val
 
-#     # get filenames instead of video names
-#     f_list = [[] for _ in range(NUM_FOLDS)]
-#     for j in range(NUM_FOLDS):
-#         # iterate over videos for this split
-#         fn_list = []
-#         for vid in name_list[j]:
-#             fn_list.extend(np.array(p_fn)[np.array(p_vids) == vid])
-#         f_list[j] = fn_list
+check = OUTPUT_DIR
+videos_dir = args["video_dir"]
 
-#     # add to overall split list
-#     for j in range(NUM_FOLDS):
-#         split_test[j][modality] = f_list[j]
+file_list = []
+video_cross_val = {}
+for split in range(5):
+    train_test_dict = {"test": [[], []], "train": [[], []]}
+    for folder in os.listdir(check):
+        if folder[0] == ".":
+            continue
+        for classe in os.listdir(os.path.join(check, folder)):
+            if classe[0] == "." or classe[0] == "u":
+                continue
+            uni = []
+            for file in os.listdir(os.path.join(check, folder, classe)):
+                if file[0] == "." or len(file.split(".")) == 2:
+                    continue
+                parts = file.split(".")
+                if not os.path.exists(
+                    os.path.
+                    join(videos_dir, parts[0] + "." + parts[1].split("_")[0])
+                ):
+                    butterfly_name = parts[0][:3] + "_Butterfly_" + parts[0][
+                        4:] + ".avi"
+                    if not os.path.exists(
+                        os.path.join(videos_dir, butterfly_name)
+                    ):
+                        print("green dots in video or aibronch", file)
+                        continue
+                    uni.append(butterfly_name)
+                else:
+                    uni.append(parts[0] + "." + parts[1].split("_")[0])
+            uni_files_in_split = np.unique(uni)
+            uni_labels = [vid[:3].lower() for vid in uni_files_in_split]
 
-# # Copy data from into a new cross_val directory
-# for split_ind in range(NUM_FOLDS):
-#     # make directory for this split
-#     split_path = os.path.join(OUTPUT_DIR, 'split' + str(split_ind))
-#     if not os.path.exists(split_path):
-#         os.makedirs(split_path)
-#     # add each data type
-#     for modality in split_test[split_ind].keys():
-#         # make directory for each modality
-#         mod_path = os.path.join(split_path, modality)
-#         if not os.path.exists(mod_path):
-#             os.makedirs(mod_path)
-#         # copy all files
-#         mod_split_files = split_test[split_ind][modality]
-#         for fname in mod_split_files:
-#             shutil.copy(os.path.join(DATA_DIR, modality, fname), mod_path)
+            if folder[-1] == str(split):
+                train_test_dict["test"][0].extend(uni_files_in_split)
+                train_test_dict["test"][1].extend(uni_labels)
+            else:
+                train_test_dict["train"][0].extend(uni_files_in_split)
+                train_test_dict["train"][1].extend(uni_labels)
+    video_cross_val[split] = train_test_dict
+
+with open(os.path.join("..", "data", "cross_val.json"), "w") as outfile:
+    json.dump(video_cross_val, outfile)
+
+this_class = {"cov": "covid", "pne": "pneumonia", "reg": "regular"}
+for i in range(5):
+    all_labels = []
+    files, labs = video_cross_val[i]["test"]
+    for j in range(len(files)):
+        assert os.path.exists(
+            os.path.join(
+                OUTPUT_DIR, "split" + str(i), this_class[labs[j]],
+                files[j] + "_frame0.jpg"
+            )
+        ), files[j] + "  in  " + str(i)

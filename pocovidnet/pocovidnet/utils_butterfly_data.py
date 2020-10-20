@@ -33,6 +33,11 @@ def get_processing_info(data_path, actual_names, labels):
                 files_to_process.append(full_path)
                 ind = actual_names.index(vid)
                 labs_to_process.append(labels[ind])
+            else:
+                print("Warning: Butterfly video not in butterfly json", vid)
+    for vid in actual_names:
+        if not any([vid in f for f in files_to_process]):
+            print("Warning: video not found in butterfly folder:", vid)
     return files_to_process, labs_to_process
 
 
