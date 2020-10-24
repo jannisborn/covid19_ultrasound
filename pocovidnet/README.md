@@ -26,21 +26,6 @@ Then, please follow the instructions of the `README.md` *at that state* (see
 
 If you want to use the latest version of the database, read below:
 
-### Videos to images
-
-First, we have to merge the videos and images to create an image dataset. 
-You can use the script `cross_val_splitter.py` to copy from [pocus images](../data/pocus_images) and [pocus videos](../data/pocus_videos). It will cope the images automatically and process all videos (read the frames and save every x-th frame dependent on the framerate supplied in args).
-
-Note: In the script, it is hard-coded that only convex POCUS data is taken, and only the classes `covid`, `pneumonia`, `regular` (there is not enough data for `viral`yet). You can change this selection in the script.
-
-From the directory of this README, execute:
-```sh
-python3 scripts/build_image_dataset.py
-```
-
-Now, your [data folder](../data) should contain a new folder `image_dataset`
-with folders `covid`, `pneumonia`, `regular` and `viral` or a subset of those dependent on your selection.
-
 ### Add butterfly data
 
 *NOTE*: The vast majority of data we gathered thus far is available in the 
@@ -66,7 +51,22 @@ the experiments from the paper, please first complete the following steps:
     *NOTE*: This step requires that you installed the `pocovidnet` package
     before (see "Installation").
     
-The butterfly images should now be added to `data/image_dataset`.
+All butterfly videos should have be added to `data/pocus_videos/convex`.
+
+### Videos to images
+
+First, we have to merge the videos and images to create an image dataset. 
+You can use the script `cross_val_splitter.py` to copy from [pocus images](../data/pocus_images) and [pocus videos](../data/pocus_videos). It will cope the images automatically and process all videos (read the frames and save every x-th frame dependent on the framerate supplied in args).
+
+Note: In the script, it is hard-coded that only convex POCUS data is taken, and only the classes `covid`, `pneumonia`, `regular` (there is not enough data for `viral`yet). You can change this selection in the script.
+
+From the directory of this README, execute:
+```sh
+python3 scripts/build_image_dataset.py
+```
+
+Now, your [data folder](../data) should contain a new folder `image_dataset`
+with folders `covid`, `pneumonia`, `regular` and `viral` or a subset of those dependent on your selection.
 
 
 ### Cross validation splitting
@@ -84,16 +84,6 @@ that specific fold.
 #### Uninformative data
 If you want to add data from an *uninformative* class, see [here](https://github.com/jannisborn/covid19_pocus_ultrasound/tree/master/data#add-class-uninformative).
 
-### Add Butterfly data
-
-As described above, the data from butterfly must be downloaded manually. We provide an automatic script to add the videos to the `data/pocus_videos/convex` folder:
-
-Assuming that you have already downloaded and unzipped the butterfly folder and renamed it to `butterfly`, `cd` into the [data folder](../data).
-Then run:
-```sh
-python ../pocovidnet/scripts/process_butterfly_videos.py  
-```
-Now all usable butterfly videos should be added to `data/pocus_videos/convex`.
 
 ### Train the model
 

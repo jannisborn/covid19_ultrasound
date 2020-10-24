@@ -56,8 +56,11 @@ class Evaluator(object):
             # retores 5 weight paths
             self.weights_paths = [
                 os.path.join(
-                    weights_dir, 'fold_' + str(fold), "best_weights",
-                    "variables", "variables"
+                    weights_dir,
+                    'fold_' + str(fold),
+                    "best_weights",
+                    "variables",
+                    "variables"
                 ) for fold in range(NUM_FOLDS)
             ]
         else:
@@ -66,8 +69,11 @@ class Evaluator(object):
             fold = split
             self.weights_paths = [
                 os.path.join(
-                    weights_dir, 'fold_' + str(fold), "best_weights",
-                    "variables", "variables"
+                    weights_dir,
+                    'fold_' + str(fold),
+                    "best_weights",
+                    "variables",
+                    "variables"
                 )
             ]
 
