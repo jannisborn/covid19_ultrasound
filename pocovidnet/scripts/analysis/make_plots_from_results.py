@@ -1,4 +1,4 @@
-from sklearn.metrics import roc_auc_score, precision_score, recall_score
+from sklearn.metrics import roc_auc_score, precision_score, recall_score, auc
 from sklearn.metrics import confusion_matrix
 import os
 import numpy as np
@@ -9,16 +9,16 @@ import pickle
 
 OUT_DIR = "../results_oct/plots"
 IN_DIR = "../results_oct/"
-BEST_MODEL = "base_new_3.dat"
+BEST_MODEL = "base_3.dat"
 
 compare_model_list = [
-    "base_new_3.dat", "cam_new_3.dat", "nasnet_new_3.dat", "encoding_3.dat",
+    "base_3.dat", "cam_3.dat", "nasnet_3.dat", "encoding_3.dat",
     "segmented_3.dat"
 ]
 name_dict = {
-    "base_new_3": "VGG",
-    "cam_new_3": "VGG-CAM",
-    "nasnet_new_3": "NASNetMobile",
+    "base_3": "VGG",
+    "cam_3": "VGG-CAM",
+    "nasnet_3": "NASNetMobile",
     "encoding_3": "Segment-Enc",
     "segmented_3": "VGG-Segment"
 }
@@ -217,8 +217,10 @@ for i in range(3):
 plt.xlim(-0.02, 1)
 plt.ylabel("$\\bf{Sensitivity}$", fontsize=20)
 plt.xlabel("$\\bf{False\ positive\ rate}$", fontsize=20)
+plt.xticks(fontsize=15)
+plt.yticks(fontsize=15)
 plt.legend(
-    fontsize=18, title="    $\\bf{Class}\ \\bf(ROC-AUC)}$"
+    fontsize=18, title="    $\\bf{Class}\ \\bf(AUC)}$"
 )  # "\n  $\\bf{(o:\ maximal\ accuracy)}$")
 plt.savefig(
     os.path.join(OUT_DIR, "roc_curve.pdf"),
@@ -234,10 +236,15 @@ plt.figure(figsize=(6, 5))
 plt.plot([1, 0], [0, 1], color='grey', lw=1.5, linestyle='--')
 for i in range(3):
     _, _, prec_mean, prec_std = data[i]
-    # prec_cleaned = prec[rec>0]
-    # rec_cleaned = rec[rec>0]
-    # s2_cleaned = s2[rec>0]
-    lab = classes[i]  # +" (%.2f"%scores[i]+"$\pm$"+str(roc_auc_std[i])+")"
+    prec_rec_auc = auc(base_eval_points, prec_mean)
+    auc_stdup = abs(auc(base_eval_points, prec_mean + prec_std) - prec_rec_auc)
+    auc_stddown = abs(
+        auc(base_eval_points, prec_mean + prec_std) - prec_rec_auc
+    )
+    # lab = classes[i]
+    lab = classes[i] + " (%.2f" % prec_rec_auc + "$\pm$" + str(
+        round(np.mean([auc_stdup, auc_stddown]), 2)
+    ) + ")"
     plt.plot(base_eval_points, prec_mean, 'k-', c=cols[i], label=lab, lw=3)
     plt.fill_between(
         base_eval_points,
@@ -248,10 +255,13 @@ for i in range(3):
     )
 plt.ylim(0, 1.03)
 plt.xlim(-0.02, 1)
+plt.xticks(fontsize=15)
+plt.yticks(fontsize=15)
 plt.ylabel("$\\bf{Precision}$", fontsize=20)
 plt.xlabel("$\\bf{Recall}$", fontsize=20)
 plt.legend(
-    fontsize=18, title="    $\\bf{Class}$"
+    fontsize=18,
+    title="    $\\bf{Class}\ \\bf(AUC)}$"  # "    $\\bf{Class}$"
 )  # "\n  $\\bf{(o:\ maximal\ accuracy)}$")
 # plt.title("$\\bf{ROC\ curves}$", fontsize=15)
 plt.savefig(
@@ -296,6 +306,8 @@ for CLASS in range(3):
         )
     plt.ylim(0, 1.01)
     plt.xlim(-0.02, 1)
+    plt.xticks(fontsize=15)
+    plt.yticks(fontsize=15)
     plt.ylabel("$\\bf{Sensitivity}$", fontsize=15)
     plt.xlabel("$\\bf{False\ positive\ rate}$", fontsize=15)
     plt.legend(
@@ -318,7 +330,20 @@ for CLASS in range(3):
             (saved_logits, saved_gt, saved_files) = pickle.load(outfile)
         data, max_points, scores, roc_auc_std = roc_auc(saved_logits, saved_gt)
         _, _, prec_mean, prec_std = data[CLASS]
-        lab = name_dict[model_data.split(".")[0]]
+        # lab = name_dict[model_data.split(".")[0]]
+        # compute auc
+        prec_rec_auc = auc(base_eval_points, prec_mean)
+        auc_stdup = abs(
+            auc(base_eval_points, prec_mean + prec_std) - prec_rec_auc
+        )
+        auc_stddown = abs(
+            auc(base_eval_points, prec_mean + prec_std) - prec_rec_auc
+        )
+        # define label
+        lab = name_dict[model_data.split(".")[0]
+                        ] + " (%.2f" % prec_rec_auc + "$\pm$" + str(
+                            round(np.mean([auc_stdup, auc_stddown]), 2)
+                        ) + ")"
         plt.plot(base_eval_points, prec_mean, 'k-', c=cols[i], label=lab, lw=3)
         plt.fill_between(
             base_eval_points,
@@ -329,9 +354,11 @@ for CLASS in range(3):
         )
     plt.ylim(0, 1.01)
     plt.xlim(-0.02, 1.02)
+    plt.xticks(fontsize=15)
+    plt.yticks(fontsize=15)
     plt.ylabel("$\\bf{Precision}$", fontsize=15)
     plt.xlabel("$\\bf{Recall}$", fontsize=15)
-    plt.legend(fontsize=15, title="    $\\bf{Model}}$")
+    plt.legend(fontsize=15, title="    $\\bf{Model}\ \\bf(AUC)}$")
 
     plt.savefig(
         os.path.join(OUT_DIR, "prec_rec_" + str(CLASS) + ".pdf"),

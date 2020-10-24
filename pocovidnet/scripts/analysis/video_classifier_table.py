@@ -6,13 +6,13 @@ import os
 import pandas as pd
 import numpy as np
 import json
-IN_DIR = "../results_oct/evaluation_outputs.dat"
+IN_DIR = "../models/evaluation_outputs_base.dat"
 OUT_DIR = "../results_oct"
 CROSS_VAL = "../../data/cross_val.json"
 
 with open(IN_DIR, "rb") as infile:
     vidbased, frame_based = pickle.load(infile)
-
+print(len(frame_based), frame_based[0].shape)
 with open(CROSS_VAL, "r") as infile:
     cross_val_split = json.load(infile)
 
@@ -42,54 +42,62 @@ def specificity(y_true, y_pred):
     return spec_out
 
 
+def summarize_votes(logits):
+    # option 1: mean
+    # return np.argmax(np.mean(logits_current, axis=0))
+    # option 2: majority vote
+    votes = np.argmax(logits_current, axis=1)
+    uni, counts = np.unique(votes, return_counts=True)
+    return uni[np.argmax(counts)]
+
+
 # define GT
 lab_dict = {"cov": 0, "pne": 1, "reg": 2}
 this_class = {"cov": "covid", "pne": "pneumonia", "reg": "regular"}
 saved_gt = []
-
+saved_files = []
 for i in range(5):
-    all_labels = []
+    all_labels, all_files = [], []
     files, labs = cross_val_split[str(i)]["test"]
     for j in range(len(files)):
-        if "Butterfly" not in files[j]:
-            assert os.path.exists(
-                os.path.join(
-                    "../data/cross_validation/split" + str(i),
-                    this_class[labs[j]], files[j] + "_frame0.jpg"
-                )
-            ), files[j] + "_" + str(i)
+        assert os.path.exists(
+            os.path.join(
+                "../../data/cross_validation/split" + str(i),
+                this_class[labs[j]], files[j] + "_frame0.jpg"
+            )
+        ), files[j] + " split: " + str(i)
         all_labels.append(lab_dict[labs[j]])
+        all_files.append(files[j])
     saved_gt.append(all_labels)
+    saved_files.append(all_files)
 
 # Evaluate
 for classifier, name in zip(
     [frame_based, vidbased], ["frame_based", "genesis_based"]
 ):
-
     saved_logits = [[] for _ in range(5)]
     split_counter = 0
-    frame_counter = len(saved_gt[0])
     for vid_ind in range(len(vidbased)):
-        # print(frame_based[vid_ind].shape)
-        # print(vid_ind, split_counter)
-        saved_logits[split_counter].append(
-            np.argmax(np.mean(classifier[vid_ind], axis=0))
-        )
+        if name == "genesis_based":
+            logits_current = classifier[vid_ind][0]
+        else:
+            logits_current = classifier[vid_ind]
+        saved_logits[split_counter].append(summarize_votes(logits_current))
+
         if len(saved_logits[split_counter]) == len(saved_gt[split_counter]):
-            # next cross val split
-            # print(vid_ind, len(saved_gt[split_counter]), split_counter)
-            frame_counter += len(saved_gt[split_counter])
             split_counter += 1
-    assert len(saved_logits[2]) == len(saved_gt[2])
+    assert len(saved_logits[4]) == len(
+        saved_gt[4]
+    ), "more files in json than in logits - check for errornous files in eval"
 
     all_reports = []
     accs = []
     bal_accs = []
     for s in range(5):
         gt_s = saved_gt[s]
-        print(len(gt_s), saved_logits[s])
-        pred_idx_s = saved_logits[
-            s]  # np.argmax(np.array(saved_logits[s]), axis=1)
+        pred_idx_s = np.array(saved_logits[s])
+        # get rid of uninformatives in video classification
+        pred_idx_s[pred_idx_s == 3] = 2
         report = classification_report(
             gt_s, pred_idx_s, target_names=CLASSES, output_dict=True
         )
@@ -103,11 +111,7 @@ for classifier, name in zip(
         df["accuracy"] = [report["accuracy"] for _ in range(len(df))]
         bal = balanced_accuracy_score(gt_s, pred_idx_s)
         df["balanced"] = [bal for _ in range(len(df))]
-        # df["video"] = vid_accs[s]
-        # df["video_balanced"] = vid_accs_bal[s]
-        # print(df[:len(CLASSES)])
-        #print(report["accuracy"])
-        # print(np.array(df)[:3,:])
+
         accs.append(report["accuracy"])
         bal_accs.append(balanced_accuracy_score(gt_s, pred_idx_s))
         # df = np.array(report)

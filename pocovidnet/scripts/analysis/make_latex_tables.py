@@ -2,13 +2,12 @@ import os
 import pandas as pd
 
 # Define paths to results files
-base_dir = "../../results_oct/"
+base_dir = "../results_oct/"
 models_to_evaluate = [
-    "base_new", "cam_new", "nasnet_new", "encoding", "segmented"
+    "frame_based_3", "genesis_based_3"
+    # "base_3", "cam_3", "nasnet_3", "encoding_3", "segmented_3"
 ]
-vid_models_to_evaluate = [
-    "frame_based_video_evaluation", "vid_based_video_evaluation"
-]
+vid_models_to_evaluate = ["frame_based_3", "genesis_based_3"]
 
 print()
 print("---------------------------------")
@@ -24,8 +23,8 @@ for model in models_to_evaluate:
         std_row = std_table.loc[i]
         if i == 0:
             print(
-                round(row["Accuracy"], 2), std_row["Accuracy"],
-                row["Balanced"], std_row["Balanced"]
+                round(row["Accuracy"], 3), std_row["Accuracy"],
+                row["Balanced"], round(std_row["Balanced"], 3)
             )
         print(
             "&",
@@ -46,26 +45,7 @@ for model in models_to_evaluate:
             round(row["Specificity"], 2),
             "\\pm {\scriptstyle",
             std_row["Specificity"],
-            "}$ & $",
+            "}$",
         )
         # round(row["MCC"], 2),
         # "\\pm {\scriptstyle", std_row["MCC"], "} $ \\\\"
-print()
-print("---------------------------------")
-print("VIDEO EVALUATION")
-print("---------------------------------")
-
-class_map2 = {0: "COVID-19", 1: "Pneumonia", 2: "Healthy"}
-for model in vid_models_to_evaluate:
-    mean_table = pd.read_csv(os.path.join(base_dir, model + ".csv"))
-    print("----------", model)
-    for i, row in mean_table.iterrows():
-        std_row = std_table.loc[i]
-        print(row["Accuracy"], row["Balanced"])
-
-        # WO standard deviation
-        print(
-            "&", class_map2[i], "&", row["recall"], "&", row["precision"], "&",
-            row["f1-score"], "&", row["Specificity"], "\\\\"
-        )
-        # "&", row["MCC"],
