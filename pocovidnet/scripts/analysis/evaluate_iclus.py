@@ -95,7 +95,7 @@ for subfolder in os.listdir(args.data_dir):
     for vid in os.listdir(os.path.join(args.data_dir, subfolder)):
         vid_id = vid.split(".")[0]
         if vid.startswith(".") or os.path.exists(
-            os.path.join(out_iclus_data, "cam_" + vid_id + ".npy")
+            os.path.join(out_iclus_data, "pred_" + vid_id + ".npy")
         ):
             print("already done", vid)
             continue
@@ -137,7 +137,7 @@ for subfolder in os.listdir(args.data_dir):
         np.save(os.path.join(out_iclus_data, "pred_" + vid_id + ".npy"), preds)
         plt.imshow(evaluator.image_arr[10])
         plt.savefig(
-            os.path.join(out_iclus_data, "pred_", vid_id + "example_img.png")
+            os.path.join(out_iclus_data, "pred_" + vid_id + "example_img.png")
         )
         print("saved predictions")
         pred_plot(preds, os.path.join(out_iclus_data, "pred_" + vid_id))
