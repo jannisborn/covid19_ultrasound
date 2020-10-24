@@ -1,11 +1,10 @@
 # COVID-19 Ultrasound data
 
 We build a dataset of lung ultrasound images and videos. The dataset is
-assembled from publicly available resources in the web as well as from publications.
+assembled from donations from hospitals as well as publicly available resources from the web (mostly publications and educational websites).
 
 
 ## Contribute!
-- You can donate your lung ultrasound recordings directly on our website: [](https://pocovidscreen.org)
 - Please help us to find more data! Open an
   [issue](https://github.com/jannisborn/covid19_pocus_ultrasound/issues) if you
   identified a promising data source. Please check [here](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) in our Google sheet whether the data is already included. Useful contributions are:
@@ -18,7 +17,8 @@ assembled from publicly available resources in the web as well as from publicati
       - https://radiopaedia.org/
       - https://grepmed.com
       - https://litfl.com/ultrasound-library/
-  
+- You can donate your lung ultrasound recordings directly on our website: [](https://pocovidscreen.org)
+
 ## Current dataset size (October 2020)
 - Convex:
   - 162 videos (45x COVID, 49x bacterial pneumonia, 65x healthy, 3x viral pneumonia)
@@ -48,7 +48,7 @@ For more information and comments by medical experts, see our [metadata](https:/
 
 Unfortunately, not all data used to train/evaluate the model is in this repo
 as we do not have the right to host/distribute the data from
-[Butterfly](https://butterflynetwork.com) and [ICLUS](https://iclus-web.bluetensor.ai/login/?next=/).
+[Butterfly](https://butterflynetwork.com).
 
 However, we **provide a script that automatically processes the data from Butterfly**. To reproduce
 the experiments from the paper, please first complete the following steps:
@@ -264,14 +264,14 @@ Also, we obtained videos and images from publications on ultrasound, and we appr
 ```
 
 ## Citation
-The paper is available [here](https://arxiv.org/abs/2004.12084).
+The paper is available [here](https://arxiv.org/abs/2009.06116).
 
 If you build upon our work or find it useful, please cite our paper:
 ```bib
-@article{born2020pocovid,
-  title={POCOVID-Net: Automatic Detection of COVID-19 From a New Lung Ultrasound Imaging Dataset (POCUS)},
-  author={Born, Jannis and Br{\"a}ndle, Gabriel and Cossio, Manuel and Disdier, Marion and Goulet, Julie and Roulin, J{\'e}r{\'e}mie and Wiedemann, Nina},
-  journal={arXiv preprint arXiv:2004.12084},
+@article{born2020accelerating,
+  title={Accelerating COVID-19 Differential Diagnosis with Explainable Ultrasound Image Analysis},
+  author={Born, Jannis and Wiedemann, Nina and Br{\"a}ndle, Gabriel and Buhre, Charlotte and Rieck, Bastian and Borgwardt, Karsten},
+  journal={arXiv preprint arXiv:2009.06116},
   year={2020}
 }
 ```
