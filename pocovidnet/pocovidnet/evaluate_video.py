@@ -273,9 +273,7 @@ class VideoEvaluator(Evaluator):
 
         # get classification result
         pred_idx = np.argmax(logits_mean)
-        classes = ["covid", "pneumonia", "regular", 'uninformative']
-        pred_class = classes[pred_idx]
 
         precision = confidence_to_precision(logits_stds[pred_idx])
 
-        return precision, pred_class
+        return precision, pred_idx
