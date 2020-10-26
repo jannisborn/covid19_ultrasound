@@ -78,10 +78,6 @@ if args.uncertain:
 out_iclus_data = args.output_dir
 
 # set cropping
-bottom = 70
-top = 570
-left = 470
-right = 970
 
 with open(os.path.join(args.data_dir, 'ICLUS_cropping.json'), "r") as infile:
     frame_cut = json.load(infile)
@@ -99,9 +95,7 @@ for subfolder in os.listdir(args.data_dir):
         ):
             print("already done", vid)
             continue
-        crop = [bottom, top, left, right]
-        if vid_id in [2, 5, 34, 36, 46]:
-            crop = frame_cut[vid_id]
+        crop = frame_cut[vid_id]
         print("process next file ", vid_id, crop)
 
         # set crop in evaluator
