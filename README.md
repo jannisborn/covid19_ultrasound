@@ -59,30 +59,28 @@ The lung is normally aerated with horizontal A-lines.</em>
 
 
 ## Contribute!
-- You can donate your lung ultrasound recordings directly on our website: [https://pocovidscreen.org](https://pocovidscreen.org)
 - Please help us to find more data! Open an
   [issue](https://github.com/jannisborn/covid19_pocus_ultrasound/issues) if you
   identified a promising data source. Please check [here](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) whether the data is
   already included. Useful contributions are:
-   - Publications with ultrasound images/videos
+   - Publications with ultrasound recordings
    - Images/Videos that are available via Creative Commens license (e.g. CC
      BY-NC-SA) in the web or on YouTube.
    - Possible sources are:
       - https://thepocusatlas.com
       - https://radiopaedia.org/
       - https://grepmed.com 
-- We are mostly looking for *healthy* lung recordings (at the moment we have *more* data for COVID than for healthy
-  lungs)
+- You can donate your lung ultrasound recordings directly on our website: [https://pocovidscreen.org](https://pocovidscreen.org)
 
 
 ## Learn more about the project
-
-- [**Read our full arXiv manuscript**](https://arxiv.org/abs/2004.12084)
+- [**Read our new manuscript**](https://arxiv.org/abs/2004.12084)
 - Web Interface ([https://pocovidscreen.org](https://pocovidscreen.org))
 - Read our [blogpost](https://towardsdatascience.com/ultrasound-for-covid-19-a-deep-learning-approach-f7906002892a)
 - [DevPost](https://devpost.com/software/automatic-detection-of-covid-19-from-pocus-ultrasound-data)   
 - Watch this [video](https://www.youtube.com/watch?v=qOayWwYTPOs) (3min pitch)
-
+- [Here](https://arxiv.org/abs/2004.12084) is our first manuscript from spring, *POCOVID-Net*.
+  
 ## Installation 
 
 ### Ultrasound data
@@ -115,7 +113,7 @@ Detailed performances:
 
 
 ## Citation
-The paper is available [here](https://arxiv.org/abs/2004.12084).
+The paper is available [here](https://arxiv.org/abs/2009.06116).
 
 If you build upon our work or find it useful, please cite our paper:
 ```bib

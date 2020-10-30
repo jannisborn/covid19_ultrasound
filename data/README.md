@@ -21,11 +21,11 @@ assembled from donations from hospitals as well as publicly available resources 
 
 ## Current dataset size (October 2020)
 - Convex:
-  - 162 videos (45x COVID, 49x bacterial pneumonia, 65x healthy, 3x viral pneumonia)
+  - 162 videos (46x COVID, 49x bacterial pneumonia, 64x healthy, 3x viral pneumonia)
   - 20 videos from the Butterfly dataset (18 COVID, 2 healthy, see below how to use the provided scripts to process the data)
   - 53 images (18x COVID, 20x bacterial pneumonia, 15x healthy)
 - Linear:
-  - 20 videos (5x COVID, 2x bacterial pneumonia, 10x healthy, 3x viral pneumonia)
+  - 20 videos (6x COVID, 2x bacterial pneumonia, 9x healthy, 3x viral pneumonia)
   - 6 images (4x COVID, 2x bacterial pneumonia)
   - 45 videos of *possible* COVID-19 patients collected in Piacenza at the peak of the crisis in Italy; there were not enough PCR tests available, so the label is not clear
 For more information and comments by medical experts, see our [metadata](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) sheet or metadata [csv](dataset_metadata.csv).
@@ -33,6 +33,7 @@ For more information and comments by medical experts, see our [metadata](https:/
 - We are constantly updating the dataset with new data - any contributions are appreciated!
 
 ## Updates
+- **24.10.2020**: Dataset metadata (patient age, gender, symptoms, ID, etc.) included (see #58).
 - **26.9.2020**: Major update to the database: 30 videos from Dr Avinash Aujayeb from Northumbria, and 45 linear videos of COVID-19 patients sponsored by Bolzano AG
 - **25.8.2020**: Update - added 10 new videos from the Northumbria hospital
 - **12.8.2020**: Update - added 14 new COVID videos from publications
@@ -108,7 +109,7 @@ Also, we obtained videos and images from publications on ultrasound, and we appr
 * 2 videos (healthy and pneumonia) from [@bouhemad2007clinical] - [Clinical review: Bedside lung ultrasound in critical care practice](https://link.springer.com/article/10.1186/cc5668#Abs1)
 * 3 COVID-19 images from [@lomoro2020covid] - [COVID-19 pneumonia manifestations at the admission on chest ultrasound, radiographs, and CT: single-center study and comprehensive radiologic literature review](https://www.sciencedirect.com/science/article/pii/S2352047720300204)
 * 2 viral pneumonia videos (H1N1) from [@testa2012early] - [Early recognition of the 2009 pandemic influenza A (H1N1) pneumonia by chest ultrasound](https://link.springer.com/article/10.1186/cc11201)
-* 1 healthy and 7 COVID-19 videos from [@yassa2020lung] - [Lung Ultrasound Can Influence the Clinical Treatment of Pregnant Women With COVID ‐19](https://onlinelibrary.wiley.com/doi/full/10.1002/jum.15367#jum15367-fig-0001)
+* 8 COVID-19 videos from [@yassa2020lung] - [Lung Ultrasound Can Influence the Clinical Treatment of Pregnant Women With COVID ‐19](https://onlinelibrary.wiley.com/doi/full/10.1002/jum.15367#jum15367-fig-0001)
 * 2 healthy and 1 viral image from [@stadler2017lung] - [Lung ultrasound for the diagnosis of community-acquired pneumonia in children](https://link.springer.com/content/pdf/10.1007/s00247-017-3910-1.pdf)
 * 1 healthy and 2 regular images from [@reissig2014lung] - [Lung Ultrasound in Community-Acquired Pneumonia and in Interstitial Lung Diseases](https://www.karger.com/Article/Pdf/357449)
 * 4 pneumonia images from [@claes2017performance] - [Performance of chest ultrasound in pediatric pneumonia](https://www.sciencedirect.com/science/article/pii/S0720048X16304260?casa_token=W82e3087RfcAAAAA:plbCnRIJAeD9tj369F72kUDp0vChQMU9CwO0pBJvd6_RKsTSozgLFdPijaG4sFM7m5Auov988b4)
@@ -260,6 +261,15 @@ Also, we obtained videos and images from publications on ultrasound, and we appr
   pages={1--5},
   year={2020},
   publisher={Springer}
+}
+@article{rogoza2016usefulness,
+  title={Usefulness of lung ultrasound in diagnosing causes of exacerbation in patients with chronic dyspnea},
+  author={Rogoza, Katarzyna and Kosiak, Wojciech},
+  journal={Advances in Respiratory Medicine},
+  volume={84},
+  number={1},
+  pages={38--46},
+  year={2016}
 }
 ```
 
