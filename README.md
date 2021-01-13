@@ -5,7 +5,7 @@
 ## Summary
 
 ### News
-This repo contains the code for the paper `Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis` which is now [available](https://www.mdpi.com/2076-3417/11/2/672). Please [cite](#Citation) that one instead of our preprints.
+This repo contains the code for the paper `Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis` which is now [available](https://www.mdpi.com/2076-3417/11/2/672). Please [cite](#Citation) that one instead of our preprint.
 
 ### Goal
 This is an ongoing ultrasound data collection initiative for COVID-19. Please help growing the [database](data/README.md).
@@ -32,17 +32,12 @@ Using model uncertainty techniques, we can further boost model performance and f
 Our dataset complements the current data collection initiaves that only focus
 on CT or X-Ray data. 
 
-
-#### Recommended reading on lung US for COVID-19
-Ultrasound data was shown to be highly
-[**correlated with CT**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7165267/), the gold standard for lung diseases. Instead of CT,
-ultrasound is **non-invasive**, **cheap**, **portable** (bedside execution),
+#### Evidence for ultrasound
+Ultrasound is **non-invasive**, **cheap**, **portable** (bedside execution),
 **repeatable** and **available in almost all medical facilities**. But even for
-trained doctors detecting COVID-19 from ultrasound data is challenging and
+trained doctors detecting patterns of COVID-19 from ultrasound data is challenging and
 time-consuming. Since their time is scarce, there is an urgent need to simplify,
 fasten & automatize the detection of COVID-19.
-
-#### Evidence for ultrasound
    - [LUS is more sensitive than X-Ray in diagnosing COVID-19](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7390587/) 
    - [COVID-19 outbreak: less stethoscope, more ultrasound](https://www.thelancet.com/journals/lanres/article/PIIS2213-2600(20)30120-X/fulltext?fbclid=IwAR2kDbxpYTSjoj3Nl_B-nOhLZL66mQLUBVBCdzn6zEG5ObLKq9oXhPZDXHQ)
    - Ultrasound can evidence the same symptoms as CT: ([Point-by-point correspondance of CT
