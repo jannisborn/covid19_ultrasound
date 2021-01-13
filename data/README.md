@@ -31,7 +31,10 @@ We build a dataset of lung ultrasound images and videos. The dataset is assemble
   - 45 videos of *possible* COVID-19 patients collected in Piacenza at the peak of the crisis in Italy; there were not enough PCR tests available, so the label is not clear.
 
 ### Statistics on symptoms and LUS patterns
-<img src="https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/pathologies.png" width="300"/> <img src="ttps://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/symptoms.png" width="300"/>
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+<img src="https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/pathologies.png" width="400"/>  |  <img src="ttps://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/symptoms.png" width="400"/>
+
 
 For more information and comments by medical experts, see our [metadata](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) sheet or metadata [csv](dataset_metadata.csv).
 The dataset is continuously updated.

@@ -16,7 +16,7 @@ Feel free to use (and cite) our dataset. We currently have >200 LUS videos. For 
 
 ## Contribution
 <p align="center">
-	<img src="pocovidnet/plots/overview.png" alt="photo not available" width="70%" height="70%">
+	<img src="pocovidnet/plots/overview.png" alt="photo not available" width="100%" height="100%">
 	<br>
    <em>Overview figure about current efforts. Public dataset consists of >200 LUS videos.</em>
 </p>
