@@ -1,5 +1,6 @@
 # pocovidnet
-[![Build Status](https://travis-ci.com/jannisborn/covid19_pocus_ultrasound.svg?branch=master)](https://travis-ci.com/jannisborn/covid19_pocus_ultrasound)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Build Status](https://travis-ci.com/BorgwardtLab/covid19_ultrasound.svg?branch=master)](https://travis-ci.com/BorgwardtLab/covid19_ultrasound)
 A simple package to train deep learning models on ultrasound data for COVID19.
 
 ## Installation
@@ -9,23 +10,12 @@ The library itself has few dependencies (see [setup.py](setup.py)) with loose re
 To run the code, just install the package `pocovidnet` in editable mode:
 
 ```sh
-git clone https://github.com/jannisborn/covid19_pocus_ultrasound.git
-cd covid19_pocus_ultrasound/pocovidnet/
+git clone https://github.com/BorgwardtLab/covid19_ultrasound.git
+cd covid19_ultrasound/pocovidnet/
 pip install -e .
 ```
 
 ## Training the model
-
-*NOTE*: The repository is constantly updated with new data. If you want to
-reproduce the results of our paper, use the repo's state of the `arxiv` tag:
-```sh
-git checkout tags/arxiv
-```
-Then, please follow the instructions of the `README.md` *at that state* (see
-[here](https://github.com/jannisborn/covid19_pocus_ultrasound/tree/6c74e05b5f4ccdf96485eb5030035775d5f5c895/pocovidnet)).
-
-If you want to use the latest version of the database, read below:
-
 ### Add butterfly data
 
 *NOTE*: The vast majority of data we gathered thus far is available in the 
@@ -117,20 +107,8 @@ python scripts/video_classification.py --output models --fold 0 --epoch 40
 
 The models will be saved to the directory specified in the `output` flag.
 
-## Our results (`POCOVID-Net`)
-
-Current results (5-fold CV) are
-
-| Model                  | Accuracy  |      Balanced | 
-| ------------------ |---------------- | -------------- |
-| VGG  |     89.7%  +- 5%       |      89.6% +- 5%
-| VGG-CAM  |     89.5% +-2%     |      88.1%  +- 3% 
-| NASNetMobile  |     75.7% +-9%     |      71.1%  +- 7% 
-
-![alt text](https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/confusion_matrix.png "Confusion matrix")
-
-Detailed performances:
-![alt text](https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/result_table.png "Result table")
+## Our results 
+To see our results, please have a look at our [paper](https://www.mdpi.com/2076-3417/11/2/672).
 
 ### Pretrained models
 To access the pre-trained models, have a look [here](https://drive.google.com/drive/folders/1c_B4V-Ejs45pVyl1QNPEXgT4_Kg0o-Lt). The default configuration in the evaluation class `Evaluator` in `evaluate_covid19.py` uses the `vgg_base` model which is stored in the Google Drive folder `trained_models_vgg`. You can place the 5 folders named `fold_1` ... `fold_5` into `pocovidnet/trained_models` and should be ready to go to use the `Evaluator` class.
@@ -143,15 +121,22 @@ To access the pre-trained models, have a look [here](https://drive.google.com/dr
 
 
 # Citation
+The paper is available in [Applied Sciences](https://www.mdpi.com/2076-3417/11/2/672).
+Please cite this one in favor of our deprecated [POCOVID-Net preprint](https://arxiv.org/abs/2004.12084).
 
-The paper is available [here](https://arxiv.org/abs/2004.12084).
-
-If you build upon our work or find it useful, please cite our paper:
+Please use the following bibtex entry:
 ```bib
-@article{born2020pocovid,
-  title={POCOVID-Net: Automatic Detection of COVID-19 From a New Lung Ultrasound Imaging Dataset (POCUS)},
-  author={Born, Jannis and Br{\"a}ndle, Gabriel and Cossio, Manuel and Disdier, Marion and Goulet, Julie and Roulin, J{\'e}r{\'e}mie and Wiedemann, Nina},
-  journal={arXiv preprint arXiv:2004.12084},
-  year={2020}
+@article{born2021accelerating,
+title={Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis}, 
+volume={11}, ISSN={2076-3417}, 
+url={http://dx.doi.org/10.3390/app11020672}, 
+DOI={10.3390/app11020672}, 
+number={2}, 
+journal={Applied Sciences}, 
+publisher={MDPI AG}, 
+author={Born, Jannis and Wiedemann, Nina and Cossio, Manuel and Buhre, Charlotte and Brändle, Gabriel and Leidermann, Konstantin and Aujayeb, Avinash and Moor, Michael and Rieck, Bastian and Borgwardt, Karsten}, 
+year={2021}, 
+month={Jan}, 
+pages={672}
 }
 ```

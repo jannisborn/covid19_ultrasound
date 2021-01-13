@@ -15,7 +15,7 @@ We build a dataset of lung ultrasound images and videos. The dataset is assemble
 
 ## Current dataset size (January 2021)
 <p align="center">
-	<img src="../pocovidnet/plots/dataset.png" alt="photo not available" width="70%" height="70%">
+	<img src="../pocovidnet/plots/dataset.png" alt="photo not available" width="60%" height="60%">
 	<br>
    <em>Current size of the dataset. Most samples use the convex probe. To our knowledge, 
    this is the largest public source of COVID-19 LUS data. 
@@ -31,11 +31,7 @@ We build a dataset of lung ultrasound images and videos. The dataset is assemble
   - 45 videos of *possible* COVID-19 patients collected in Piacenza at the peak of the crisis in Italy; there were not enough PCR tests available, so the label is not clear.
 
 ### Statistics on symptoms and LUS patterns
-LUS pathologies            |  Symptoms
-:-------------------------:|:-------------------------:
-![alt text](https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/pathologies.png "LUS Pathologies")
-|
-![alt text](https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/symptoms.png "Patient symptoms")
+<img src="https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/pathologies.png" width="300"/> <img src="ttps://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/symptoms.png" width="300"/>
 
 For more information and comments by medical experts, see our [metadata](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) sheet or metadata [csv](dataset_metadata.csv).
 The dataset is continuously updated.
