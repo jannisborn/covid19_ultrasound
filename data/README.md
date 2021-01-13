@@ -1,38 +1,46 @@
-# COVID-19 Ultrasound data
+# COVID-19 Lung ultrasound dataset
 
-We build a dataset of lung ultrasound images and videos. The dataset is
-assembled from donations from hospitals as well as publicly available resources from the web (mostly publications and educational websites).
+We build a dataset of lung ultrasound images and videos. The dataset is assembled from collaborating hospitals as well as publicly available resources from the web (e.g. publications and educational websites).
 
 
 ## Contribute!
 - Please help us to find more data! Open an
   [issue](https://github.com/jannisborn/covid19_pocus_ultrasound/issues) if you
-  identified a promising data source. Please check [here](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) in our Google sheet whether the data is already included. Useful contributions are:
-   - Publications with ultrasound images/videos
+  identified a promising data source. Please check [here](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) whether the data is already included. Useful contributions are:
+   - Publications with ultrasound videos
       - check sheet *image_data_publications* in the goole sheet linked above to see whether a publication was already added
-   - Images/Videos that are available via Creative Commens license (e.g. CC
+   - Videos that are available via Creative Commens license (e.g. CC
      BY-NC-SA) in the web or on YouTube.
-   - Possible sources are:
-      - https://thepocusatlas.com
-      - https://radiopaedia.org/
-      - https://grepmed.com
-      - https://litfl.com/ultrasound-library/
-- You can donate your lung ultrasound recordings directly on our website: [](https://pocovidscreen.org)
+   - Possible sources are: [The Pocus Atlas](https://thepocusatlas.com), [Radiopaedia](https://radiopaedia.org/), [GrepMed](https://grepmed.com) and [Liftl](https://litfl.com/ultrasound-library/).
 
-## Current dataset size (October 2020)
+## Current dataset size (January 2021)
+<p align="center">
+	<img src="../pocovidnet/plots/dataset.png" alt="photo not available" width="70%" height="70%">
+	<br>
+   <em>Current size of the dataset. Most samples use the convex probe. To our knowledge, 
+   this is the largest public source of COVID-19 LUS data. 
+   More data on non-COVID-19 viral pneumonia is urgently needed.</em>
+</p>
 - Convex:
-  - 162 videos (46x COVID, 49x bacterial pneumonia, 64x healthy, 3x viral pneumonia)
-  - 20 videos from the Butterfly dataset (18 COVID, 2 healthy, see below how to use the provided scripts to process the data)
-  - 53 images (18x COVID, 20x bacterial pneumonia, 15x healthy)
+  - 162 videos (46x COVID, 49x bacterial pneumonia, 64x healthy, 3x viral pneumonia).
+  - 20 videos from the Butterfly dataset (18 COVID, 2 healthy, see below how to use the provided scripts to process the data).
+  - 53 images (18x COVID, 20x bacterial pneumonia, 15x healthy).
 - Linear:
-  - 20 videos (6x COVID, 2x bacterial pneumonia, 9x healthy, 3x viral pneumonia)
-  - 6 images (4x COVID, 2x bacterial pneumonia)
-  - 45 videos of *possible* COVID-19 patients collected in Piacenza at the peak of the crisis in Italy; there were not enough PCR tests available, so the label is not clear
+  - 20 videos (6x COVID, 2x bacterial pneumonia, 9x healthy, 3x viral pneumonia).
+  - 6 images (4x COVID, 2x bacterial pneumonia).
+  - 45 videos of *possible* COVID-19 patients collected in Piacenza at the peak of the crisis in Italy; there were not enough PCR tests available, so the label is not clear.
+
+### Statistics on symptoms and LUS patterns
+LUS pathologies            |  Symptoms
+:-------------------------:|:-------------------------:
+![alt text](https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/pathologies.png "LUS Pathologies")
+|
+![alt text](https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/symptoms.png "Patient symptoms")
+
 For more information and comments by medical experts, see our [metadata](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) sheet or metadata [csv](dataset_metadata.csv).
+The dataset is continuously updated.
 
-- We are constantly updating the dataset with new data - any contributions are appreciated!
-
-## Updates
+### Updates
 - **24.10.2020**: Dataset metadata (patient age, gender, symptoms, ID, etc.) included (see #58).
 - **26.9.2020**: Major update to the database: 30 videos from Dr Avinash Aujayeb from Northumbria, and 45 linear videos of COVID-19 patients sponsored by Bolzano AG
 - **25.8.2020**: Update - added 10 new videos from the Northumbria hospital
@@ -273,15 +281,23 @@ Also, we obtained videos and images from publications on ultrasound, and we appr
 }
 ```
 
-## Citation
-The paper is available [here](https://arxiv.org/abs/2009.06116).
+# Citation
+Our paper is available in [Applied Sciences](https://www.mdpi.com/2076-3417/11/2/672).
+Please cite this one in favor of our deprecated [POCOVID-Net preprint](https://arxiv.org/abs/2004.12084).
 
-If you build upon our work or find it useful, please cite our paper:
+Please use the following bibtex entry:
 ```bib
-@article{born2020accelerating,
-  title={Accelerating COVID-19 Differential Diagnosis with Explainable Ultrasound Image Analysis},
-  author={Born, Jannis and Wiedemann, Nina and Br{\"a}ndle, Gabriel and Buhre, Charlotte and Rieck, Bastian and Borgwardt, Karsten},
-  journal={arXiv preprint arXiv:2009.06116},
-  year={2020}
+@article{born2021accelerating,
+title={Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis}, 
+volume={11}, ISSN={2076-3417}, 
+url={http://dx.doi.org/10.3390/app11020672}, 
+DOI={10.3390/app11020672}, 
+number={2}, 
+journal={Applied Sciences}, 
+publisher={MDPI AG}, 
+author={Born, Jannis and Wiedemann, Nina and Cossio, Manuel and Buhre, Charlotte and Brändle, Gabriel and Leidermann, Konstantin and Aujayeb, Avinash and Moor, Michael and Rieck, Bastian and Borgwardt, Karsten}, 
+year={2021}, 
+month={Jan}, 
+pages={672}
 }
 ```
