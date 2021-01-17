@@ -17,14 +17,20 @@ pip install -e .
 ```
 
 ## Training the model
-### Add butterfly data
+### Set up database
+A lot of data is directly provided in this repository in the [data folder](../data).
 
-*NOTE*: The vast majority of data we gathered thus far is available in the 
-[data folder](../data).
-But unfortunately, not all data used to train/evaluate the model is in this repo
-as we do not have the right to host/distribute the data from
+#### Web data
+Parts of our database are videos/images from online sources that are not licensed for redistribution. This includes publications with restrictive licenses (e.g. from Elsevier) or data from commercial websites. These samples are not provided within our repo but we provide a script to download and preprocess this data automatically:
+```sh
+cd ../data
+sh get_and_process_web_data.sh
+```
+This will take a while, but afterwards more data will be in the [data folder](../data).
+
+#### Butterfly ddata
+We also do not have the right to host/distribute the data from
 [Butterfly](https://butterflynetwork.com).
-
 However, we provide a script that automatically processes the data. To reproduce
 the experiments from the paper, please first complete the following steps:
 
@@ -128,16 +134,16 @@ Please cite this one in favor of our deprecated [POCOVID-Net preprint](https://a
 Please use the following bibtex entry:
 ```bib
 @article{born2021accelerating,
-title={Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis}, 
-volume={11}, ISSN={2076-3417}, 
-url={http://dx.doi.org/10.3390/app11020672}, 
-DOI={10.3390/app11020672}, 
-number={2}, 
-journal={Applied Sciences}, 
-publisher={MDPI AG}, 
-author={Born, Jannis and Wiedemann, Nina and Cossio, Manuel and Buhre, Charlotte and Brändle, Gabriel and Leidermann, Konstantin and Aujayeb, Avinash and Moor, Michael and Rieck, Bastian and Borgwardt, Karsten}, 
-year={2021}, 
-month={Jan}, 
-pages={672}
+  title={Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis}, 
+  author={Born, Jannis and Wiedemann, Nina and Cossio, Manuel and Buhre, Charlotte and Brändle, Gabriel and Leidermann, Konstantin and      Aujayeb, Avinash and Moor, Michael and Rieck, Bastian and Borgwardt, Karsten}, 
+  volume={11}, ISSN={2076-3417}, 
+  url={http://dx.doi.org/10.3390/app11020672}, 
+  DOI={10.3390/app11020672}, 
+  number={2}, 
+  journal={Applied Sciences}, 
+  publisher={MDPI AG}, 
+  year={2021}, 
+  month={Jan}, 
+  pages={672}
 }
 ```

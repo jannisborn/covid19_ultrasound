@@ -21,6 +21,7 @@ We build a dataset of lung ultrasound images and videos. The dataset is assemble
    this is the largest public source of COVID-19 LUS data. 
    More data on non-COVID-19 viral pneumonia is urgently needed.</em>
 </p>
+
 - Convex:
   - 162 videos (46x COVID, 49x bacterial pneumonia, 64x healthy, 3x viral pneumonia).
   - 20 videos from the Butterfly dataset (18 COVID, 2 healthy, see below how to use the provided scripts to process the data).
@@ -79,13 +80,10 @@ All butterfly videos should have be added to `data/pocus_videos/convex`.
 
 
 ## Add class "uninformative"
-In the current state, a user could input any image, e.g. of a house, and still receive a classification result as covid / pneumonia / healthy.
+In the current state, a user could input any image, e.g. of a house, and still receive a classification result as COVID-19 / pneumonia / healthy.
 In order to prevent this, we decided to include a fourth class called "uninformative", where we add Imagenet images and neck-ultrasound data from the Kaggle Nerve Segmentation Challenge.
-
 Download the data [here](https://drive.google.com/open?id=1bAbCJCq-U5vIxbG0ySUKanAW_pW_z2O4) from google drive. It contains a folder *uniform_class_nerves* and one *uniform_class_imagenet*.
-
 The data can be immediately used for training, simply combine it in a folder *uninformative* next to the *covid*, *pneumonia* and *regular* folders.
-
 If you want to add them to an existing cross validation split (e.g after executing [cross_val_splitter](../pocovidnet/scripts/cross_val_splitter.py)), we also provide a script:
 
 Run:
@@ -96,17 +94,31 @@ python ../pocovidnet/scripts/add_uninformative_class.py -i uniform_class_imagene
 This script will split the data in the *uniform_class_nerves* and *uniform_class_imagenet* folders and add them in a folder *uninformative* to each fold.
 
 ## License Note:
-Most data here is available under [Creative Commons
-License](https://creativecommons.org/licenses/by-nc/4.0/).
-The following modifcations to videos/images were done:
-- Cropped to the center to remove measuring bars, text etc.
-- Removal of artifcats on the sample (few cases only)
+*NOTE* For every source of this dataset, individual licenses apply. Users have the responsibility to verify whether the individual licenses allow the desired usage. We assume no liability for any of such cases. We are further not responsibe or liable for the proper collection of datasources contributed in this repository.
+
+
+### Neuruppin and Northumbria data
+All participants consented to be included in the study and agreed to their data being distributed. The data from Neuruppin is licensed under [`CC BY 4.0`](https://creativecommons.org/licenses/by/4.0/). The data contributed from Northumbria hospital is licensedd under *soon to come*.
+
+### Scraped data
+All videos/images provided in this repo which were collected from public sources have a license specified in the `dataset_metadata.csv`.
+We provide links to the respective licenses and indicate whether (and which) changes were made.
+
+
+#### Unlicensed data
+Some data used in our [study](https://www.mdpi.com/2076-3417/11/2/672) was obtained from public sources, but cant be redistributed on this repository due to licensing restrictions. We therefore provide a script `get_and_process_web_data.sh` which users can use to download the data and process it for inclusion and reproduction of our study. The provided script only works on Unix distributions (**not on Windowns!**) and requires that you have python3 installed.
+
+```sh
+get_and_process_web_data.sh
+```
+After executing this script, a lot of data will have been added into your local `pocus_images` and `pocus_videos` folder.
+Please note that for this freshly added data, all rights are reserved. 
+
 
 We are deeply thankful to the authors and contributors to our datset, in particular
 * Dr Avinash Aujayeb (MBBS MRCP (Edin 2008) PgCert ClinEd FHEA), Pleural Medicine Lead and Consultant in Respiratory and Acute Medicine for the Trustee for Mesothelioma UK and Northumbria Specialist Emergency Care Hospital, who contributes regularly to our database with clinical data. We greatly appreciate their efforts for open-access data.
-* The maintainers of https://thepocusatlas.com, https://radiopaedia.org/, https://grepmed.com and https://litfl.com/ultrasound-library/ (thanks for Dr. Rippey in particular who gave interesting advice)
 * Charlotte Buhre for recording data herself just for our dataset.
-* The contributers to [Stemlyn's blog](https://www.stemlynsblog.org/combatting-covid19-is-lung-ultrasound-an-option/).
+* The maintainers of https://thepocusatlas.com, https://radiopaedia.org/, https://grepmed.com and https://litfl.com/ultrasound-library/.
 
 Also, we obtained videos and images from publications on ultrasound, and we appreciate very much that we could include data from the following publications in our database:
 
@@ -287,16 +299,16 @@ Please cite this one in favor of our deprecated [POCOVID-Net preprint](https://a
 Please use the following bibtex entry:
 ```bib
 @article{born2021accelerating,
-title={Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis}, 
-volume={11}, ISSN={2076-3417}, 
-url={http://dx.doi.org/10.3390/app11020672}, 
-DOI={10.3390/app11020672}, 
-number={2}, 
-journal={Applied Sciences}, 
-publisher={MDPI AG}, 
-author={Born, Jannis and Wiedemann, Nina and Cossio, Manuel and Buhre, Charlotte and Brändle, Gabriel and Leidermann, Konstantin and Aujayeb, Avinash and Moor, Michael and Rieck, Bastian and Borgwardt, Karsten}, 
-year={2021}, 
-month={Jan}, 
-pages={672}
+  title={Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis}, 
+  author={Born, Jannis and Wiedemann, Nina and Cossio, Manuel and Buhre, Charlotte and Brändle, Gabriel and Leidermann, Konstantin and Aujayeb, Avinash and Moor, Michael and Rieck, Bastian and Borgwardt, Karsten}, 
+  volume={11}, ISSN={2076-3417}, 
+  url={http://dx.doi.org/10.3390/app11020672}, 
+  DOI={10.3390/app11020672}, 
+  number={2}, 
+  journal={Applied Sciences}, 
+  publisher={MDPI AG}, 
+  year={2021}, 
+  month={Jan}, 
+  pages={672}
 }
 ```
