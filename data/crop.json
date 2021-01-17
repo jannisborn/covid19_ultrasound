@@ -889,5 +889,93 @@
             0,
             144.0
         ]
+    ],
+    "pocus_videos/convex/Pneu_Youtube_case.mp4": [
+        [
+            40,
+            100,
+            270
+        ],
+        [
+            0,
+            165.0
+        ]
+    ],
+    "pocus_images/convex/Reg_Chen_2020_3A.png": [
+        [
+            20,
+            50,
+            230
+        ],
+        [
+            0,
+            -9.223372036854776e+18
+        ]
+    ],
+    "pocus_images/convex/Pneu_Reissig_2012_fig2A.jpg": [
+        [
+            25,
+            20,
+            220
+        ],
+        [
+            0,
+            1.0
+        ]
+    ],
+    "pocus_images/convex/Pneu_Reissig_2012_fig2B.jpg": [
+        [
+            25,
+            300,
+            230
+        ],
+        [
+            0,
+            1.0
+        ]
+    ],
+    "pocus_images/convex/Cov_wfumb_fig6.png": [
+        [
+            80,
+            250,
+            800
+        ],
+        [
+            0,
+            -9.223372036854776e+18
+        ]
+    ],
+    "pocus_images/convex/Cov_wfumb_fig3.png": [
+        [
+            25,
+            50,
+            200
+        ],
+        [
+            0,
+            -9.223372036854776e+18
+        ]
+    ],
+    "pocus_images/convex/Reg_Chen_2020_6A.png": [
+        [
+            20,
+            50,
+            200
+        ],
+        [
+            0,
+            -9.223372036854776e+18
+        ]
+    ],
+    "pocus_images/linear/Cov_14": [
+        [
+            100,
+            250,
+            2000
+        ],
+        [
+            0,
+            -9.223372036854776e+18
+        ]
     ]
 }
