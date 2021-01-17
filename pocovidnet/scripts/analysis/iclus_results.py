@@ -173,7 +173,7 @@ if plot_cutoffs:
         plt.plot(results[:, i], label=label[i])
     plt.xticks(np.arange(len(cutoffs)), [round(c, 2) for c in cutoffs])
     plt.legend()
-    plt.savefig(f"results_oct/plots/iclus_confidence_new.pdf")
+    plt.savefig(f"results_oct/plots/dez_iclus_confidence_new.pdf")
     plt.show()
 
 # Violin plot
@@ -182,7 +182,7 @@ if plot_boxplot:
         np.swapaxes(np.array([gt, pred_probs]), 1, 0),
         columns=["Severity", "Predicted COVID probability"]
     )
-    plt.figure(figsize=(10, 5))
+    plt.figure(figsize=(10, 6))
     ax = sn.boxplot(x="Severity", y="Predicted COVID probability", data=df)
     colors = ['green', 'orange', 'orangered', 'firebrick']
     for box, col in zip(ax.artists, colors):
@@ -190,9 +190,11 @@ if plot_boxplot:
         box.set_facecolor(col)
         box.set_edgecolor('black')
         box.set_linewidth(2)
-    plt.xlabel("Severity of abnormalities", fontsize=15)
-    plt.ylabel("Predicted COVID-19 probability", fontsize=15)
+    plt.xlabel("Severity of abnormalities", fontsize=25)
+    plt.ylabel("Predicted COVID-19 probability", fontsize=23)
     plt.ylim(0, 1)
-    plt.xticks([0, 1, 2, 3], [0, 1, 2, 3], fontsize=15)
-    plt.savefig(f"results_oct/plots/conf_{take_dir}.pdf")
-    plt.show()
+    plt.gcf().subplots_adjust(bottom=0.15)
+    plt.yticks(fontsize=15)
+    plt.xticks([0, 1, 2, 3], [0, 1, 2, 3], fontsize=20)
+    plt.tight_layout()
+    plt.savefig(f"results_oct/plots/dez_conf_{take_dir}.pdf")
