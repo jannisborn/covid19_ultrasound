@@ -934,44 +934,11 @@
             1.0
         ]
     ],
-    "pocus_images/convex/Cov_wfumb_fig6.png": [
-        [
-            80,
-            250,
-            800
-        ],
-        [
-            0,
-            -9.223372036854776e+18
-        ]
-    ],
-    "pocus_images/convex/Cov_wfumb_fig3.png": [
-        [
-            25,
-            50,
-            200
-        ],
-        [
-            0,
-            -9.223372036854776e+18
-        ]
-    ],
     "pocus_images/convex/Reg_Chen_2020_6A.png": [
         [
             20,
             50,
             200
-        ],
-        [
-            0,
-            -9.223372036854776e+18
-        ]
-    ],
-    "pocus_images/linear/Cov_14": [
-        [
-            100,
-            250,
-            2000
         ],
         [
             0,

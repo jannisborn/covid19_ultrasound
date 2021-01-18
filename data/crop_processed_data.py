@@ -7,10 +7,10 @@ import matplotlib.pyplot as plt
 DISPLAY_IMG = False
 
 # input path with uncropped videos
-path = "../../data_pocovid/DATASET/"  # temp_data
+path = "tmp"
 
 # path where to output the final videos
-final_path = "../../data_pocovid/DATASET/test_videos"  # "."
+final_path = "."
 if not os.path.exists(final_path):
     os.makedirs(final_path)
     os.makedirs(os.path.join(final_path, "pocus_videos/convex"))
@@ -23,6 +23,8 @@ with open("crop.json", "r") as infile:
     crop_dir = json.load(infile)
 
 for key in crop_dir.keys():
+    # I/O paths
+    vid_path = os.path.join(path, key)
     save_video_path = os.path.join(final_path, key)
 
     # get crop and trimming
@@ -32,7 +34,16 @@ for key in crop_dir.keys():
     print(key, crop_dir[key])
 
     # read video
-    cap = cv2.VideoCapture(os.path.join(path, key))
+    cap = cv2.VideoCapture(vid_path)
+
+    # test whether it's okay
+    ret, test = cap.read()
+    if test is None:
+        print(f"Problem reading file: {vid_path}")
+        continue
+
+    # reset cap
+    cap = cv2.VideoCapture(vid_path)
 
     # Image processing
     if cap.get(7) < 2:

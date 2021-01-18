@@ -62,14 +62,14 @@ wget -O tmp/pocus_videos/convex/Pneu_clinicalreview_MOV4.mp4 https://static-cont
 wget -O tmp/pocus_images/convex/Cov_ablines_covidmanifestations_paper1.png https://ars.els-cdn.com/content/image/1-s2.0-S2352047720300204-gr1_lrg.jpg
 wget -O tmp/pocus_images/convex/Cov_blines_covidmanifestation_paper2.png https://ars.els-cdn.com/content/image/1-s2.0-S2352047720300204-gr2_lrg.jpg
 wget -O tmp/pocus_images/linear/Cov_irregularpleural_covidmanifestations_paper3.png https://ars.els-cdn.com/content/image/1-s2.0-S2352047720300204-gr3_lrg.jpg
-wget -O tmp/pocus_videos/convex/Cov_new_pregnant_vid1.avi https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fjum.15367&file=jum15367-sup-0001-VideoS1.avi
-wget -O tmp/pocus_videos/convex/Cov_new_pregnant_vid2.avi https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fjum.15367&file=jum15367-sup-0002-VideoS2.avi
-wget -O tmp/pocus_videos/convex/Cov_new_pregnant_vid3.avi https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fjum.15367&file=jum15367-sup-0003-VideoS3.avi
-wget -O tmp/pocus_videos/convex/Cov_new_pregnant_vid4.avi https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fjum.15367&file=jum15367-sup-0004-VideoS4.avi
-wget -O tmp/pocus_videos/convex/Cov_new_pregnant_vid5.avi https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fjum.15367&file=jum15367-sup-0005-VideoS5.avi
-wget -O tmp/pocus_videos/convex/Cov_new_pregnant_vid6.avi https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fjum.15367&file=jum15367-sup-0006-VideoS6.avi
-wget -O tmp/pocus_videos/convex/Cov_new_pregnant_vid7.avi https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fjum.15367&file=jum15367-sup-0007-VideoS7.avi
-wget -O tmp/pocus_videos/convex/Cov_new_pregnant_vid8.avi https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fjum.15367&file=jum15367-sup-0008-VideoS8.avi
+wget -O tmp/pocus_videos/convex/Cov_new_pregnant_vid1.avi "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fjum.15367&file=jum15367-sup-0001-VideoS1.avi"
+wget -O tmp/pocus_videos/convex/Cov_new_pregnant_vid2.avi "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fjum.15367&file=jum15367-sup-0002-VideoS2.avi"
+wget -O tmp/pocus_videos/convex/Cov_new_pregnant_vid3.avi "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fjum.15367&file=jum15367-sup-0003-VideoS3.avi"
+wget -O tmp/pocus_videos/convex/Cov_new_pregnant_vid4.avi "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fjum.15367&file=jum15367-sup-0004-VideoS4.avi"
+wget -O tmp/pocus_videos/convex/Cov_new_pregnant_vid5.avi "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fjum.15367&file=jum15367-sup-0005-VideoS5.avi"
+wget -O tmp/pocus_videos/convex/Cov_new_pregnant_vid6.avi "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fjum.15367&file=jum15367-sup-0006-VideoS6.avi"
+wget -O tmp/pocus_videos/convex/Cov_new_pregnant_vid7.avi "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fjum.15367&file=jum15367-sup-0007-VideoS7.avi"
+wget -O tmp/pocus_videos/convex/Cov_new_pregnant_vid8.avi "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fjum.15367&file=jum15367-sup-0008-VideoS8.avi"
 wget -O tmp/pocus_images/convex/Reg_com_acquired_paper.png https://www.karger.com/WebMaterial/ShowPic/150968
 wget -O tmp/pocus_images/convex/Pneu_air_bronchogram_com_acquired_paper.png https://www.karger.com/WebMaterial/ShowPic/150968
 wget -O tmp/pocus_images/linear/Pneu_leftbasal_pedriatic_pneumonia.png https://ars.els-cdn.com/content/image/1-s2.0-S0720048X16304260-gr5.jpg 
@@ -84,28 +84,26 @@ wget -O tmp/pocus_images/convex/Cov_whitelungs_thoraric_paperfig5.png https://me
 wget -O tmp/pocus_images/convex/Cov_pleuraleffusion_thoraric_paperfig9.png https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40477-020-00458-7/MediaObjects/40477_2020_458_Fig8_HTML.jpg
 wget -O tmp/pocus_images/convex/Cov_subpleuralthickening_thoraric_paperfig6.png https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40477-020-00458-7/MediaObjects/40477_2020_458_Fig5_HTML.jpg
 wget -O tmp/pocus_images/convex/Reg_publication1.png https://journals.viamedica.pl/advances_in_respiratory_medicine/article/viewFile/41845/36561/110994
-wget -O tmp/pocus_images/convex/Cov_efsumb1.png https://www.efsumb.org/blog/wp-content/uploads/2020/04/wfumb_april_fig03.png
-wget -O tmp/pocus_images/convex/Cov_efsumb1_2.png https://www.efsumb.org/blog/wp-content/uploads/2020/04/wfumb_april_fig03.png
-wget -O tmp/pocus_images/convex/Cov_efsumb3.png http://www.efsumb.org/blog/wp-content/uploads/2020/04/wfumb_april_fig06-1-1024x682-1.png
-wget -O tmp/pocus_images/convex/Reg_efsumb2.png http://www.efsumb.org/blog/wp-content/uploads/2020/04/wfumb_april_fig01.png
-wget -O tmp/pocus_images/convex/Pneu_bikus2.pdf https://www.ultraschalltagung-bb.de/download/Vortraege/Thoraxsonografie_Grundkurs.pdf
-wget -O tmp/pocus_images/convex/Pneu_bikus3.pdf https://www.ultraschalltagung-bb.de/download/Vortraege/Thoraxsonografie_Grundkurs.pdf
-wget -O tmp/pocus_images/convex/Reg_bikus.png https://www.ultraschalltagung-bb.de/download/Vortraege/Thoraxsonografie_Grundkurs.pdf
+wget -O tmp/pocus_images/convex/Cov_efsumb1.png https://wfumb.info/wp-content/uploads/2020/04/wfumb_april_fig03.png 
+wget -O tmp/pocus_images/convex/Cov_efsumb1_2.png https://wfumb.info/wp-content/uploads/2020/04/wfumb_april_fig03.png
+wget -O tmp/pocus_images/convex/Cov_efsumb3.png https://wfumb.info/wp-content/uploads/2020/04/wfumb_april_fig06-1-1024x682.png 
+wget -O tmp/pocus_images/convex/Reg_efsumb2.png https://wfumb.info/wp-content/uploads/2020/04/wfumb_april_fig01.png
 wget -O tmp/pocus_images/convex/Pneu_sonographiebilder1.jpg https://sonographiebilder.de/fileadmin/_processed_/c/b/csm_Pneumonie_li_canifizierend_24ebb9e166.jpg
 wget -O tmp/pocus_images/convex/Pneu_sonographiebilder2.jpg https://sonographiebilder.de/fileadmin/_migrated/pics/Pneumonie__3_.jpg
-wget -O tmp/pocus_images/convex/Reg_acutemedicine.pdf https://covid19.healthcoms.org/wp-content/uploads/sites/3/2020/04/Lung-Ultrasound.pdf
-wget -O tmp/pocus_images/convex/Cov_severe_acutemedicine.pdf https://covid19.healthcoms.org/wp-content/uploads/sites/3/2020/04/Lung-Ultrasound.pdf
-wget -O tmp/pocus_images/linear/Cov_blines_acutemedicine.pdf https://covid19.healthcoms.org/wp-content/uploads/sites/3/2020/04/Lung-Ultrasound.pdf
 wget -O tmp/pocus_videos/linear/Cov_linear_abrams_2020_v1.mp4 https://www.jem-journal.com/cms/10.1016/j.jemermed.2020.06.032/attachment/69e81993-824e-4a79-9b61-8683b242a328/mmc1.mp4
 wget -O tmp/pocus_images/convex/Cov_siemens_1.png https://static.healthcare.siemens.com/siemens_hwem-hwem_ssxa_websites-context-root/wcm/idc/groups/public/@global/documents/image/mda5/nzg3/~edisp/jun-5c1-lung-hepatization-07275343/~renditions/jun-5c1-lung-hepatization-07275343~8.jpg
 wget -O tmp/pocus_images/convex/Cov_siemens_2.png https://static.healthcare.siemens.com/siemens_hwem-hwem_ssxa_websites-context-root/wcm/idc/groups/public/@global/documents/image/mda5/nzg3/~edisp/jun-5c1-lung-4-b-lines-07275344/~renditions/jun-5c1-lung-4-b-lines-07275344~8.jpg 
 wget -O tmp/pocus_images/linear/Cov_siemens_3.png https://static.healthcare.siemens.com/siemens_hwem-hwem_ssxa_websites-context-root/wcm/idc/groups/public/@global/documents/image/mda5/nzg3/~edisp/seq-10l4-lung-b-lines-pleuritis-07275337/~renditions/seq-10l4-lung-b-lines-pleuritis-07275337~8.jpg
-wget -O tmp/pocus_videos/linear/Reg_siemens_vid_3.mp4 https://house-fastly-signed-eu-west-1-prod.brightcovecdn.com/media/v1/hls/v4/clear/2744552178001/5ef91327-742a-48cb-9ade-d04374e5dcac/49587bc4-0dac-48b4-ba3a-93d41d44cbf0/5x/segment0.ts?fastly_token=NjAwNGU4ZjNfMTQxNWMwMjBlNjI0NTEwMTBhNzE3OTBiYTY2M2Q3NWNmZTdkMDM4NDIwNzhjNDVhNmVhOWM0YzMzZTY4ZGMxN18vL2hvdXNlLWZhc3RseS1zaWduZWQtZXUtd2VzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvaGxzL3Y0L2NsZWFyLzI3NDQ1NTIxNzgwMDEvNWVmOTEzMjctNzQyYS00OGNiLTlhZGUtZDA0Mzc0ZTVkY2FjLzQ5NTg3YmM0LTBkYWMtNDhiNC1iYTNhLTkzZDQxZDQ0Y2JmMC8%3D
-
+wget -O tmp/pocus_videos/linear/Reg_siemens_vid_3.mp4 "https://house-fastly-signed-eu-west-1-prod.brightcovecdn.com/media/v1/hls/v4/clear/2744552178001/5ef91327-742a-48cb-9ade-d04374e5dcac/49587bc4-0dac-48b4-ba3a-93d41d44cbf0/5x/segment0.ts?fastly_token=NjAwNGU4ZjNfMTQxNWMwMjBlNjI0NTEwMTBhNzE3OTBiYTY2M2Q3NWNmZTdkMDM4NDIwNzhjNDVhNmVhOWM0YzMzZTY4ZGMxN18vL2hvdXNlLWZhc3RseS1zaWduZWQtZXUtd2VzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvaGxzL3Y0L2NsZWFyLzI3NDQ1NTIxNzgwMDEvNWVmOTEzMjctNzQyYS00OGNiLTlhZGUtZDA0Mzc0ZTVkY2FjLzQ5NTg3YmM0LTBkYWMtNDhiNC1iYTNhLTkzZDQxZDQ0Y2JmMC8%3D"
+wget -O tmp/pocus_images/convex/Reg_Chen_2020_3A.png https://cdn.amegroups.cn/journals/amepc/files/journals/8/articles/46675/public/46675-PB8-6552-R1.png 
+wget -O tmp/pocus_images/convex/Reg_Chen_2020_6A.png https://cdn.amegroups.cn/journals/amepc/files/journals/8/articles/46675/public/46675-PB8-6552-R1.png
+wget -O tmp/pocus_images/convex/Pneu_Reissig_2012_fig2A.jpg https://ars.els-cdn.com/content/image/1-s2.0-S0012369212605662-gr2.jpg 
+wget -O tmp/pocus_images/convex/Pneu_Reissig_2012_fig2B.jpg https://ars.els-cdn.com/content/image/1-s2.0-S0012369212605662-gr2.jpg 
+youtube-dl -f 134 -o "tmp/pocus_videos/convex/Pneu_Youtube_case.mp4" https://www.youtube.com/watch?v=UnMeUrakOmc&feature=emb_logo
 
 echo "Data fetched. Postprocessing..."
 
-# python3 crop_processed_data.py
+python3 crop_processed_data.py
 
 # rm -rf tmp
 echo "Done, shutting down."
