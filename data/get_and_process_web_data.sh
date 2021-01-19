@@ -105,5 +105,5 @@ echo "Data fetched. Postprocessing..."
 
 python3 crop_processed_data.py
 
-# rm -rf tmp
+rm -rf tmp
 echo "Done, shutting down."
