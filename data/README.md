@@ -1,17 +1,6 @@
 # COVID-19 Lung ultrasound dataset
 
-We build a dataset of lung ultrasound images and videos. The dataset is assembled from collaborating hospitals as well as publicly available resources from the web (e.g. publications and educational websites).
-
-
-## Contribute!
-- Please help us to find more data! Open an
-  [issue](https://github.com/jannisborn/covid19_pocus_ultrasound/issues) if you
-  identified a promising data source. Please check [here](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) whether the data is already included. Useful contributions are:
-   - Publications with ultrasound videos
-      - check sheet *image_data_publications* in the goole sheet linked above to see whether a publication was already added
-   - Videos that are available via Creative Commens license (e.g. CC
-     BY-NC-SA) in the web or on YouTube.
-   - Possible sources are: [The Pocus Atlas](https://thepocusatlas.com), [Radiopaedia](https://radiopaedia.org/), [GrepMed](https://grepmed.com) and [Liftl](https://litfl.com/ultrasound-library/).
+We build a dataset of lung ultrasound images and videos. The dataset combines data from collaborating hospitals as well as publicly available resources from the web (e.g. publications and educational websites).
 
 ## Current dataset size (January 2021)
 <p align="center">
@@ -19,8 +8,9 @@ We build a dataset of lung ultrasound images and videos. The dataset is assemble
 	<br>
    <em>Current size of the dataset. Most samples use the convex probe. To our knowledge, 
    this is the largest public source of COVID-19 LUS data. 
-   More data on non-COVID-19 viral pneumonia is urgently needed.</em>
+   </em>
 </p>
+
 - Convex:
   - 162 videos (46x COVID, 49x bacterial pneumonia, 64x healthy, 3x viral pneumonia).
   - 20 videos from the Butterfly dataset (18 COVID, 2 healthy, see below how to use the provided scripts to process the data).
@@ -39,27 +29,35 @@ LUS pathologies            |  Symptoms
 For more information and comments by medical experts, see our [metadata](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) sheet or metadata [csv](dataset_metadata.csv).
 The dataset is continuously updated.
 
-### Updates
-- **24.10.2020**: Dataset metadata (patient age, gender, symptoms, ID, etc.) included (see #58).
-- **26.9.2020**: Major update to the database: 30 videos from Dr Avinash Aujayeb from Northumbria, and 45 linear videos of COVID-19 patients sponsored by Bolzano AG
-- **25.8.2020**: Update - added 10 new videos from the Northumbria hospital
-- **12.8.2020**: Update - added 14 new COVID videos from publications
-- **28.7.2020**: Update - added 4 new videos and 7 new images from the Northumbria hospital
-- **11.7.2020**: Database update - We added an up to date csv file with all metadata, and new videos that were contributed from the Northumbria Specialist Emergency Care Hospital (17 images and 4 videos of healthy patients)
-- **22.6.2020**: Database update - We added 46 new videos (18x COVID, 1x bacterial pneumonia, 27x healthy).
-- **16.5.2020**: The [ICLUS
-  project](https://www.disi.unitn.it/iclus) released ~60 videos
-  from COVID-patients (register [here](https://covid19.disi.unitn.it/iclusdb/login)). 
+
+## Contribute!
+- Please help us to find more data! Open an
+  [issue](https://github.com/jannisborn/covid19_pocus_ultrasound/issues) if you
+  identified a promising data source. Please check [here](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) whether the data is already included.
+  Useful contributions are clean lung ultrasound videos available via Creative Commons license, e.g.:
+   - Publications with ultrasound videos as electronic supplement
+   - Websites like [The Pocus Atlas](https://thepocusatlas.com), [Radiopaedia](https://radiopaedia.org/) or [Liftl](https://litfl.com/ultrasound-library/).
+   - Other LUS data available via CC license.
+
   
 
-## Collect Data from sources without CC license (Butterfly & ICLUS)
+## Collect Data from sources without CC license 
 
 Unfortunately, not all data used to train/evaluate the model is in this repo
-as we do not have the right to host/distribute the data from
-[Butterfly](https://butterflynetwork.com).
+as we do not have the right to host/distribute it.
 
-However, we **provide a script that automatically processes the data from Butterfly**. To reproduce
-the experiments from the paper, please first complete the following steps:
+#### Unlicensed data
+Some data used in our [study](https://www.mdpi.com/2076-3417/11/2/672) was obtained from public sources, but cant be redistributed on this repository due to licensing restrictions. We therefore provide a script `get_and_process_web_data.sh` which users can use to download the data and process it for inclusion and reproduction of our study. The provided script only works on Unix distributions (**not on Windowns!**) and requires that you have python3 installed.
+
+```sh
+get_and_process_web_data.sh
+```
+After executing this script, a lot of data will have been added into your local `pocus_images` and `pocus_videos` folder.
+Please note that for this freshly added data, all rights are reserved. 
+
+#### Butterfly
+We provide a separate script that automatically processes the data from [Butterfly](https://butterflynetwork.com). To reproduce
+the experiments from the paper, please first complete the following steps (in addition to executing `get_and_process_web_data.sh`)
 
 1. Visit the [COVID-19 ultrasound_gallery](https://butterflynetwork.com/covid19/covid-19-ultrasound-gallery)
    of Butterfly, scroll to the bottom and download the videos (we accessed this
@@ -78,14 +76,36 @@ the experiments from the paper, please first complete the following steps:
 All butterfly videos should have be added to `data/pocus_videos/convex`.
 
 
+## License Note:
+*NOTE* For every source of this dataset, individual licenses apply. Users have the responsibility to verify whether the individual licenses allow the desired usage. We assume no liability for any of such cases. We are further not responsibe or liable for the proper collection of datasources contributed in this repository.
+
+### Neuruppin and Northumbria data
+All participants consented to be included in the study and agreed to their data being distributed. The data from Neuruppin is licensed under [`CC BY 4.0`](https://creativecommons.org/licenses/by/4.0/). The data contributed from Northumbria hospital is licensed under [`CC BY NC 4.0`](https://creativecommons.org/licenses/by-nc/4.0/).
+
+### Scraped data
+All videos/images provided in this repo which were collected from public sources have a license specified in the `dataset_metadata.csv`.
+We provide links to the respective licenses and indicate whether (and which) changes were made.
+
+
+
+## Updates
+- **24.10.2020**: Dataset metadata (patient age, gender, symptoms, ID, etc.) included (see #58).
+- **26.9.2020**: Major update to the database: 30 videos from Dr Avinash Aujayeb from Northumbria, and 45 linear videos of COVID-19 patients sponsored by Bolzano AG
+- **25.8.2020**: Update - added 10 new videos from the Northumbria hospital
+- **12.8.2020**: Update - added 14 new COVID videos from publications
+- **28.7.2020**: Update - added 4 new videos and 7 new images from the Northumbria hospital
+- **11.7.2020**: Database update - We added an up to date csv file with all metadata, and new videos that were contributed from the Northumbria Specialist Emergency Care Hospital (17 images and 4 videos of healthy patients)
+- **22.6.2020**: Database update - We added 46 new videos (18x COVID, 1x bacterial pneumonia, 27x healthy).
+- **16.5.2020**: The [ICLUS
+  project](https://www.disi.unitn.it/iclus) released ~60 videos
+  from COVID-patients (register [here](https://covid19.disi.unitn.it/iclusdb/login)). 
+
+
 ## Add class "uninformative"
-In the current state, a user could input any image, e.g. of a house, and still receive a classification result as covid / pneumonia / healthy.
+In the current state, a user could input any image, e.g. of a house, and still receive a classification result as COVID-19 / pneumonia / healthy.
 In order to prevent this, we decided to include a fourth class called "uninformative", where we add Imagenet images and neck-ultrasound data from the Kaggle Nerve Segmentation Challenge.
-
 Download the data [here](https://drive.google.com/open?id=1bAbCJCq-U5vIxbG0ySUKanAW_pW_z2O4) from google drive. It contains a folder *uniform_class_nerves* and one *uniform_class_imagenet*.
-
 The data can be immediately used for training, simply combine it in a folder *uninformative* next to the *covid*, *pneumonia* and *regular* folders.
-
 If you want to add them to an existing cross validation split (e.g after executing [cross_val_splitter](../pocovidnet/scripts/cross_val_splitter.py)), we also provide a script:
 
 Run:
@@ -95,19 +115,15 @@ python ../pocovidnet/scripts/add_uninformative_class.py -i uniform_class_imagene
 
 This script will split the data in the *uniform_class_nerves* and *uniform_class_imagenet* folders and add them in a folder *uninformative* to each fold.
 
-## License Note:
-Most data here is available under [Creative Commons
-License](https://creativecommons.org/licenses/by-nc/4.0/).
-The following modifcations to videos/images were done:
-- Cropped to the center to remove measuring bars, text etc.
-- Removal of artifcats on the sample (few cases only)
+## References
 
+### Acknowledgements to contributors
 We are deeply thankful to the authors and contributors to our datset, in particular
 * Dr Avinash Aujayeb (MBBS MRCP (Edin 2008) PgCert ClinEd FHEA), Pleural Medicine Lead and Consultant in Respiratory and Acute Medicine for the Trustee for Mesothelioma UK and Northumbria Specialist Emergency Care Hospital, who contributes regularly to our database with clinical data. We greatly appreciate their efforts for open-access data.
-* The maintainers of https://thepocusatlas.com, https://radiopaedia.org/, https://grepmed.com and https://litfl.com/ultrasound-library/ (thanks for Dr. Rippey in particular who gave interesting advice)
 * Charlotte Buhre for recording data herself just for our dataset.
-* The contributers to [Stemlyn's blog](https://www.stemlynsblog.org/combatting-covid19-is-lung-ultrasound-an-option/).
+* The maintainers of https://thepocusatlas.com, https://radiopaedia.org/ and https://litfl.com/ultrasound-library/ for distritbuting their data under a CC license.
 
+### Publications
 Also, we obtained videos and images from publications on ultrasound, and we appreciate very much that we could include data from the following publications in our database:
 
 * 3 COVID-19 images from [@inchingolo2020diagnosis] - [The Diagnosis of Pneumonia in a Pregnant Woman with COVID-19 Using Maternal Lung Ultrasound](https://www.ajog.org/action/showPdf?pii=S0002-9378%2820%2930468-3)
@@ -287,16 +303,16 @@ Please cite this one in favor of our deprecated [POCOVID-Net preprint](https://a
 Please use the following bibtex entry:
 ```bib
 @article{born2021accelerating,
-title={Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis}, 
-volume={11}, ISSN={2076-3417}, 
-url={http://dx.doi.org/10.3390/app11020672}, 
-DOI={10.3390/app11020672}, 
-number={2}, 
-journal={Applied Sciences}, 
-publisher={MDPI AG}, 
-author={Born, Jannis and Wiedemann, Nina and Cossio, Manuel and Buhre, Charlotte and Brändle, Gabriel and Leidermann, Konstantin and Aujayeb, Avinash and Moor, Michael and Rieck, Bastian and Borgwardt, Karsten}, 
-year={2021}, 
-month={Jan}, 
-pages={672}
+  title={Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis}, 
+  author={Born, Jannis and Wiedemann, Nina and Cossio, Manuel and Buhre, Charlotte and Brändle, Gabriel and Leidermann, Konstantin and Aujayeb, Avinash and Moor, Michael and Rieck, Bastian and Borgwardt, Karsten}, 
+  volume={11}, ISSN={2076-3417}, 
+  url={http://dx.doi.org/10.3390/app11020672}, 
+  DOI={10.3390/app11020672}, 
+  number={2}, 
+  journal={Applied Sciences}, 
+  publisher={MDPI AG}, 
+  year={2021}, 
+  month={Jan}, 
+  pages={672}
 }
 ```

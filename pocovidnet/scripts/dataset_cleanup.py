@@ -94,7 +94,9 @@ for i in range(len(table)):
     if location.startswith("data/"):
         location = location[5:]
 
-    if not os.path.exists(os.path.join(base, location, fn)):
+    path1 = os.path.join(base, location, fn)
+    path2 = ".".join(path1.split(".")[:-1]) + ".mp4"
+    if not (os.path.exists(path1) or os.path.exists(path2)):
         if not ("not" in location or "Butterfly" in fn):
             # if not os.path.exists(os.path.join(base, location, fn + ".png")):
             print(
@@ -116,8 +118,13 @@ filenames_in_table = table["Filename"].values
 for fold in folders:
     for fn in os.listdir(os.path.join(base, fold)):
         if not (fn.startswith(".") or "Butterfly" in fn):
+            fn_without = fn.split(".")[0]
+            fn_avi = fn_without + ".avi"
+            fn_gif = fn_without + ".gif"
+            fn_mov = fn_without + ".mov"
             if not (
-                fn in filenames_in_table
-                or fn.split(".")[0] in filenames_in_table
+                fn in filenames_in_table or fn_without in filenames_in_table
+                or fn_avi in filenames_in_table or fn_gif in filenames_in_table
+                or fn_mov in filenames_in_table
             ):
                 print(fold, fn)

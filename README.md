@@ -73,16 +73,16 @@ Please cite this one in favor of our deprecated [POCOVID-Net preprint](https://a
 Please use the following bibtex entry:
 ```bib
 @article{born2021accelerating,
-title={Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis}, 
-volume={11}, ISSN={2076-3417}, 
-url={http://dx.doi.org/10.3390/app11020672}, 
-DOI={10.3390/app11020672}, 
-number={2}, 
-journal={Applied Sciences}, 
-publisher={MDPI AG}, 
-author={Born, Jannis and Wiedemann, Nina and Cossio, Manuel and Buhre, Charlotte and Brändle, Gabriel and Leidermann, Konstantin and Aujayeb, Avinash and Moor, Michael and Rieck, Bastian and Borgwardt, Karsten}, 
-year={2021}, 
-month={Jan}, 
-pages={672}
+   title={Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis},
+   author={Born, Jannis and Wiedemann, Nina and Cossio, Manuel and Buhre, Charlotte and Brändle, Gabriel and Leidermann, Konstantin and Aujayeb, Avinash and Moor, Michael and Rieck, Bastian and Borgwardt, Karsten},  
+   volume={11}, ISSN={2076-3417}, 
+   url={http://dx.doi.org/10.3390/app11020672}, 
+   DOI={10.3390/app11020672}, 
+   number={2}, 
+   journal={Applied Sciences}, 
+   publisher={MDPI AG}, 
+   year={2021}, 
+   month={Jan}, 
+   pages={672}
 }
 ```
