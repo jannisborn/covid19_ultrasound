@@ -7,7 +7,7 @@ import seaborn as sn
 import matplotlib.pyplot as plt
 import pickle
 
-OUT_DIR = "../results_oct/plots"
+OUT_DIR = "../results_oct/plots/new"
 IN_DIR = "../results_oct/"
 BEST_MODEL = "base_3.dat"
 
@@ -49,21 +49,21 @@ def plot_confusion_matrix(data_confusion, labels, save_path):
     ax = fig.axes
     df_cm = pd.DataFrame(
         data_confusion,
-        index=[i for i in ["COVID-19", "Pneumonia", "Healthy"]],
-        columns=[i for i in ["COVID-19", "Pneumonia", "Healthy"]]
+        index=[i for i in ["COVID-19", "Bact. Pneu.", "Healthy"]],
+        columns=[i for i in ["COVID-19", "Bact. Pneu.", "Healthy"]]
     )
 
     sn.set(font_scale=1.8)
 
     plt.xticks(
-        np.arange(3) + 0.5, ("COVID-19", "Pneumonia", "Normal"),
-        fontsize="18",
+        np.arange(3) + 0.5, ("COVID-19", "Bact. Pneu.", "Normal"),
+        fontsize="17",
         va="center"
     )
     plt.yticks(
         np.arange(3) + 0.5, ("C", "P", "H"),
         rotation=0,
-        fontsize="18",
+        fontsize="17",
         va="center"
     )
     # sn.heatmap(df_cm, annot=True, fmt="g", cmap="YlGnBu")
@@ -76,8 +76,8 @@ def plot_confusion_matrix(data_confusion, labels, save_path):
         top=False,  # ticks along the top edge are off
         labelbottom=True
     )
-    plt.xlabel("$\\bf{Predictions}$", fontsize=20)
-    plt.ylabel("$\\bf{Ground\ truth}$", fontsize=20)
+    plt.xlabel("$\\bf{Predictions}$", fontsize=23)
+    plt.ylabel("$\\bf{Ground\ truth}$", fontsize=23)
     plt.savefig(save_path, bbox_inches='tight', pad_inches=0, transparent=True)
 
 
@@ -186,7 +186,7 @@ with open(os.path.join(IN_DIR, BEST_MODEL), "rb") as outfile:
 data, max_points, scores, roc_auc_std = roc_auc(saved_logits, saved_gt)
 
 cols = ["red", "orange", "green"]
-classes = ["COVID-19", "Pneumonia", "Healthy"]
+classes = ["COVID-19", "Bacterial Pneu.", "Healthy"]
 
 # ROC curve of best model
 plt.figure(figsize=(6, 5))
@@ -215,12 +215,12 @@ for i in range(3):
     )
     plt.ylim(0, 1.03)
 plt.xlim(-0.02, 1)
-plt.ylabel("$\\bf{Sensitivity}$", fontsize=20)
-plt.xlabel("$\\bf{False\ positive\ rate}$", fontsize=20)
+plt.ylabel("$\\bf{Sensitivity}$", fontsize=25)
+plt.xlabel("$\\bf{False\ positive\ rate}$", fontsize=25)
 plt.xticks(fontsize=15)
 plt.yticks(fontsize=15)
 plt.legend(
-    fontsize=18, title="    $\\bf{Class}\ \\bf(AUC)}$"
+    fontsize=16, title="    $\\bf{Class}\ \\bf(AUC)}$"
 )  # "\n  $\\bf{(o:\ maximal\ accuracy)}$")
 plt.savefig(
     os.path.join(OUT_DIR, "roc_curve.pdf"),
@@ -257,8 +257,8 @@ plt.ylim(0, 1.03)
 plt.xlim(-0.02, 1)
 plt.xticks(fontsize=15)
 plt.yticks(fontsize=15)
-plt.ylabel("$\\bf{Precision}$", fontsize=20)
-plt.xlabel("$\\bf{Recall}$", fontsize=20)
+plt.ylabel("$\\bf{Precision}$", fontsize=25)
+plt.xlabel("$\\bf{Recall}$", fontsize=25)
 plt.legend(
     fontsize=18,
     title="    $\\bf{Class}\ \\bf(AUC)}$"  # "    $\\bf{Class}$"
@@ -274,7 +274,7 @@ plt.savefig(
 # ------------------- ROC AUC ALL MODELS ------------------------------
 for CLASS in range(3):
     cols = ["red", "orange", "green", "blue", "purple"]
-    classes = ["COVID-19", "Pneumonia", "Healthy"]
+    classes = ["COVID-19", "Bacterial Pneu.", "Healthy"]
     # roc_auc_scores = np.mean(np.asarray(scores), axis=0)
     fig = plt.figure(figsize=(6, 5))
     # plt.subplot(1,3,1)
@@ -308,10 +308,10 @@ for CLASS in range(3):
     plt.xlim(-0.02, 1)
     plt.xticks(fontsize=15)
     plt.yticks(fontsize=15)
-    plt.ylabel("$\\bf{Sensitivity}$", fontsize=15)
-    plt.xlabel("$\\bf{False\ positive\ rate}$", fontsize=15)
+    plt.ylabel("$\\bf{Sensitivity}$", fontsize=25)
+    plt.xlabel("$\\bf{False\ positive\ rate}$", fontsize=25)
     plt.legend(
-        fontsize=15, title="    $\\bf{Model}\ \\bf(ROC-AUC)}$"
+        fontsize=14, title="    $\\bf{Model}\ \\bf(ROC-AUC)}$"
     )  # "\n  $\\bf{(o:\ maximal\ accuracy)}$")
     # plt.title("ROC-curve (COVID-19)", fontsize=20)
     plt.savefig(
@@ -356,9 +356,9 @@ for CLASS in range(3):
     plt.xlim(-0.02, 1.02)
     plt.xticks(fontsize=15)
     plt.yticks(fontsize=15)
-    plt.ylabel("$\\bf{Precision}$", fontsize=15)
-    plt.xlabel("$\\bf{Recall}$", fontsize=15)
-    plt.legend(fontsize=15, title="    $\\bf{Model}\ \\bf(AUC)}$")
+    plt.ylabel("$\\bf{Precision}$", fontsize=25)
+    plt.xlabel("$\\bf{Recall}$", fontsize=25)
+    plt.legend(fontsize=14, title="    $\\bf{Model}\ \\bf(AUC)}$")
 
     plt.savefig(
         os.path.join(OUT_DIR, "prec_rec_" + str(CLASS) + ".pdf"),

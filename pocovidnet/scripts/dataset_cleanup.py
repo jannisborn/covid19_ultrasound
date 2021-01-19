@@ -43,15 +43,15 @@ print("Find and copy the ones that have no MD comment")
 md1 = table["Comments first medical doctor (MD1)"].values
 md2 = table["MD2"].values
 for i in range(len(table)):
-    if (pd.isnull(md1[i])
-        and pd.isnull(md2[i])) or md1[i] == "Video not found":
+    if (pd.isnull(md1[i]) and pd.isnull(md2[i])
+        ) or (md1[i] == "Video not found" and pd.isnull(md2[i])):
         if not pd.isnull(table.iloc[i]["Current location"]):
-            print(table.iloc[i]["Filename"])
             location = table.iloc[i]["Current location"].lower()
             if location.startswith("data/"):
                 location = location[5:]
-            if "bolzano" in table.iloc[i]["Filename"]:
+            if "not" in location:
                 continue
+            print(table.iloc[i]["Filename"])
             location = table.iloc[i]["Current location"].lower()
             if location.startswith("data/"):
                 location = location[5:]
