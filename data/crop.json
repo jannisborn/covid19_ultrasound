@@ -944,5 +944,49 @@
             0,
             -9.223372036854776e+18
         ]
+    ],
+    "pocus_videos/convex/Cov_wfumb_case_dez.mp4": [
+        [
+            20,
+            75,
+            300
+        ],
+        [
+            0,
+            91.0
+        ]
+    ],
+    "pocus_images/convex/Cov_wfumb_case_dez_a.jpg": [
+        [
+            70,
+            250,
+            400
+        ],
+        [
+            0,
+            -9.223372036854776e+18
+        ]
+    ],
+    "pocus_images/convex/Cov_wfumb_case_dez_c.jpg": [
+        [
+            580,
+            200,
+            480
+        ],
+        [
+            0,
+            -9.223372036854776e+18
+        ]
+    ],
+    "pocus_images/convex/Cov_wfumb_case_dez_b.jpg": [
+        [
+            70,
+            1150,
+            430
+        ],
+        [
+            0,
+            -9.223372036854776e+18
+        ]
     ]
 }
