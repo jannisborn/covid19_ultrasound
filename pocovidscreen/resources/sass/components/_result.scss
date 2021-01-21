@@ -1,0 +1,89 @@
+@import "../variables";
+
+.result {
+    border-radius: var(--border-radius-base);
+    overflow: hidden;
+
+    img {
+        width: 410px;
+    }
+
+    &.green {
+        background-color: var(--result-bg-green);
+
+        .symptoms p {
+            color: var(--result-color-green);
+        }
+
+        .progress-size {
+            background-color: var(--result-color-green);
+        }
+    }
+
+    &.orange {
+        background-color: var(--result-bg-orange);
+
+        .symptoms p {
+            color: var(--result-color-orange);
+        }
+
+        .progress-size {
+            background-color: var(--result-color-orange);
+        }
+    }
+
+    &.red {
+        background-color: var(--result-bg-red);
+
+        .symptoms p {
+            color: var(--result-color-red);
+        }
+
+        .progress-size {
+            background-color: var(--result-color-red);
+        }
+    }
+
+    .progress {
+        height: 5px;
+        position: relative;
+        background-color: var(--result-spacer);
+
+        .progress-size {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+        }
+    }
+}
+
+.result-information-part {
+    padding-bottom: 1rem;
+    border-bottom: solid var(--result-spacer) 1px;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    h3 {
+        font-family: $roboto;
+        margin-bottom: .2rem;
+        font-weight: normal;
+    }
+
+    &.no-border {
+        border: 0;
+    }
+}
+
+.result-probability {
+    font-weight: bold;
+    font-size: 4.5rem;
+    color: var(--black);
+    line-height: 4.5rem;
+}
+
+.image-title p {
+    color: #777777;
+}

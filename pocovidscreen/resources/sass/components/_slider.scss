@@ -1,0 +1,35 @@
+.slider {
+    position: relative;
+
+    .controls {
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        transform: translateY(-50%);
+        opacity: .88;
+
+        button {
+            outline: none;
+        }
+    }
+
+    .left {
+        transform: translateX(-100%);
+    }
+
+    .right {
+        transform: translateX(100%);
+    }
+}
+
+.slider-cards {
+    display: flex;
+    flex-wrap: nowrap;
+
+    > .slide-card {
+        padding-left: 0;
+        padding-right: 2rem;
+        flex: 0 0 auto;
+        opacity: .3;
+    }
+}

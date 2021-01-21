@@ -1,0 +1,7 @@
+tensorflow==2.2.0rc1
+scikit-learn
+matplotlib
+imutils
+numpy>=1.18.2
+opencv-contrib-python
+flask

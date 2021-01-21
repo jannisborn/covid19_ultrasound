@@ -1,0 +1,29 @@
+$theme-switcher-size: 20px;
+
+.theme-switcher {
+    box-sizing: content-box;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 1px var(--black);
+    width: $theme-switcher-size;
+    height: $theme-switcher-size;
+}
+
+.theme-switcher-light,
+.theme-switcher-dark {
+    float: left;
+    width: $theme-switcher-size / 2;
+    height: $theme-switcher-size;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.theme-switcher-dark {
+    background-color: var(--black);
+}
+
+.theme-switcher-light {
+    background-color: var(--main-bg-color);
+}

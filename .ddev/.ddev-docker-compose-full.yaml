@@ -1,0 +1,177 @@
+networks:
+  default:
+    external: true
+    name: ddev_default
+services:
+  db:
+    build:
+      args:
+        BASE_IMAGE: drud/ddev-dbserver-mariadb-10.2:v1.14.1
+        gid: '20'
+        uid: '501'
+        username: jroulin
+      context: /Users/jroulin/Dev/covid19_pocus_ultrasound/.ddev/db-build
+      dockerfile: /Users/jroulin/Dev/covid19_pocus_ultrasound/.ddev/.dbimageBuild/Dockerfile
+    command: ''
+    container_name: ddev-covidscreen-db
+    environment:
+      COLUMNS: '0'
+      DDEV_PROJECT: covidscreen
+      LINES: '0'
+      TZ: ''
+    healthcheck:
+      interval: 1s
+      retries: 30
+      start_period: 20s
+      timeout: 2m
+    hostname: covidscreen-db
+    image: drud/ddev-dbserver-mariadb-10.2:v1.14.1-covidscreen-built
+    labels:
+      com.ddev.app-type: php
+      com.ddev.approot: /Users/jroulin/Dev/covid19_pocus_ultrasound
+      com.ddev.platform: ddev
+      com.ddev.site-name: covidscreen
+    ports:
+    - 127.0.0.1::3306/tcp
+    restart: "no"
+    stop_grace_period: 60s
+    user: '501:20'
+    volumes:
+    - ddev-global-cache:/mnt/ddev-global-cache:rw
+    - source: /Users/jroulin/Dev/covid19_pocus_ultrasound/.ddev
+      target: /mnt/ddev_config
+      type: bind
+    - source: mariadb-database
+      target: /var/lib/mysql
+      type: volume
+      volume:
+        nocopy: true
+  dba:
+    container_name: ddev-covidscreen-dba
+    environment:
+      HTTPS_EXPOSE: 8037:8036
+      HTTP_EXPOSE: 8036:8036
+      PMA_PASSWORD: db
+      PMA_USER: db
+      TZ: ''
+      VIRTUAL_HOST: covidscreen.ddev.site
+    healthcheck:
+      interval: 2m
+      retries: 1
+      timeout: 2s
+    hostname: covidscreen-dba
+    image: phpmyadmin/phpmyadmin:5
+    labels:
+      com.ddev.app-type: php
+      com.ddev.approot: /Users/jroulin/Dev/covid19_pocus_ultrasound
+      com.ddev.platform: ddev
+      com.ddev.site-name: covidscreen
+    links:
+    - db
+    ports:
+    - target: 80
+    restart: "no"
+  pocovidnet:
+    build:
+      context: /Users/jroulin/Dev/covid19_pocus_ultrasound/pocovidnet
+    container_name: ddev-covidscreen-pocovidnet
+    labels:
+      com.ddev.approot: /Users/jroulin/Dev/covid19_pocus_ultrasound
+      com.ddev.site-name: covidscreen
+    ports:
+    - published: 8000
+      target: 8000
+    volumes:
+    - /Users/jroulin/Dev/covid19_pocus_ultrasound/.ddev/data:/data:rw
+    - /Users/jroulin/Dev/covid19_pocus_ultrasound/.ddev:/mnt/ddev_config:rw
+  redis:
+    command:
+    - redis-server
+    - /usr/local/etc/redis/redis.conf
+    container_name: ddev-covidscreen-redis
+    image: redis:4
+    labels:
+      com.ddev.approot: /Users/jroulin/Dev/covid19_pocus_ultrasound
+      com.ddev.site-name: covidscreen
+    ports:
+    - target: 6379
+    volumes:
+    - /Users/jroulin/Dev/covid19_pocus_ultrasound/.ddev:/mnt/ddev_config:rw
+    - /Users/jroulin/Dev/covid19_pocus_ultrasound/.ddev/redis:/usr/local/etc/redis:rw
+  web:
+    build:
+      args:
+        BASE_IMAGE: drud/ddev-webserver:v1.14.2
+        gid: '20'
+        uid: '501'
+        username: jroulin
+      context: /Users/jroulin/Dev/covid19_pocus_ultrasound/.ddev/web-build
+      dockerfile: /Users/jroulin/Dev/covid19_pocus_ultrasound/.ddev/.webimageBuild/Dockerfile
+    cap_add:
+    - SYS_PTRACE
+    container_name: ddev-covidscreen-web
+    depends_on:
+    - pocovidnet
+    - redis
+    environment:
+      COLUMNS: '0'
+      DDEV_PHP_VERSION: '7.3'
+      DDEV_PROJECT: covidscreen
+      DDEV_PROJECT_TYPE: php
+      DDEV_ROUTER_HTTPS_PORT: '443'
+      DDEV_ROUTER_HTTP_PORT: '80'
+      DDEV_WEBSERVER_TYPE: apache-fpm
+      DDEV_XDEBUG_ENABLED: "false"
+      DEPLOY_NAME: local
+      DOCKER_IP: 127.0.0.1
+      DOCROOT: pocovidscreen/public
+      HOST_DOCKER_INTERNAL_IP: ''
+      HTTPS_EXPOSE: 443:80,8026:8025
+      HTTP_EXPOSE: 80:80,8025:8025
+      IS_DDEV_PROJECT: "true"
+      LINES: '0'
+      SSH_AUTH_SOCK: /home/.ssh-agent/socket
+      TZ: ''
+      VIRTUAL_HOST: covidscreen.ddev.site
+    external_links:
+    - ddev-router:covidscreen.ddev.site
+    healthcheck:
+      interval: 1s
+      retries: 10
+      start_period: 10s
+      timeout: 2m
+    hostname: covidscreen-web
+    image: drud/ddev-webserver:v1.14.2-covidscreen-built
+    labels:
+      com.ddev.app-type: php
+      com.ddev.approot: /Users/jroulin/Dev/covid19_pocus_ultrasound
+      com.ddev.platform: ddev
+      com.ddev.site-name: covidscreen
+    links:
+    - db
+    - pocovidnet
+    - redis
+    ports:
+    - 127.0.0.1::80/tcp
+    - 127.0.0.1::443/tcp
+    restart: "no"
+    user: '501:20'
+    volumes:
+    - /Users/jroulin/Dev/covid19_pocus_ultrasound/.ddev/data:/data:rw
+    - ddev-ssh-agent_socket_dir:/home/.ssh-agent:rw
+    - ddev-global-cache:/mnt/ddev-global-cache:rw
+    - /Users/jroulin/Dev/covid19_pocus_ultrasound/.ddev:/mnt/ddev_config:ro
+    - consistency: cached
+      source: /Users/jroulin/Dev/covid19_pocus_ultrasound
+      target: /var/www/html
+      type: bind
+version: '3.6'
+volumes:
+  ddev-global-cache:
+    name: ddev-global-cache
+  ddev-ssh-agent_socket_dir:
+    external: true
+    name: ddev-ssh-agent_socket_dir
+  mariadb-database:
+    name: covidscreen-mariadb
+

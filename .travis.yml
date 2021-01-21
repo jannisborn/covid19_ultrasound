@@ -1,0 +1,16 @@
+dist: xenial
+
+language: python
+
+python:
+  - "3.6"
+
+before_script:
+  - cd pocovidnet
+  - pip3 install -e .
+
+script:
+  - python3 -c "import pocovidnet"
+
+notifications:
+  slack: pocovidscreen:OeJ76c8RNTQNKjIXjgvBSsn6
