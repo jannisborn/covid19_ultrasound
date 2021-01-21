@@ -1,0 +1,16 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/public/images/icons/.DS_Store
+/vendor
+/.idea
+/.vscode
+/.vagrant
+/tmp_images
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+.env
+.DS_Store

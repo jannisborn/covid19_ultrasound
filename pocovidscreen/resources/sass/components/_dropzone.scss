@@ -1,0 +1,40 @@
+.file-upload-area {
+    background: var(--light-primary);
+    border-radius: var(--border-radius-base);
+    padding: 2rem;
+    transform: translateY(-50%);
+    margin-bottom: -100px;
+    border: dashed 2px #47BAC2;
+    position: relative;
+}
+
+.thumbs-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.thumb-inner {
+    display: flex;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.thumb {
+    display: inline-flex;
+    border-radius: var(--border-radius-base);
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    img {
+        display: block;
+        width: auto;
+        height: 100%;
+    }
+}

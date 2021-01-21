@@ -1,0 +1,52 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "analyze": "source-map-explorer 'public/js/*.js'"
+    },
+    "devDependencies": {
+        "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+        "@babel/preset-react": "^7.8.3",
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.3.2",
+        "@testing-library/user-event": "^7.1.2",
+        "babel-preset-react": "^6.24.1",
+        "cross-env": "^5.2.1",
+        "eslint": "^4.19.1",
+        "eslint-config-standard": "^11.0.0",
+        "eslint-plugin-import": "^2.20.1",
+        "eslint-plugin-node": "^6.0.1",
+        "eslint-plugin-promise": "^3.8.0",
+        "eslint-plugin-react": "^7.18.3",
+        "eslint-plugin-standard": "^3.1.0",
+        "laravel-mix": "^5.0.1",
+        "laravel-mix-purgecss": "^5.0.0-rc.1",
+        "node-sass": "^4.13.1",
+        "nprogress": "^0.2.0",
+        "resolve-url-loader": "^3.1.0",
+        "sass": "^1.26.2",
+        "sass-loader": "^8.0.2",
+        "source-map-explorer": "^2.3.1",
+        "whatwg-fetch": "^3.0.0"
+    },
+    "dependencies": {
+        "bootstrap": "^4.4.1",
+        "gsap": "^3.2.6",
+        "react": "^16.13.0",
+        "react-dom": "^16.13.0",
+        "react-dropzone": "^10.2.2",
+        "react-helmet": "^6.0.0",
+        "react-intl": "^4.4.0",
+        "react-media-hook": "^0.4.6",
+        "react-router-dom": "^5.1.2",
+        "react-scripts": "3.4.1",
+        "react-use": "^14.1.1",
+        "rfs": "^9.0.3"
+    }
+}

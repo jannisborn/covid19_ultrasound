@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500|Roboto:200,400,700&display=swap');
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/images";
+@import "~rfs/scss";
+@import "components/auth";
+@import "components/home";
+@import "components/train";
+@import "components/button";
+@import "components/call-to-action";
+@import "components/content";
+@import "components/footer";
+@import "components/logo";
+@import "components/partner";
+@import "components/slider";
+@import "components/statistic-number";
+@import "components/team-member";
+@import "components/theme-switcher";
+@import "components/video-presentation";
+@import "components/dropzone";
+@import "components/result";
+@import "components/teaser";
+@import "components/modal";
+@import "variables";
+
+:root {
+    --primary: #{$primary};
+    --secondary: #{$secondary};
+    --border-radius-base: #{$border-radius-base};
+}
+
+::selection {
+    background: $primary;
+    color: #fff;
+}
+::-moz-selection {
+    background: $primary;
+    color: #fff;
+}
+
+.light {
+    --primary-light: #{$primary-light};
+    --main-bg-color: #{$white};
+    --main-color: #{$dark-gray};
+    --black: #111;
+    --blackblack: #000;
+    --white: #fff;
+    --main-color-light: #{$light-dark};
+    --footer-bg: #{$light-white};
+    --copyright-bg: #{$white};
+    --link-color: #{$primary};
+    --light-primary: #{$light-primary};
+    --input-bg: #{$white};
+    --result-bg-green: #{$result-bg-green-light};
+    --result-bg-orange: #{$result-bg-orange-light};
+    --result-bg-red: #{$result-bg-red-light};
+    --result-color-green: #{$result-color-green-light};
+    --result-color-orange: #{$result-color-orange-light};
+    --result-color-red: #{$result-color-red-light};
+    --result-spacer: #{$result-spacer-light};
+}
+
+.dark {
+    --primary-light: #{$light-dark};
+    --main-bg-color: #{$dark};
+    --main-color: #{$opac-white};
+    --black: #fff;
+    --blackblack: #fff;
+    --white: #111;
+    --main-color-light: #{$light-white};
+    --footer-bg: #{$light-dark};
+    --copyright-bg: #{$dark};
+    --link-color: #{$white};
+    --light-primary: #{$light-dark-primary};
+    --input-bg: #{$input-bg-dark};
+    --result-bg-green: #{$result-bg-green-dark};
+    --result-bg-orange: #{$result-bg-orange-dark};
+    --result-bg-red: #{$result-bg-red-dark};
+    --result-color-green: #{$result-color-green-dark};
+    --result-color-orange: #{$result-color-orange-dark};
+    --result-color-red: #{$result-color-red-dark};
+    --result-spacer: #{$result-spacer-dark};
+}
+
+html,
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    transition: color,background-color .25s ease;
+    visibility: hidden;
+    overflow-x: hidden;
+    font-family: $roboto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $montserrat;
+    color:var(--black);
+}
+
+p {
+    line-height: 2rem;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+
+    main {
+        flex: 1;
+    }
+}
+
+.app-header {
+    font-size: .9rem;
+
+    .button:not(.primary) {
+        color: var(--blackblack);
+    }
+}
+
+.app-footer {
+    background-color: var(--footer-bg);
+
+    .copyright {
+        background-color: var(--copyright-bg);
+    }
+}
+
+.app-footer-links {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.page {
+    visibility: hidden;
+}
+
+.spacer {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+}
+
+.spacer-small {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}

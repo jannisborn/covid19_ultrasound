@@ -1,0 +1,21 @@
+.statistic-number {
+    &.primary {
+        border-top: solid 2px var(--primary);
+
+        h3 {
+            color: var(--primary);
+        }
+    }
+
+    &.secondary {
+        border-top: solid 2px var(--secondary);
+
+        h3 {
+            color: var(--secondary);
+        }
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+}

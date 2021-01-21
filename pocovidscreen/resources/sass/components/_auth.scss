@@ -1,0 +1,33 @@
+.form {
+    background: var(--light-primary);
+    border-radius: var(--border-radius-base);
+    transform: translateY(-30%);
+
+    a {
+        color: var(--primary);
+    }
+
+
+    label {
+        display: block;
+    }
+
+    input {
+        border-radius: 5px;
+        background-color: var(--input-bg);
+        padding: 1rem;
+        border: none;
+        color: var(--light-black);
+        outline-color: var(--primary);
+    }
+}
+
+.sign-up {
+    .call-to-action {
+        transform: translateY(-30%);
+
+        &:hover {
+            transform: translateY(-32%);
+        }
+    }
+}

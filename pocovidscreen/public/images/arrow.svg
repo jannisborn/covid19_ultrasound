@@ -1,0 +1,19 @@
+<svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="COVID-19" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="000---message-alert-(-Black-)-(-Desktop-)" transform="translate(-402.000000, -1344.000000)">
+            <g id="CONTENT" transform="translate(0.000000, 202.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <g id="CTA" transform="translate(185.000000, 811.000000)">
+                    <g id="CTA-1">
+                        <g id="TEXT" transform="translate(50.000000, 80.000000)">
+                            <g id="bouton/ghost/default" transform="translate(0.000000, 243.000000)">
+                                <g id="icon/arrow" transform="translate(167.000000, 8.000000)">
+                                    <path d="M1.32231405,12 C1.62534435,12 1.87327824,11.928 2.09366391,11.784 L9.39393939,6.96 C9.6969697,6.744 10,6.456 10,6 C10,5.544 9.6969697,5.256 9.39393939,5.04 L2.09366391,0.216 C1.87327824,0.072 1.62534435,0 1.32231405,0 C0.606060606,0 0,0.528 0,1.152 C0,1.44 0.165289256,1.848 0.550964187,2.088 L6.63911846,6 L0.550964187,9.912 C0.165289256,10.152 0,10.56 0,10.848 C0,11.472 0.606060606,12 1.32231405,12 Z"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

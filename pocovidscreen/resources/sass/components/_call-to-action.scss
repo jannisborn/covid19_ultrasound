@@ -1,0 +1,69 @@
+.call-to-action {
+    transform: translateY(-50%);
+    border-radius: var(--border-radius-base);
+    color: #fff !important;
+    transition: transform .25s ease, background-color .25s ease-in-out;
+    text-align: left;
+    white-space: normal;
+
+    &:hover,
+    &:focus,
+    &.active {
+        text-decoration: none;
+        transform: translateY(-52%);
+
+        .call-to-action-link::after {
+            animation-name: left-to-right;
+            animation-duration: .5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+    }
+
+    &.primary {
+        background-color: var(--primary) !important;;
+    }
+
+    &.secondary {
+        background-color: var(--secondary) !important;
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 2.3rem;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+}
+
+.call-to-action-link {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        display: inline-block;
+        content: url("../../../resources/js/assets/images/arrow.svg");
+        position: absolute;
+        right: -25px;
+        top: 1px;
+        transition: transform .25s ease;
+    }
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
