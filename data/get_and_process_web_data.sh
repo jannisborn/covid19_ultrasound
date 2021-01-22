@@ -104,6 +104,7 @@ wget -O tmp/pocus_images/convex/Cov_wfumb_case_dez_a.jpg https://wfumb.info/wp-c
 wget -O tmp/pocus_images/convex/Cov_wfumb_case_dez_b.jpg https://wfumb.info/wp-content/uploads/2020/12/wfumb-dec2pics.png
 wget -O tmp/pocus_images/convex/Cov_wfumb_case_dez_c.jpg https://wfumb.info/wp-content/uploads/2020/12/wfumb-dec2pics.png
 youtube-dl -f 134 -o "tmp/pocus_videos/convex/Cov_wfumb_case_dez.mp4" "https://www.youtube.com/watch?v=CpXPimphNSM&feature=youtu.be"
+wget -O tmp/pocus_videos/convex/Cov_Arnthfield_2020_Vid3.mp4 https://www.medrxiv.org/content/medrxiv/early/2020/10/22/2020.10.13.20212258/DC3/embed/media-3.mp4
 
 echo "Data fetched. Postprocessing..."
 
