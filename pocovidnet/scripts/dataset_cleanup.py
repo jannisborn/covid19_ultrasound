@@ -6,7 +6,9 @@ import json
 
 base = "../../data/"
 metadata = base + "dataset_metadata.csv"
-out = None  # "missing_MD_comments"
+out = "missing_MD_comments_jan"
+if out is not None:
+    os.makedirs(out)
 
 # Analyze numbers in dataset
 base_dir = "../../data/"
@@ -86,6 +88,10 @@ print(
     "Find which filenames appear in the sheet but not in the specified folder"
 )
 
+possible_endings = [
+    "", ".jpeg", ".png", ".jpg", ".mp4", ".JPG", ".mpeg", ".avi", ".gif",
+    ".mov"
+]
 for i in range(len(table)):
     fn = table.iloc[i]["Filename"]
     location = table.iloc[i]["Current location"].lower()
@@ -96,13 +102,14 @@ for i in range(len(table)):
 
     path1 = os.path.join(base, location, fn)
     path2 = ".".join(path1.split(".")[:-1]) + ".mp4"
-    if not (os.path.exists(path1) or os.path.exists(path2)):
+    missing = True
+    for ending in possible_endings:
+        if os.path.exists(path1 + ending):
+            missing = False
+    if missing:
         if not ("not" in location or "Butterfly" in fn):
             # if not os.path.exists(os.path.join(base, location, fn + ".png")):
-            print(
-                fn, "missing at", location, "searching in",
-                os.path.join(base, location, fn)
-            )
+            print(fn, "missing at", location)
 
 # Find which filenames appear in folder but not in sheet
 print("----------------------")
@@ -119,12 +126,5 @@ for fold in folders:
     for fn in os.listdir(os.path.join(base, fold)):
         if not (fn.startswith(".") or "Butterfly" in fn):
             fn_without = fn.split(".")[0]
-            fn_avi = fn_without + ".avi"
-            fn_gif = fn_without + ".gif"
-            fn_mov = fn_without + ".mov"
-            if not (
-                fn in filenames_in_table or fn_without in filenames_in_table
-                or fn_avi in filenames_in_table or fn_gif in filenames_in_table
-                or fn_mov in filenames_in_table
-            ):
+            if fn_without not in filenames_in_table:
                 print(fold, fn)
