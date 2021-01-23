@@ -47,7 +47,9 @@ Unfortunately, not all data used to train/evaluate the model is in this repo
 as we do not have the right to host/distribute it.
 
 #### Unlicensed data
-Some data used in our [study](https://www.mdpi.com/2076-3417/11/2/672) was obtained from public sources, but cant be redistributed on this repository due to licensing restrictions. We therefore provide a script `get_and_process_web_data.sh` which users can use to download the data and process it for inclusion and reproduction of our study. The provided script only works on Unix distributions (**not on Windowns!**) and requires that you have python3 installed.
+Some data used in our [study](https://www.mdpi.com/2076-3417/11/2/672) was obtained from public sources, but cant be redistributed on this repository due to licensing restrictions.
+We therefore provide a script `get_and_process_web_data.sh` which users can use to download the data and process it for inclusion and reproduction of our study.
+The provided script only works on Unix distributions (**not on Windows!**) and requires that you have python3 installed.
 
 ```sh
 get_and_process_web_data.sh
@@ -77,7 +79,9 @@ All butterfly videos should have be added to `data/pocus_videos/convex`.
 
 
 ## License Note:
-*NOTE* For every source of this dataset, individual licenses apply. Users have the responsibility to verify whether the individual licenses allow the desired usage. We assume no liability for any of such cases. We are further not responsibe or liable for the proper collection of datasources contributed in this repository.
+*NOTE 1*: The founders/authors of the repository take no responsibility or liability for the data contributed to this archive. The contributing sites have to ensure that the collection and use of the data fulfills all applicable legal and ethical requirements.
+
+*NOTE 2*: For every source of this dataset, individual licenses apply. Users have the responsibility to verify whether the individual licenses allow the desired usage. We assume no liability for any of such cases.
 
 ### Neuruppin and Northumbria data
 All participants consented to be included in the study and agreed to their data being distributed. The data from Neuruppin is licensed under [`CC BY 4.0`](https://creativecommons.org/licenses/by/4.0/). The data contributed from Northumbria hospital is licensed under [`CC BY NC 4.0`](https://creativecommons.org/licenses/by-nc/4.0/).
@@ -297,14 +301,15 @@ Also, we obtained videos and images from publications on ultrasound, and we appr
 ```
 
 # Citation
-Our paper is available in [Applied Sciences](https://www.mdpi.com/2076-3417/11/2/672).
-Please cite this one in favor of our deprecated [POCOVID-Net preprint](https://arxiv.org/abs/2004.12084).
+An [abstract of our work was published](https://thorax.bmj.com/content/76/Suppl_1/A230.2) in *Thorax* as part of the BTS Winter Meeting 2021. 
+The full paper is available via the COVID-19 special issue of [Applied Sciences](https://www.mdpi.com/2076-3417/11/2/672).
+Please cite these in favor of our deprecated [POCOVID-Net preprint](https://arxiv.org/abs/2004.12084).
 
-Please use the following bibtex entry:
+Please use the following bibtex entries:
 ```bib
 @article{born2021accelerating,
   title={Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis}, 
-  author={Born, Jannis and Wiedemann, Nina and Cossio, Manuel and Buhre, Charlotte and Brändle, Gabriel and Leidermann, Konstantin and Aujayeb, Avinash and Moor, Michael and Rieck, Bastian and Borgwardt, Karsten}, 
+  author={Born, Jannis and Wiedemann, Nina and Cossio, Manuel and Buhre, Charlotte and Brändle, Gabriel and Leidermann, Konstantin and      Aujayeb, Avinash and Moor, Michael and Rieck, Bastian and Borgwardt, Karsten}, 
   volume={11}, ISSN={2076-3417}, 
   url={http://dx.doi.org/10.3390/app11020672}, 
   DOI={10.3390/app11020672}, 
@@ -314,5 +319,20 @@ Please use the following bibtex entry:
   year={2021}, 
   month={Jan}, 
   pages={672}
+}
+
+@article {born2021l2,
+	author = {Born, J and Wiedemann, N and Cossio, M and Buhre, C and Br{\"a}ndle, G and Leidermann, K and Aujayeb, A and Rieck, B and Borgwardt, K},
+	title = {L2 Accelerating COVID-19 differential diagnosis with explainable ultrasound image analysis: an AI tool},
+	volume = {76},
+	number = {Suppl 1},
+	pages = {A230--A231},
+	year = {2021},
+	doi = {10.1136/thorax-2020-BTSabstracts.404},
+	publisher = {BMJ Publishing Group Ltd},
+	issn = {0040-6376},
+	URL = {https://thorax.bmj.com/content/76/Suppl_1/A230.2},
+	eprint = {https://thorax.bmj.com/content/76/Suppl_1/A230.2.full.pdf},
+	journal = {Thorax}
 }
 ```

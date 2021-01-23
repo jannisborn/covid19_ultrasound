@@ -128,10 +128,11 @@ To access the pre-trained models, have a look [here](https://drive.google.com/dr
 
 
 # Citation
-The paper is available in [Applied Sciences](https://www.mdpi.com/2076-3417/11/2/672).
-Please cite this one in favor of our deprecated [POCOVID-Net preprint](https://arxiv.org/abs/2004.12084).
+An [abstract of our work was published](https://thorax.bmj.com/content/76/Suppl_1/A230.2) in *Thorax* as part of the BTS Winter Meeting 2021. 
+The full paper is available via the COVID-19 special issue of [Applied Sciences](https://www.mdpi.com/2076-3417/11/2/672).
+Please cite these in favor of our deprecated [POCOVID-Net preprint](https://arxiv.org/abs/2004.12084).
 
-Please use the following bibtex entry:
+Please use the following bibtex entries:
 ```bib
 @article{born2021accelerating,
   title={Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis}, 
@@ -145,5 +146,20 @@ Please use the following bibtex entry:
   year={2021}, 
   month={Jan}, 
   pages={672}
+}
+
+@article {born2021l2,
+	author = {Born, J and Wiedemann, N and Cossio, M and Buhre, C and Br{\"a}ndle, G and Leidermann, K and Aujayeb, A and Rieck, B and Borgwardt, K},
+	title = {L2 Accelerating COVID-19 differential diagnosis with explainable ultrasound image analysis: an AI tool},
+	volume = {76},
+	number = {Suppl 1},
+	pages = {A230--A231},
+	year = {2021},
+	doi = {10.1136/thorax-2020-BTSabstracts.404},
+	publisher = {BMJ Publishing Group Ltd},
+	issn = {0040-6376},
+	URL = {https://thorax.bmj.com/content/76/Suppl_1/A230.2},
+	eprint = {https://thorax.bmj.com/content/76/Suppl_1/A230.2.full.pdf},
+	journal = {Thorax}
 }
 ```
