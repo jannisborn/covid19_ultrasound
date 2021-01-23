@@ -88,17 +88,17 @@ Please use the following bibtex entries:
 }
 
 @article {born2021l2,
-	author = {Born, J and Wiedemann, N and Cossio, M and Buhre, C and Br{\"a}ndle, G and Leidermann, K and Aujayeb, A and Rieck, B and Borgwardt, K},
-	title = {L2 Accelerating COVID-19 differential diagnosis with explainable ultrasound image analysis: an AI tool},
-	volume = {76},
-	number = {Suppl 1},
-	pages = {A230--A231},
-	year = {2021},
-	doi = {10.1136/thorax-2020-BTSabstracts.404},
-	publisher = {BMJ Publishing Group Ltd},
-	issn = {0040-6376},
-	URL = {https://thorax.bmj.com/content/76/Suppl_1/A230.2},
-	eprint = {https://thorax.bmj.com/content/76/Suppl_1/A230.2.full.pdf},
-	journal = {Thorax}
+  author = {Born, J and Wiedemann, N and Cossio, M and Buhre, C and Br{\"a}ndle, G and Leidermann, K and Aujayeb, A and Rieck, B and Borgwardt, K},
+  title = {L2 Accelerating COVID-19 differential diagnosis with explainable ultrasound image analysis: an AI tool},
+  volume = {76},
+  number = {Suppl 1},
+  pages = {A230--A231},
+  year = {2021},
+  doi = {10.1136/thorax-2020-BTSabstracts.404},
+  publisher = {BMJ Publishing Group Ltd},
+  issn = {0040-6376},
+  URL = {https://thorax.bmj.com/content/76/Suppl_1/A230.2},
+  eprint = {https://thorax.bmj.com/content/76/Suppl_1/A230.2.full.pdf},
+  journal = {Thorax}
 }
 ```
