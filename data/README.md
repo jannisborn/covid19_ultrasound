@@ -52,7 +52,7 @@ We therefore provide a script `get_and_process_web_data.sh` which users can use 
 The provided script only works on Unix distributions (**not on Windows!**) and requires that you have python3 installed.
 
 ```sh
-get_and_process_web_data.sh
+sh get_and_process_web_data.sh
 ```
 After executing this script, a lot of data will have been added into your local `pocus_images` and `pocus_videos` folder.
 Please note that for this freshly added data, all rights are reserved. 
