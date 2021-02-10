@@ -61,8 +61,8 @@ Please note that for this freshly added data, all rights are reserved.
 We provide a separate script that automatically processes the data from [Butterfly](https://butterflynetwork.com). To reproduce
 the experiments from the paper, please first complete the following steps (in addition to executing `get_and_process_web_data.sh`)
 
-1. Visit the [COVID-19 ultrasound_gallery](https://butterflynetwork.com/covid19/covid-19-ultrasound-gallery)
-   of Butterfly, scroll to the bottom and download the videos (we accessed this
+1. Visit the [COVID-19 ultrasound_gallery](https://www.butterflynetwork.com/covid-19  )
+   of Butterfly, scroll to *Download Gallery* and download the videos (we accessed this
    source on 17.04.2020 for training our models. Please note that it is not
    under control whether Butterfly will keep this data online. Feel free to
    notify us if you observe any changes).
