@@ -1,6 +1,6 @@
 # **Automatic Detection of COVID-19 from Ultrasound Data**
 ![Node.js CI](https://github.com/jannisborn/covid19_pocus_ultrasound/workflows/Node.js%20CI/badge.svg)
-[![Build Status](https://travis-ci.com/BorgwardtLab/covid19_ultrasound.svg?branch=master)](https://travis-ci.com/BorgwardtLab/covid19_ultrasound)
+[![Build Status](https://travis-ci.com/jannisborn/covid19_ultrasound.svg?branch=master)](https://travis-ci.com/jannisborn/covid19_ultrasound)
 
 ## Summary
 
