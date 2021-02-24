@@ -79,7 +79,7 @@ All butterfly videos should have be added to `data/pocus_videos/convex`.
 
 *NOTE 2*: For every source of this dataset, individual licenses apply. Users have the responsibility to verify whether the individual licenses allow the desired usage. We exclude any liability for any of such cases.
 
-*NOTE 3*: For the unlicensed data, users have the responsibility to verify whether their desired usage is allowed. We exclude any liability for any of such cases.
+*NOTE 3*: For the unlicensed data, users have the responsibility to verify whether their desired usage is allowed. We exclude any liability for any use by others.
 
 ### Neuruppin and Northumbria data
 All participants consented to be included in the study and agreed to their data being distributed. The data from Neuruppin is licensed under [`CC BY 4.0`](https://creativecommons.org/licenses/by/4.0/). The data contributed from Northumbria hospital is licensed under [`CC BY NC 4.0`](https://creativecommons.org/licenses/by-nc/4.0/).
