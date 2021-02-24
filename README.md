@@ -88,7 +88,7 @@ Please use the following bibtex entries:
 }
 
 @article {born2021l2,
-  author = {Born, J and Wiedemann, N and Cossio, M and Buhre, C and Br{\"a}ndle, G and Leidermann, K and Aujayeb, A and Rieck, B and Borgwardt, K},
+  author = {Born, J and Wiedemann, N and Cossio, M and Buhre, C and Br{\"a}ndle, G and Leidermann, K and Aujayeb, A},
   title = {L2 Accelerating COVID-19 differential diagnosis with explainable ultrasound image analysis: an AI tool},
   volume = {76},
   number = {Suppl 1},
