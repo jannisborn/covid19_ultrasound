@@ -10,7 +10,9 @@ import argparse
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-data', type=str, default="butterfly")
+    parser.add_argument(
+        '-data', type=str, default=os.path.join("butterfly", "Published ")
+    )
     parser.add_argument('-out', type=str, default="pocus_videos/convex")
     parser.add_argument('-json', type=str, default="data_from_butterfly.json")
     args = parser.parse_args()
@@ -43,11 +45,12 @@ if __name__ == "__main__":
             "width", cap.get(3), "height", cap.get(4), "number frames:",
             cap.get(7)
         )
-        if os.path.exists(out_path + "_" + fn.split(".")[0] + ".mpeg"):
-            print(
-                "already done, ", out_path + "_" + fn.split(".")[0] + ".mpeg"
-            )
+        full_save_path = out_path + "_Butterfly_" + fn.split(".")[0] + ".avi"
+        if os.path.exists(full_save_path):
+            print("already done, ", full_save_path)
             continue
+
+        (out_width, out_height) = (int(cap.get(3)), int(cap.get(4)))
 
         nr_selected = 0
         while cap.isOpened():
@@ -56,41 +59,6 @@ if __name__ == "__main__":
             if not ret:
                 break
 
-            frame = np.asarray(frame).astype(int)
-            # crop
-            width_border = int(cap.get(3) * 0.15)
-            width_box = int(cap.get(3)) - 2 * width_border
-            if width_box + del_upper > cap.get(4):
-                width_box = int(cap.get(4) - del_upper)
-                width_border = int(cap.get(3) / 2 - width_box / 2)
-            frame = frame[del_upper:width_box + del_upper,
-                          width_border:width_box + width_border]
-
-            # detect green point
-            green_point = frame[:, :, 1] - frame[:, :, 0]
-            # get first frame for green point deletion:
-            if frameId == 0:
-                frame_start = green_point
-            # skip the green moving points
-            if np.any((green_point - frame_start) > 100):
-                # plt.imshow(green_point)
-                # plt.show()
-                print("VID WITH GREEN DOT")
-                break
-            # delete blue symbol
-            blue_symbol = np.where(green_point < -50)
-            frame[blue_symbol] = frame[0, 0]
-            # delete green symbol
-            if np.any(green_point > 220):
-                green_symbol = np.where(green_point > 50)
-                frame[green_symbol] = frame[0, 0]
-            # resize
-            frame = np.asarray(frame).astype(np.uint8)
-            # frame = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
-            # frame = cv2.resize(frame, (240, 240))
-            # if frameId == 0:
-            #     plt.imshow(frame)
-            #     plt.show()
             vid_arr.append(frame)
         cap.release()
         vid_arr = np.asarray(vid_arr)
@@ -98,14 +66,14 @@ if __name__ == "__main__":
         if len(vid_arr) > 5:
             curr_size = vid_arr.shape[1:3]
             print("output video size", curr_size)
-            fourcc = cv2.VideoWriter_fourcc(*'XVID')
+            fourcc = cv2.VideoWriter_fourcc('M', 'J', 'P', 'G')
             writer = cv2.VideoWriter(
-                out_path + "_Butterfly_" + fn.split(".")[0] + ".avi", fourcc,
-                20.0, tuple(curr_size)
+                full_save_path, fourcc, 20.0, (out_width, out_height)
             )
             for x in vid_arr:
                 writer.write(x.astype("uint8"))
             writer.release()
+            # # If OpenCV does not work, install skvideo and try skvideo.io
             # io.vwrite(
             #     out_path + "_Butterfly_" + fn.split(".")[0] + ".mpeg",
             #     vid_arr,
@@ -113,4 +81,4 @@ if __name__ == "__main__":
             # )
             print("DONE", vid_arr.shape)
         else:
-            print("GREEN DOT:", fn)
+            print("Invalid video, could not read frames:", fn)

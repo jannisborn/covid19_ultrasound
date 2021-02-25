@@ -13,7 +13,7 @@ We build a dataset of lung ultrasound images and videos. The dataset combines da
 
 - Convex:
   - 162 videos (46x COVID, 49x bacterial pneumonia, 64x healthy, 3x viral pneumonia).
-  - 20 videos from the Butterfly dataset (18 COVID, 2 healthy, see below how to use the provided scripts to process the data).
+  - 20 videos from the Butterfly dataset (18 COVID, 2 healthy).
   - 53 images (18x COVID, 20x bacterial pneumonia, 15x healthy).
 - Linear:
   - 20 videos (6x COVID, 2x bacterial pneumonia, 9x healthy, 3x viral pneumonia).
@@ -43,8 +43,7 @@ The dataset is continuously updated.
 
 ## Collect Data from sources without CC license 
 
-Unfortunately, not all data used to train/evaluate the model is in this repo
-as we do not have the right to host/distribute it.
+**NOTE**: If you use this dataset for your own research, we recommend only using the data directly hosted in this repository.
 
 #### Unlicensed data
 Some data used in our [study](https://www.mdpi.com/2076-3417/11/2/672) was obtained from public sources, but cant be redistributed on this repository due to licensing restrictions.
@@ -58,8 +57,7 @@ After executing this script, a lot of data will have been added into your local 
 Please note that for this freshly added data, all rights are reserved. 
 
 #### Butterfly
-We provide a separate script that automatically processes the data from [Butterfly](https://butterflynetwork.com). To reproduce
-the experiments from the paper, please first complete the following steps (in addition to executing `get_and_process_web_data.sh`)
+To obtain the data from Butterfly please complete the following steps (in addition to executing `get_and_process_web_data.sh`)
 
 1. Visit the [COVID-19 ultrasound_gallery](https://www.butterflynetwork.com/covid-19  )
    of Butterfly, scroll to *Download Gallery* and download the videos (we accessed this
@@ -68,12 +66,10 @@ the experiments from the paper, please first complete the following steps (in ad
    notify us if you observe any changes).
 2. Place the `.zip` folder into the this folder (`data`)
 3. `cd` into the `data` folder.
-3. Run:
-    ```sh
-    sh parse_butterfly.sh
-    ```
-    *NOTE*: This step requires that you installed the `pocovidnet` package
-    before (see the [pocovidnet](../pocovidnet/) README how to do that).
+4. Run:
+```sh
+sh parse_butterfly.sh
+```
     
 All butterfly videos should have be added to `data/pocus_videos/convex`.
 
@@ -81,7 +77,9 @@ All butterfly videos should have be added to `data/pocus_videos/convex`.
 ## License Note:
 *NOTE 1*: The founders/authors of the repository take no responsibility or liability for the data contributed to this archive. The contributing sites have to ensure that the collection and use of the data fulfills all applicable legal and ethical requirements.
 
-*NOTE 2*: For every source of this dataset, individual licenses apply. Users have the responsibility to verify whether the individual licenses allow the desired usage. We assume no liability for any of such cases.
+*NOTE 2*: For every source of this dataset, individual licenses apply. Users have the responsibility to verify whether the individual licenses allow the desired usage. We exclude any liability for any of such cases.
+
+*NOTE 3*: For the unlicensed data, users have the responsibility to verify whether their desired usage is allowed. We exclude any liability for any use by others.
 
 ### Neuruppin and Northumbria data
 All participants consented to be included in the study and agreed to their data being distributed. The data from Neuruppin is licensed under [`CC BY 4.0`](https://creativecommons.org/licenses/by/4.0/). The data contributed from Northumbria hospital is licensed under [`CC BY NC 4.0`](https://creativecommons.org/licenses/by-nc/4.0/).
@@ -124,7 +122,7 @@ This script will split the data in the *uniform_class_nerves* and *uniform_class
 ### Acknowledgements to contributors
 We are deeply thankful to the authors and contributors to our datset, in particular
 * Dr Avinash Aujayeb (MBBS MRCP (Edin 2008) PgCert ClinEd FHEA), Pleural Medicine Lead and Consultant in Respiratory and Acute Medicine for the Trustee for Mesothelioma UK and Northumbria Specialist Emergency Care Hospital, who contributes regularly to our database with clinical data. We greatly appreciate their efforts for open-access data.
-* Charlotte Buhre for recording data herself just for our dataset.
+* Charlotte Buhre for recording data for our dataset.
 * The maintainers of https://thepocusatlas.com, https://radiopaedia.org/ and https://litfl.com/ultrasound-library/ for distritbuting their data under a CC license.
 
 ### Publications
@@ -322,7 +320,7 @@ Please use the following bibtex entries:
 }
 
 @article {born2021l2,
-  author = {Born, J and Wiedemann, N and Cossio, M and Buhre, C and Br{\"a}ndle, G and Leidermann, K and Aujayeb, A and Rieck, B and Borgwardt, K},
+  author = {Born, J and Wiedemann, N and Cossio, M and Buhre, C and Br{\"a}ndle, G and Leidermann, K and Aujayeb, A},
   title = {L2 Accelerating COVID-19 differential diagnosis with explainable ultrasound image analysis: an AI tool},
   volume = {76},
   number = {Suppl 1},
