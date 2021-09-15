@@ -2,6 +2,9 @@
 
 We build a dataset of lung ultrasound images and videos. The dataset combines data from collaborating hospitals as well as publicly available resources from the web (e.g. publications and educational websites).
 
+## Train/test split
+**Due to multiple papers that used our dataset incorrectly, we are adding the following disclaimer: Please make sure to create a meaningful train/test data split. Do not split the data on a frame-level, but on a video/patient-level. The task becomes trivial otherwise because consecutive LUS frames are extremely correlated. We provide scripts to create a cross-validation split for you. See the instructions [here](../pocovidnet/#cross-validation-splitting).**
+
 ## Current dataset size (January 2021)
 <p align="center">
 	<img src="../pocovidnet/plots/dataset.png" alt="photo not available" width="60%" height="60%">

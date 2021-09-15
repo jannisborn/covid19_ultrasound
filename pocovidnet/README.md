@@ -1,8 +1,11 @@
 # pocovidnet
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Build Status](https://travis-ci.com/BorgwardtLab/covid19_ultrasound.svg?branch=master)](https://travis-ci.com/BorgwardtLab/covid19_ultrasound)
+[![build](https://github.com/jannisborn/covid19_ultrasound/actions/workflows/build.yml/badge.svg)](https://github.com/jannisborn/covid19_ultrasound/actions/workflows/build.yml)
 
 A simple package to train deep learning models on ultrasound data for COVID19.
+
+## Train/test split
+**Due to multiple papers that used our dataset incorrectly, we are adding the following disclaimer: Please make sure to create a meaningful train/test data split. Do not split the data on a frame-level, but on a video/patient-level. The task becomes trivial otherwise because consecutive LUS frames are extremely correlated. We provide scripts to create a cross-validation split for you. See the instructions [here](#cross-validation-splitting).**
 
 ## Installation
 
