@@ -20,6 +20,7 @@ jobs:
         if: always()
         with:
           status: ${{ job.status }}
+          fields: repo,message,commit,author,action,eventName,ref,workflow,job,took
           text: "CI Build ${{ matrix.os }}"
           author_name: ${{ github.actor }}
         env:
