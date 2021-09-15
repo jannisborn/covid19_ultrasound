@@ -12,7 +12,9 @@ This is an ongoing ultrasound data collection initiative for COVID-19. Please he
 
 ### Dataset
 Feel free to use (and cite) our dataset. We currently have >200 LUS videos. For details see [data/README.md](data/README.md).
+**NOTE: Please make sure to create a meaningful train/test data split. Do not split the data on a frame-level, but on a video/patient-level. The task becomes trivial otherwise. See the instructions [here](pocovidnet/#cross-validation-splitting).**
 Please note: The founders/authors of the repository take no responsibility or liability for the data contributed to this archive. The contributing sites have to ensure that the collection and use of the data fulfills all applicable legal and ethical requirements.
+
 
 ## Contribution
 <p align="center">
