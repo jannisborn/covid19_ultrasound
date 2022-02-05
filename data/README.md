@@ -64,7 +64,7 @@ To obtain the data from Butterfly please complete the following steps (in additi
 
 **NOTE:** We can not provide a script to crop the butterfly videos and remove artifacts due to data licensing. The following code only selects the videos that we used for our experiments, renames them, and sorts them into the correct folders.
 
-1. Visit the [COVID-19 ultrasound_gallery](https://butterflynetwork.com/covid19/covid-19-ultrasound-gallery)
+1. Visit the [COVID-19 ultrasound_gallery](https://www.butterflynetwork.com/covid-19#gallery)
    of Butterfly, scroll to *Download Gallery* and download the videos (we accessed this
    source on 17.04.2020 for training our models). Please note that it is not
    under control whether Butterfly will keep this data online. Feel free to
