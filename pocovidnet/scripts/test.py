@@ -68,7 +68,7 @@ def load_encoding(imagePath, FEAT_ID=0, w=7, h=9, pool=True):
 
 def evaluate_logits(saved_logits, saved_gt, saved_files, CLASSES, save_path):
     all_reports, accs, bal_accs = [], [], []
-    for s in range(5):
+    for s in range(len(saved_logits)):
         gt_s = saved_gt[s]
         pred_idx_s = np.argmax(np.array(saved_logits[s]), axis=1)
         report = classification_report(
