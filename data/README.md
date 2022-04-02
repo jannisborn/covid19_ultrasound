@@ -33,7 +33,7 @@ For more information and comments by medical experts, see our [metadata](https:/
 The dataset is continuously updated.
 
 
-# Lung Severity Scores
+## Lung Severity Scores
 <!-- Lung Severity Scores       
 <img src="../pocovidnet/plots/severity.png" width="500"/> -->
 <!--  -->
