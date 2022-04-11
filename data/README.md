@@ -47,7 +47,7 @@ The dataset is continuously updated.
 
 A subset of 136 videos were scored into 4 lung-severity classes as part of work in [Gare et al., 2022. 'Weakly Supervised Contrastive Learning'](https://arxiv.org/abs/2201.07357), by using the scoring scheme as defined in [LUSCOVID19](https://clinicaltrials.gov/ct2/show/record/NCT04322487?term=ultrasound+covid&draw=2&view=record). These severity scores are made available in the [dataset_metadata.csv](./dataset_metadata.csv) under the column **"Lung Severity Score"**.
 
-**Disclamer**: The labels are provided as reference for follow on studies under CC license. Use at your own risk.
+**Disclamer**: The labels are provided as reference for follow on studies under [`CC BY NC 4.0`](https://creativecommons.org/licenses/by-nc/4.0/) license. Use at your own risk.
 
 If you use these labels, please cite the [Gare et al., 2022](https://arxiv.org/abs/2201.07357) paper using the following bibtex entry:
 ```bib
@@ -62,6 +62,22 @@ If you use these labels, please cite the [Gare et al., 2022](https://arxiv.org/a
     arxivId = {2201.07357}
 }
 ```
+
+## Metadata
+
+The [dataset_metadata.csv](./dataset_metadata.csv) file contains a rich amount of metadata of the dataset. The below table lists the metadata category and the corresponding column names under which the information is listed.
+
+| Metadata Category   |      Column Names |
+|----------|:-------------:|
+| File source | **Date added**, **Current location**, **Filename**, **URL (Video Name)**|
+| Labels | **Label**, **Lung Severity Score**|	
+| License Info | **License**, **LinkToLicense**, **ChangesMade**, **InThisRepo**|	
+| Probe details | **Type**, **Probe**	| 
+| Clinical Observation | **DOI**, **Source ID**, **Comments from web site**, **Title**, **Comments first medical doctor (MD1)**, **MD2**, **MD3**|	
+| Video Details | **Framerate**, **Resolution**, **Length (frames)**, **Gender**, **Age**, **Patient ID / Name**, **Lung /abdomen interface**| 
+| Patient comments | **Preconditions / Comments about patient**, **Area according to DEGUM**| 
+|	Bio-markers | **Effusion**, **Consolidations**, **B-lines**, **A-lines**, **Pleural line irregularities**, **Air bronchogram**|	
+| Symptoms | **Healthy**, **Fever**, **Cough**, **Respiratory problems**, **Headache**, **Loss of smell/taste**, **Fatigue**, **Sore throat**, **Asymptomatic**, **Other**|
 
 
 ## Contribute!

@@ -107,3 +107,17 @@ Please use the following bibtex entries:
   journal = {Thorax}
 }
 ```
+
+If you use the severity scores, please cite the [Gare et al., 2022](https://arxiv.org/abs/2201.07357) paper using the following bibtex entry:
+```bib
+@article{Gare2022WeaklyUltrasound,
+    author = {Gare, Gautam Rajendrakumar and Tran, Hai V. and deBoisblanc, Bennett P and Rodriguez, Ricardo Luis and Galeotti, John Michael},
+    title = {{Weakly Supervised Contrastive Learning for Better Severity Scoring of Lung Ultrasound}},
+    year = {2022},
+    month = {1},
+    publisher = {arXiv},
+    url = {https://arxiv.org/abs/2201.07357},
+    doi = {10.48550/ARXIV.2201.07357},
+    arxivId = {2201.07357}
+}
+```
