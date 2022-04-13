@@ -26,11 +26,58 @@ We build a dataset of lung ultrasound images and videos. The dataset combines da
 ### Statistics on symptoms and LUS patterns
 LUS pathologies            |  Symptoms
 :-------------------------:|:-------------------------:
-<img src="https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/pathologies.png" width="500"/>  |  <img src="https://github.com/jannisborn/covid19_pocus_ultrasound/blob/master/pocovidnet/plots/symptoms.png" width="500"/>
+<img src="../pocovidnet/plots/pathologies.png" width="500"/>  |  <img src="../pocovidnet/plots/symptoms.png" width="500"/>
 
 
 For more information and comments by medical experts, see our [metadata](https://docs.google.com/spreadsheets/d/1t-tLMjMod6W-nAjkuxmO0CLsiyalFIOp92k_XD_yeo8/edit#gid=1181682638) sheet or metadata [csv](dataset_metadata.csv).
 The dataset is continuously updated.
+
+
+## Lung Severity Scores
+<!-- Lung Severity Scores       
+<img src="../pocovidnet/plots/severity.png" width="500"/> -->
+<!--  -->
+<p align="center">
+	<img src="../pocovidnet/plots/severity.png" alt="photo not available" width="40%" height="30%">
+	<!-- <br> -->
+   <!-- <em>Current size of the dataset. Most samples use the convex probe. To our knowledge, 
+   this is the largest public source of COVID-19 LUS data. 
+   </em> -->
+</p>
+
+A subset of 136 videos were scored into 4 lung-severity classes as part of work in [Gare et al., 2022. 'Weakly Supervised Contrastive Learning'](https://arxiv.org/abs/2201.07357), by using the scoring scheme as defined in [LUSCOVID19](https://clinicaltrials.gov/ct2/show/record/NCT04322487?term=ultrasound+covid&draw=2&view=record). These severity scores are made available in the [dataset_metadata.csv](./dataset_metadata.csv) under the column **"Lung Severity Score"**.
+
+**Disclamer**: The labels are provided as reference for follow on studies under [`CC BY NC 4.0`](https://creativecommons.org/licenses/by-nc/4.0/) license. Use at your own risk.
+
+If you use these labels, please cite the [Gare et al., 2022](https://arxiv.org/abs/2201.07357) paper using the following bibtex entry:
+```bib
+@article{Gare2022WeaklyUltrasound,
+    author = {Gare, Gautam Rajendrakumar and Tran, Hai V. and deBoisblanc, Bennett P and Rodriguez, Ricardo Luis and Galeotti, John Michael},
+    title = {{Weakly Supervised Contrastive Learning for Better Severity Scoring of Lung Ultrasound}},
+    year = {2022},
+    month = {1},
+    publisher = {arXiv},
+    url = {https://arxiv.org/abs/2201.07357},
+    doi = {10.48550/ARXIV.2201.07357},
+    arxivId = {2201.07357}
+}
+```
+
+## Metadata
+
+The [dataset_metadata.csv](./dataset_metadata.csv) file contains a rich amount of metadata of the dataset. The below table lists the metadata category and the corresponding column names under which the information is listed.
+
+| Metadata Category   |      Column Names |
+|----------|:-------------:|
+| File source | **Date added**, **Current location**, **Filename**, **URL (Video Name)**|
+| Labels | **Label**, **Lung Severity Score**|	
+| License Info | **License**, **LinkToLicense**, **ChangesMade**, **InThisRepo**|	
+| Probe details | **Type**, **Probe**	| 
+| Clinical Observation | **DOI**, **Source ID**, **Comments from web site**, **Title**, **Comments first medical doctor (MD1)**, **MD2**, **MD3**|	
+| Video Details | **Framerate**, **Resolution**, **Length (frames)**, **Gender**, **Age**, **Patient ID / Name**, **Lung /abdomen interface**| 
+| Patient comments | **Preconditions / Comments about patient**, **Area according to DEGUM**| 
+|	Bio-markers | **Effusion**, **Consolidations**, **B-lines**, **A-lines**, **Pleural line irregularities**, **Air bronchogram**|	
+| Symptoms | **Healthy**, **Fever**, **Cough**, **Respiratory problems**, **Headache**, **Loss of smell/taste**, **Fatigue**, **Sore throat**, **Asymptomatic**, **Other**|
 
 
 ## Contribute!

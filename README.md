@@ -13,6 +13,9 @@ This is an ongoing ultrasound data collection initiative for COVID-19. Please he
 ### Dataset
 Feel free to use (and cite) our dataset. We currently have >200 LUS videos. For details see [data/README.md](data/README.md).
 **NOTE: Please make sure to create a meaningful train/test data split. Do not split the data on a frame-level, but on a video/patient-level. The task becomes trivial otherwise. See the instructions [here](pocovidnet/#cross-validation-splitting).**
+
+Lung severity scores for 136 videos are made available in the [dataset_metadata.csv](./data/dataset_metadata.csv) under the column **"Lung Severity Score"** from [Gare et al., 2022](https://arxiv.org/abs/2201.07357).
+
 Please note: The founders/authors of the repository take no responsibility or liability for the data contributed to this archive. The contributing sites have to ensure that the collection and use of the data fulfills all applicable legal and ethical requirements.
 
 
@@ -102,5 +105,19 @@ Please use the following bibtex entries:
   URL = {https://thorax.bmj.com/content/76/Suppl_1/A230.2},
   eprint = {https://thorax.bmj.com/content/76/Suppl_1/A230.2.full.pdf},
   journal = {Thorax}
+}
+```
+
+If you use the severity scores, please cite the [Gare et al., 2022](https://arxiv.org/abs/2201.07357) paper using the following bibtex entry:
+```bib
+@article{Gare2022WeaklyUltrasound,
+    author = {Gare, Gautam Rajendrakumar and Tran, Hai V. and deBoisblanc, Bennett P and Rodriguez, Ricardo Luis and Galeotti, John Michael},
+    title = {{Weakly Supervised Contrastive Learning for Better Severity Scoring of Lung Ultrasound}},
+    year = {2022},
+    month = {1},
+    publisher = {arXiv},
+    url = {https://arxiv.org/abs/2201.07357},
+    doi = {10.48550/ARXIV.2201.07357},
+    arxivId = {2201.07357}
 }
 ```
