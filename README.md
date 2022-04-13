@@ -11,10 +11,9 @@ This repo contains the code for the paper `Accelerating Detection of Lung Pathol
 This is an ongoing ultrasound data collection initiative for COVID-19. Please help growing the [database](data/README.md).
 
 ### Dataset
-Feel free to use (and cite) our dataset. We currently have >200 LUS videos. For details see [data/README.md](data/README.md).
-**NOTE: Please make sure to create a meaningful train/test data split. Do not split the data on a frame-level, but on a video/patient-level. The task becomes trivial otherwise. See the instructions [here](pocovidnet/#cross-validation-splitting).**
+Feel free to use (and cite) our dataset. We currently have >200 LUS videos labelled with a diagnostic outcome. Moreover, lung severity scores for 136 videos are made available in the [dataset_metadata.csv](./data/dataset_metadata.csv) under the column **"Lung Severity Score"** from [Gare et al., 2022](https://arxiv.org/abs/2201.07357). Further clinical information (symptoms, visible LUS patterns etc) are provided for some videos. For details see [data/README.md](data/README.md).
 
-Lung severity scores for 136 videos are made available in the [dataset_metadata.csv](./data/dataset_metadata.csv) under the column **"Lung Severity Score"** from [Gare et al., 2022](https://arxiv.org/abs/2201.07357).
+**NOTE: Please make sure to create a meaningful train/test data split. Do not split the data on a frame-level, but on a video/patient-level. The task becomes trivial otherwise. See the instructions [here](pocovidnet/#cross-validation-splitting).**
 
 Please note: The founders/authors of the repository take no responsibility or liability for the data contributed to this archive. The contributing sites have to ensure that the collection and use of the data fulfills all applicable legal and ethical requirements.
 
