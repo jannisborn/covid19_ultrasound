@@ -1,5 +1,3 @@
-import sys
-sys.path.append('../pocovidnet/')
 from pocovidnet.utils_butterfly_data import (
     get_processing_info, get_paths, label_to_dir
 )
@@ -13,7 +11,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '-data', type=str, default="butterfly"
+        '-data', type=str, default=os.path.join("butterfly", "Published ")
     )
     parser.add_argument('-out', type=str, default="pocus_videos/convex")
     parser.add_argument('-json', type=str, default="data_from_butterfly.json")
