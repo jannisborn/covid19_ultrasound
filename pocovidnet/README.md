@@ -105,7 +105,7 @@ To access the pre-trained models, have a look [here](https://drive.google.com/dr
 # Contact 
 - If you experience problems with the code, please open an
 [issue](https://github.com/jannisborn/covid19_pocus_ultrasound/issues).
-- If you have questions about the project, please reach out: `jborn@ethz.ch`.
+- If you have questions about the project, please reach out: `jannis.born@gmx.de`.
 
 
 # Citation
