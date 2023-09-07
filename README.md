@@ -68,7 +68,7 @@ folder.
 ## Contact 
 - If you experience problems with the code, please open an
 [issue](https://github.com/jannisborn/covid19_pocus_ultrasound/issues).
-- If you have questions about the project, please reach out: `jborn@ethz.ch`.
+- If you have questions about the project, please reach out: `jannis.born@gmx.de`.
 
 # Citation
 An [abstract of our work was published](https://thorax.bmj.com/content/76/Suppl_1/A230.2) in *Thorax* as part of the BTS Winter Meeting 2021. 
