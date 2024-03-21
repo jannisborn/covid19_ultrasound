@@ -9,6 +9,7 @@ This repo contains the code for the paper `Accelerating Detection of Lung Pathol
 
 ### Dataset
 Feel free to use (and cite) our dataset. We currently have >200 LUS videos labelled with a diagnostic outcome. Moreover, lung severity scores for 136 videos are made available in the [dataset_metadata.csv](./data/dataset_metadata.csv) under the column **"Lung Severity Score"** from [Gare et al., 2022](https://arxiv.org/abs/2201.07357). Further clinical information (symptoms, visible LUS patterns etc) are provided for some videos. For details see [data/README.md](data/README.md).
+
 If you are looking for more data, please consider using the 40,000 [carefully simulated LUS images](https://gitlab.com/pulselab/covid19) from the paper by [Zhao et al. (2024, *Communications Medicine*)](https://www.nature.com/articles/s43856-024-00463-5) that were obtained from our source data.
 
 **NOTE: Please make sure to create a meaningful train/test data split. Do not split the data on a frame-level, but on a video/patient-level. The task becomes trivial otherwise. See the instructions [here](pocovidnet/#cross-validation-splitting).**
@@ -73,7 +74,7 @@ An [abstract of our work was published](https://thorax.bmj.com/content/76/Suppl_
 The full paper is available via the COVID-19 special issue of [Applied Sciences](https://www.mdpi.com/2076-3417/11/2/672).
 Please cite these in favor of our deprecated [POCOVID-Net preprint](https://arxiv.org/abs/2004.12084).
 
-Please use the following bibtex entries:
+**Please use the following bibtex entry to cite this dataset:**
 ```bib
 @article{born2021accelerating,
   title={Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis}, 
