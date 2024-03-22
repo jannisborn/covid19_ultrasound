@@ -7,11 +7,10 @@
 ### News
 This repo contains the code for the paper `Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis` which is now [available](https://www.mdpi.com/2076-3417/11/2/672). Please [cite](#Citation) that one instead of our preprint.
 
-### Goal
-This is an ongoing ultrasound data collection initiative for COVID-19. Please help growing the [database](data/README.md).
-
 ### Dataset
 Feel free to use (and cite) our dataset. We currently have >200 LUS videos labelled with a diagnostic outcome. Moreover, lung severity scores for 136 videos are made available in the [dataset_metadata.csv](./data/dataset_metadata.csv) under the column **"Lung Severity Score"** from [Gare et al., 2022](https://arxiv.org/abs/2201.07357). Further clinical information (symptoms, visible LUS patterns etc) are provided for some videos. For details see [data/README.md](data/README.md).
+
+If you are looking for more data, please consider using the 40,000 [carefully simulated LUS images](https://gitlab.com/pulselab/covid19) from the paper by [Zhao et al. (2024, *Communications Medicine*)](https://www.nature.com/articles/s43856-024-00463-5) that were partially derived from the data in this repo.
 
 **NOTE: Please make sure to create a meaningful train/test data split. Do not split the data on a frame-level, but on a video/patient-level. The task becomes trivial otherwise. See the instructions [here](pocovidnet/#cross-validation-splitting).**
 
@@ -75,7 +74,7 @@ An [abstract of our work was published](https://thorax.bmj.com/content/76/Suppl_
 The full paper is available via the COVID-19 special issue of [Applied Sciences](https://www.mdpi.com/2076-3417/11/2/672).
 Please cite these in favor of our deprecated [POCOVID-Net preprint](https://arxiv.org/abs/2004.12084).
 
-Please use the following bibtex entries:
+**Please use the following bibtex entry to cite this dataset:**
 ```bib
 @article{born2021accelerating,
   title={Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis}, 
@@ -90,21 +89,6 @@ Please use the following bibtex entries:
   month={Jan}, 
   pages={672}
 }
-
-@article {born2021l2,
-  author = {Born, J and Wiedemann, N and Cossio, M and Buhre, C and Br{\"a}ndle, G and Leidermann, K and Aujayeb, A},
-  title = {L2 Accelerating COVID-19 differential diagnosis with explainable ultrasound image analysis: an AI tool},
-  volume = {76},
-  number = {Suppl 1},
-  pages = {A230--A231},
-  year = {2021},
-  doi = {10.1136/thorax-2020-BTSabstracts.404},
-  publisher = {BMJ Publishing Group Ltd},
-  issn = {0040-6376},
-  URL = {https://thorax.bmj.com/content/76/Suppl_1/A230.2},
-  eprint = {https://thorax.bmj.com/content/76/Suppl_1/A230.2.full.pdf},
-  journal = {Thorax}
-}
 ```
 
 If you use the severity scores, please cite the [Gare et al., 2022](https://arxiv.org/abs/2201.07357) paper using the following bibtex entry:
@@ -118,5 +102,19 @@ If you use the severity scores, please cite the [Gare et al., 2022](https://arxi
     url = {https://arxiv.org/abs/2201.07357},
     doi = {10.48550/ARXIV.2201.07357},
     arxivId = {2201.07357}
+}
+```
+
+If you use the 40,000 synthetic images from [Zhao et al., 2024](https://www.nature.com/articles/s43856-024-00463-5), please cite their paper with the following bibtex entry:
+```bib
+@article{zhao2024detection,
+  title={Detection of COVID-19 features in lung ultrasound images using deep neural networks},
+  author={Zhao, Lingyi and Fong, Tiffany Clair and Bell, Muyinatu A Lediju},
+  journal={Communications Medicine},
+  volume={4},
+  number={1},
+  pages={41},
+  year={2024},
+  publisher={Nature Publishing Group UK London}
 }
 ```
