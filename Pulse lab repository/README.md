@@ -1,4 +1,4 @@
-# External Repository Containing Simulated and Labeled In Vivo COVID-19 Dataset
+# Pulse Lab Repository Containing Simulated and Labeled In Vivo COVID-19 Dataset
 
 ## Repository link: 
 https://gitlab.com/pulselab/covid19
