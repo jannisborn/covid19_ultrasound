@@ -104,17 +104,3 @@ If you use the severity scores, please cite the [Gare et al., 2022](https://arxi
     arxivId = {2201.07357}
 }
 ```
-
-If you use the 40,000 synthetic images from [Zhao et al., 2024](https://www.nature.com/articles/s43856-024-00463-5), please cite their paper with the following bibtex entry:
-```bib
-@article{zhao2024detection,
-  title={Detection of COVID-19 features in lung ultrasound images using deep neural networks},
-  author={Zhao, Lingyi and Fong, Tiffany Clair and Bell, Muyinatu A Lediju},
-  journal={Communications Medicine},
-  volume={4},
-  number={1},
-  pages={41},
-  year={2024},
-  publisher={Nature Publishing Group UK London}
-}
-```
