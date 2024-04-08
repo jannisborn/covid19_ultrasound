@@ -1,7 +1,6 @@
 # Pulse Lab Repository Containing Simulated and Labeled In Vivo COVID-19 Dataset
 
-## Repository link: 
-https://gitlab.com/pulselab/covid19
+Repository link: https://gitlab.com/pulselab/covid19
 
 This external repository link provides public access to the datasets and code described in the paper “Detection of COVID-19 features in lung ultrasound images using deep neural networks.” Communications Medicine, 2024. https://www.nature.com/articles/s43856-024-00463-5.
 
