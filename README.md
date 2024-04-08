@@ -3,12 +3,13 @@
 [![Build Status](https://github.com/jannisborn/covid19_ultrasound/actions/workflows/build.yml/badge.svg)](https://github.com/jannisborn/covid19_ultrasound/actions/workflows/build.yml)
 
 ## Summary
+This repo contains the code for the paper [`Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis`](https://www.mdpi.com/2076-3417/11/2/672).
 
 ### News
-This repo contains the code for the paper `Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis` which is now [available](https://www.mdpi.com/2076-3417/11/2/672). Please [cite](#Citation) that one instead of our preprint.
+- **April '24: We released [COVID-BLUES](https://github.com/NinaWie/COVID-BLUES), a new dataset of 371 videos from 63 patients collected in a prospective clinical study**. Please check out the data and consider using it _instead_ of this one since it is of much higher quality. The paper for this data will appear soon.
 
 ### Dataset
-Feel free to use (and cite) our dataset. We currently have >200 LUS videos labelled with a diagnostic outcome. Moreover, lung severity scores for 136 videos are made available in the [dataset_metadata.csv](./data/dataset_metadata.csv) under the column **"Lung Severity Score"** from [Gare et al., 2022](https://arxiv.org/abs/2201.07357). Further clinical information (symptoms, visible LUS patterns etc) are provided for some videos. For details see [data/README.md](data/README.md).
+Feel free to use (and [cite](#Citation)) our dataset. We currently have >200 LUS videos labelled with a diagnostic outcome. Moreover, lung severity scores for 136 videos are made available in the [dataset_metadata.csv](./data/dataset_metadata.csv) under the column **"Lung Severity Score"** from [Gare et al., 2022](https://arxiv.org/abs/2201.07357). Further clinical information (symptoms, visible LUS patterns etc) are provided for some videos. For details see [data/README.md](data/README.md).
 
 If you are looking for more data, please consider using the 40,000 [carefully simulated LUS images](https://gitlab.com/pulselab/covid19) from the paper by [Zhao et al. (2024, *Communications Medicine*)](https://www.nature.com/articles/s43856-024-00463-5) that were partially derived from the data in this repo.
 
@@ -88,19 +89,5 @@ Please cite these in favor of our deprecated [POCOVID-Net preprint](https://arxi
   year={2021}, 
   month={Jan}, 
   pages={672}
-}
-```
-
-If you use the severity scores, please cite the [Gare et al., 2022](https://arxiv.org/abs/2201.07357) paper using the following bibtex entry:
-```bib
-@article{Gare2022WeaklyUltrasound,
-    author = {Gare, Gautam Rajendrakumar and Tran, Hai V. and deBoisblanc, Bennett P and Rodriguez, Ricardo Luis and Galeotti, John Michael},
-    title = {{Weakly Supervised Contrastive Learning for Better Severity Scoring of Lung Ultrasound}},
-    year = {2022},
-    month = {1},
-    publisher = {arXiv},
-    url = {https://arxiv.org/abs/2201.07357},
-    doi = {10.48550/ARXIV.2201.07357},
-    arxivId = {2201.07357}
 }
 ```
