@@ -10,7 +10,7 @@ This repo contains the code for the paper `Accelerating Detection of Lung Pathol
 ### Dataset
 Feel free to use (and cite) our dataset. We currently have >200 LUS videos labelled with a diagnostic outcome. Moreover, lung severity scores for 136 videos are made available in the [dataset_metadata.csv](./data/dataset_metadata.csv) under the column **"Lung Severity Score"** from [Gare et al., 2022](https://arxiv.org/abs/2201.07357). Further clinical information (symptoms, visible LUS patterns etc) are provided for some videos. For details see [data/README.md](data/README.md).
 
-If you are looking for more data, please consider using the 40,000 [carefully simulated LUS images](https://gitlab.com/pulselab/covid19) from the paper by [Zhao et al. (2024, *Communications Medicine*)](https://www.nature.com/articles/s43856-024-00463-5) that were partially derived from the data in this repo. For details see [Pulse lab repository/README.md](Pulse%20lab%20repository/README.md).
+If you are looking for more data, please consider using the 40,000 [carefully simulated LUS images](https://gitlab.com/pulselab/covid19) from the paper by [Zhao et al. (2024, *Communications Medicine*)](https://www.nature.com/articles/s43856-024-00463-5) that were partially derived from the data in this repo. For details see [Pulse Lab Repository/README.md](Pulse%20Lab%20Repository/README.md).
 
 **NOTE: Please make sure to create a meaningful train/test data split. Do not split the data on a frame-level, but on a video/patient-level. The task becomes trivial otherwise. See the instructions [here](pocovidnet/#cross-validation-splitting).**
 
