@@ -6,7 +6,7 @@ This external repository link provides public access to the datasets and code de
 
 Access includes 40,000 carefully simulated lung ultrasound B-mode images containing A-line, B-line, and consolidation features with paired ground truth segmentations. The simulation code can be accessed via the repository. 
 
-Access also includes segmentation annotations (i.e., labels) of the following publicly available POCUS datasets (available in https://github.com/jannisborn/covid19_ultrasound):
+Access also includes segmentation annotations of the following publicly available POCUS datasets (available in https://github.com/jannisborn/covid19_ultrasound):
 
 <div style="text-align:center;">
 	<img src="POCUSdataset.png" alt="photo not available" width="100%" height="100%">
@@ -16,5 +16,19 @@ Access also includes segmentation annotations (i.e., labels) of the following pu
 If you use the simulated datasets, labels, and/or code in this external repository, you must cite the following references:
 
 L. Zhao, T.C. Fong, M.A.L. Bell, “Detection of COVID-19 features in lung ultrasound images using deep neural networks”, Communications Medicine, 2024. https://www.nature.com/articles/s43856-024-00463-5
+
+The bibtex entry is as follows:
+```bib
+@article{zhao2024detection,
+  title={Detection of COVID-19 features in lung ultrasound images using deep neural networks},
+  author={Zhao, Lingyi and Fong, Tiffany Clair and Bell, Muyinatu A Lediju},
+  journal={Communications Medicine},
+  volume={4},
+  number={1},
+  pages={41},
+  year={2024},
+  publisher={Nature Publishing Group UK London}
+}
+```
 
 L. Zhao, M.A.L. Bell (2023). Code for the paper “Detection of COVID-19 features in lung ultrasound images using deep neural networks”. Zenodo. https://doi.org/10.5281/zenodo.10324042
