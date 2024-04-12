@@ -62,11 +62,10 @@ Access also includes segmentation annotations of the following publicly availabl
 | Butterfly                              | https://www.butterflynetwork.com/covid19/covid-19-ultrasound-gallery                                 | Bline         | Cov_021                             |
 | Butterfly                              | https://www.butterflynetwork.com/covid19/covid-19-ultrasound-gallery                                 | Bline         | Cov_022                             |
 
-If you use the simulated datasets, labels, and/or code in this external repository, you must cite the following references:
+If you use the simulated datasets, labels, and/or code in this external repository, cite the following references:
 
-L. Zhao, T.C. Fong, M.A.L. Bell, “Detection of COVID-19 features in lung ultrasound images using deep neural networks”, Communications Medicine, 2024. https://www.nature.com/articles/s43856-024-00463-5
+1. L. Zhao, T.C. Fong, M.A.L. Bell, “Detection of COVID-19 features in lung ultrasound images using deep neural networks”, Communications Medicine, 2024. https://www.nature.com/articles/s43856-024-00463-5
 
-The bibtex entry is as follows:
 ```bib
 @article{zhao2024detection,
   title={Detection of COVID-19 features in lung ultrasound images using deep neural networks},
@@ -80,4 +79,14 @@ The bibtex entry is as follows:
 }
 ```
 
-L. Zhao, M.A.L. Bell (2023). Code for the paper “Detection of COVID-19 features in lung ultrasound images using deep neural networks”. Zenodo. https://doi.org/10.5281/zenodo.10324042
+2. L. Zhao, M.A.L. Bell (2023). Code for the paper “Detection of COVID-19 features in lung ultrasound images using deep neural networks”. Zenodo. https://doi.org/10.5281/zenodo.10324042
+
+```bib
+@misc{zenodo,
+  title={Code for the paper “Detection of COVID-19 features in lung ultrasound images using deep neural networks"},
+  author={Zhao, Lingyi and Bell, Muyinatu A Lediju},
+  year={2024},  
+  publisher={Zenodo}
+  url={https://doi.org/10.5281/zenodo.10324042}
+}
+```
