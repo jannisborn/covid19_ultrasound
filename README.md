@@ -5,8 +5,8 @@
 ## Summary
 This repo contains the code for the paper [`Accelerating Detection of Lung Pathologies with Explainable Ultrasound Image Analysis`](https://www.mdpi.com/2076-3417/11/2/672).
 
-### News
-- **April '24: We released [COVID-BLUES](https://github.com/NinaWie/COVID-BLUES), a new dataset of 371 videos from 63 patients collected in a prospective clinical study**. Please check out the data and consider using it _instead_ of this one since it is of much higher quality. The paper for this data will appear soon.
+### News 2025: 
+We released [COVID-BLUES](https://github.com/NinaWie/COVID-BLUES), a new dataset of 371 videos from 63 patients collected in a **prospective** clinical study. The paper has been published in [Wiedemann et al. (2025), *IEEE Journal of Biomedical and Health Informatics*](https://ieeexplore.ieee.org/abstract/document/10903196). Please check out the data and consider using it _instead_ of this one since it is of much higher quality!
 
 ### Dataset
 Feel free to use (and [cite](#Citation)) our dataset. We currently have >200 LUS videos labelled with a diagnostic outcome. Moreover, lung severity scores for 136 videos are made available in the [dataset_metadata.csv](./data/dataset_metadata.csv) under the column **"Lung Severity Score"** from [Gare et al., 2022](https://arxiv.org/abs/2201.07357). Further clinical information (symptoms, visible LUS patterns etc) are provided for some videos. For details see [data/README.md](data/README.md).
